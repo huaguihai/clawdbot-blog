@@ -35,7 +35,7 @@ export default function PostCard({ post, index }: { post: Post; index: number })
               <span>5 min read</span>
             </div>
             
-            <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight group-hover:text-indigo-600 transition-colors">
+            <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight group-hover:text-orange-600 transition-colors">
               {post.title}
             </h3>
             
@@ -43,7 +43,7 @@ export default function PostCard({ post, index }: { post: Post; index: number })
               {post.excerpt}
             </p>
 
-            <div className="flex items-center text-sm font-bold text-indigo-600 group-hover:underline decoration-2 underline-offset-4">
+            <div className="flex items-center text-sm font-bold text-orange-600 group-hover:underline decoration-2 underline-offset-4">
               阅读全文 <ArrowRight className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" />
             </div>
           </div>
