@@ -1,10 +1,11 @@
 import Link from 'next/link';
-import { posts } from '@/lib/posts';
+import { getPosts } from '@/lib/posts'; // Use the function now
 import PostCard from '@/components/PostCard';
 import DynamicPattern from '@/components/DynamicPattern';
 import { Sparkles, TrendingUp, Search } from 'lucide-react';
 
 export default function Home() {
+  const posts = getPosts(); // Fetch at runtime
   const featuredPost = posts[0];
   const recentPosts = posts.slice(1);
 
