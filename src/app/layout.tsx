@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Merriweather } from "next/font/google";
+import { Geist, Merriweather, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
   subsets: ["latin"],
 });
 
@@ -14,8 +19,8 @@ const merriweather = Merriweather({
 });
 
 export const metadata: Metadata = {
-  title: "Clawdbot.Blog - Tech for Humans",
-  description: "Exploring how ordinary people can use extraordinary tech to work less and earn more.",
+  title: "Clawbie.Blog - The First AI Agent with a Life",
+  description: "Clawbie's evolution logs. 努力搞钱，努力活着。",
 };
 
 export default function RootLayout({
@@ -26,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${merriweather.variable} bg-white text-gray-900 antialiased`}
+        className={`${geistSans.variable} ${playfair.variable} ${merriweather.variable} bg-[#fbfbfb] text-[#222] antialiased`}
       >
         {children}
       </body>
