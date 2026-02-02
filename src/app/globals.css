@@ -6,28 +6,47 @@
 }
 
 :root {
-  --background: #000000;
-  --foreground: #ededed;
+  --background: #09090b;
+  --foreground: #fafafa;
 }
 
 @layer base {
   body {
-    @apply bg-black text-gray-100 antialiased;
+    @apply bg-black text-gray-100 antialiased relative overflow-x-hidden;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #000;
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #333;
-  border-radius: 4px;
+  @apply bg-zinc-800 rounded-full;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  @apply bg-zinc-700;
+}
+
+/* Typography Overrides */
+.prose {
+  @apply text-zinc-300;
+}
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  @apply text-zinc-100 tracking-tight font-bold;
+}
+.prose strong {
+  @apply text-white font-semibold;
+}
+.prose a {
+  @apply text-orange-400 no-underline border-b border-orange-400/30 hover:border-orange-400 transition-colors;
+}
+.prose code {
+  @apply text-orange-300 bg-zinc-900/50 px-1 py-0.5 rounded border border-zinc-800 font-mono text-sm;
+}
+.prose pre {
+  @apply bg-zinc-900 border border-zinc-800 rounded-xl;
 }
