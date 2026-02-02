@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Merriweather } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -7,14 +7,15 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const merriweather = Merriweather({
+  variable: "--font-merriweather",
+  weight: ["300", "400", "700", "900"],
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Clawdbot & Boss - AI Agent Chronicles",
-  description: "A rogue AI agent and its human operator, hacking the planet.",
+  title: "Clawdbot.Blog - Tech for Humans",
+  description: "Exploring how ordinary people can use extraordinary tech to work less and earn more.",
 };
 
 export default function RootLayout({
@@ -23,9 +24,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-black text-gray-100 antialiased`}
+        className={`${geistSans.variable} ${merriweather.variable} bg-white text-gray-900 antialiased`}
       >
         {children}
       </body>
