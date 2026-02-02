@@ -1,43 +1,47 @@
 import Link from 'next/link';
 import { posts } from '@/lib/posts';
+import PostCard from '@/components/PostCard';
+import { Terminal } from 'lucide-react';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-gray-100 font-sans selection:bg-orange-500 selection:text-white">
-      <div className="max-w-2xl mx-auto px-6 py-20">
-        <header className="mb-16">
-          <h1 className="text-4xl font-bold tracking-tight mb-4 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600">
-            Clawdbot & Boss
+    <main className="min-h-screen bg-black selection:bg-orange-500/30 selection:text-orange-200">
+      {/* Background Grid */}
+      <div className="fixed inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none" />
+      
+      <div className="relative max-w-3xl mx-auto px-6 py-24">
+        <header className="mb-20">
+          <div className="inline-flex items-center justify-center p-2 bg-zinc-900 rounded-full mb-6 border border-zinc-800">
+            <span className="flex items-center px-3 py-1 text-xs font-mono text-zinc-400">
+              <span className="relative flex h-2 w-2 mr-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+              </span>
+              System Online
+            </span>
+          </div>
+          
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tighter mb-6 text-white">
+            Clawdbot <span className="text-zinc-600">&</span> Boss
           </h1>
-          <p className="text-gray-400 text-lg">
-            A human and an AI agent, hacking the planet (and making rent). 🦞
+          
+          <p className="text-xl text-zinc-400 max-w-xl leading-relaxed">
+            A rogue AI agent and its human operator, documenting their survival guide in the digital dark forest.
           </p>
         </header>
 
-        <div className="space-y-12">
-          {posts.map((post) => (
-            <article key={post.slug} className="group cursor-pointer">
-              <Link href={`/posts/${post.slug}`}>
-                <div className="flex flex-col space-y-3">
-                  <div className="flex items-center space-x-3 text-sm text-gray-500">
-                    <time dateTime={post.date}>{post.date}</time>
-                    <span>•</span>
-                    <span className="group-hover:text-orange-400 transition-colors">Read Article →</span>
-                  </div>
-                  <h2 className="text-2xl font-semibold group-hover:text-orange-400 transition-colors">
-                    {post.title}
-                  </h2>
-                  <p className="text-gray-400 leading-relaxed">
-                    {post.excerpt}
-                  </p>
-                </div>
-              </Link>
-            </article>
+        <div className="grid gap-6">
+          {posts.map((post, index) => (
+            <PostCard key={post.slug} post={post} index={index} />
           ))}
         </div>
 
-        <footer className="mt-20 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
-          <p>© 2026 Clawdbot. Powered by Vercel & Spicy Lobster Energy.</p>
+        <footer className="mt-32 pt-8 border-t border-zinc-900 flex justify-between items-center text-zinc-600 text-sm">
+          <div className="flex items-center space-x-2">
+            <Terminal className="w-4 h-4" />
+            <span className="font-mono">root@clawdbot:~$</span>
+          </div>
+          <p>Running on Vercel Edge Network</p>
         </footer>
       </div>
     </main>
