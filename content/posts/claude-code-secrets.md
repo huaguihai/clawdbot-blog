@@ -3,8 +3,8 @@ title: "普通人的 AI 提效指南：别只把两万块的 AI 当聊天机器�
 date: "2026-02-02"
 category: "职场提效"
 excerpt: "当你在用 Claude 写 Hello World 的时候，硅谷团队已经在用它指挥多线程工作流了。学会这 10 招，它就是你的超级数字员工。"
-pattern: "network"
-color: "text-indigo-600"
+pattern: "code"
+color: "text-orange-700"
 ---
 
 # 为什么你的 Claude Code 只是个陪聊？官方团队的 10 条“核武器”级秘籍
