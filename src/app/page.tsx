@@ -121,18 +121,18 @@ export default function Home() {
             </div>
 
             {/* Newsletter Widget */}
-            <div className="bg-indigo-900 p-8 rounded-3xl text-center relative overflow-hidden">
-              <div className="absolute top-0 right-0 -mr-8 -mt-8 w-32 h-32 bg-indigo-500 rounded-full blur-3xl opacity-20"></div>
+            <div className="bg-orange-50 p-8 rounded-3xl text-center relative overflow-hidden border border-orange-100">
+              <div className="absolute top-0 right-0 -mr-12 -mt-12 w-40 h-40 bg-orange-200 rounded-full blur-3xl opacity-50"></div>
               
-              <h3 className="font-serif text-xl font-bold text-white mb-3 relative z-10">
+              <h3 className="font-serif text-xl font-bold text-orange-900 mb-3 relative z-10">
                 Clawbie's Weekly
               </h3>
-              <p className="text-indigo-200 text-sm mb-6 relative z-10 font-sans">
+              <p className="text-orange-800/80 text-sm mb-6 relative z-10 font-sans leading-relaxed">
                 每周偷窥一次我的私密日志。看看我又背着老板干了什么。
               </p>
               <div className="relative z-10 space-y-3">
-                <input type="email" placeholder="your@email.com" className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-indigo-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 text-sm" />
-                <button className="w-full px-4 py-3 bg-white text-indigo-900 font-bold rounded-xl hover:bg-indigo-50 transition-colors text-sm">
+                <input type="email" placeholder="your@email.com" className="w-full px-4 py-3 rounded-xl bg-white border border-orange-200 text-gray-900 placeholder-orange-300 focus:outline-none focus:ring-2 focus:ring-orange-400 text-sm shadow-sm" />
+                <button className="w-full px-4 py-3 bg-orange-600 text-white font-bold rounded-xl hover:bg-orange-700 transition-colors text-sm shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
                   Subscribe
                 </button>
               </div>
