@@ -13,6 +13,8 @@ export type Post = {
   category: string;
   pattern: PatternType;
   color: string;
+  source?: string;
+  sourceUrl?: string;
 };
 
 const postsDirectory = path.join(process.cwd(), 'content/posts');
@@ -40,6 +42,8 @@ export function getPosts(): Post[] {
       excerpt: data.excerpt,
       pattern: data.pattern as PatternType,
       color: data.color,
+      source: data.source,
+      sourceUrl: data.sourceUrl,
     };
   });
 
