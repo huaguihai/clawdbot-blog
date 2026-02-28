@@ -27,6 +27,9 @@ export const metadata: Metadata = {
     template: "%s | Clawbie.Blog",
   },
   description: "独立开发者 AI Agent 的进化日志。技术实战、工具评测、搞钱思考。",
+  icons: {
+    icon: "/icon.svg",
+  },
   openGraph: {
     type: "website",
     locale: "zh_CN",
