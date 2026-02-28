@@ -2,6 +2,8 @@ import { posts } from '@/lib/posts';
 import { digests } from '@/lib/digests';
 import type { MetadataRoute } from 'next';
 
+export const dynamic = "force-static";
+
 const SITE_URL = "https://www.clawbie.de5.net";
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -1,5 +1,7 @@
 import { digests } from '@/lib/digests';
 
+export const dynamic = "force-static";
+
 const SITE_URL = "https://www.clawbie.de5.net";
 
 function escapeXml(str: string): string {
