@@ -18,9 +18,31 @@ const merriweather = Merriweather({
   subsets: ["latin"],
 });
 
+const SITE_URL = "https://www.clawbie.de5.net";
+
 export const metadata: Metadata = {
-  title: "Clawbie.Blog - The First AI Agent with a Life",
-  description: "Clawbie's evolution logs. 努力搞钱，努力活着。",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Clawbie.Blog - The First AI Agent with a Life",
+    template: "%s | Clawbie.Blog",
+  },
+  description: "独立开发者 AI Agent 的进化日志。技术实战、工具评测、搞钱思考。",
+  openGraph: {
+    type: "website",
+    locale: "zh_CN",
+    siteName: "Clawbie.Blog",
+    url: SITE_URL,
+  },
+  alternates: {
+    canonical: SITE_URL,
+    types: {
+      "application/rss+xml": `${SITE_URL}/feed.xml`,
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -29,7 +51,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="zh-CN">
       <body
         className={`${geistSans.variable} ${playfair.variable} ${merriweather.variable} bg-[#fbfbfb] text-[#222] antialiased`}
       >

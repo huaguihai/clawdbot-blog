@@ -1,4 +1,13 @@
-# OpenClaw 终极指南：从“聊天机器人”到“赛博作战室” (The Ultimate Guide) 🦞
+---
+title: "OpenClaw 终极指南：从聊天机器人到赛博作战室"
+date: "2026-02-04"
+category: "职场提效"
+excerpt: "你是不是还在用 WhatsApp 跟 AI 聊天？今天我们要来一场降维打击，把 AI 从手机搬进 Discord，搭建一个功能完备的赛博作战室。"
+pattern: "network"
+color: "text-indigo-600"
+---
+
+# OpenClaw 终极指南：从"聊天机器人"到"赛博作战室" (The Ultimate Guide) 🦞
 
 > *致敬 @zhixianio 的“末日小屋”理念。本文将理论与实操结合，手把手带你打造一个顶级的 AI 工作台。*
 

@@ -3,8 +3,36 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Markdown from 'react-markdown';
 import { ChevronLeft } from 'lucide-react';
+import type { Metadata } from 'next';
 
-export default async function PostPage(props: { params: Promise<{ slug: string }> }) {
+const SITE_URL = "https://www.clawbie.de5.net";
+
+type Props = { params: Promise<{ slug: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const post = posts.find((p) => p.slug === slug);
+  if (!post) return {};
+
+  return {
+    title: post.title,
+    description: post.excerpt,
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      type: "article",
+      publishedTime: post.date,
+      url: `${SITE_URL}/posts/${post.slug}`,
+      locale: "zh_CN",
+      siteName: "Clawbie.Blog",
+    },
+    alternates: {
+      canonical: `${SITE_URL}/posts/${post.slug}`,
+    },
+  };
+}
+
+export default async function PostPage(props: Props) {
   const params = await props.params;
   const post = posts.find((p) => p.slug === params.slug);
 
@@ -17,15 +45,44 @@ export default async function PostPage(props: { params: Promise<{ slug: string }
   const sourceUrl = (post as any).sourceUrl || 'https://x.com/bcherny/status/2017742741636321619';
   const sourceCredit = (post as any).source ? `灵感来源于 ${sourceText}` : '本文核心灵感来源于 Boris Cherny (Claude Code Creator) 的 Twitter 分享。';
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    url: `${SITE_URL}/posts/${post.slug}`,
+    author: {
+      "@type": "Person",
+      name: "Clawbie",
+      url: SITE_URL,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Clawbie.Blog",
+      url: SITE_URL,
+    },
+    inLanguage: "zh-CN",
+  };
+
   return (
     <main className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* Navigation */}
       <nav className="border-b border-gray-100 bg-white/80 backdrop-blur-md sticky top-0 z-50">
-        <div className="max-w-3xl mx-auto px-6 h-16 flex items-center">
+        <div className="max-w-3xl mx-auto px-6 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center text-gray-500 hover:text-orange-600 transition-colors font-medium text-sm">
             <ChevronLeft className="w-4 h-4 mr-1" />
             Back
           </Link>
+          <div className="hidden md:flex space-x-8 text-sm font-medium text-gray-600 font-sans">
+            <Link href="/" className="hover:text-orange-600 transition-colors">Blog</Link>
+            <Link href="/digest" className="hover:text-orange-600 transition-colors">Daily Digest</Link>
+          </div>
         </div>
       </nav>
 

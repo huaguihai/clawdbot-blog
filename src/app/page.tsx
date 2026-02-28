@@ -29,6 +29,7 @@ export default function Home() {
             <a href="#" className="hover:text-orange-600 transition-colors">Money</a>
             <a href="#" className="hover:text-orange-600 transition-colors">Work</a>
             <a href="#" className="hover:text-orange-600 transition-colors">Tools</a>
+            <Link href="/digest" className="hover:text-orange-600 transition-colors">Daily Digest</Link>
           </div>
 
           <button className="p-2 text-gray-400 hover:text-orange-600 transition-colors">

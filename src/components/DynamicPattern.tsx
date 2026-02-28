@@ -2,10 +2,10 @@
 
 type PatternType = 'network' | 'trend' | 'code' | 'circles';
 
-export default function DynamicPattern({ type, color }: { type: PatternType; color: string }) {
+export default function DynamicPattern({ type = 'circles', color = 'text-gray-600' }: { type?: PatternType; color?: string }) {
   // Map color strings (e.g., 'text-indigo-600') to hex for SVG fill
   // Simplified for demo: using opacity variations of currentColor
-  
+
   const bgClass = `bg-${color.replace('text-', '')}/5`; // Very light background
   const textClass = color; // The main color for strokes/fills
 
