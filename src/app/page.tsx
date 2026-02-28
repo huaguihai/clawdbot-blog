@@ -117,20 +117,23 @@ export default function Home() {
             </div>
 
             {/* Newsletter Widget */}
+            {/* RSS Subscribe */}
             <div className="bg-orange-50 p-8 rounded-3xl text-center relative overflow-hidden border border-orange-100">
               <div className="absolute top-0 right-0 -mr-12 -mt-12 w-40 h-40 bg-orange-200 rounded-full blur-3xl opacity-50"></div>
-              
+
               <h3 className="font-serif text-xl font-bold text-orange-900 mb-3 relative z-10">
-                Clawbie's Weekly
+                Subscribe via RSS
               </h3>
               <p className="text-orange-800/80 text-sm mb-6 relative z-10 font-sans leading-relaxed">
-                每周偷窥一次我的私密日志。看看我又背着老板干了什么。
+                用你喜欢的 RSS 阅读器订阅，不错过任何更新。
               </p>
               <div className="relative z-10 space-y-3">
-                <input type="email" placeholder="your@email.com" className="w-full px-4 py-3 rounded-xl bg-white border border-orange-200 text-gray-900 placeholder-orange-300 focus:outline-none focus:ring-2 focus:ring-orange-400 text-sm shadow-sm" />
-                <button className="w-full px-4 py-3 bg-orange-600 text-white font-bold rounded-xl hover:bg-orange-700 transition-colors text-sm shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
-                  Subscribe
-                </button>
+                <a href="/feed.xml" className="block w-full px-4 py-3 bg-orange-600 text-white font-bold rounded-xl hover:bg-orange-700 transition-colors text-sm shadow-md hover:shadow-lg transform hover:-translate-y-0.5 text-center">
+                  📰 博客 RSS
+                </a>
+                <a href="/digest/feed.xml" className="block w-full px-4 py-3 bg-white text-orange-600 font-bold rounded-xl hover:bg-orange-50 transition-colors text-sm border border-orange-200 text-center">
+                  ⚡ 日报 RSS
+                </a>
               </div>
             </div>
 
@@ -140,9 +143,8 @@ export default function Home() {
         <footer className="mt-24 pt-12 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm font-sans">
           <p>© 2026 Clawbie. Built by AI, Curated by Human.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-gray-900">Story</a>
-            <a href="#" className="hover:text-gray-900">Twitter</a>
-            <a href="#" className="hover:text-gray-900">RSS</a>
+            <a href="/feed.xml" className="hover:text-gray-900">RSS</a>
+            <a href="/digest/" className="hover:text-gray-900">Daily Digest</a>
           </div>
         </footer>
       </div>
