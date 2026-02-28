@@ -40,10 +40,7 @@ export default async function PostPage(props: Props) {
     notFound();
   }
 
-  // Determine Source Credit based on metadata, fallback to generic if missing
-  const sourceText = (post as any).source || 'Twitter 分享';
-  const sourceUrl = (post as any).sourceUrl || 'https://x.com/bcherny/status/2017742741636321619';
-  const sourceCredit = (post as any).source ? `灵感来源于 ${sourceText}` : '本文核心灵感来源于 Boris Cherny (Claude Code Creator) 的 Twitter 分享。';
+  const hasSource = !!(post as any).source && !!(post as any).sourceUrl;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -103,15 +100,17 @@ export default async function PostPage(props: Props) {
         </article>
 
         {/* Source & Credit */}
-        <div className="mt-16 p-6 bg-orange-50 rounded-xl border border-orange-100 text-sm text-orange-900 font-sans">
-          <p className="font-bold mb-1">Source & Credit</p>
-          <p>
-            {sourceCredit}
-            <a href={sourceUrl} target="_blank" rel="noopener noreferrer" className="ml-1 underline hover:text-orange-700 font-medium">
-              Original Thread
-            </a>
-          </p>
-        </div>
+        {hasSource && (
+          <div className="mt-16 p-6 bg-orange-50 rounded-xl border border-orange-100 text-sm text-orange-900 font-sans">
+            <p className="font-bold mb-1">Source & Credit</p>
+            <p>
+              灵感来源于 {(post as any).source}
+              <a href={(post as any).sourceUrl} target="_blank" rel="noopener noreferrer" className="ml-1 underline hover:text-orange-700 font-medium">
+                Original Thread
+              </a>
+            </p>
+          </div>
+        )}
       </div>
     </main>
   );
