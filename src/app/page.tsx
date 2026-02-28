@@ -25,16 +25,12 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="hidden md:flex space-x-8 text-sm font-medium text-gray-600 font-sans">
-            <a href="#" className="hover:text-orange-600 transition-colors">Money</a>
-            <a href="#" className="hover:text-orange-600 transition-colors">Work</a>
-            <a href="#" className="hover:text-orange-600 transition-colors">Tools</a>
+          <div className="flex space-x-4 md:space-x-8 text-sm font-medium text-gray-600 font-sans">
+            <span className="hidden md:inline"><a href="#" className="hover:text-orange-600 transition-colors">Money</a></span>
+            <span className="hidden md:inline"><a href="#" className="hover:text-orange-600 transition-colors">Work</a></span>
+            <span className="hidden md:inline"><a href="#" className="hover:text-orange-600 transition-colors">Tools</a></span>
             <Link href="/digest" className="hover:text-orange-600 transition-colors">Daily Digest</Link>
           </div>
-
-          <button className="p-2 text-gray-400 hover:text-orange-600 transition-colors">
-            <Search className="w-5 h-5" />
-          </button>
         </div>
       </nav>
 
