@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <style>
+    text { font-family: -apple-system, 'Segoe UI', sans-serif; }
+  </style>
+
+  <!-- Bad shell box -->
+  <rect x="20" y="40" width="180" height="120" rx="16" fill="#FEE2E2" stroke="#F87171" stroke-width="2"/>
+  <text x="110" y="85" text-anchor="middle" font-size="15" font-weight="700" fill="#991B1B">烂产品的壳</text>
+  <text x="110" y="110" text-anchor="middle" font-size="12" fill="#B91C1C">用户熟悉的形式</text>
+  <text x="110" y="128" text-anchor="middle" font-size="12" fill="#B91C1C">已有的分发渠道</text>
+  <text x="110" y="146" text-anchor="middle" font-size="12" fill="#B91C1C">成熟的用户习惯</text>
+
+  <!-- Plus sign -->
+  <text x="240" y="110" text-anchor="middle" font-size="36" font-weight="700" fill="#9CA3AF">+</text>
+
+  <!-- Good core box -->
+  <rect x="280" y="40" width="180" height="120" rx="16" fill="#DCFCE7" stroke="#4ADE80" stroke-width="2"/>
+  <text x="370" y="85" text-anchor="middle" font-size="15" font-weight="700" fill="#166534">好内容的核</text>
+  <text x="370" y="110" text-anchor="middle" font-size="12" fill="#15803D">真正有价值的信息</text>
+  <text x="370" y="128" text-anchor="middle" font-size="12" fill="#15803D">解决用户真实痛点</text>
+  <text x="370" y="146" text-anchor="middle" font-size="12" fill="#15803D">反差感驱动传播</text>
+
+  <!-- Equals sign -->
+  <text x="500" y="110" text-anchor="middle" font-size="36" font-weight="700" fill="#9CA3AF">=</text>
+
+  <!-- Result box -->
+  <rect x="530" y="40" width="170" height="120" rx="16" fill="#FFF7ED" stroke="#EA580C" stroke-width="2"/>
+  <text x="615" y="80" text-anchor="middle" font-size="15" font-weight="700" fill="#9A3412">自带传播的</text>
+  <text x="615" y="100" text-anchor="middle" font-size="15" font-weight="700" fill="#9A3412">新物种</text>
+  <text x="615" y="128" text-anchor="middle" font-size="12" fill="#C2410C">用户主动分享</text>
+  <text x="615" y="146" text-anchor="middle" font-size="12" fill="#C2410C">竞争者难以复制</text>
+</svg>
