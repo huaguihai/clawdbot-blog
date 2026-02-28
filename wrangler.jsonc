@@ -1,8 +1,0 @@
-{
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "clawdbot-blog",
-  "compatibility_date": "2025-04-01",
-  "assets": {
-    "directory": "out"
-  }
-}
