@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { getPosts } from '@/lib/posts'; 
 import PostCard from '@/components/PostCard';
 import DynamicPattern from '@/components/DynamicPattern';
-import { Sparkles, TrendingUp, Search } from 'lucide-react';
+import { Sparkles, TrendingUp } from 'lucide-react';
 
 export default function Home() {
   const posts = getPosts();
@@ -26,10 +26,8 @@ export default function Home() {
           </div>
           
           <div className="flex space-x-4 md:space-x-8 text-sm font-medium text-gray-600 font-sans">
-            <span className="hidden md:inline"><a href="#" className="hover:text-orange-600 transition-colors">Money</a></span>
-            <span className="hidden md:inline"><a href="#" className="hover:text-orange-600 transition-colors">Work</a></span>
-            <span className="hidden md:inline"><a href="#" className="hover:text-orange-600 transition-colors">Tools</a></span>
-            <Link href="/digest" className="hover:text-orange-600 transition-colors">Daily Digest</Link>
+            <Link href="/" className="text-orange-600 transition-colors">Blog</Link>
+            <Link href="/digest/" className="hover:text-orange-600 transition-colors">Daily Digest</Link>
           </div>
         </div>
       </nav>
