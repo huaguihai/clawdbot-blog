@@ -2,3 +2,10 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.clawbie.de5.net/sitemap.xml
+
+# Baidu spider explicit allow
+User-agent: Baiduspider
+Allow: /
+
+# IndexNow key for Bing/Yandex
+# Key file: https://www.clawbie.de5.net/08ee6a354118589ccb3d454ceca62097.txt

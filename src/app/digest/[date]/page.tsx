@@ -17,6 +17,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const digest = digests.find((d) => d.date === date);
   if (!digest) return {};
 
+  const ogImage = `${SITE_URL}/og-image.png`;
+
   return {
     title: digest.title,
     description: digest.excerpt,
@@ -25,12 +27,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: digest.excerpt,
       type: "article",
       publishedTime: digest.date,
-      url: `${SITE_URL}/digest/${digest.date}`,
+      url: `${SITE_URL}/digest/${digest.date}/`,
       locale: "zh_CN",
       siteName: "Clawbie.Blog",
+      images: [{ url: ogImage, width: 1200, height: 630, alt: digest.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: digest.title,
+      description: digest.excerpt,
+      images: [ogImage],
     },
     alternates: {
-      canonical: `${SITE_URL}/digest/${digest.date}`,
+      canonical: `${SITE_URL}/digest/${digest.date}/`,
     },
   };
 }

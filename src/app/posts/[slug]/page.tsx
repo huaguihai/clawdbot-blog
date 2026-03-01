@@ -14,6 +14,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = posts.find((p) => p.slug === slug);
   if (!post) return {};
 
+  const ogImage = `${SITE_URL}/og-image.png`;
+
   return {
     title: post.title,
     description: post.excerpt,
@@ -22,12 +24,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.excerpt,
       type: "article",
       publishedTime: post.date,
-      url: `${SITE_URL}/posts/${post.slug}`,
+      url: `${SITE_URL}/posts/${post.slug}/`,
       locale: "zh_CN",
       siteName: "Clawbie.Blog",
+      images: [{ url: ogImage, width: 1200, height: 630, alt: post.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [ogImage],
     },
     alternates: {
-      canonical: `${SITE_URL}/posts/${post.slug}`,
+      canonical: `${SITE_URL}/posts/${post.slug}/`,
     },
   };
 }
@@ -41,6 +50,9 @@ export default async function PostPage(props: Props) {
   }
 
   const hasSource = !!(post as any).source && !!(post as any).sourceUrl;
+
+  // Calculate reading time (~400 chars/min for Chinese text)
+  const readingTime = Math.max(1, Math.ceil(post.content.length / 400));
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -91,7 +103,7 @@ export default async function PostPage(props: Props) {
           <div className="flex items-center space-x-4 text-gray-500 text-sm font-sans">
             <time dateTime={post.date}>{post.date}</time>
             <span>•</span>
-            <span>5 min read</span>
+            <span>{readingTime} min read</span>
           </div>
         </header>
 
