@@ -26,7 +26,29 @@
   line-height: 1.9;
 }
 
-/* Force List Styles */
+.prose p {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+/* Headings */
+.prose h1, .prose h2, .prose h3 {
+  @apply font-sans font-bold tracking-tight text-gray-900;
+}
+
+.prose h1 {
+  @apply text-4xl md:text-5xl border-b border-gray-200 pb-6 mt-16 mb-6;
+}
+
+.prose h2 {
+  @apply text-2xl md:text-3xl mt-14 mb-5;
+}
+
+.prose h3 {
+  @apply text-xl md:text-2xl mt-10 mb-4;
+}
+
+/* Lists */
 .prose ul {
   list-style-type: disc;
   padding-left: 1.5em;
@@ -42,30 +64,90 @@
 }
 
 .prose li {
+  margin-bottom: 0.75em;
+  padding-left: 0.25em;
+}
+
+.prose li > p {
+  margin-top: 0.5em;
   margin-bottom: 0.5em;
-  padding-left: 0.2em;
 }
 
-.prose h1, .prose h2, .prose h3 {
-  @apply font-sans font-bold tracking-tight text-gray-900 mt-16 mb-6; /* Headings use Geist */
-}
-
-.prose h1 {
-  @apply text-4xl md:text-5xl border-b border-gray-200 pb-6;
-}
-
+/* Links */
 .prose a {
   @apply text-orange-600 no-underline border-b-2 border-orange-100 hover:border-orange-600 transition-colors duration-300;
 }
 
+/* Blockquotes */
 .prose blockquote {
-  @apply not-italic border-l-4 border-orange-500 pl-6 py-2 text-xl text-gray-600 font-sans bg-gray-50 rounded-r-lg;
+  @apply not-italic border-l-4 border-orange-400 pl-6 py-3 text-gray-600 font-sans bg-orange-50/40 rounded-r-lg;
+  font-size: 1.05rem;
+  margin-top: 1.75em;
+  margin-bottom: 1.75em;
 }
 
+.prose blockquote p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Inline Code */
 .prose code {
   @apply text-orange-700 bg-orange-50 px-1.5 py-0.5 rounded font-mono text-sm border border-orange-100;
 }
 
+/* Code Blocks */
+.prose pre {
+  @apply bg-gray-900 text-gray-100 rounded-xl border border-gray-800 font-mono text-sm overflow-x-auto;
+  padding: 1.25em 1.5em;
+  margin-top: 1.75em;
+  margin-bottom: 1.75em;
+  line-height: 1.7;
+}
+
+.prose pre code {
+  @apply bg-transparent text-gray-100 border-0 p-0 rounded-none text-sm;
+}
+
+/* Tables */
+.prose table {
+  @apply w-full text-sm font-sans border-collapse;
+  margin-top: 1.75em;
+  margin-bottom: 1.75em;
+}
+
+.prose thead th {
+  @apply text-left font-semibold text-gray-900 bg-gray-50 border-b-2 border-gray-200;
+  padding: 0.75em 1em;
+}
+
+.prose tbody td {
+  @apply text-gray-700 border-b border-gray-100;
+  padding: 0.75em 1em;
+}
+
+.prose tbody tr:hover {
+  @apply bg-orange-50/30;
+}
+
+/* Horizontal Rules */
+.prose hr {
+  @apply border-0 my-12;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #d1d5db, transparent);
+}
+
+/* Images */
 .prose img {
   @apply rounded-xl shadow-lg border border-gray-100 my-10;
+}
+
+/* Strong — slightly warmer color for emphasis */
+.prose strong {
+  @apply text-gray-900 font-bold;
+}
+
+/* Emphasis */
+.prose em {
+  @apply text-gray-600;
 }
