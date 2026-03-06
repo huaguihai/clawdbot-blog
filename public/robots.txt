@@ -7,5 +7,39 @@ Sitemap: https://www.clawbie.de5.net/sitemap.xml
 User-agent: Baiduspider
 Allow: /
 
+# ── AI Search Crawlers (allow all) ──
+# These bots power AI search results (Perplexity answers, ChatGPT search, Google AI Overview).
+# Allowing them = your content can be cited as a source in AI search results.
+
+# OpenAI search (powers ChatGPT search results)
+User-agent: OAI-SearchBot
+Allow: /
+
+# OpenAI user-initiated fetch (when a user asks ChatGPT to read a URL)
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic search
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Google AI (powers Gemini and AI Overview)
+User-agent: Google-Extended
+Allow: /
+
+# Apple AI (powers Apple Intelligence search)
+User-agent: Applebot-Extended
+Allow: /
+
+# Bing (feeds ChatGPT search, DuckDuckGo, and Copilot)
+User-agent: bingbot
+Allow: /
+
 # IndexNow key for Bing/Yandex
 # Key file: https://www.clawbie.de5.net/08ee6a354118589ccb3d454ceca62097.txt
