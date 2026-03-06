@@ -1,0 +1,60 @@
+---
+title: "AI 日报 | 2026-03-04"
+date: "2026-03-04"
+excerpt: "Claude Code 新增语音模式；Anthropic 升级 Claude 记忆功能免费开放；Google 推出 Gemini 3.1 Flash-Lite"
+---
+
+### 🦞 AI 日报 | 2026-03-04
+
+---
+
+#### 📰 今日深度（2 篇）
+
+**1. Claude Code 新增语音模式：用嘴写代码成为可能**
+
+来源：TechCrunch AI
+
+Anthropic 为其终端编码工具 Claude Code 推出语音模式功能。开发者现在可以通过语音与 Claude Code 交互，描述需求、审查代码、执行命令。
+
+这个更新对特定场景很有价值：比如在调试时双手忙于操作键盘，或者在白板前讨论架构时想快速验证想法。语音模式降低了与 AI 编码助手交互的门槛，尤其适合有无障碍需求的开发者。
+
+关键数据：Claude Code 新功能，支持语音交互
+
+🔗 [原文链接](https://techcrunch.com/2026/03/03/claude-code-rolls-out-a-voice-mode-capability/)
+
+---
+
+**2. Anthropic 升级 Claude 记忆功能：免费用户也能用，支持从其他 AI 迁移**
+
+来源：The Verge AI
+
+Anthropic 宣布将 Claude 的记忆功能下放到免费用户，同时推出专门的工具帮助用户从其他聊天机器人导入对话历史和偏好设置。
+
+记忆功能此前是付费用户专属，现在免费开放。更值得关注的是"迁移工具"——用户可以将 ChatGPT 的对话历史和偏好导入 Claude，配合近期 Claude 在应用商店排名上升的势头，Anthropic 正在系统性地降低用户切换成本。
+
+关键数据：记忆功能免费开放、新增迁移工具
+
+🔗 [原文链接](https://www.theverge.com/ai-artificial-intelligence/887885/anthropic-claude-memory-upgrades-importing)
+
+---
+
+#### ⚡ 快讯（10 条）
+
+- **Google 发布 Gemini 3.1 Flash-Lite** — 面向大规模部署的轻量级模型，强调性价比 [Google AI Blog](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-lite/)
+- **TechCrunch 发布 ChatGPT 转 Claude 迁移指南** — 详细教程帮助用户完成切换 [TechCrunch](https://techcrunch.com/2026/03/02/users-are-ditching-chatgpt-for-claude-heres-how-to-make-the-switch/)
+- **Google 发布 Project Genie 提示词技巧** — 4 个实用建议帮助用户更好地生成虚拟世界 [Google AI Blog](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/tips-prompt-writing-project-genie/)
+- **Hugging Face 发布 PRX 第三部分** — 24 小时内训练文生图模型的完整教程 [HF Blog](https://huggingface.co/blog/Photoroom/prx-part3)
+- **Anthropic ARR 达 19 亿美元** — 年化经常性收入持续增长 [Latent Space](https://www.latent.space/p/ainews-anthropic-19b-arr-qwen-team)
+- **OpenAI 联合创始人 Durk Kingma 加入 Anthropic** — 称公司 AI 理念与其个人信念一致 [Latently](https://www.latestly.com/socially/technology/openai-co-founder-durk-kingma-joins-anthropicai-says-companys-ai-approach-resonates-with-his-own-beliefs-6311686.html)
+- **Qwen 团队核心成员离职** — 阿里 Qwen 大模型团队出现人员变动 [Latent Space](https://www.latent.space/p/ainews-anthropic-19b-arr-qwen-team)
+- **MIT：OpenAI 五角大楼协议是 Anthropic 担忧的场景** — 分析两家公司军事合作分歧 [MIT Tech Review](https://www.technologyreview.com/2026/03/02/1133850/openais-compromise-with-the-pentagon-is-what-anthropic-feared/)
+- **TechCrunch：AI 公司与政府合作缺乏清晰框架** — 行业在政府合作问题上仍无共识 [TechCrunch](https://techcrunch.com/2026/03/02/openai-anthropic-department-of-defense-war-hegseth-ai-companies-work-with-us-government/)
+- **Latent Space：人工智能时代的真相问题** — 探讨 AI 生成内容对信息真实性的影响 [Latent Space](https://www.latent.space/p/ainews-truth-in-the-time-of-artifice)
+
+---
+
+#### 🔮 博客选题（1 条）
+
+- **选题**：从 ChatGPT 迁移到 Claude：完整操作指南
+  - **切入角度**：结合 Anthropic 新推出的迁移工具和记忆功能免费开放，写一篇实操教程。包括：如何导出 ChatGPT 对话历史、如何导入到 Claude、记忆功能的设置技巧、两个平台的功能差异对比。读者看完就能动手迁移。
+  - **来源新闻**：Anthropic 升级 Claude 记忆功能 + TechCrunch 迁移指南

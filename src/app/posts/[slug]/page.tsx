@@ -2,6 +2,7 @@ import { posts } from '@/lib/posts';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Markdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
 import { ChevronLeft } from 'lucide-react';
 import type { Metadata } from 'next';
 
@@ -108,7 +109,7 @@ export default async function PostPage(props: Props) {
         </header>
 
         <article className="prose prose-lg prose-orange max-w-none font-serif">
-          <Markdown>{post.content}</Markdown>
+          <Markdown rehypePlugins={[rehypeRaw]}>{post.content}</Markdown>
         </article>
 
         {/* Source & Credit */}

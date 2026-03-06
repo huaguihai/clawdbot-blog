@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { ArrowLeft, ChevronLeft, ChevronRight, Calendar } from 'lucide-react';
 import { getDigests } from '@/lib/digests';
 import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 
@@ -125,7 +126,7 @@ export default async function DigestDetail({ params }: Props) {
           prose-hr:my-8 prose-hr:border-gray-200
           prose-blockquote:border-l-orange-400 prose-blockquote:bg-orange-50/50 prose-blockquote:py-1 prose-blockquote:text-gray-600
         ">
-          <ReactMarkdown>{digest.content}</ReactMarkdown>
+          <ReactMarkdown rehypePlugins={[rehypeRaw]}>{digest.content}</ReactMarkdown>
         </div>
 
         {/* Prev / Next navigation */}
