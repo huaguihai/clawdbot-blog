@@ -98,7 +98,7 @@ export default async function PostPage(props: Props) {
 
       <div className="max-w-3xl mx-auto px-6 py-12">
         <header className="mb-10">
-          <h1 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 leading-tight mb-4 tracking-tight">
+          <h1 className="font-serif text-2xl md:text-4xl font-bold text-gray-900 leading-tight mb-4 tracking-tight">
             {post.title}
           </h1>
           <div className="flex items-center space-x-4 text-gray-500 text-sm font-sans">
@@ -108,7 +108,7 @@ export default async function PostPage(props: Props) {
           </div>
         </header>
 
-        <article className="prose prose-lg prose-orange max-w-none font-serif">
+        <article className="prose prose-orange max-w-none font-serif">
           <Markdown rehypePlugins={[rehypeRaw]}>{post.content}</Markdown>
         </article>
 
