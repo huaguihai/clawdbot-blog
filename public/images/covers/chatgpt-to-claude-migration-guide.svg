@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300" width="660" height="300">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#44403C"/>
       <stop offset="100%" style="stop-color:#1C1917"/>
     </linearGradient>
@@ -8,88 +8,88 @@
       <stop offset="0%" style="stop-color:#EA580C"/>
       <stop offset="100%" style="stop-color:#F59E0B"/>
     </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <pattern id="texture" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="20" r="1" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="45" cy="80" r="1.2" fill="#D6D3D1" opacity="0.05"/>
+      <circle cx="80" cy="35" r="0.8" fill="#D6D3D1" opacity="0.07"/>
+      <circle cx="25" cy="60" r="1" fill="#D6D3D1" opacity="0.04"/>
+      <circle cx="90" cy="90" r="1.1" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="60" cy="15" r="0.9" fill="#D6D3D1" opacity="0.05"/>
+      <circle cx="15" cy="95" r="1" fill="#D6D3D1" opacity="0.04"/>
+      <circle cx="70" cy="50" r="1.3" fill="#D6D3D1" opacity="0.05"/>
+    </pattern>
   </defs>
   
+  <!-- 背景 -->
   <rect width="660" height="300" fill="url(#bgGrad)"/>
+  <rect width="660" height="300" fill="url(#texture)"/>
   
-  <g opacity="0.06">
-    <circle cx="120" cy="45" r="1.5" fill="#D6D3D1"/>
-    <circle cx="280" cy="90" r="1.2" fill="#D6D3D1"/>
-    <circle cx="180" cy="150" r="1.8" fill="#D6D3D1"/>
-    <circle cx="90" cy="200" r="1.3" fill="#D6D3D1"/>
-    <circle cx="320" cy="180" r="1.6" fill="#D6D3D1"/>
-    <circle cx="220" cy="250" r="1.4" fill="#D6D3D1"/>
-    <circle cx="150" cy="100" r="1.1" fill="#D6D3D1"/>
-    <circle cx="480" cy="120" r="1.5" fill="#D6D3D1"/>
-    <circle cx="560" cy="200" r="1.3" fill="#D6D3D1"/>
-    <circle cx="420" cy="260" r="1.7" fill="#D6D3D1"/>
+  <!-- 左侧强调色竖线 -->
+  <rect x="50" y="50" width="5" height="200" fill="url(#accentGrad)" rx="2"/>
+  
+  <!-- 标题 - 3行 -->
+  <text x="70" y="95" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="bold" fill="#FAFAF9">ChatGPT 用户</text>
+  <text x="70" y="125" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="bold" fill="#FAFAF9">正在搬家：</text>
+  <text x="70" y="155" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="bold" fill="#FAFAF9">冷静的迁移指南</text>
+  
+  <!-- 副标题 -->
+  <text x="70" y="190" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#A8A29E">Anthropic 刚推出迁移工具，ChatGPT</text>
+  <text x="70" y="210" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#A8A29E">卸载量在涨。但「能搬」和「该搬」</text>
+  <text x="70" y="230" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#A8A29E">是两件事。</text>
+  
+  <!-- 标签胶囊 -->
+  <g transform="translate(70, 250)">
+    <rect x="0" y="0" width="75" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="37.5" y="17" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#D6D3D1" text-anchor="middle">AI 迁移</text>
+  </g>
+  <g transform="translate(85, 250)">
+    <rect x="0" y="0" width="65" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="32.5" y="17" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#D6D3D1" text-anchor="middle">Claude</text>
+  </g>
+  <g transform="translate(160, 250)">
+    <rect x="0" y="0" width="80" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="40" y="17" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#D6D3D1" text-anchor="middle">上手指南</text>
   </g>
   
-  <rect x="50" y="80" width="4" height="60" fill="url(#accentGrad)" rx="2"/>
-  
-  <text x="70" y="105" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="bold" fill="#FAFAF9">
-    <tspan x="70" dy="0">ChatGPT 用户正在搬家：</tspan>
-    <tspan x="70" dy="32">一份冷静的迁移指南</tspan>
-  </text>
-  
-  <text x="70" y="165" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#A8A29E">
-    Anthropic 刚推出了迁移工具，ChatGPT 卸载量在涨
-  </text>
-  
-  <g transform="translate(70, 195)">
-    <rect width="90" height="28" rx="14" fill="#57534E" opacity="0.4"/>
-    <text x="45" y="19" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#D6D3D1" text-anchor="middle">迁移工具</text>
+  <!-- 右侧插图：迁移工具界面 -->
+  <g transform="translate(430, 50)">
+    <!-- 终端窗口 -->
+    <rect x="0" y="0" width="200" height="160" rx="8" fill="#1C1917" stroke="#57534E" stroke-width="1" filter="url(#shadow)"/>
+    <!-- 窗口标题栏 -->
+    <rect x="0" y="0" width="200" height="28" rx="8" fill="#292524"/>
+    <rect x="0" y="20" width="200" height="8" fill="#292524"/>
+    <!-- 窗口控制点 -->
+    <circle cx="15" cy="14" r="5" fill="#EF4444"/>
+    <circle cx="32" cy="14" r="5" fill="#F59E0B"/>
+    <circle cx="49" cy="14" r="5" fill="#22C55E"/>
+    <!-- 标题文字 -->
+    <text x="100" y="18" font-family="monospace" font-size="10" fill="#A8A29E" text-anchor="middle">Claude - AI Migration</text>
+    
+    <!-- Claude对话内容 -->
+    <text x="10" y="45" font-family="monospace" font-size="9" fill="#FAFAF9">Welcome to Claude!</text>
+    <text x="10" y="60" font-family="monospace" font-size="8" fill="#A8A29E">Your preferences imported</text>
+    <text x="10" y="75" font-family="monospace" font-size="8" fill="#A8A29E">from ChatGPT ✓</text>
+    
+    <!-- 进度条 -->
+    <rect x="10" y="90" width="120" height="6" rx="3" fill="#44403C"/>
+    <rect x="10" y="90" width="85" height="6" rx="3" fill="url(#accentGrad)"/>
+    <text x="10" y="108" font-family="monospace" font-size="7" fill="#A8A29E">Importing memories...</text>
+    
+    <!-- 成功提示 -->
+    <text x="10" y="130" font-family="monospace" font-size="8" fill="#22C55E">✓ Migration complete</text>
+    <text x="10" y="145" font-family="monospace" font-size="7" fill="#A8A29E">12 memories imported</text>
+    
+    <!-- 输入框 -->
+    <rect x="10" y="152" width="180" height="20" rx="4" fill="#292524"/>
+    <text x="18" y="165" font-family="monospace" font-size="8" fill="#57534E">Send a message...</text>
+    
+    <!-- 箭头指示迁移方向 -->
+    <path d="M 160 80 L 190 80" stroke="#F59E0B" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arrowhead)"/>
   </g>
   
-  <g transform="translate(170, 195)">
-    <rect width="80" height="28" rx="14" fill="#57534E" opacity="0.4"/>
-    <text x="40" y="19" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#D6D3D1" text-anchor="middle">成本分析</text>
-  </g>
-  
-  <g transform="translate(260, 195)">
-    <rect width="70" height="28" rx="14" fill="#57534E" opacity="0.4"/>
-    <text x="35" y="19" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#D6D3D1" text-anchor="middle">Claude</text>
-  </g>
-  
-  <g transform="translate(420, 60)">
-    <rect x="0" y="0" width="200" height="140" rx="8" fill="none" stroke="#A8A29E" stroke-width="2" stroke-dasharray="4,4"/>
-    
-    <g transform="translate(20, 25)">
-      <rect x="0" y="0" width="70" height="50" rx="4" fill="#57534E" opacity="0.3"/>
-      <text x="35" y="18" font-family="monospace" font-size="11" fill="#FAFAF9" text-anchor="middle">ChatGPT</text>
-      <circle cx="35" cy="35" r="8" fill="#22C55E" opacity="0.6"/>
-    </g>
-    
-    <path d="M 95 50 L 115 50" stroke="url(#accentGrad)" stroke-width="3" marker-end="url(#arrowhead)"/>
-    <defs>
-      <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-        <polygon points="0 0, 10 3, 0 6" fill="#F59E0B"/>
-      </marker>
-    </defs>
-    
-    <g transform="translate(120, 25)">
-      <rect x="0" y="0" width="60" height="50" rx="4" fill="#57534E" opacity="0.3"/>
-      <text x="30" y="18" font-family="monospace" font-size="11" fill="#FAFAF9" text-anchor="middle">Claude</text>
-      <circle cx="30" cy="35" r="8" fill="#EA580C" opacity="0.6"/>
-    </g>
-    
-    <text x="100" y="95" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#A8A29E" text-anchor="middle">数据迁移</text>
-    
-    <g transform="translate(15, 105)">
-      <rect x="0" y="0" width="35" height="18" rx="3" fill="#EF4444" opacity="0.2"/>
-      <text x="17.5" y="13" font-family="monospace" font-size="9" fill="#EF4444" text-anchor="middle">成本</text>
-    </g>
-    
-    <g transform="translate(55, 105)">
-      <rect x="0" y="0" width="35" height="18" rx="3" fill="#F59E0B" opacity="0.2"/>
-      <text x="17.5" y="13" font-family="monospace" font-size="9" fill="#F59E0B" text-anchor="middle">习惯</text>
-    </g>
-    
-    <g transform="translate(95, 105)">
-      <rect x="0" y="0" width="35" height="18" rx="3" fill="#22C55E" opacity="0.2"/>
-      <text x="17.5" y="13" font-family="monospace" font-size="9" fill="#22C55E" text-anchor="middle">收益</text>
-    </g>
-  </g>
-  
-  <rect x="0" y="293" width="660" height="7" fill="url(#accentGrad)"/>
+  <!-- 底部强调色条 -->
+  <rect x="50" y="293" width="560" height="7" fill="url(#accentGrad)"/>
 </svg>
