@@ -18,9 +18,9 @@ export default function PostCard({ post, index }: { post: Post; index: number })
         <div className="flex flex-col h-full bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
           
           {/* Cover: custom SVG or fallback DynamicPattern */}
-          <div className="h-48 relative overflow-hidden bg-gray-50">
+          <div className={`relative overflow-hidden ${post.coverImage ? 'bg-stone-900 md:h-48' : 'h-48 bg-gray-50'}`}>
             {post.coverImage ? (
-              <img src={post.coverImage} alt={post.title} className="w-full h-full object-cover" />
+              <img src={post.coverImage} alt={post.title} className="w-full md:h-full md:object-cover" />
             ) : (
               <DynamicPattern type={post.pattern} color={post.color} />
             )}

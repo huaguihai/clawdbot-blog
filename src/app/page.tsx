@@ -52,9 +52,9 @@ export default function Home() {
                 Start Reading
               </Link>
             </div>
-            <div className="order-1 md:order-2 h-64 md:h-full min-h-[300px] rounded-2xl relative overflow-hidden shadow-inner bg-gray-50 border border-gray-100">
+            <div className={`order-1 md:order-2 rounded-2xl relative overflow-hidden shadow-inner border border-gray-100 ${featuredPost.coverImage ? 'bg-stone-900' : 'h-64 md:h-full min-h-[300px] bg-gray-50'}`}>
               {featuredPost.coverImage ? (
-                <img src={featuredPost.coverImage} alt={featuredPost.title} className="w-full h-full object-cover" />
+                <img src={featuredPost.coverImage} alt={featuredPost.title} className="w-full md:min-h-[250px] md:object-cover" />
               ) : (
                 <DynamicPattern type={featuredPost.pattern} color={featuredPost.color} />
               )}
