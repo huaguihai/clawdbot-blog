@@ -25,6 +25,7 @@ const CATEGORY_COLOR: Record<string, string> = {
   '搞钱实操': 'text-orange-600',
   '上手指南': 'text-stone-600',
   '行业辣评': 'text-gray-600',
+  '宝藏合集': 'text-red-800',
 };
 const FALLBACK_COLOR = 'text-gray-600';
 
