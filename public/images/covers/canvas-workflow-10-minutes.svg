@@ -1,70 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300" width="660" height="300">
+<svg width="660" height="300" viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#44403C;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#1C1917;stop-opacity:1" />
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#44403C"/>
+      <stop offset="100%" stop-color="#1C1917"/>
     </linearGradient>
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#EA580C;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
     </linearGradient>
+    <pattern id="texture" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="6" r="1.2" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="14" cy="10" r="1" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="8" cy="18" r="1.1" fill="#D6D3D1" opacity="0.06"/>
+    </pattern>
   </defs>
-  
-  <rect width="660" height="300" fill="url(#bgGrad)"/>
-  
-  <circle cx="120" cy="80" r="1.5" fill="#D6D3D1" opacity="0.06"/>
-  <circle cx="280" cy="140" r="1.5" fill="#D6D3D1" opacity="0.06"/>
-  <circle cx="180" cy="200" r="1.5" fill="#D6D3D1" opacity="0.06"/>
-  <circle cx="320" cy="90" r="1.5" fill="#D6D3D1" opacity="0.06"/>
-  <circle cx="90" cy="160" r="1.5" fill="#D6D3D1" opacity="0.06"/>
-  <circle cx="240" cy="240" r="1.5" fill="#D6D3D1" opacity="0.06"/>
-  <circle cx="150" cy="120" r="1.5" fill="#D6D3D1" opacity="0.06"/>
-  <circle cx="350" cy="180" r="1.5" fill="#D6D3D1" opacity="0.06"/>
-  <circle cx="480" cy="100" r="1.5" fill="#D6D3D1" opacity="0.06"/>
-  <circle cx="560" cy="160" r="1.5" fill="#D6D3D1" opacity="0.06"/>
-  <circle cx="520" cy="220" r="1.5" fill="#D6D3D1" opacity="0.06"/>
-  <circle cx="600" cy="130" r="1.5" fill="#D6D3D1" opacity="0.06"/>
-  
-  <rect x="50" y="50" width="5" height="180" fill="url(#accentGrad)" rx="2"/>
-  
-  <text x="70" y="75" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FAFAF9">从搜索到代码</text>
-  <text x="70" y="102" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FAFAF9">只需 10 分钟？</text>
-  <text x="70" y="129" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FAFAF9">试试 Google 新出的</text>
-  <text x="70" y="156" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FAFAF9">Canvas 工作流</text>
-  
-  <text x="70" y="182" font-family="Arial, sans-serif" font-size="14" fill="#A8A29E">从搜索结果直接生成、运行代码</text>
-  
-  <rect x="70" y="200" width="85" height="24" rx="12" fill="#57534E" opacity="0.4"/>
-  <text x="82" y="216" font-family="Arial, sans-serif" font-size="12" fill="#D6D3D1">Canvas</text>
-  
-  <rect x="165" y="200" width="85" height="24" rx="12" fill="#57534E" opacity="0.4"/>
-  <text x="175" y="216" font-family="Arial, sans-serif" font-size="12" fill="#D6D3D1">工作流</text>
-  
-  <rect x="260" y="200" width="85" height="24" rx="12" fill="#57534E" opacity="0.4"/>
-  <text x="267" y="216" font-family="Arial, sans-serif" font-size="12" fill="#D6D3D1">代码生成</text>
-  
-  <rect x="445" y="65" width="170" height="130" rx="8" fill="none" stroke="#A8A29E" stroke-width="2"/>
-  
-  <rect x="455" y="75" width="150" height="18" rx="9" fill="#57534E" opacity="0.3"/>
-  <circle cx="463" cy="84" r="3" fill="#EA580C"/>
-  <circle cx="473" cy="84" r="3" fill="#F59E0B"/>
-  <circle cx="483" cy="84" r="3" fill="#22C55E"/>
-  
-  <rect x="455" y="100" width="150" height="8" rx="4" fill="#EA580C" opacity="0.3"/>
-  <text x="460" y="107" font-family="monospace" font-size="7" fill="#FAFAF9">search: weather API</text>
-  
-  <line x1="530" y1="115" x2="530" y2="135" stroke="#F59E0B" stroke-width="2" marker-end="url(#arrowhead)"/>
-  <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto">
-      <polygon points="0 0, 5 3, 0 6" fill="#F59E0B"/>
-    </marker>
-  </defs>
-  
-  <rect x="455" y="140" width="150" height="45" rx="4" fill="#1C1917" stroke="#22C55E" stroke-width="1.5"/>
-  <text x="460" y="152" font-family="monospace" font-size="8" fill="#22C55E">def get_weather():</text>
-  <text x="465" y="162" font-family="monospace" font-size="8" fill="#FAFAF9">  api_key = "..."</text>
-  <text x="465" y="172" font-family="monospace" font-size="8" fill="#FAFAF9">  response = ...</text>
-  <text x="465" y="182" font-family="monospace" font-size="8" fill="#22C55E">  return data</text>
-  
-  <rect x="0" y="293" width="660" height="7" fill="url(#accentGrad)"/>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="660" height="300" fill="url(#bg)"/>
+  <rect x="0" y="0" width="660" height="300" fill="url(#texture)"/>
+
+  <!-- Left accent line -->
+  <rect x="50" y="30" width="5" height="240" fill="url(#accent)"/>
+
+  <!-- Title -->
+  <text x="70" y="78" fill="#FAFAF9" font-size="22" font-weight="700" font-family="sans-serif">
+    <tspan x="70" dy="0">从搜索到代码只需 10 分钟？</tspan>
+    <tspan x="70" dy="28">试试 Google 新出的 Canvas 工作流</tspan>
+  </text>
+
+  <!-- Subtitle -->
+  <text x="70" y="138" fill="#A8A29E" font-size="13" font-family="sans-serif">
+    Google 搜索里内置了一个代码画板，可以直接从搜索结果生成、修改、运行代码。
+  </text>
+
+  <!-- Tags -->
+  <g font-family="sans-serif" font-size="12" fill="#D6D3D1">
+    <rect x="70" y="238" width="80" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+    <text x="110" y="254" text-anchor="middle">Canvas</text>
+
+    <rect x="160" y="238" width="76" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+    <text x="198" y="254" text-anchor="middle">搜索</text>
+
+    <rect x="246" y="238" width="76" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+    <text x="284" y="254" text-anchor="middle">代码</text>
+  </g>
+
+  <!-- Decorative elements (right-bottom, no overlap with text/tags) -->
+  <g opacity="0.22" stroke="#EA580C" stroke-width="2" fill="none">
+    <rect x="500" y="190" width="70" height="52" rx="6"/>
+    <line x1="510" y1="206" x2="560" y2="206"/>
+    <line x1="510" y1="218" x2="548" y2="218"/>
+    <line x1="510" y1="230" x2="540" y2="230"/>
+  </g>
+  <g opacity="0.18" stroke="#A8A29E" stroke-width="2" fill="none">
+    <circle cx="590" cy="235" r="24"/>
+    <line x1="590" y1="223" x2="590" y2="247"/>
+    <line x1="578" y1="235" x2="602" y2="235"/>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="293" width="660" height="7" fill="url(#accent)"/>
 </svg>

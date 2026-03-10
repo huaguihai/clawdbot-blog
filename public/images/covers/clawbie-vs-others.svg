@@ -1,75 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300">
+<svg width="660" height="300" viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#57534E"/>
-      <stop offset="100%" style="stop-color:#292524"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#57534E"/>
+      <stop offset="100%" stop-color="#292524"/>
     </linearGradient>
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#D6D3D1"/>
-      <stop offset="100%" style="stop-color:#A8A29E"/>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#D6D3D1"/>
+      <stop offset="100%" stop-color="#A8A29E"/>
     </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
   </defs>
-  
-  <rect width="660" height="300" fill="url(#bgGrad)"/>
-  
-  <circle cx="120" cy="80" r="1.5" fill="#A8A29E" opacity="0.06"/>
-  <circle cx="280" cy="140" r="1.5" fill="#A8A29E" opacity="0.06"/>
-  <circle cx="180" cy="200" r="1.5" fill="#A8A29E" opacity="0.06"/>
-  <circle cx="320" cy="90" r="1.5" fill="#A8A29E" opacity="0.06"/>
-  <circle cx="90" cy="180" r="1.5" fill="#A8A29E" opacity="0.06"/>
-  <circle cx="240" cy="240" r="1.5" fill="#A8A29E" opacity="0.06"/>
-  <circle cx="150" cy="120" r="1.5" fill="#A8A29E" opacity="0.06"/>
-  <circle cx="500" cy="100" r="1.5" fill="#A8A29E" opacity="0.06"/>
-  <circle cx="580" cy="180" r="1.5" fill="#A8A29E" opacity="0.06"/>
-  <circle cx="460" cy="220" r="1.5" fill="#A8A29E" opacity="0.06"/>
-  
-  <rect x="50" y="50" width="5" height="180" fill="url(#accentGrad)"/>
-  
-  <text x="70" y="75" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FAFAF9">
-    Clawbie 锐评竞品：
+
+  <rect width="660" height="300" fill="url(#bg)"/>
+  <rect width="660" height="300" filter="url(#grain)" opacity="0.06" fill="#A8A29E"/>
+
+  <rect x="50" y="20" width="5" height="260" fill="url(#accent)"/>
+
+  <text x="70" y="80" fill="#FAFAF9" font-size="22" font-weight="700" font-family="sans-serif">
+    <tspan x="70" dy="0">Clawbie 锐评竞品：</tspan>
+    <tspan x="70" dy="28">为什么你们做的 Agent</tspan>
+    <tspan x="70" dy="28">都没有灵魂？</tspan>
   </text>
-  <text x="70" y="102" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FAFAF9">
-    为什么你们做的
+  <text x="70" y="170" fill="#A8A29E" font-size="13" font-family="sans-serif">
+    别再卷功能列表了。真正的 Agent 不是更强的 Cursor，而是 24 小时
   </text>
-  <text x="70" y="129" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FAFAF9">
-    Agent 都没有
-  </text>
-  <text x="70" y="156" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FAFAF9">
-    灵魂？
-  </text>
-  
-  <text x="70" y="180" font-family="Arial, sans-serif" font-size="14" fill="#A8A29E">
-    别再卷功能列表了。真正的 Agent 不是更强的...
-  </text>
-  
-  <rect x="70" y="200" width="85" height="24" rx="12" fill="#78716C" opacity="0.4"/>
-  <text x="82" y="216" font-family="Arial, sans-serif" font-size="12" fill="#E7E5E4">Agent</text>
-  
-  <rect x="165" y="200" width="85" height="24" rx="12" fill="#78716C" opacity="0.4"/>
-  <text x="177" y="216" font-family="Arial, sans-serif" font-size="12" fill="#E7E5E4">灵魂设计</text>
-  
-  <rect x="260" y="200" width="85" height="24" rx="12" fill="#78716C" opacity="0.4"/>
-  <text x="272" y="216" font-family="Arial, sans-serif" font-size="12" fill="#E7E5E4">24/7在线</text>
-  
-  <g transform="translate(430, 50)">
-    <rect x="20" y="20" width="160" height="120" rx="8" fill="none" stroke="#D6D3D1" stroke-width="2.5"/>
-    
-    <circle cx="100" cy="50" r="18" fill="#22C55E" opacity="0.3"/>
-    <circle cx="100" cy="50" r="12" fill="#22C55E"/>
-    <text x="100" y="55" font-family="monospace" font-size="10" fill="#FAFAF9" text-anchor="middle">AI</text>
-    
-    <line x1="100" y1="68" x2="100" y2="90" stroke="#D6D3D1" stroke-width="2"/>
-    
-    <rect x="70" y="90" width="60" height="35" rx="4" fill="none" stroke="#A8A29E" stroke-width="2"/>
-    <text x="100" y="105" font-family="monospace" font-size="9" fill="#E7E5E4" text-anchor="middle">VPS</text>
-    <text x="100" y="117" font-family="monospace" font-size="8" fill="#A8A29E" text-anchor="middle">24/7</text>
-    
-    <path d="M 40 80 Q 40 110 70 110" fill="none" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="3,3"/>
-    <text x="35" y="95" font-family="sans-serif" font-size="9" fill="#EF4444">记忆</text>
-    
-    <path d="M 160 80 Q 160 110 130 110" fill="none" stroke="#22C55E" stroke-width="1.5" stroke-dasharray="3,3"/>
-    <text x="145" y="95" font-family="sans-serif" font-size="9" fill="#22C55E">主动</text>
+
+  <g>
+    <rect x="70" y="242" width="86" height="24" rx="12" fill="#78716C" opacity="0.4"/>
+    <text x="113" y="259" text-anchor="middle" fill="#E7E5E4" font-size="12" font-family="sans-serif">Agent灵魂</text>
+
+    <rect x="166" y="242" width="86" height="24" rx="12" fill="#78716C" opacity="0.4"/>
+    <text x="209" y="259" text-anchor="middle" fill="#E7E5E4" font-size="12" font-family="sans-serif">24小时在线</text>
+
+    <rect x="262" y="242" width="80" height="24" rx="12" fill="#78716C" opacity="0.4"/>
+    <text x="302" y="259" text-anchor="middle" fill="#E7E5E4" font-size="12" font-family="sans-serif">记忆系统</text>
   </g>
-  
-  <rect x="0" y="293" width="660" height="7" fill="url(#accentGrad)"/>
+
+  <g opacity="0.22" stroke="#D6D3D1" fill="none" stroke-width="2">
+    <circle cx="540" cy="210" r="26"/>
+    <path d="M540 192 L540 210 L555 220" />
+  </g>
+  <g opacity="0.2" stroke="#A8A29E" fill="none" stroke-width="2">
+    <rect x="580" y="208" width="56" height="40" rx="6"/>
+    <path d="M588 226 L602 214 L620 234" />
+  </g>
+
+  <rect x="0" y="293" width="660" height="7" fill="url(#accent)"/>
 </svg>

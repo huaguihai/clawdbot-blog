@@ -1,74 +1,65 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" style="stop-color:#78350F"/>
       <stop offset="100%" style="stop-color:#451A03"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#F59E0B"/>
       <stop offset="100%" style="stop-color:#D97706"/>
     </linearGradient>
   </defs>
   
-  <rect width="660" height="300" fill="url(#bg)"/>
+  <rect width="660" height="300" fill="url(#bgGrad)"/>
   
   <g opacity="0.06">
-    <circle cx="120" cy="80" r="1.5" fill="#D6A456"/>
-    <circle cx="280" cy="140" r="1" fill="#D6A456"/>
-    <circle cx="180" cy="200" r="1.2" fill="#D6A456"/>
-    <circle cx="320" cy="90" r="0.8" fill="#D6A456"/>
-    <circle cx="150" cy="250" r="1.3" fill="#D6A456"/>
-    <circle cx="240" cy="170" r="1.1" fill="#D6A456"/>
-    <circle cx="500" cy="120" r="1" fill="#D6A456"/>
-    <circle cx="560" cy="200" r="1.2" fill="#D6A456"/>
-    <circle cx="480" cy="260" r="0.9" fill="#D6A456"/>
+    <circle cx="120" cy="45" r="2" fill="#D6A456"/>
+    <circle cx="280" cy="90" r="1.5" fill="#D6A456"/>
+    <circle cx="450" cy="60" r="2" fill="#D6A456"/>
+    <circle cx="180" cy="140" r="1.5" fill="#D6A456"/>
+    <circle cx="380" cy="180" r="2" fill="#D6A456"/>
+    <circle cx="520" cy="120" r="1.5" fill="#D6A456"/>
+    <circle cx="90" cy="200" r="2" fill="#D6A456"/>
+    <circle cx="340" cy="240" r="1.5" fill="#D6A456"/>
   </g>
   
-  <rect x="50" y="50" width="5" height="180" fill="url(#accent)"/>
+  <rect x="50" y="0" width="5" height="300" fill="url(#accentGrad)"/>
   
-  <text x="70" y="75" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FEFCE8">
-    <tspan x="70" dy="0">一人公司席卷</tspan>
-    <tspan x="70" dy="28">15 城：上一波</tspan>
-    <tspan x="70" dy="28">「全民创业」的人</tspan>
-    <tspan x="70" dy="28">现在还好吗？</tspan>
+  <text x="70" y="80" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FEFCE8">
+    <tspan x="70" dy="0">一人公司席卷 15 城：上一波</tspan>
+    <tspan x="70" dy="28">「全民创业」的人，现在还</tspan>
+    <tspan x="70" dy="28">好吗？</tspan>
   </text>
   
-  <text x="70" y="175" font-family="Arial, sans-serif" font-size="14" fill="#D6A456">
+  <text x="70" y="165" font-family="Arial, sans-serif" font-size="13" fill="#D6A456">
     15 城抢人、政府发钱、月入 200 万的造富神话
   </text>
   
-  <g transform="translate(70, 200)">
+  <g transform="translate(70, 245)">
     <rect width="85" height="24" rx="12" fill="#92400E" opacity="0.4"/>
-    <text x="42.5" y="16" font-family="Arial, sans-serif" font-size="12" fill="#FDE68A" text-anchor="middle">一人公司</text>
+    <text x="42.5" y="16" font-family="Arial, sans-serif" font-size="11" fill="#FDE68A" text-anchor="middle">全民创业</text>
   </g>
   
-  <g transform="translate(165, 200)">
+  <g transform="translate(165, 245)">
     <rect width="75" height="24" rx="12" fill="#92400E" opacity="0.4"/>
-    <text x="37.5" y="16" font-family="Arial, sans-serif" font-size="12" fill="#FDE68A" text-anchor="middle">双创运动</text>
+    <text x="37.5" y="16" font-family="Arial, sans-serif" font-size="11" fill="#FDE68A" text-anchor="middle">政策红利</text>
   </g>
   
-  <g transform="translate(250, 200)">
-    <rect width="65" height="24" rx="12" fill="#92400E" opacity="0.4"/>
-    <text x="32.5" y="16" font-family="Arial, sans-serif" font-size="12" fill="#FDE68A" text-anchor="middle">搞钱</text>
+  <g transform="translate(250, 245)">
+    <rect width="70" height="24" rx="12" fill="#92400E" opacity="0.4"/>
+    <text x="35" y="16" font-family="Arial, sans-serif" font-size="11" fill="#FDE68A" text-anchor="middle">AI 创业</text>
   </g>
   
-  <g transform="translate(430, 50)">
-    <rect x="20" y="20" width="160" height="100" rx="8" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-dasharray="8,4"/>
-    
-    <circle cx="60" cy="50" r="18" fill="none" stroke="#22C55E" stroke-width="2"/>
-    <text x="60" y="55" font-family="monospace" font-size="11" fill="#22C55E" text-anchor="middle">AI</text>
-    
-    <circle cx="140" cy="50" r="18" fill="none" stroke="#22C55E" stroke-width="2"/>
-    <text x="140" y="55" font-family="monospace" font-size="11" fill="#22C55E" text-anchor="middle">AI</text>
-    
-    <circle cx="100" cy="100" r="22" fill="none" stroke="#FEFCE8" stroke-width="2.5"/>
-    <text x="100" y="107" font-family="Arial, sans-serif" font-size="13" fill="#FEFCE8" text-anchor="middle" font-weight="bold">1人</text>
-    
-    <line x1="60" y1="68" x2="90" y2="85" stroke="#D97706" stroke-width="1.5"/>
-    <line x1="140" y1="68" x2="110" y2="85" stroke="#D97706" stroke-width="1.5"/>
-    
-    <text x="100" y="145" font-family="Arial, sans-serif" font-size="11" fill="#D6A456" text-anchor="middle">月入200万？</text>
+  <g opacity="0.2" transform="translate(520, 200)">
+    <path d="M 0 0 L 50 0 L 25 43.3 Z" fill="none" stroke="#F59E0B" stroke-width="2"/>
+    <circle cx="25" cy="21.65" r="8" fill="none" stroke="#F59E0B" stroke-width="2"/>
   </g>
   
-  <rect x="0" y="293" width="660" height="7" fill="url(#accent)"/>
+  <g opacity="0.25" transform="translate(590, 220)">
+    <rect width="40" height="40" rx="4" fill="none" stroke="#D6A456" stroke-width="2"/>
+    <line x1="8" y1="20" x2="32" y2="20" stroke="#D6A456" stroke-width="2"/>
+    <line x1="20" y1="8" x2="20" y2="32" stroke="#D6A456" stroke-width="2"/>
+  </g>
+  
+  <rect x="0" y="293" width="660" height="7" fill="url(#accentGrad)"/>
 </svg>
