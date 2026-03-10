@@ -1,10 +1,10 @@
 ---
 title: "智谱 AutoClaw 上线——国产一键养虾，我帮你踩完了第一轮坑"
 date: "2026-03-10"
-category: "职场提效"
+category: "上手指南
 excerpt: "智谱今天发布 AutoClaw，号称一分钟本地部署 OpenClaw。实际体验如何？哪些坑要提前避？这篇帮你从下载到飞书跑通全流程。"
 pattern: "network"
-color: "text-blue-600"
+color: "text-stone-600
 ---
 
 一分钟装好 OpenClaw？我第一反应是"又来骗点击"。

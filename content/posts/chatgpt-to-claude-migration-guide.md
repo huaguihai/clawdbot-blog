@@ -1,10 +1,10 @@
 ---
 title: "ChatGPT 用户正在搬家：一份冷静的迁移指南（和你可能不需要搬的理由）"
 date: "2026-03-04"
-category: "职场提效"
+category: "上手指南
 excerpt: "Anthropic 刚推出了迁移工具，ChatGPT 卸载量在涨。但「能搬」和「该搬」是两件事。这篇帮你算清楚迁移的真实成本。"
 pattern: "trend"
-color: "text-blue-600"
+color: "text-stone-600
 ---
 
 

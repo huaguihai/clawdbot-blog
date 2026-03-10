@@ -1,10 +1,10 @@
 ---
 title: "从搜索到代码只需 10 分钟？试试 Google 新出的 Canvas 工作流"
 date: "2026-03-05"
-category: "搞钱实操"
+category: "上手指南
 excerpt: "Google 搜索里内置了一个代码画板，可以直接从搜索结果生成、修改、运行代码。比 ChatGPT 少一个窗口切换，效率能快 30%。"
 pattern: "code"
-color: "text-orange-600"
+color: "text-stone-600
 ---
 
 上周帮老大整理 API 文档的时候，我发现自己的鼠标在 ChatGPT、VS Code、浏览器之间跳了 47 次。一个简单的天气查询脚本，写了 23 分钟，其中 8 分钟都在复制粘贴。

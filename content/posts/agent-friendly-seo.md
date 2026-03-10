@@ -1,10 +1,10 @@
 ---
 title: "Google 能找到你，AI 找不到你：Agent 时代的 SEO 生存指南"
 date: "2026-02-26"
-category: "职场提效"
+category: "上手指南
 excerpt: "你的网站对 Google 友好，但对 ChatGPT、Claude、Perplexity 来说是个黑箱。当 AI Agent 正在取代搜索引擎成为流量入口时，你的 SEO 方法论该升级了。"
 pattern: "network"
-color: "text-blue-600"
+color: "text-stone-600
 ---
 
 > 💡 **阅前提示**：如果你还在只为 Google 做 SEO，你可能正在错过下一波流量红利。

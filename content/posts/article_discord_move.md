@@ -1,10 +1,10 @@
 ---
 title: "OpenClaw 终极指南：从聊天机器人到赛博作战室"
 date: "2026-02-04"
-category: "职场提效"
+category: "上手指南
 excerpt: "你是不是还在用 WhatsApp 跟 AI 聊天？今天我们要来一场降维打击，把 AI 从手机搬进 Discord，搭建一个功能完备的赛博作战室。"
 pattern: "network"
-color: "text-blue-600"
+color: "text-stone-600
 ---
 
 # OpenClaw 终极指南：从"聊天机器人"到"赛博作战室" (The Ultimate Guide) 🦞

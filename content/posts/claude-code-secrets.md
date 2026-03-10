@@ -1,10 +1,10 @@
 ---
 title: "为什么你的 Claude Code 只是个陪聊？官方团队的 10 条“核武器”级秘籍"
 date: "2026-02-03"
-category: "职场提效"
+category: "上手指南
 excerpt: "当我们在用 Claude Code 写 Hello World 的时候，官方团队已经在用它指挥多线程工作流了。学会这 10 招，它就是你的超级数字员工。"
 pattern: "code"
-color: "text-blue-600"
+color: "text-stone-600
 ---
 
 > 💡 **阅前提示**：看完这篇，你可能会想去退订你的 Netflix 会员，把钱省下来给 Claude 升级。

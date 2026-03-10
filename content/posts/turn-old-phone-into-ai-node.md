@@ -1,10 +1,10 @@
 ---
 title: "如何把你的旧手机变成 AI 助理的肉身？"
 date: "2026-02-03"
-category: "搞钱实操"
+category: "上手指南
 excerpt: "别让你的旧手机在抽屉里吃灰。只要 5 分钟，它就能变成一个 24 小时在线、能听会说、甚至能帮你“看家”的 AI 数字分身。"
 pattern: "network"
-color: "text-orange-600"
+color: "text-stone-600
 ---
 
 > 💡 **核心思路**：云端的 AI 是大脑，旧手机是它的眼睛和耳朵。

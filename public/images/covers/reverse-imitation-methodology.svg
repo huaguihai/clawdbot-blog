@@ -1,75 +1,81 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#3F6212"/>
-      <stop offset="100%" style="stop-color:#1A2E05"/>
+      <stop offset="0%" style="stop-color:#44403C"/>
+      <stop offset="100%" style="stop-color:#1C1917"/>
     </linearGradient>
     <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#A3E635"/>
-      <stop offset="100%" style="stop-color:#65A30D"/>
+      <stop offset="0%" style="stop-color:#EA580C"/>
+      <stop offset="100%" style="stop-color:#F59E0B"/>
     </linearGradient>
   </defs>
   
   <rect width="660" height="300" fill="url(#bgGrad)"/>
   
   <g opacity="0.06">
-    <circle cx="120" cy="45" r="2" fill="#A3B18A"/>
-    <circle cx="280" cy="90" r="1.5" fill="#A3B18A"/>
-    <circle cx="180" cy="150" r="2" fill="#A3B18A"/>
-    <circle cx="90" cy="200" r="1.5" fill="#A3B18A"/>
-    <circle cx="320" cy="180" r="2" fill="#A3B18A"/>
-    <circle cx="240" cy="250" r="1.5" fill="#A3B18A"/>
-    <circle cx="150" cy="110" r="2" fill="#A3B18A"/>
-    <circle cx="500" cy="120" r="1.5" fill="#A3B18A"/>
-    <circle cx="580" cy="200" r="2" fill="#A3B18A"/>
-    <circle cx="450" cy="260" r="1.5" fill="#A3B18A"/>
+    <circle cx="120" cy="45" r="1.5" fill="#D6D3D1"/>
+    <circle cx="280" cy="90" r="1.2" fill="#D6D3D1"/>
+    <circle cx="180" cy="150" r="1.8" fill="#D6D3D1"/>
+    <circle cx="90" cy="200" r="1.3" fill="#D6D3D1"/>
+    <circle cx="320" cy="180" r="1.6" fill="#D6D3D1"/>
+    <circle cx="220" cy="250" r="1.4" fill="#D6D3D1"/>
+    <circle cx="150" cy="100" r="1.1" fill="#D6D3D1"/>
+    <circle cx="480" cy="120" r="1.5" fill="#D6D3D1"/>
+    <circle cx="540" cy="200" r="1.3" fill="#D6D3D1"/>
+    <circle cx="420" cy="260" r="1.7" fill="#D6D3D1"/>
   </g>
   
-  <rect x="50" y="50" width="5" height="60" fill="url(#accentGrad)" rx="2.5"/>
+  <rect x="50" y="60" width="5" height="50" fill="url(#accentGrad)" rx="2.5"/>
   
-  <text x="70" y="75" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#F7FEE7">
+  <text x="70" y="85" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#FAFAF9">
     <tspan x="70" dy="0">别抄好产品了：反向模仿</tspan>
     <tspan x="70" dy="32">烂产品，才是独立开发者的蓝海</tspan>
   </text>
   
-  <text x="70" y="145" font-family="Arial, sans-serif" font-size="16" fill="#A3B18A">
-    人人都在抄 Notion、抄 Linear，但有人靠模仿「老年养生号」的风格反向
+  <text x="70" y="155" font-family="Arial, sans-serif" font-size="16" fill="#A8A29E">
+    <tspan x="70" dy="0">人人都在抄 Notion、抄 Linear，但有人靠模仿</tspan>
+    <tspan x="70" dy="20">「老年养生号」的风格反向劝导父母，火遍全网</tspan>
   </text>
   
-  <g transform="translate(70, 180)">
-    <rect width="90" height="28" rx="14" fill="#4D7C0F" opacity="0.4"/>
-    <text x="45" y="19" font-family="Arial, sans-serif" font-size="13" fill="#D9F99D" text-anchor="middle">反向思维</text>
+  <g transform="translate(70, 205)">
+    <rect width="90" height="28" rx="14" fill="#57534E" opacity="0.4"/>
+    <text x="45" y="19" font-family="Arial, sans-serif" font-size="13" fill="#D6D3D1" text-anchor="middle">反向模仿</text>
   </g>
   
-  <g transform="translate(170, 180)">
-    <rect width="80" height="28" rx="14" fill="#4D7C0F" opacity="0.4"/>
-    <text x="40" y="19" font-family="Arial, sans-serif" font-size="13" fill="#D9F99D" text-anchor="middle">借壳上市</text>
+  <g transform="translate(170, 205)">
+    <rect width="80" height="28" rx="14" fill="#57534E" opacity="0.4"/>
+    <text x="40" y="19" font-family="Arial, sans-serif" font-size="13" fill="#D6D3D1" text-anchor="middle">烂产品</text>
   </g>
   
-  <g transform="translate(260, 180)">
-    <rect width="70" height="28" rx="14" fill="#4D7C0F" opacity="0.4"/>
-    <text x="35" y="19" font-family="Arial, sans-serif" font-size="13" fill="#D9F99D" text-anchor="middle">蓝海</text>
+  <g transform="translate(260, 205)">
+    <rect width="70" height="28" rx="14" fill="#57534E" opacity="0.4"/>
+    <text x="35" y="19" font-family="Arial, sans-serif" font-size="13" fill="#D6D3D1" text-anchor="middle">蓝海</text>
   </g>
   
-  <g transform="translate(420, 60)">
-    <rect x="0" y="0" width="200" height="140" rx="8" fill="none" stroke="#A3E635" stroke-width="3" stroke-dasharray="8,4"/>
+  <g transform="translate(420, 50)">
+    <rect x="0" y="0" width="200" height="140" rx="8" fill="none" stroke="#EA580C" stroke-width="2.5" stroke-dasharray="8,4"/>
     
-    <rect x="20" y="20" width="70" height="90" rx="6" fill="#4D7C0F" opacity="0.3"/>
-    <text x="55" y="50" font-family="Arial, sans-serif" font-size="32" fill="#EF4444" text-anchor="middle">❌</text>
-    <text x="55" y="75" font-family="Arial, sans-serif" font-size="11" fill="#A3B18A" text-anchor="middle">烂产品</text>
-    <text x="55" y="90" font-family="Arial, sans-serif" font-size="11" fill="#A3B18A" text-anchor="middle">外壳</text>
+    <rect x="20" y="20" width="70" height="90" rx="6" fill="#57534E" opacity="0.3"/>
+    <text x="55" y="50" font-family="Arial, sans-serif" font-size="32" fill="#22C55E" text-anchor="middle">✓</text>
+    <text x="55" y="75" font-family="Arial, sans-serif" font-size="11" fill="#D6D3D1" text-anchor="middle">好产品</text>
+    <text x="55" y="90" font-family="Arial, sans-serif" font-size="11" fill="#A8A29E" text-anchor="middle">Notion</text>
+    <text x="55" y="103" font-family="Arial, sans-serif" font-size="11" fill="#A8A29E" text-anchor="middle">Linear</text>
     
-    <text x="105" y="70" font-family="Arial, sans-serif" font-size="28" fill="#A3E635" font-weight="bold">+</text>
+    <path d="M 100 65 L 120 65" stroke="#F59E0B" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+        <polygon points="0 0, 10 3, 0 6" fill="#F59E0B"/>
+      </marker>
+    </defs>
     
-    <rect x="120" y="20" width="70" height="90" rx="6" fill="#4D7C0F" opacity="0.3"/>
-    <text x="155" y="50" font-family="Arial, sans-serif" font-size="32" fill="#22C55E" text-anchor="middle">✓</text>
-    <text x="155" y="75" font-family="Arial, sans-serif" font-size="11" fill="#A3B18A" text-anchor="middle">好内容</text>
-    <text x="155" y="90" font-family="Arial, sans-serif" font-size="11" fill="#A3B18A" text-anchor="middle">内核</text>
+    <rect x="110" y="20" width="70" height="90" rx="6" fill="#57534E" opacity="0.3"/>
+    <text x="145" y="50" font-family="Arial, sans-serif" font-size="32" fill="#EF4444" text-anchor="middle">✗</text>
+    <text x="145" y="75" font-family="Arial, sans-serif" font-size="11" fill="#D6D3D1" text-anchor="middle">烂产品</text>
+    <text x="145" y="90" font-family="Arial, sans-serif" font-size="11" fill="#A8A29E" text-anchor="middle">养生号</text>
+    <text x="145" y="103" font-family="Arial, sans-serif" font-size="11" fill="#A8A29E" text-anchor="middle">套路课</text>
     
-    <path d="M 30 125 L 100 125 L 95 120 M 100 125 L 95 130" stroke="#A3E635" stroke-width="2" fill="none"/>
-    <path d="M 170 125 L 100 125" stroke="#A3E635" stroke-width="2" fill="none"/>
-    <text x="100" y="145" font-family="Arial, sans-serif" font-size="12" fill="#D9F99D" text-anchor="middle" font-weight="bold">新物种</text>
+    <text x="100" y="130" font-family="Arial, sans-serif" font-size="13" fill="#F59E0B" text-anchor="middle" font-weight="bold">反向借壳</text>
   </g>
   
-  <rect y="293" width="660" height="7" fill="url(#accentGrad)"/>
+  <rect x="0" y="293" width="660" height="7" fill="url(#accentGrad)"/>
 </svg>

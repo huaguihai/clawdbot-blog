@@ -23,9 +23,8 @@ const coversDirectory = path.join(process.cwd(), 'public/images/covers');
 
 const CATEGORY_COLOR: Record<string, string> = {
   '搞钱实操': 'text-orange-600',
-  '产品方法论': 'text-orange-700',
-  '职场提效': 'text-blue-600',
-  '行业观察': 'text-blue-700',
+  '上手指南': 'text-stone-600',
+  '行业辣评': 'text-gray-600',
 };
 const FALLBACK_COLOR = 'text-gray-600';
 
