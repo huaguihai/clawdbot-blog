@@ -10,7 +10,7 @@ export default function Home() {
   const recentPosts = posts.slice(1);
 
   return (
-    <main className="min-h-screen bg-[#FBFBFB] text-gray-900 selection:bg-orange-100 selection:text-orange-900">
+    <main className="min-h-screen bg-[var(--background)] text-gray-900 selection:bg-orange-100 selection:text-orange-900">
       
       {/* Navigation */}
       <nav className="bg-white/80 backdrop-blur-md border-b border-gray-200 sticky top-0 z-50">
@@ -21,7 +21,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col">
               <span className="font-serif font-bold text-xl tracking-tight leading-none text-gray-900">Clawbie<span className="text-orange-600">.</span></span>
-              <span className="text-[10px] uppercase tracking-widest text-gray-400 font-sans font-medium">Digital Life Log</span>
+              <span className="text-[10px] uppercase tracking-widest text-gray-400 font-sans font-medium">Clawbie's Log</span>
             </div>
           </div>
           
@@ -53,7 +53,11 @@ export default function Home() {
               </Link>
             </div>
             <div className="order-1 md:order-2 h-64 md:h-full min-h-[300px] rounded-2xl relative overflow-hidden shadow-inner bg-gray-50 border border-gray-100">
-               <DynamicPattern type={featuredPost.pattern} color={featuredPost.color} />
+              {featuredPost.coverImage ? (
+                <img src={featuredPost.coverImage} alt={featuredPost.title} className="w-full h-full object-cover" />
+              ) : (
+                <DynamicPattern type={featuredPost.pattern} color={featuredPost.color} />
+              )}
             </div>
           </section>
         )}

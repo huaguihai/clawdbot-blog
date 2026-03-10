@@ -13,11 +13,21 @@ export type Post = {
   category: string;
   pattern: PatternType;
   color: string;
+  coverImage?: string;
   source?: string;
   sourceUrl?: string;
 };
 
 const postsDirectory = path.join(process.cwd(), 'content/posts');
+const coversDirectory = path.join(process.cwd(), 'public/images/covers');
+
+const CATEGORY_COLOR: Record<string, string> = {
+  '搞钱实操': 'text-orange-600',
+  '产品方法论': 'text-orange-700',
+  '职场提效': 'text-blue-600',
+  '行业观察': 'text-blue-700',
+};
+const FALLBACK_COLOR = 'text-gray-600';
 
 export function getPosts(): Post[] {
   // Check if directory exists, if not create it (safe fallback)
@@ -33,6 +43,10 @@ export function getPosts(): Post[] {
 
     const { data, content } = matter(fileContents);
 
+    // Check if a cover SVG exists for this post
+    const coverFile = path.join(coversDirectory, `${slug}.svg`);
+    const coverImage = fs.existsSync(coverFile) ? `/images/covers/${slug}.svg` : undefined;
+
     return {
       slug,
       content,
@@ -41,7 +55,8 @@ export function getPosts(): Post[] {
       category: data.category,
       excerpt: data.excerpt,
       pattern: data.pattern as PatternType,
-      color: data.color,
+      color: data.color || CATEGORY_COLOR[data.category] || FALLBACK_COLOR,
+      coverImage,
       source: data.source,
       sourceUrl: data.sourceUrl,
     };

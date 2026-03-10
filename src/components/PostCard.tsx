@@ -17,9 +17,13 @@ export default function PostCard({ post, index }: { post: Post; index: number })
       <Link href={`/posts/${post.slug}`} className="block h-full">
         <div className="flex flex-col h-full bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
           
-          {/* Dynamic SVG Cover */}
+          {/* Cover: custom SVG or fallback DynamicPattern */}
           <div className="h-48 relative overflow-hidden bg-gray-50">
-            <DynamicPattern type={post.pattern} color={post.color} />
+            {post.coverImage ? (
+              <img src={post.coverImage} alt={post.title} className="w-full h-full object-cover" />
+            ) : (
+              <DynamicPattern type={post.pattern} color={post.color} />
+            )}
             <div className="absolute top-4 left-4">
               <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-xs font-bold text-gray-800 rounded-full shadow-sm border border-gray-100">
                 {post.category}

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300" font-family="-apple-system, 'Segoe UI', sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#44403C"/>
+      <stop offset="100%" stop-color="#1C1917"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background: warm stone-brown gradient -->
+  <rect width="660" height="300" fill="url(#bg)"/>
+
+  <!-- Subtle texture: irregular dots mimicking paper grain -->
+  <g opacity="0.06" fill="#D6D3D1">
+    <circle cx="45" cy="35" r="1.2"/><circle cx="82" cy="28" r="1.5"/><circle cx="130" cy="42" r="1"/><circle cx="165" cy="22" r="1.3"/>
+    <circle cx="38" cy="72" r="1.4"/><circle cx="95" cy="65" r="1"/><circle cx="148" cy="78" r="1.6"/><circle cx="175" cy="55" r="1.1"/>
+    <circle cx="55" cy="105" r="1.3"/><circle cx="110" cy="98" r="1.5"/><circle cx="160" cy="112" r="1"/><circle cx="72" cy="140" r="1.2"/>
+    <circle cx="125" cy="135" r="1.4"/><circle cx="42" cy="165" r="1"/><circle cx="90" cy="175" r="1.3"/>
+  </g>
+
+  <!-- Right side: terminal window illustration -->
+  <g transform="translate(400, 50)">
+    <!-- Terminal frame -->
+    <rect width="220" height="180" rx="10" fill="#292524" stroke="#57534E" stroke-width="1"/>
+    <!-- Title bar -->
+    <rect width="220" height="28" rx="10" fill="#3F3F46"/>
+    <rect y="14" width="220" height="14" fill="#3F3F46"/>
+    <circle cx="16" cy="14" r="4.5" fill="#EF4444" opacity="0.8"/>
+    <circle cx="32" cy="14" r="4.5" fill="#F59E0B" opacity="0.8"/>
+    <circle cx="48" cy="14" r="4.5" fill="#22C55E" opacity="0.8"/>
+    <!-- Terminal content -->
+    <text x="14" y="52" font-size="10" fill="#A8A29E" font-family="monospace">$ autoclaw install</text>
+    <text x="14" y="70" font-size="10" fill="#22C55E" font-family="monospace">✓ OpenClaw ready</text>
+    <text x="14" y="88" font-size="10" fill="#22C55E" font-family="monospace">✓ Skills loaded (50+)</text>
+    <text x="14" y="106" font-size="10" fill="#22C55E" font-family="monospace">✓ Feishu connected</text>
+    <text x="14" y="130" font-size="10" fill="#F59E0B" font-family="monospace">→ localhost:18789/chat</text>
+    <text x="14" y="158" font-size="10" fill="#78716C" font-family="monospace">  1 min | 0 config files</text>
+    <!-- Cursor blink -->
+    <rect x="14" y="166" width="7" height="12" fill="#EA580C" opacity="0.7"/>
+  </g>
+
+  <!-- Accent line -->
+  <rect x="50" y="95" width="50" height="3" rx="1.5" fill="url(#accent)"/>
+
+  <!-- Title -->
+  <text x="50" y="132" font-size="26" font-weight="700" fill="#FAFAF9" letter-spacing="-0.5">智谱 AutoClaw</text>
+  <text x="50" y="165" font-size="16" font-weight="400" fill="#A8A29E">一键养虾，踩完第一轮坑</text>
+
+  <!-- Tags -->
+  <g transform="translate(50, 200)">
+    <rect width="80" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+    <text x="40" y="16" text-anchor="middle" font-size="10" font-weight="500" fill="#D6D3D1">OpenClaw</text>
+  </g>
+  <g transform="translate(140, 200)">
+    <rect width="56" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+    <text x="28" y="16" text-anchor="middle" font-size="10" font-weight="500" fill="#D6D3D1">飞书</text>
+  </g>
+  <g transform="translate(206, 200)">
+    <rect width="70" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+    <text x="35" y="16" text-anchor="middle" font-size="10" font-weight="500" fill="#D6D3D1">本地部署</text>
+  </g>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="293" width="660" height="7" fill="url(#accent)"/>
+</svg>
