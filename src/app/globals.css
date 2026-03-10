@@ -4,17 +4,31 @@
   --font-sans: var(--font-geist-sans);
   --font-serif: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
   --font-body: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+
+  /* Gray → warm stone override */
+  --color-gray-50:  #fafaf9;
+  --color-gray-100: #f5f5f4;
+  --color-gray-200: #e7e5e4;
+  --color-gray-300: #d6d3d1;
+  --color-gray-400: #a8a29e;
+  --color-gray-500: #78716c;
+  --color-gray-600: #57534e;
+  --color-gray-700: #44403c;
+  --color-gray-800: #292524;
+  --color-gray-900: #1c1917;
+  --color-gray-950: #0c0a09;
 }
 
 :root {
-  --background: #fbfbfb; /* Paper White */
-  --foreground: #222222; /* Ink Black */
+  --background: #faf8f5; /* Cloud Dancer warm white */
+  --foreground: #1c1917; /* stone-950 */
   --accent: #ea580c; /* Burned Orange */
+  --accent-blue: #2563eb; /* Complementary blue */
 }
 
 @layer base {
   body {
-    @apply bg-[#fbfbfb] text-[#222] antialiased selection:bg-orange-100 selection:text-orange-900;
+    @apply bg-[var(--background)] text-[var(--foreground)] antialiased selection:bg-orange-100 selection:text-orange-900;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
@@ -141,7 +155,7 @@
 .prose hr {
   @apply border-0 my-12;
   height: 1px;
-  background: linear-gradient(to right, transparent, #d1d5db, transparent);
+  background: linear-gradient(to right, transparent, #d6d3d1, transparent);
 }
 
 /* Images */

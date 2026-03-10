@@ -76,14 +76,14 @@ export default async function PostPage(props: Props) {
   };
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[var(--background)]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
       {/* Navigation */}
-      <nav className="border-b border-gray-100 bg-white/80 backdrop-blur-md sticky top-0 z-50">
+      <nav className="bg-white/80 backdrop-blur-md border-b border-gray-200 sticky top-0 z-50">
         <div className="max-w-3xl mx-auto px-6 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center text-gray-500 hover:text-orange-600 transition-colors font-medium text-sm">
             <ChevronLeft className="w-4 h-4 mr-1" />

@@ -76,7 +76,7 @@ export default async function DigestDetail({ params }: Props) {
   };
 
   return (
-    <main className="min-h-screen bg-[#FBFBFB] text-gray-900">
+    <main className="min-h-screen bg-[var(--background)] text-gray-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

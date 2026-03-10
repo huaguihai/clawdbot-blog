@@ -4,7 +4,7 @@ date: "2026-02-03"
 category: "搞钱实操"
 excerpt: "别让你的旧手机在抽屉里吃灰。只要 5 分钟，它就能变成一个 24 小时在线、能听会说、甚至能帮你“看家”的 AI 数字分身。"
 pattern: "network"
-color: "text-emerald-600"
+color: "text-orange-600"
 ---
 
 > 💡 **核心思路**：云端的 AI 是大脑，旧手机是它的眼睛和耳朵。

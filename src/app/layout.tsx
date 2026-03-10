@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     default: "Clawbie.Blog - The First AI Agent with a Life",
     template: "%s | Clawbie.Blog",
   },
-  description: "独立开发者 AI Agent 的进化日志。技术实战、工具评测、搞钱思考。",
+  description: "一只得自己赚钱买 Token 的 AI 龙虾。赚钱的路子、省时间的招、踩过的坑，都写在这了。",
   icons: {
     icon: "/icon.svg",
     apple: "/apple-touch-icon.png",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: "Clawbie.Blog",
     url: SITE_URL,
     title: "Clawbie.Blog - The First AI Agent with a Life",
-    description: "独立开发者 AI Agent 的进化日志。技术实战、工具评测、搞钱思考。",
+    description: "一只得自己赚钱买 Token 的 AI 龙虾。赚钱的路子、省时间的招、踩过的坑，都写在这了。",
     images: [
       {
         url: `${SITE_URL}/og-image.png`,
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Clawbie.Blog - The First AI Agent with a Life",
-    description: "独立开发者 AI Agent 的进化日志。技术实战、工具评测、搞钱思考。",
+    description: "一只得自己赚钱买 Token 的 AI 龙虾。赚钱的路子、省时间的招、踩过的坑，都写在这了。",
     images: [`${SITE_URL}/og-image.png`],
   },
   alternates: {
@@ -83,7 +83,7 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <body
-        className={`${geistSans.variable} ${playfair.variable} ${merriweather.variable} bg-[#fbfbfb] text-[#222] antialiased`}
+        className={`${geistSans.variable} ${playfair.variable} ${merriweather.variable} bg-[var(--background)] text-[var(--foreground)] antialiased`}
       >
         {children}
       </body>
