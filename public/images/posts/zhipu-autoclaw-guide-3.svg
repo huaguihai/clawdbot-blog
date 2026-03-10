@@ -1,0 +1,63 @@
+<svg viewBox="0 0 660 400" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, 'Segoe UI', sans-serif">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0001"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#94A3B8"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="660" height="400" fill="#FAFAFA"/>
+  
+  <!-- 标题 -->
+  <text x="330" y="40" text-anchor="middle" font-size="18" font-weight="600" fill="#1E293B">AutoGLM Browser-Use 能力对比</text>
+  
+  <!-- 左侧卡片：OpenClaw 原生能力 -->
+  <rect x="30" y="70" width="280" height="290" rx="12" fill="white" filter="url(#shadow)"/>
+  <text x="170" y="105" text-anchor="middle" font-size="15" font-weight="600" fill="#64748B">OpenClaw 原生能力</text>
+  <rect x="50" y="130" width="240" height="2" fill="#E2E8F0"/>
+  
+  <!-- 弱点图标 -->
+  <circle cx="80" cy="170" r="20" fill="#FECACA"/>
+  <path d="M70 170 L78 178 L90 162" stroke="#DC2626" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <text x="115" y="165" font-size="13" fill="#475569">打开网页</text>
+  <text x="115" y="183" font-size="13" fill="#475569">截图</text>
+  <text x="115" y="201" font-size="12" fill="#94A3B8">× 多步骤操作易翻车</text>
+  
+  <!-- 右侧卡片：AutoGLM Browser-Use -->
+  <rect x="350" y="70" width="280" height="290" rx="12" fill="white" filter="url(#shadow)"/>
+  <text x="490" y="105" text-anchor="middle" font-size="15" font-weight="600" fill="#2563EB">AutoGLM Browser-Use</text>
+  <rect x="370" y="130" width="240" height="2" fill="#E2E8F0"/>
+  
+  <!-- 流程步骤 -->
+  <!-- 步骤1 -->
+  <rect x="390" y="155" width="200" height="40" rx="8" fill="#DBEAFE"/>
+  <circle cx="415" cy="175" r="12" fill="#2563EB"/>
+  <text x="415" y="179" text-anchor="middle" font-size="12" font-weight="600" fill="white">1</text>
+  <text x="435" y="170" font-size="13" font-weight="500" fill="#1E40AF">点击按钮</text>
+  
+  <!-- 箭头 -->
+  <path d="M490 205 L490 220" stroke="#94A3B8" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arrow)"/>
+  
+  <!-- 步骤2 -->
+  <rect x="390" y="230" width="200" height="40" rx="8" fill="#DBEAFE"/>
+  <circle cx="415" cy="250" r="12" fill="#2563EB"/>
+  <text x="415" y="254" text-anchor="middle" font-size="12" font-weight="600" fill="white">2</text>
+  <text x="435" y="245" font-size="13" font-weight="500" fill="#1E40AF">等待加载</text>
+  
+  <!-- 箭头 -->
+  <path d="M490 280 L490 295" stroke="#94A3B8" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arrow)"/>
+  
+  <!-- 步骤3 -->
+  <rect x="390" y="305" width="200" height="40" rx="8" fill="#DBEAFE"/>
+  <circle cx="415" cy="325" r="12" fill="#2563EB"/>
+  <text x="415" y="329" text-anchor="middle" font-size="12" font-weight="600" fill="white">3</text>
+  <text x="435" y="320" font-size="13" font-weight="500" fill="#1E40AF">自动执行完整流程</text>
+  
+  <!-- 底部提示 -->
+  <rect x="100" y="375" width="460" height="20" rx="4" fill="#FEF3C7"/>
+  <text x="330" y="389" text-anchor="middle" font-size="11" fill="#92400E">⚠ 依赖云端服务 | 敏感数据请谨慎使用</text>
+</svg>
