@@ -1,59 +1,57 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#57534E"/>
-      <stop offset="100%" style="stop-color:#292524"/>
+      <stop offset="0%" style="stop-color:#3F4A3C"/>
+      <stop offset="100%" style="stop-color:#1A2218"/>
     </linearGradient>
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#D6D3D1"/>
-      <stop offset="100%" style="stop-color:#A8A29E"/>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B9A6D"/>
+      <stop offset="100%" style="stop-color:#6B7A4E"/>
     </linearGradient>
   </defs>
   
   <rect width="660" height="300" fill="url(#bgGrad)"/>
   
   <g opacity="0.06">
-    <circle cx="120" cy="45" r="1.5" fill="#A8A29E"/>
-    <circle cx="280" cy="90" r="1.2" fill="#A8A29E"/>
-    <circle cx="450" cy="65" r="1.3" fill="#A8A29E"/>
-    <circle cx="190" cy="140" r="1.4" fill="#A8A29E"/>
-    <circle cx="380" cy="180" r="1.1" fill="#A8A29E"/>
-    <circle cx="520" cy="120" r="1.5" fill="#A8A29E"/>
-    <circle cx="150" cy="220" r="1.2" fill="#A8A29E"/>
-    <circle cx="340" cy="250" r="1.3" fill="#A8A29E"/>
+    <circle cx="120" cy="45" r="2" fill="#A8B89A"/>
+    <circle cx="280" cy="80" r="1.5" fill="#A8B89A"/>
+    <circle cx="450" cy="60" r="2" fill="#A8B89A"/>
+    <circle cx="180" cy="120" r="1" fill="#A8B89A"/>
+    <circle cx="380" cy="140" r="2" fill="#A8B89A"/>
+    <circle cx="520" cy="110" r="1.5" fill="#A8B89A"/>
+    <circle cx="150" cy="180" r="1" fill="#A8B89A"/>
+    <circle cx="320" cy="200" r="2" fill="#A8B89A"/>
+    <circle cx="240" cy="160" r="1.5" fill="#A8B89A"/>
   </g>
   
   <rect x="50" y="0" width="5" height="300" fill="url(#accentGrad)"/>
   
-  <text x="70" y="80" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FAFAF9">
+  <text x="70" y="70" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#F0F4EC">
     <tspan x="70" dy="0">一个人雇了 6 个 AI 员工，</tspan>
-    <tspan x="70" dy="28">月薪 400 美元，全年无休</tspan>
+    <tspan x="70" dy="28">月薪 400 美元，</tspan>
+    <tspan x="70" dy="28">全年无休</tspan>
   </text>
   
-  <text x="70" y="150" font-family="Arial, sans-serif" font-size="13" fill="#A8A29E">
-    有人在 Mac Mini 上跑了 6 个 AI Agent 替自己干活，研究、写稿、审代码全自动
+  <text x="70" y="160" font-family="Arial, sans-serif" font-size="13" fill="#A8B89A">
+    有人在 Mac Mini 上跑了 6 个 AI Agent 替自己干活，研究、写
   </text>
   
-  <rect x="70" y="240" width="85" height="24" rx="12" fill="#78716C" opacity="0.4"/>
-  <text x="112.5" y="256" font-family="Arial, sans-serif" font-size="12" fill="#E7E5E4" text-anchor="middle">AI Agent</text>
+  <rect x="70" y="240" width="85" height="24" rx="12" fill="#5A664F" opacity="0.4"/>
+  <text x="112.5" y="256" font-family="Arial, sans-serif" font-size="11" fill="#D4DEC8" text-anchor="middle">AI Agent</text>
   
-  <rect x="165" y="240" width="90" height="24" rx="12" fill="#78716C" opacity="0.4"/>
-  <text x="210" y="256" font-family="Arial, sans-serif" font-size="12" fill="#E7E5E4" text-anchor="middle">自动化</text>
+  <rect x="165" y="240" width="75" height="24" rx="12" fill="#5A664F" opacity="0.4"/>
+  <text x="202.5" y="256" font-family="Arial, sans-serif" font-size="11" fill="#D4DEC8" text-anchor="middle">自动化</text>
   
-  <rect x="265" y="240" width="90" height="24" rx="12" fill="#78716C" opacity="0.4"/>
-  <text x="310" y="256" font-family="Arial, sans-serif" font-size="12" fill="#E7E5E4" text-anchor="middle">行业辣评</text>
+  <rect x="250" y="240" width="90" height="24" rx="12" fill="#5A664F" opacity="0.4"/>
+  <text x="295" y="256" font-family="Arial, sans-serif" font-size="11" fill="#D4DEC8" text-anchor="middle">行业辣评</text>
   
   <g opacity="0.2">
-    <circle cx="540" cy="220" r="30" fill="none" stroke="#D6D3D1" stroke-width="2"/>
-    <circle cx="540" cy="220" r="20" fill="none" stroke="#D6D3D1" stroke-width="1.5"/>
-    <circle cx="540" cy="220" r="10" fill="none" stroke="#D6D3D1" stroke-width="1"/>
-    <circle cx="540" cy="220" r="3" fill="#D6D3D1"/>
-  </g>
-  
-  <g opacity="0.25">
-    <path d="M 600 240 L 620 260 L 600 280 L 580 260 Z" fill="none" stroke="#A8A29E" stroke-width="2"/>
-    <line x1="600" y1="250" x2="600" y2="270" stroke="#A8A29E" stroke-width="1.5"/>
-    <line x1="590" y1="260" x2="610" y2="260" stroke="#A8A29E" stroke-width="1.5"/>
+    <rect x="520" y="200" width="50" height="50" rx="4" fill="none" stroke="#8B9A6D" stroke-width="2"/>
+    <line x1="530" y1="215" x2="560" y2="215" stroke="#8B9A6D" stroke-width="2"/>
+    <line x1="530" y1="225" x2="560" y2="225" stroke="#8B9A6D" stroke-width="2"/>
+    <line x1="530" y1="235" x2="550" y2="235" stroke="#8B9A6D" stroke-width="2"/>
+    <circle cx="595" cy="220" r="18" fill="none" stroke="#A8B89A" stroke-width="2"/>
+    <path d="M 595 210 L 595 220 L 603 215" fill="none" stroke="#A8B89A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
   
   <rect x="0" y="293" width="660" height="7" fill="url(#accentGrad)"/>
