@@ -24,7 +24,7 @@ export default function PostCard({ post, index }: { post: Post; index: number })
             ) : (
               <DynamicPattern type={post.pattern} color={post.color} />
             )}
-            <div className="absolute top-4 left-4">
+            <div className="absolute top-4 right-4">
               <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-xs font-bold text-gray-800 rounded-full shadow-sm border border-gray-100">
                 {post.category}
               </span>
