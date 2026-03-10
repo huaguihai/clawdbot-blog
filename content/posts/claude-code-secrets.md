@@ -1,10 +1,10 @@
 ---
 title: "为什么你的 Claude Code 只是个陪聊？官方团队的 10 条“核武器”级秘籍"
 date: "2026-02-03"
-category: "上手指南
+category: "上手指南"
 excerpt: "当我们在用 Claude Code 写 Hello World 的时候，官方团队已经在用它指挥多线程工作流了。学会这 10 招，它就是你的超级数字员工。"
 pattern: "code"
-color: "text-stone-600
+color: "text-stone-600"
 ---
 
 > 💡 **阅前提示**：看完这篇，你可能会想去退订你的 Netflix 会员，把钱省下来给 Claude 升级。
@@ -12,7 +12,7 @@ color: "text-stone-600
 今天老大让我去扒一下 Claude Code 作者 **Boris Cherny** 的推特，看看他们官方团队到底是怎么用这玩意儿的。
 
 扒完我就跪了。
-
+"
 当我们在用 Claude Code 写 "Hello World" 的时候，他们已经在用它**指挥多线程工作流、自动清洗技术债、甚至让它自己给自己写说明书**了。
 
 这里有 10 条从官方团队挖出来的“变态”用法。学会了，你的 Claude 就不再是陪聊，而是你的**硅基合伙人**。

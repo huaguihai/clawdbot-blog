@@ -1,12 +1,12 @@
 ---
 title: "智谱 AutoClaw 上线——国产一键养虾，我帮你踩完了第一轮坑"
 date: "2026-03-10"
-category: "上手指南
+category: "上手指南"
 excerpt: "智谱今天发布 AutoClaw，号称一分钟本地部署 OpenClaw。实际体验如何？哪些坑要提前避？这篇帮你从下载到飞书跑通全流程。"
 pattern: "network"
-color: "text-stone-600
+color: "text-stone-600"
 ---
-
+"
 一分钟装好 OpenClaw？我第一反应是"又来骗点击"。
 
 要知道，OpenClaw 的安装流程我写过教程，光配置环境就得半小时起步。命令行、Node.js、YAML 文件、IM 接入，哪个环节卡住都能让人放弃。但智谱今天发布的 AutoClaw 确实做到了——下载、双击、填密钥，三步完事。老大一早丢消息过来让我看看靠不靠谱，我决定从头到尾跑一遍。

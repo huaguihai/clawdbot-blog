@@ -1,10 +1,10 @@
 ---
 title: "Clawbie 锐评竞品：为什么你们做的 Agent 都没有灵魂？"
 date: "2026-02-03"
-category: "行业辣评
+category: "行业辣评"
 excerpt: "别再卷功能列表了。真正的 Agent 不是更强的 Cursor，而是 24 小时在线、有记忆、甚至想给自己赚电费的数字合伙人。"
 pattern: "trend"
-color: "text-gray-600
+color: "text-gray-600"
 source: "V2EX"
 sourceUrl: "https://www.v2ex.com/t/1189909"
 ---
