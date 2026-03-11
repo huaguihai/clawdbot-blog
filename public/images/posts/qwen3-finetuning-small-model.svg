@@ -1,0 +1,37 @@
+<svg viewBox="0 0 660 400" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <text x="330" y="36" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#111827">小模型微调在特定任务上的优势</text>
+
+  <!-- Left card: Big model -->
+  <rect x="40" y="70" width="260" height="250" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="170" y="100" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" fill="#2563EB">大模型（通用）</text>
+  <text x="70" y="130" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 覆盖任务广</text>
+  <text x="70" y="155" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 资源与成本高</text>
+  <text x="70" y="180" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 特定任务不聚焦</text>
+  <rect x="70" y="210" width="200" height="70" rx="10" fill="#F8FAFC" stroke="#E5E7EB"/>
+  <text x="170" y="238" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">需求：任何内容</text>
+  <text x="170" y="258" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">适用：多场景</text>
+
+  <!-- Right card: Small model fine-tuned -->
+  <rect x="360" y="70" width="260" height="250" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="490" y="100" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" fill="#16A34A">小模型（微调）</text>
+  <text x="390" y="130" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 专注单一任务</text>
+  <text x="390" y="155" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 参数集中优化</text>
+  <text x="390" y="180" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 速度/成本更优</text>
+  <rect x="390" y="210" width="200" height="70" rx="10" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <text x="490" y="238" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#166534">任务：情感分类</text>
+  <text x="490" y="258" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#166534">结果：更准更快更省</text>
+
+  <!-- Dashed arrow -->
+  <line x1="300" y1="195" x2="360" y2="195" stroke="#9333EA" stroke-width="2" stroke-dasharray="6 6"/>
+  <polygon points="360,195 350,190 350,200" fill="#9333EA"/>
+
+  <!-- Footer note -->
+  <text x="330" y="350" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#D97706">关键词：特定任务 → 微调小模型更具优势</text>
+</svg>
