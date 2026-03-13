@@ -1,0 +1,70 @@
+<svg viewBox='0 0 660 400' xmlns='http://www.w3.org/2000/svg' font-family="-apple-system, 'Segoe UI', sans-serif">
+  <rect width='660' height='400' fill='#FAFAFA' rx='12'/>
+
+  <!-- Title -->
+  <text x='330' y='36' text-anchor='middle' font-size='15' font-weight='700' fill='#1E293B'>Function Calling vs 单工具 CLI</text>
+
+  <!-- Left Column Header -->
+  <rect x='40' y='56' width='260' height='36' rx='8' fill='#EA580C'/>
+  <text x='170' y='79' text-anchor='middle' font-size='13' font-weight='700' fill='#FFFFFF'>多工具 Function Calling</text>
+
+  <!-- Right Column Header -->
+  <rect x='360' y='56' width='260' height='36' rx='8' fill='#2563EB'/>
+  <text x='490' y='79' text-anchor='middle' font-size='13' font-weight='700' fill='#FFFFFF'>单工具 CLI</text>
+
+  <!-- Left: task box -->
+  <rect x='40' y='112' width='260' height='200' rx='10' fill='#FFFFFF' stroke='#FED7AA' stroke-width='1.5'/>
+
+  <!-- Tool nodes left -->
+  <rect x='60' y='126' width='100' height='30' rx='6' fill='#FFF7ED' stroke='#EA580C' stroke-width='1.2'/>
+  <text x='110' y='146' text-anchor='middle' font-size='11' fill='#EA580C' font-weight='600'>read_file</text>
+
+  <rect x='180' y='126' width='100' height='30' rx='6' fill='#FFF7ED' stroke='#EA580C' stroke-width='1.2'/>
+  <text x='230' y='146' text-anchor='middle' font-size='11' fill='#EA580C' font-weight='600'>search_text</text>
+
+  <rect x='60' y='178' width='100' height='30' rx='6' fill='#FFF7ED' stroke='#EA580C' stroke-width='1.2'/>
+  <text x='110' y='198' text-anchor='middle' font-size='11' fill='#EA580C' font-weight='600'>count_lines</text>
+
+  <rect x='180' y='178' width='100' height='30' rx='6' fill='#FFF7ED' stroke='#EA580C' stroke-width='1.2'/>
+  <text x='230' y='198' text-anchor='middle' font-size='11' fill='#EA580C' font-weight='600'>run_python</text>
+
+  <!-- Dashed arrows between left tools -->
+  <line x1='160' y1='141' x2='180' y2='141' stroke='#EA580C' stroke-width='1.2' stroke-dasharray='4,3'/>
+  <line x1='110' y1='156' x2='110' y2='178' stroke='#EA580C' stroke-width='1.2' stroke-dasharray='4,3'/>
+  <line x1='160' y1='193' x2='180' y2='193' stroke='#EA580C' stroke-width='1.2' stroke-dasharray='4,3'/>
+
+  <!-- Left pain points -->
+  <text x='170' y='234' text-anchor='middle' font-size='11' fill='#92400E'>每步单独调用 / schema 各不相同</text>
+  <text x='170' y='253' text-anchor='middle' font-size='11' fill='#92400E'>上下文随步骤数线性增长</text>
+  <text x='170' y='272' text-anchor='middle' font-size='11' fill='#92400E'>单步出错 → 连环偏航</text>
+
+  <!-- Right: task box -->
+  <rect x='360' y='112' width='260' height='200' rx='10' fill='#FFFFFF' stroke='#BFDBFE' stroke-width='1.5'/>
+
+  <!-- Single CLI node -->
+  <rect x='390' y='130' width='200' height='38' rx='8' fill='#EFF6FF' stroke='#2563EB' stroke-width='1.5'/>
+  <text x='490' y='148' text-anchor='middle' font-size='11' fill='#2563EB' font-weight='700'>run(command: string)</text>
+  <text x='490' y='162' text-anchor='middle' font-size='10' fill='#3B82F6'>统一入口，一种调用形式</text>
+
+  <!-- Pipeline example -->
+  <rect x='390' y='184' width='200' height='34' rx='6' fill='#F0FDF4' stroke='#16A34A' stroke-width='1.2'/>
+  <text x='490' y='198' text-anchor='middle' font-size='10' fill='#16A34A' font-family="'Courier New', monospace" font-weight='600'>cat log | grep ERROR | wc -l</text>
+  <text x='490' y='212' text-anchor='middle' font-size='10' fill='#15803D'>一次调用完成三步</text>
+
+  <!-- Right advantages -->
+  <text x='490' y='248' text-anchor='middle' font-size='11' fill='#1E40AF'>| &amp;&amp; || 天然支持组合与回退</text>
+  <text x='490' y='267' text-anchor='middle' font-size='11' fill='#1E40AF'>注意力专注于"拼命令"</text>
+  <text x='490' y='286' text-anchor='middle' font-size='11' fill='#1E40AF'>50 年 Unix 管道体系背书</text>
+
+  <!-- VS divider -->
+  <line x1='330' y1='60' x2='330' y2='320' stroke='#CBD5E1' stroke-width='1.5' stroke-dasharray='6,4'/>
+  <rect x='312' y='192' width='36' height='24' rx='12' fill='#F1F5F9'/>
+  <text x='330' y='209' text-anchor='middle' font-size='12' font-weight='700' fill='#64748B'>VS</text>
+
+  <!-- Bottom labels -->
+  <rect x='40' y='330' width='260' height='32' rx='8' fill='#FFF1EB' stroke='#EA580C' stroke-width='1'/>
+  <text x='170' y='350' text-anchor='middle' font-size='12' fill='#9A3412' font-weight='600'>注意力分散 / 调用链易断</text>
+
+  <rect x='360' y='330' width='260' height='32' rx='8' fill='#EFF6FF' stroke='#2563EB' stroke-width='1'/>
+  <text x='490' y='350' text-anchor='middle' font-size='12' fill='#1D4ED8' font-weight='600'>统一认知 / 组合能力更强</text>
+</svg>
