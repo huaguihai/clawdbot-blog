@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+
+  <!-- Title -->
+  <text x="330" y="36" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#111827" font-weight="700">为什么比“窗口变大”更重要：定价逻辑改变</text>
+  <text x="330" y="58" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">从“精打细算 token” → “可直接放入完整上下文”</text>
+
+  <!-- Center card -->
+  <rect x="170" y="110" width="320" height="86" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="170" y="110" width="10" height="86" rx="12" fill="#2563EB"/>
+  <text x="190" y="140" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" fill="#111827" font-weight="700">1M 上下文 + 无溢价定价</text>
+  <text x="190" y="163" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">核心变化：成本不再随长文本显著跳涨</text>
+  <text x="190" y="182" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">结果：减少“该不该放进上下文”的心理负担</text>
+
+  <!-- Left card: Codebase -->
+  <rect x="40" y="245" width="185" height="110" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="40" y="245" width="10" height="110" rx="12" fill="#16A34A"/>
+  <text x="60" y="275" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827" font-weight="700">代码库分析</text>
+  <text x="60" y="297" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">整项目一次性喂入</text>
+  <text x="60" y="316" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">更好重构 / 排查 bug</text>
+  <text x="60" y="335" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">生成文档更完整</text>
+
+  <!-- Middle card: Long docs -->
+  <rect x="238" y="245" width="185" height="110" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="238" y="245" width="10" height="110" rx="12" fill="#EA580C"/>
+  <text x="258" y="275" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827" font-weight="700">长文档处理</text>
+  <text x="258" y="297" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">合同 / 规范 / 论文</text>
+  <text x="258" y="316" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">无需拆段与手动拼接</text>
+  <text x="258" y="335" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">直接总结 / 对比 / 抽取</text>
+
+  <!-- Right card: Memory -->
+  <rect x="436" y="245" width="185" height="110" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="436" y="245" width="10" height="110" rx="12" fill="#9333EA"/>
+  <text x="456" y="275" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827" font-weight="700">多轮对话记忆</text>
+  <text x="456" y="297" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">保留完整历史上下文</text>
+  <text x="456" y="316" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">Agent 不易“健忘”</text>
+  <text x="456" y="335" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">成本不再失控</text>
+
+  <!-- Dashed connectors -->
+  <path d="M 230 196 C 175 210, 120 222, 132 245" fill="none" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="6 6"/>
+  <path d="M 330 196 C 330 214, 330 226, 330 245" fill="none" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="6 6"/>
+  <path d="M 430 196 C 485 210, 540 222, 528 245" fill="none" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- Footer note -->
+  <rect x="40" y="82" width="580" height="18" rx="9" fill="#FFFFFF" filter="url(#shadow)"/>
+  <circle cx="54" cy="91" r="5" fill="#D97706"/>
+  <text x="66" y="95" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">结论：技术不稀缺，稀缺的是“敢不敢用”的成本结构</text>
+</svg>
