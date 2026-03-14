@@ -1,0 +1,74 @@
+<svg viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3F4A3C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1A2218;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B9A6D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6B7A4E;stop-opacity:1" />
+    </linearGradient>
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.5" />
+    </filter>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="660" height="300" fill="url(#bgGradient)" />
+
+  <!-- 纹理层 -->
+  <circle cx="120" cy="45" r="2" fill="#A8B89A" opacity="0.06" />
+  <circle cx="280" cy="78" r="1.5" fill="#A8B89A" opacity="0.06" />
+  <circle cx="420" cy="120" r="2.5" fill="#A8B89A" opacity="0.06" />
+  <circle cx="580" cy="95" r="1.8" fill="#A8B89A" opacity="0.06" />
+  <circle cx="150" cy="180" r="2" fill="#A8B89A" opacity="0.06" />
+  <circle cx="350" cy="210" r="1.5" fill="#A8B89A" opacity="0.06" />
+  <circle cx="520" cy="160" r="2.2" fill="#A8B89A" opacity="0.06" />
+  <circle cx="90" cy="250" r="1.8" fill="#A8B89A" opacity="0.06" />
+  <circle cx="480" cy="240" r="2" fill="#A8B89A" opacity="0.06" />
+  <circle cx="620" cy="200" r="1.5" fill="#A8B89A" opacity="0.06" />
+
+  <!-- 左侧强调线 -->
+  <rect x="50" y="0" width="4" height="300" fill="url(#accentGradient)" />
+
+  <!-- 标题 -->
+  <text x="70" y="45" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#F0F4EC" letter-spacing="0.5">
+    <tspan x="70" dy="0">Replit 估值半年翻三倍：</tspan>
+    <tspan x="70" dy="28">代码写完了，</tspan>
+    <tspan x="70" dy="28">接下来干什么？</tspan>
+  </text>
+
+  <!-- 副标题 -->
+  <text x="70" y="135" font-family="Arial, sans-serif" font-size="13" fill="#A8B89A">
+    Replit 刚拿到 90 亿美元估值，不再只是写代码平台
+  </text>
+
+  <!-- 标签胶囊 -->
+  <g>
+    <!-- 标签1: AI编程 -->
+    <rect x="70" y="240" width="75" height="24" rx="12" fill="#5A664F" opacity="0.4" />
+    <text x="107.5" y="256" font-family="Arial, sans-serif" font-size="12" fill="#D4DEC8" text-anchor="middle">AI编程</text>
+
+    <!-- 标签2: 知识工作 -->
+    <rect x="160" y="240" width="85" height="24" rx="12" fill="#5A664F" opacity="0.4" />
+    <text x="202.5" y="256" font-family="Arial, sans-serif" font-size="12" fill="#D4DEC8" text-anchor="middle">知识工作</text>
+
+    <!-- 标签3: 产品转向 -->
+    <rect x="260" y="240" width="80" height="24" rx="12" fill="#5A664F" opacity="0.4" />
+    <text x="300" y="256" font-family="Arial, sans-serif" font-size="12" fill="#D4DEC8" text-anchor="middle">产品转向</text>
+  </g>
+
+  <!-- 装饰元素：右下角代码符号和上升箭头 -->
+  <g opacity="0.2">
+    <!-- 代码括号 -->
+    <path d="M 520 190 L 510 200 L 520 210" stroke="#8B9A6D" stroke-width="2" fill="none" stroke-linecap="round" />
+    <path d="M 560 190 L 570 200 L 560 210" stroke="#8B9A6D" stroke-width="2" fill="none" stroke-linecap="round" />
+    
+    <!-- 上升箭头 -->
+    <path d="M 540 225 L 540 205 M 535 210 L 540 205 L 545 210" stroke="#A8B89A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- 底部色条 -->
+  <rect x="0" y="293" width="660" height="7" fill="url(#accentGradient)" />
+</svg>
