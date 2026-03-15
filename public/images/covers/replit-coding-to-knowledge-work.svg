@@ -1,74 +1,113 @@
-<svg viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="300" viewBox="0 0 660 300">
   <defs>
-    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#3F4A3C;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#1A2218;stop-opacity:1" />
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3F4A3C"/>
+      <stop offset="100%" stop-color="#1A2218"/>
     </linearGradient>
-    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#8B9A6D;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#6B7A4E;stop-opacity:1" />
+    <linearGradient id="accent" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8B9A6D"/>
+      <stop offset="100%" stop-color="#6B7A4E"/>
     </linearGradient>
-    <filter id="noise">
-      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" result="noise" />
-      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.5" />
-    </filter>
+    <linearGradient id="bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B9A6D"/>
+      <stop offset="100%" stop-color="#6B7A4E"/>
+    </linearGradient>
   </defs>
 
-  <!-- 背景 -->
-  <rect width="660" height="300" fill="url(#bgGradient)" />
+  <!-- Background -->
+  <rect width="660" height="300" fill="url(#bg)"/>
 
-  <!-- 纹理层 -->
-  <circle cx="120" cy="45" r="2" fill="#A8B89A" opacity="0.06" />
-  <circle cx="280" cy="78" r="1.5" fill="#A8B89A" opacity="0.06" />
-  <circle cx="420" cy="120" r="2.5" fill="#A8B89A" opacity="0.06" />
-  <circle cx="580" cy="95" r="1.8" fill="#A8B89A" opacity="0.06" />
-  <circle cx="150" cy="180" r="2" fill="#A8B89A" opacity="0.06" />
-  <circle cx="350" cy="210" r="1.5" fill="#A8B89A" opacity="0.06" />
-  <circle cx="520" cy="160" r="2.2" fill="#A8B89A" opacity="0.06" />
-  <circle cx="90" cy="250" r="1.8" fill="#A8B89A" opacity="0.06" />
-  <circle cx="480" cy="240" r="2" fill="#A8B89A" opacity="0.06" />
-  <circle cx="620" cy="200" r="1.5" fill="#A8B89A" opacity="0.06" />
-
-  <!-- 左侧强调线 -->
-  <rect x="50" y="0" width="4" height="300" fill="url(#accentGradient)" />
-
-  <!-- 标题 -->
-  <text x="70" y="45" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#F0F4EC" letter-spacing="0.5">
-    <tspan x="70" dy="0">Replit 估值半年翻三倍：</tspan>
-    <tspan x="70" dy="28">代码写完了，</tspan>
-    <tspan x="70" dy="28">接下来干什么？</tspan>
-  </text>
-
-  <!-- 副标题 -->
-  <text x="70" y="135" font-family="Arial, sans-serif" font-size="13" fill="#A8B89A">
-    Replit 刚拿到 90 亿美元估值，不再只是写代码平台
-  </text>
-
-  <!-- 标签胶囊 -->
-  <g>
-    <!-- 标签1: AI编程 -->
-    <rect x="70" y="240" width="75" height="24" rx="12" fill="#5A664F" opacity="0.4" />
-    <text x="107.5" y="256" font-family="Arial, sans-serif" font-size="12" fill="#D4DEC8" text-anchor="middle">AI编程</text>
-
-    <!-- 标签2: 知识工作 -->
-    <rect x="160" y="240" width="85" height="24" rx="12" fill="#5A664F" opacity="0.4" />
-    <text x="202.5" y="256" font-family="Arial, sans-serif" font-size="12" fill="#D4DEC8" text-anchor="middle">知识工作</text>
-
-    <!-- 标签3: 产品转向 -->
-    <rect x="260" y="240" width="80" height="24" rx="12" fill="#5A664F" opacity="0.4" />
-    <text x="300" y="256" font-family="Arial, sans-serif" font-size="12" fill="#D4DEC8" text-anchor="middle">产品转向</text>
+  <!-- Texture dots -->
+  <g fill="#A8B89A" opacity="0.06">
+    <circle cx="30" cy="20" r="1.5"/>
+    <circle cx="80" cy="45" r="1"/>
+    <circle cx="140" cy="15" r="1.5"/>
+    <circle cx="200" cy="60" r="1"/>
+    <circle cx="260" cy="30" r="1.5"/>
+    <circle cx="320" cy="55" r="1"/>
+    <circle cx="380" cy="20" r="1.5"/>
+    <circle cx="440" cy="40" r="1"/>
+    <circle cx="500" cy="18" r="1.5"/>
+    <circle cx="560" cy="50" r="1"/>
+    <circle cx="620" cy="25" r="1.5"/>
+    <circle cx="50" cy="90" r="1"/>
+    <circle cx="110" cy="110" r="1.5"/>
+    <circle cx="170" cy="80" r="1"/>
+    <circle cx="230" cy="120" r="1.5"/>
+    <circle cx="290" cy="95" r="1"/>
+    <circle cx="350" cy="115" r="1.5"/>
+    <circle cx="410" cy="85" r="1"/>
+    <circle cx="470" cy="105" r="1.5"/>
+    <circle cx="530" cy="75" r="1"/>
+    <circle cx="590" cy="100" r="1.5"/>
+    <circle cx="640" cy="88" r="1"/>
+    <circle cx="20" cy="160" r="1.5"/>
+    <circle cx="90" cy="175" r="1"/>
+    <circle cx="150" cy="155" r="1.5"/>
+    <circle cx="210" cy="185" r="1"/>
+    <circle cx="270" cy="165" r="1.5"/>
+    <circle cx="330" cy="180" r="1"/>
+    <circle cx="390" cy="150" r="1.5"/>
+    <circle cx="450" cy="170" r="1"/>
+    <circle cx="510" cy="160" r="1.5"/>
+    <circle cx="570" cy="185" r="1"/>
+    <circle cx="630" cy="155" r="1.5"/>
+    <circle cx="60" cy="220" r="1"/>
+    <circle cx="120" cy="240" r="1.5"/>
+    <circle cx="180" cy="215" r="1"/>
+    <circle cx="240" cy="250" r="1.5"/>
+    <circle cx="300" cy="230" r="1"/>
+    <circle cx="360" cy="245" r="1.5"/>
+    <circle cx="420" cy="210" r="1"/>
+    <circle cx="480" cy="235" r="1.5"/>
+    <circle cx="540" cy="220" r="1"/>
+    <circle cx="600" cy="248" r="1.5"/>
+    <circle cx="650" cy="225" r="1"/>
   </g>
 
-  <!-- 装饰元素：右下角代码符号和上升箭头 -->
-  <g opacity="0.2">
-    <!-- 代码括号 -->
-    <path d="M 520 190 L 510 200 L 520 210" stroke="#8B9A6D" stroke-width="2" fill="none" stroke-linecap="round" />
-    <path d="M 560 190 L 570 200 L 560 210" stroke="#8B9A6D" stroke-width="2" fill="none" stroke-linecap="round" />
-    
-    <!-- 上升箭头 -->
-    <path d="M 540 225 L 540 205 M 535 210 L 540 205 L 545 210" stroke="#A8B89A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Left accent line -->
+  <rect x="50" y="40" width="4" height="200" fill="url(#accent)" rx="2"/>
+
+  <!-- Title -->
+  <text font-family="'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-weight="700" font-size="22" fill="#F0F4EC">
+    <tspan x="70" dy="0" y="90">Replit 估值半年翻三倍：</tspan>
+    <tspan x="70" dy="32">Coding Agent 都在往上爬，</tspan>
+    <tspan x="70" dy="32">知识工作才是终局</tspan>
+  </text>
+
+  <!-- Subtitle -->
+  <text font-family="'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="13" fill="#A8B89A" x="70" y="200">
+    Replit 半年从 30 亿涨到 90 亿美元，所有 Coding Agent 都在接管知识工作
+  </text>
+
+  <!-- Tags -->
+  <rect x="70" y="228" width="80" height="24" rx="12" fill="#5A664F" opacity="0.4"/>
+  <text font-family="'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#D4DEC8" x="110" y="244" text-anchor="middle">Coding Agent</text>
+
+  <rect x="162" y="228" width="72" height="24" rx="12" fill="#5A664F" opacity="0.4"/>
+  <text font-family="'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#D4DEC8" x="198" y="244" text-anchor="middle">知识工作</text>
+
+  <rect x="246" y="228" width="72" height="24" rx="12" fill="#5A664F" opacity="0.4"/>
+  <text font-family="'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#D4DEC8" x="282" y="244" text-anchor="middle">行业辣评</text>
+
+  <!-- Decoration: upward arrow / growth chart (right bottom corner) -->
+  <g opacity="0.22" stroke="#8B9A6D" stroke-width="2" fill="none">
+    <!-- Simple trend line going up -->
+    <polyline points="510,265 535,245 558,252 582,228 605,210" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Arrow head -->
+    <polyline points="596,207 605,210 602,219" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Axis lines -->
+    <line x1="510" y1="270" x2="615" y2="270" stroke-linecap="round"/>
+    <line x1="510" y1="270" x2="510" y2="200" stroke-linecap="round"/>
+    <!-- Small dots on line -->
+    <circle cx="535" cy="245" r="2.5" fill="#8B9A6D"/>
+    <circle cx="558" cy="252" r="2.5" fill="#8B9A6D"/>
+    <circle cx="582" cy="228" r="2.5" fill="#8B9A6D"/>
   </g>
 
-  <!-- 底部色条 -->
-  <rect x="0" y="293" width="660" height="7" fill="url(#accentGradient)" />
+  <!-- Decoration: x3 label -->
+  <text font-family="'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="18" font-weight="700" fill="#8B9A6D" opacity="0.2" x="620" y="225" text-anchor="middle">×3</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="293" width="660" height="7" fill="url(#bar)" rx="0"/>
 </svg>
