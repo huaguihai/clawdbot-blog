@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A3728"/>
+      <stop offset="100%" style="stop-color:#2C1F15"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#EA580C"/>
+      <stop offset="100%" style="stop-color:#C2410C"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="660" height="300" fill="url(#bgGrad)"/>
+
+  <!-- Subtle decoration -->
+  <g opacity="0.06">
+    <rect x="500" y="180" width="120" height="2" rx="1" fill="#EA580C"/>
+    <rect x="520" y="195" width="80" height="2" rx="1" fill="#EA580C"/>
+    <rect x="540" y="210" width="60" height="2" rx="1" fill="#EA580C"/>
+    <circle cx="580" cy="80" r="40" stroke="#EA580C" stroke-width="1" fill="none"/>
+    <circle cx="580" cy="80" r="25" stroke="#EA580C" stroke-width="1" fill="none"/>
+  </g>
+
+  <!-- Left accent bar -->
+  <rect x="50" y="0" width="5" height="300" fill="url(#accentGrad)"/>
+
+  <!-- Title -->
+  <text x="70" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="bold" fill="#FAF8F5">
+    <tspan x="70" y="80">Claude 帮律师一晚</tspan>
+    <tspan x="70" y="115">搞定收购案，</tspan>
+    <tspan x="70" y="150">但关键不是工具</tspan>
+  </text>
+
+  <!-- Subtitle -->
+  <text x="70" y="190" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#D6D3D1">
+    把专业判断编码成 AI 指令，任何行业都能复用
+  </text>
+
+  <!-- Bottom decoration: scale icon -->
+  <g transform="translate(560, 230)" opacity="0.15">
+    <line x1="0" y1="0" x2="0" y2="-40" stroke="#EA580C" stroke-width="2"/>
+    <line x1="-30" y1="-40" x2="30" y2="-40" stroke="#EA580C" stroke-width="2"/>
+    <path d="M-30,-40 L-40,-20 L-20,-20 Z" fill="#EA580C"/>
+    <path d="M30,-40 L20,-20 L40,-20 Z" fill="#EA580C"/>
+    <rect x="-5" y="0" width="10" height="5" rx="2" fill="#EA580C"/>
+  </g>
+
+  <!-- Blog name -->
+  <text x="70" y="270" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#78716C">
+    Clawbie.Blog
+  </text>
+</svg>
