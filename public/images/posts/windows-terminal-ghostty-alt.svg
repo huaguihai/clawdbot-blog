@@ -1,0 +1,61 @@
+<svg viewBox="0 0 660 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#00000010"/>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="330" y="35" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="17" font-weight="bold" fill="#1C1917">Windows 终端美化四步流程</text>
+
+  <!-- Step 1: PowerShell 7 -->
+  <rect x="40" y="60" width="130" height="80" rx="10" fill="#FFFFFF" stroke="#2563EB" stroke-width="2" filter="url(#shadow)"/>
+  <circle cx="105" cy="85" r="16" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="105" y="91" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16">&#x2699;</text>
+  <text x="105" y="115" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#2563EB">PowerShell 7</text>
+  <text x="105" y="132" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#78716C">换引擎</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="170" y1="100" x2="200" y2="100" stroke="#CBD5E1" stroke-width="2"/>
+  <polygon points="200,95 210,100 200,105" fill="#CBD5E1"/>
+
+  <!-- Step 2: Nerd Font -->
+  <rect x="215" y="60" width="130" height="80" rx="10" fill="#FFFFFF" stroke="#EA580C" stroke-width="2" filter="url(#shadow)"/>
+  <circle cx="280" cy="85" r="16" fill="#FFF7ED" stroke="#EA580C" stroke-width="1.5"/>
+  <text x="280" y="91" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16">&#x1F520;</text>
+  <text x="280" y="115" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#EA580C">Nerd Font</text>
+  <text x="280" y="132" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#78716C">装图标字体</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="345" y1="100" x2="375" y2="100" stroke="#CBD5E1" stroke-width="2"/>
+  <polygon points="375,95 385,100 375,105" fill="#CBD5E1"/>
+
+  <!-- Step 3: Oh My Posh -->
+  <rect x="390" y="60" width="130" height="80" rx="10" fill="#FFFFFF" stroke="#16A34A" stroke-width="2" filter="url(#shadow)"/>
+  <circle cx="455" cy="85" r="16" fill="#F0FDF4" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="455" y="91" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16">&#x1F3A8;</text>
+  <text x="455" y="115" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#16A34A">Oh My Posh</text>
+  <text x="455" y="132" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#78716C">装美化引擎</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="455" y1="140" x2="455" y2="165" stroke="#CBD5E1" stroke-width="2"/>
+  <polygon points="450,165 455,175 460,165" fill="#CBD5E1"/>
+
+  <!-- Step 4: Profile Config (wider, spans across) -->
+  <rect x="215" y="180" width="305" height="80" rx="10" fill="#FFFFFF" stroke="#9333EA" stroke-width="2" filter="url(#shadow)"/>
+  <circle cx="255" cy="210" r="16" fill="#FAF5FF" stroke="#9333EA" stroke-width="1.5"/>
+  <text x="255" y="216" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16">&#x1F4DD;</text>
+  <text x="385" y="208" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#9333EA">Profile 配置</text>
+  <text x="385" y="228" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#78716C">UTF-8 + 主题 + 补全 + 快捷键速查</text>
+  <text x="385" y="248" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#16A34A">&#x2713; 复制粘贴即用</text>
+
+  <!-- Result box -->
+  <rect x="120" y="290" width="420" height="80" rx="12" fill="#F0FDF4" stroke="#16A34A" stroke-width="2" filter="url(#shadow)"/>
+  <text x="330" y="320" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="bold" fill="#16A34A">配置完成效果</text>
+  <text x="330" y="345" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#44403C">毛玻璃透明 · Nerd Font 图标 · 深色配色 · 智能补全 · 对齐速查表</text>
+  <text x="330" y="362" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#78716C">约 10 分钟 · 完全免费 · 接近 Ghostty 体验</text>
+
+  <!-- Arrow 4→result -->
+  <line x1="367" y1="260" x2="330" y2="290" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6 4"/>
+</svg>

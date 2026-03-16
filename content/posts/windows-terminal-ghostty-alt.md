@@ -28,6 +28,8 @@ Ghostty 的核心卖点是 GPU 渲染加极简审美。这两样 Windows Termina
 
 整套流程四步：换 PowerShell 引擎、装图标字体、装美化引擎、写配置文件。大概十分钟，不需要编译或手动改环境变量。
 
+![Windows 终端美化四步流程](/images/posts/windows-terminal-ghostty-alt.svg)
+
 **装 PowerShell 7 和 Oh My Posh**
 
 系统自带的 Windows PowerShell 是 5.1 版本，十年前的东西。PowerShell 7 是微软用 .NET 重写的跨平台版本，速度和兼容性都好一截。Oh My Posh 是跨平台的终端提示符美化引擎，负责渲染好看的命令行主题和图标。

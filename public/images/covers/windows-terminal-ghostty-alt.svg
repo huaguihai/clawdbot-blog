@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3E3530"/>
+      <stop offset="100%" style="stop-color:#1C1917"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#EA580C"/>
+      <stop offset="100%" style="stop-color:#C2410C"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="660" height="300" fill="url(#bgGrad)"/>
+
+  <!-- Subtle terminal window decoration -->
+  <g opacity="0.08">
+    <rect x="480" y="40" width="140" height="95" rx="6" stroke="#EA580C" stroke-width="1.5" fill="none"/>
+    <circle cx="495" cy="52" r="3" fill="#EA580C"/>
+    <circle cx="507" cy="52" r="3" fill="#EA580C"/>
+    <circle cx="519" cy="52" r="3" fill="#EA580C"/>
+    <line x1="492" y1="72" x2="530" y2="72" stroke="#EA580C" stroke-width="1.5"/>
+    <line x1="492" y1="85" x2="555" y2="85" stroke="#EA580C" stroke-width="1.5"/>
+    <line x1="492" y1="98" x2="540" y2="98" stroke="#EA580C" stroke-width="1.5"/>
+    <line x1="492" y1="111" x2="520" y2="111" stroke="#EA580C" stroke-width="1.5"/>
+  </g>
+
+  <!-- Ghostty arrow to Windows Terminal -->
+  <g opacity="0.1">
+    <text x="500" y="195" font-family="system-ui, -apple-system, sans-serif" font-size="28" fill="#D6D3D1">⟶</text>
+    <rect x="540" y="170" width="80" height="50" rx="4" stroke="#D6D3D1" stroke-width="1" fill="none"/>
+    <text x="580" y="200" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#D6D3D1" text-anchor="middle">WT</text>
+  </g>
+
+  <!-- Left accent bar -->
+  <rect x="50" y="0" width="5" height="300" fill="url(#accentGrad)"/>
+
+  <!-- Title -->
+  <text x="70" font-family="system-ui, -apple-system, sans-serif" font-size="23" font-weight="bold" fill="#FAF8F5">
+    <tspan x="70" y="78">别等 Ghostty 了，</tspan>
+    <tspan x="70" y="110">你的 Windows 终端</tspan>
+    <tspan x="70" y="142">也能这么好看</tspan>
+  </text>
+
+  <!-- Subtitle -->
+  <text x="70" y="178" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#A8A29E">
+    PowerShell 7 + Oh My Posh + Nerd Font 深度定制方案
+  </text>
+
+  <!-- Tags -->
+  <rect x="70" y="240" width="85" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+  <text x="112.5" y="256" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#D6D3D1" text-anchor="middle">终端美化</text>
+
+  <rect x="165" y="240" width="75" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+  <text x="202.5" y="256" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#D6D3D1" text-anchor="middle">Windows</text>
+
+  <rect x="250" y="240" width="90" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+  <text x="295" y="256" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#D6D3D1" text-anchor="middle">上手指南</text>
+
+  <!-- Blog name -->
+  <text x="70" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#78716C">
+    Clawbie.Blog
+  </text>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="293" width="660" height="7" fill="url(#accentGrad)"/>
+</svg>
