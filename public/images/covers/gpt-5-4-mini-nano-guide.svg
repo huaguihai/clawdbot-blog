@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="300" viewBox="0 0 660 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#44403C"/>
+      <stop offset="100%" stop-color="#1C1917"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <linearGradient id="accentV" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="660" height="300" fill="url(#bg)"/>
+
+  <!-- Texture dots -->
+  <g fill="#D6D3D1" opacity="0.06">
+    <circle cx="80" cy="30" r="1.5"/>
+    <circle cx="140" cy="55" r="1"/>
+    <circle cx="200" cy="20" r="1.5"/>
+    <circle cx="260" cy="45" r="1"/>
+    <circle cx="320" cy="25" r="1.5"/>
+    <circle cx="380" cy="60" r="1"/>
+    <circle cx="440" cy="15" r="1.5"/>
+    <circle cx="500" cy="40" r="1"/>
+    <circle cx="560" cy="22" r="1.5"/>
+    <circle cx="620" cy="50" r="1"/>
+    <circle cx="100" cy="90" r="1"/>
+    <circle cx="170" cy="110" r="1.5"/>
+    <circle cx="240" cy="80" r="1"/>
+    <circle cx="310" cy="100" r="1.5"/>
+    <circle cx="390" cy="85" r="1"/>
+    <circle cx="460" cy="115" r="1.5"/>
+    <circle cx="530" cy="75" r="1"/>
+    <circle cx="600" cy="95" r="1.5"/>
+    <circle cx="60" cy="150" r="1.5"/>
+    <circle cx="130" cy="170" r="1"/>
+    <circle cx="210" cy="145" r="1.5"/>
+    <circle cx="290" cy="165" r="1"/>
+    <circle cx="370" cy="155" r="1.5"/>
+    <circle cx="450" cy="175" r="1"/>
+    <circle cx="520" cy="140" r="1.5"/>
+    <circle cx="590" cy="160" r="1"/>
+    <circle cx="640" cy="130" r="1.5"/>
+    <circle cx="90" cy="210" r="1"/>
+    <circle cx="160" cy="230" r="1.5"/>
+    <circle cx="230" cy="200" r="1"/>
+    <circle cx="300" cy="220" r="1.5"/>
+    <circle cx="420" cy="205" r="1"/>
+    <circle cx="630" cy="215" r="1.5"/>
+    <circle cx="110" cy="265" r="1.5"/>
+    <circle cx="180" cy="280" r="1"/>
+    <circle cx="250" cy="255" r="1.5"/>
+    <circle cx="340" cy="270" r="1"/>
+    <circle cx="410" cy="260" r="1.5"/>
+    <circle cx="640" cy="270" r="1"/>
+  </g>
+
+  <!-- Left accent line -->
+  <rect x="50" y="60" width="4" height="180" fill="url(#accentV)" rx="2"/>
+
+  <!-- Title -->
+  <text font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-weight="700" font-size="22" fill="#FAFAF9">
+    <tspan x="70" dy="0" y="105">GPT-5.4 mini 和 nano 发布：</tspan>
+    <tspan x="70" dy="32">速度翻倍，价格打骨折，</tspan>
+    <tspan x="70" dy="32">但别急着全切过去</tspan>
+  </text>
+
+  <!-- Subtitle -->
+  <text font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" fill="#A8A29E">
+    <tspan x="70" y="205">OpenAI 发布 GPT-5.4 mini 和 nano，速度翻倍，价格降至四分之一</tspan>
+  </text>
+
+  <!-- Tags -->
+  <rect x="70" y="232" width="80" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+  <text x="110" y="248" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="12" fill="#D6D3D1" text-anchor="middle">上手指南</text>
+
+  <rect x="162" y="232" width="80" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+  <text x="202" y="248" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="12" fill="#D6D3D1" text-anchor="middle">小模型</text>
+
+  <rect x="254" y="232" width="80" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+  <text x="294" y="248" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="12" fill="#D6D3D1" text-anchor="middle">成本优化</text>
+
+  <!-- Decorative elements - bottom right corner only (x>=480, y>=180) -->
+  <!-- Circuit / chip icon suggestion: simple geometric lines -->
+  <g opacity="0.2" stroke="#EA580C" stroke-width="1.5" fill="none">
+    <!-- Chip outline -->
+    <rect x="510" y="195" width="50" height="50" rx="4"/>
+    <!-- Inner core -->
+    <rect x="522" y="207" width="26" height="26" rx="2"/>
+    <!-- Pins left -->
+    <line x1="510" y1="208" x2="500" y2="208"/>
+    <line x1="510" y1="220" x2="500" y2="220"/>
+    <line x1="510" y1="232" x2="500" y2="232"/>
+    <!-- Pins right -->
+    <line x1="560" y1="208" x2="570" y2="208"/>
+    <line x1="560" y1="220" x2="570" y2="220"/>
+    <line x1="560" y1="232" x2="570" y2="232"/>
+    <!-- Pins top -->
+    <line x1="522" y1="195" x2="522" y2="185"/>
+    <line x1="535" y1="195" x2="535" y2="185"/>
+    <line x1="548" y1="195" x2="548" y2="185"/>
+    <!-- Pins bottom -->
+    <line x1="522" y1="245" x2="522" y2="255"/>
+    <line x1="535" y1="245" x2="535" y2="255"/>
+    <line x1="548" y1="245" x2="548" y2="255"/>
+  </g>
+
+  <!-- Speed arrow decoration -->
+  <g opacity="0.18" stroke="#F59E0B" stroke-width="1.5" fill="none" stroke-linecap="round">
+    <line x1="590" y1="200" x2="630" y2="200"/>
+    <polyline points="622,193 630,200 622,207"/>
+    <line x1="590" y1="215" x2="625" y2="215"/>
+    <polyline points="617,208 625,215 617,222"/>
+    <line x1="590" y1="230" x2="618" y2="230"/>
+    <polyline points="610,223 618,230 610,237"/>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="293" width="660" height="7" fill="url(#accent)"/>
+</svg>
