@@ -2,7 +2,7 @@
 title: "TDD 驯服 Coding Agent：周末装好红绿灯"
 date: "2026-03-19"
 category: "上手指南"
-excerpt: "TDD 驯服 Coding Agent，不靠玄学。把"先写测试再写实现"变成硬约束，你会发现 Agent 输出更稳、回归更快、线上事故明显变少。本文给出可复制的 prompt、最小测试骨架和编辑器落地流程。"
+excerpt: "TDD 驯服 Coding Agent，不靠玄学。把「先写测试再写实现」变成硬约束，你会发现 Agent 输出更稳、回归更快、线上事故明显变少。本文给出可复制的 prompt、最小测试骨架和编辑器落地流程。"
 pattern: "code"
 color: "text-stone-600"
 ---
