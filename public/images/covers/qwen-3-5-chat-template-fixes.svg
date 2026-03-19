@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="300" viewBox="0 0 660 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#44403C"/>
+      <stop offset="100%" stop-color="#1C1917"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <linearGradient id="accentV" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="660" height="300" fill="url(#bg)"/>
+
+  <!-- Texture dots -->
+  <g fill="#D6D3D1" opacity="0.06">
+    <circle cx="90" cy="25" r="1.5"/>
+    <circle cx="140" cy="55" r="1"/>
+    <circle cx="200" cy="18" r="1.5"/>
+    <circle cx="260" cy="42" r="1"/>
+    <circle cx="310" cy="70" r="1.5"/>
+    <circle cx="370" cy="30" r="1"/>
+    <circle cx="420" cy="60" r="1.5"/>
+    <circle cx="480" cy="15" r="1"/>
+    <circle cx="530" cy="45" r="1.5"/>
+    <circle cx="590" cy="28" r="1"/>
+    <circle cx="620" cy="75" r="1.5"/>
+    <circle cx="75" cy="95" r="1"/>
+    <circle cx="130" cy="120" r="1.5"/>
+    <circle cx="185" cy="88" r="1"/>
+    <circle cx="240" cy="110" r="1.5"/>
+    <circle cx="295" cy="138" r="1"/>
+    <circle cx="350" cy="100" r="1.5"/>
+    <circle cx="405" cy="125" r="1"/>
+    <circle cx="460" cy="90" r="1.5"/>
+    <circle cx="515" cy="115" r="1"/>
+    <circle cx="570" cy="95" r="1.5"/>
+    <circle cx="630" cy="110" r="1"/>
+    <circle cx="100" cy="160" r="1.5"/>
+    <circle cx="155" cy="185" r="1"/>
+    <circle cx="210" cy="155" r="1.5"/>
+    <circle cx="265" cy="175" r="1"/>
+    <circle cx="320" cy="200" r="1.5"/>
+    <circle cx="375" cy="165" r="1"/>
+    <circle cx="55" cy="210" r="1.5"/>
+    <circle cx="165" cy="230" r="1"/>
+    <circle cx="225" cy="255" r="1.5"/>
+    <circle cx="280" cy="240" r="1"/>
+    <circle cx="335" cy="270" r="1.5"/>
+    <circle cx="390" cy="255" r="1"/>
+    <circle cx="445" cy="235" r="1.5"/>
+    <circle cx="640" cy="155" r="1"/>
+    <circle cx="610" cy="200" r="1.5"/>
+    <circle cx="580" cy="170" r="1"/>
+    <circle cx="650" cy="230" r="1.5"/>
+    <circle cx="500" cy="145" r="1"/>
+    <circle cx="545" cy="175" r="1.5"/>
+  </g>
+
+  <!-- Left accent line -->
+  <rect x="50" y="40" width="4" height="200" fill="url(#accentV)" rx="2"/>
+
+  <!-- Title -->
+  <text font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-weight="700" font-size="22" fill="#FAFAF9" letter-spacing="0.5">
+    <tspan x="70" dy="0" y="90">Qwen 3.5 的 Chat Template</tspan>
+    <tspan x="70" dy="32">有 21 个 Bug：修好它</tspan>
+    <tspan x="70" dy="32">Agent 才能真正跑起来</tspan>
+  </text>
+
+  <!-- Subtitle -->
+  <text x="70" y="194" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" fill="#A8A29E" letter-spacing="0.3">Qwen 3.5 35B 是目前本地跑 Agent 最热门的选择，但官方 Chat Template 存在已知缺陷</text>
+
+  <!-- Tags -->
+  <!-- Tag 1: Chat Template -->
+  <rect x="70" y="228" width="96" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+  <text x="118" y="244" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12" fill="#D6D3D1" text-anchor="middle">Chat Template</text>
+
+  <!-- Tag 2: Agent 工具调用 -->
+  <rect x="176" y="228" width="100" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+  <text x="226" y="244" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12" fill="#D6D3D1" text-anchor="middle">Agent 工具调用</text>
+
+  <!-- Tag 3: 上手指南 -->
+  <rect x="286" y="228" width="76" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+  <text x="324" y="244" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12" fill="#D6D3D1" text-anchor="middle">上手指南</text>
+
+  <!-- Decorative elements - bottom right corner only (x>=480, y>=180) -->
+  <!-- Bug/gear icon suggestion: hexagon + inner lines -->
+  <g opacity="0.22" transform="translate(530, 215)">
+    <!-- Hexagon outline -->
+    <polygon points="0,-32 27.7,-16 27.7,16 0,32 -27.7,16 -27.7,-16" fill="none" stroke="#EA580C" stroke-width="2"/>
+    <!-- Inner cross lines suggesting code/config -->
+    <line x1="-14" y1="0" x2="14" y2="0" stroke="#F59E0B" stroke-width="1.5"/>
+    <line x1="0" y1="-14" x2="0" y2="14" stroke="#F59E0B" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="6" fill="none" stroke="#EA580C" stroke-width="1.5"/>
+  </g>
+
+  <!-- Small bug/bracket decoration -->
+  <g opacity="0.18" transform="translate(600, 200)">
+    <!-- Code brackets -->
+    <text font-family="monospace" font-size="38" fill="#A8A29E" x="-12" y="14">{</text>
+    <text font-family="monospace" font-size="38" fill="#A8A29E" x="14" y="14">}</text>
+  </g>
+
+  <!-- Small dot cluster bottom right -->
+  <g opacity="0.2">
+    <circle cx="490" cy="245" r="3" fill="#EA580C"/>
+    <circle cx="502" cy="237" r="2" fill="#F59E0B"/>
+    <circle cx="498" cy="253" r="1.5" fill="#EA580C"/>
+  </g>
+
+  <!-- Bottom color bar -->
+  <rect x="0" y="293" width="660" height="7" fill="url(#accent)"/>
+</svg>
