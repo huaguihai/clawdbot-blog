@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="400" viewBox="0 0 660 400">
+  <!-- Background -->
+  <rect width="660" height="400" fill="#FAFAFA" rx="12"/>
+
+  <!-- Card shadow effect -->
+  <rect x="30" y="20" width="600" height="360" rx="10" fill="white" stroke="#E7E5E4" stroke-width="1"/>
+  <rect x="30" y="20" width="600" height="360" rx="10" fill="white" filter="url(#shadow)"/>
+
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-weight="700" font-size="18" fill="#1C1917" text-anchor="middle" x="330" y="55">Claude Code 工作台三层架构</text>
+
+  <!-- Subtitle -->
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="12" fill="#78716C" text-anchor="middle" x="330" y="75">搭一次，永久生效</text>
+
+  <!-- Layer 1: CLAUDE.md -->
+  <rect x="80" y="95" width="500" height="72" rx="8" fill="#FFF7ED" stroke="#EA580C" stroke-width="1.5"/>
+  <rect x="80" y="95" width="500" height="24" rx="8" fill="#EA580C"/>
+  <rect x="80" y="107" width="500" height="12" fill="#EA580C"/>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-weight="600" font-size="13" fill="white" x="100" y="113">CLAUDE.md — 项目说明书</text>
+
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="12" fill="#44403C">
+    <tspan x="100" y="140">技术栈 / 代码规范 / 工作流约束 / 常用命令</tspan>
+    <tspan x="100" dy="16" fill="#78716C">Agent 每次启动自动读取，不用重复回答"你们用什么框架"</tspan>
+  </text>
+
+  <!-- Arrow down -->
+  <g transform="translate(320, 170)">
+    <line x1="10" y1="0" x2="10" y2="20" stroke="#A8A29E" stroke-width="1.5"/>
+    <polyline points="4,14 10,22 16,14" fill="none" stroke="#A8A29E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Layer 2: SubAgents -->
+  <rect x="80" y="195" width="500" height="72" rx="8" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.5"/>
+  <rect x="80" y="195" width="500" height="24" rx="8" fill="#2563EB"/>
+  <rect x="80" y="207" width="500" height="12" fill="#2563EB"/>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-weight="600" font-size="13" fill="white" x="100" y="213">子代理 — 专项分工</text>
+
+  <!-- Sub-agent boxes -->
+  <rect x="100" y="230" width="130" height="28" rx="5" fill="white" stroke="#2563EB" stroke-width="1"/>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#2563EB" text-anchor="middle" x="165" y="248">explorer 探索</text>
+
+  <rect x="245" y="230" width="130" height="28" rx="5" fill="white" stroke="#2563EB" stroke-width="1"/>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#2563EB" text-anchor="middle" x="310" y="248">reviewer 审查</text>
+
+  <rect x="390" y="230" width="170" height="28" rx="5" fill="white" stroke="#93C5FD" stroke-width="1" stroke-dasharray="4 2"/>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#93C5FD" text-anchor="middle" x="475" y="248">自定义... 按需添加</text>
+
+  <!-- Arrow down -->
+  <g transform="translate(320, 270)">
+    <line x1="10" y1="0" x2="10" y2="20" stroke="#A8A29E" stroke-width="1.5"/>
+    <polyline points="4,14 10,22 16,14" fill="none" stroke="#A8A29E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Layer 3: Git Hooks -->
+  <rect x="80" y="295" width="500" height="72" rx="8" fill="#F0FDF4" stroke="#16A34A" stroke-width="1.5"/>
+  <rect x="80" y="295" width="500" height="24" rx="8" fill="#16A34A"/>
+  <rect x="80" y="307" width="500" height="12" fill="#16A34A"/>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-weight="600" font-size="13" fill="white" x="100" y="313">Git Hooks — 自动护栏</text>
+
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="12" fill="#44403C">
+    <tspan x="100" y="340">pre-commit: lint + test → 不通过就拒绝提交</tspan>
+    <tspan x="100" dy="16" fill="#78716C">不挑工具，Claude Code / Codex / Cursor 通用</tspan>
+  </text>
+</svg>
