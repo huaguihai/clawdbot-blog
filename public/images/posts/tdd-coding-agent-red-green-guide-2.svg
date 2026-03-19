@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <style>
+    .title{font:700 22px -apple-system,'Segoe UI',sans-serif;fill:#111827}
+    .subtitle{font:500 12px -apple-system,'Segoe UI',sans-serif;fill:#6B7280}
+    .cardTitle{font:700 18px -apple-system,'Segoe UI',sans-serif}
+    .body{font:500 12px -apple-system,'Segoe UI',sans-serif;fill:#374151}
+    .small{font:500 11px -apple-system,'Segoe UI',sans-serif;fill:#6B7280}
+    .guardTitle{font:700 16px -apple-system,'Segoe UI',sans-serif;fill:#D97706}
+    .guardText{font:500 12px -apple-system,'Segoe UI',sans-serif;fill:#374151}
+  </style>
+
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563EB"/>
+    </marker>
+  </defs>
+
+  <text x="40" y="42" class="title">具体到“红-绿-重构”，每天怎么用？</text>
+  <text x="40" y="64" class="subtitle">用 1 条失败测试驱动最小修改，再在绿灯后清理代码</text>
+
+  <rect x="36" y="98" width="180" height="170" rx="16" fill="#FFFFFF" stroke="#F3F4F6" filter="url(#shadow)"/>
+  <circle cx="72" cy="130" r="18" fill="#FEE2E2"/>
+  <text x="72" y="136" text-anchor="middle" style="font:700 16px -apple-system,'Segoe UI',sans-serif;fill:#DC2626">红</text>
+  <text x="100" y="136" class="cardTitle" fill="#DC2626">先失败</text>
+  <text x="54" y="165" class="body">• 挑最影响业务的路径</text>
+  <text x="54" y="187" class="body">• 先写 1 条失败测试</text>
+  <text x="54" y="209" class="body">• 测试名直说人话</text>
+  <rect x="54" y="224" width="144" height="28" rx="8" fill="#FEF2F2"/>
+  <text x="126" y="242" text-anchor="middle" class="small">test_refund_fails_after_settlement</text>
+
+  <rect x="240" y="98" width="180" height="170" rx="16" fill="#FFFFFF" stroke="#F3F4F6" filter="url(#shadow)"/>
+  <circle cx="276" cy="130" r="18" fill="#DCFCE7"/>
+  <text x="276" y="136" text-anchor="middle" style="font:700 16px -apple-system,'Segoe UI',sans-serif;fill:#16A34A">绿</text>
+  <text x="304" y="136" class="cardTitle" fill="#16A34A">最小通过</text>
+  <text x="258" y="165" class="body">• 限制 Agent 修改范围</text>
+  <text x="258" y="187" class="body">• 只改直接相关函数</text>
+  <text x="258" y="209" class="body">• 不动其他文件</text>
+  <rect x="258" y="224" width="144" height="28" rx="8" fill="#F0FDF4"/>
+  <text x="330" y="242" text-anchor="middle" class="small">目标：让当前测试刚好通过</text>
+
+  <rect x="444" y="98" width="180" height="170" rx="16" fill="#FFFFFF" stroke="#F3F4F6" filter="url(#shadow)"/>
+  <circle cx="480" cy="130" r="18" fill="#F3E8FF"/>
+  <text x="480" y="136" text-anchor="middle" style="font:700 14px -apple-system,'Segoe UI',sans-serif;fill:#9333EA">重</text>
+  <text x="508" y="136" class="cardTitle" fill="#9333EA">重构</text>
+  <text x="462" y="165" class="body">• 在绿灯基础上清理</text>
+  <text x="462" y="187" class="body">• 格式化、改名、小解耦</text>
+  <text x="462" y="209" class="body">• 重跑所有测试</text>
+  <rect x="462" y="224" width="144" height="28" rx="8" fill="#FAF5FF"/>
+  <text x="534" y="242" text-anchor="middle" class="small">目标：代码更干净且不破坏行为</text>
+
+  <line x1="216" y1="183" x2="240" y2="183" stroke="#2563EB" stroke-width="2.5" stroke-dasharray="7 6" marker-end="url(#arrowBlue)"/>
+  <line x1="420" y1="183" x2="444" y2="183" stroke="#2563EB" stroke-width="2.5" stroke-dasharray="7 6" marker-end="url(#arrowBlue)"/>
+
+  <rect x="78" y="304" width="504" height="64" rx="16" fill="#FFFFFF" stroke="#FDE68A" filter="url(#shadow)"/>
+  <circle cx="112" cy="336" r="14" fill="#FFF7ED" stroke="#D97706"/>
+  <text x="112" y="341" text-anchor="middle" style="font:700 14px -apple-system,'Segoe UI',sans-serif;fill:#D97706">!</text>
+  <text x="138" y="328" class="guardTitle">护栏提示</text>
+  <text x="138" y="348" class="guardText">若本次修改导致已有测试失败：先回滚到上一个绿灯版本，说明原因，再继续修改，避免“修一个、坏三个”。</text>
+</svg>
