@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <text x="36" y="42" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#111827">MiniMax M2.7：性能与成本平衡</text>
+  <text x="36" y="66" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#6B7280">核心结论：开源第一梯队，卖点不是绝对最强，而是高性价比</text>
+
+  <rect x="36" y="92" width="250" height="118" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="54" y="118" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#2563EB">官方能力指标</text>
+  <text x="54" y="145" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827">• SWE-Pro：56.22%</text>
+  <text x="54" y="169" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827">• Terminal Bench 2：57.0%</text>
+  <text x="54" y="193" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827">• OpenClaw 技能遵循率：97%</text>
+
+  <rect x="304" y="92" width="320" height="118" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="322" y="118" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#9333EA">第三方评测更保守</text>
+  <text x="322" y="145" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827">• Artificial Analysis 智能指数：50</text>
+  <text x="322" y="169" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827">• GDPval-AA Elo：1494</text>
+  <text x="322" y="193" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#16A34A">• 幻觉率较上一代 M2.5 明显下降</text>
+
+  <line x1="330" y1="240" x2="330" y2="338" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="330" y1="240" x2="230" y2="240" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="330" y1="240" x2="430" y2="240" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <rect x="58" y="250" width="172" height="90" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="76" y="276" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#EA580C">能力定位</text>
+  <text x="76" y="304" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827">Elo 1494</text>
+  <text x="76" y="326" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#6B7280">高于 GLM-5、MiMo-V2-Pro、Kimi K2.5</text>
+
+  <rect x="244" y="224" width="172" height="116" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="262" y="250" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#2563EB">M2.7 核心数据</text>
+  <text x="262" y="278" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827">智能指数：50</text>
+  <text x="262" y="300" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827">输入：$0.30/M</text>
+  <text x="262" y="322" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827">输出：$1.20/M</text>
+
+  <rect x="430" y="250" width="172" height="90" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="448" y="276" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#16A34A">成本优势</text>
+  <text x="448" y="304" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827">运行成本：$176</text>
+  <text x="448" y="326" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#6B7280">显著低于 GLM-5 的 $600+</text>
+
+  <rect x="186" y="350" width="288" height="32" rx="10" fill="#D97706" opacity="0.12"/>
+  <text x="330" y="371" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#D97706">结论：不是最强，但“性能 × 成本”平衡非常突出</text>
+</svg>

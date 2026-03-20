@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563EB"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#EA580C"/>
+    </marker>
+  </defs>
+
+  <text x="330" y="34" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#111827">“自我进化”是什么意思？</text>
+  <text x="330" y="58" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">M2.7 深度参与训练工作流，但仍由人主导关键决策</text>
+
+  <rect x="36" y="86" width="180" height="248" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="126" y="114" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#2563EB">M2.7 参与模块</text>
+  <text x="126" y="136" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">可处理约 30%–50% 训练工作流</text>
+
+  <rect x="56" y="154" width="140" height="26" rx="10" fill="#EFF6FF"/>
+  <text x="126" y="171" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#1E3A8A">收集反馈数据</text>
+
+  <rect x="56" y="188" width="140" height="26" rx="10" fill="#F5F3FF"/>
+  <text x="126" y="205" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#5B21B6">构建评估数据集</text>
+
+  <rect x="56" y="222" width="140" height="26" rx="10" fill="#ECFDF5"/>
+  <text x="126" y="239" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#166534">迭代优化 Skills/MCP</text>
+
+  <rect x="56" y="256" width="140" height="26" rx="10" fill="#FFF7ED"/>
+  <text x="126" y="273" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#9A3412">记忆系统优化</text>
+
+  <rect x="56" y="290" width="140" height="26" rx="10" fill="#FEF3C7"/>
+  <text x="126" y="307" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#92400E">架构设计辅助</text>
+
+  <rect x="254" y="104" width="152" height="212" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="330" y="132" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#111827">训练工作流</text>
+  <circle cx="330" cy="180" r="52" fill="none" stroke="#2563EB" stroke-width="12" stroke-dasharray="98 229" transform="rotate(-90 330 180)"/>
+  <circle cx="330" cy="180" r="52" fill="none" stroke="#E5E7EB" stroke-width="12"/>
+  <text x="330" y="174" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="26" font-weight="800" fill="#2563EB">30%-50%</text>
+  <text x="330" y="196" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">模型参与度</text>
+  <text x="330" y="235" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">关键词：参与，而非主导</text>
+  <text x="330" y="257" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">更像加速重复性任务</text>
+  <text x="330" y="275" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">而不是完全自主研究</text>
+
+  <rect x="444" y="86" width="180" height="248" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="534" y="114" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#EA580C">人类主导部分</text>
+  <text x="534" y="136" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">多数关键判断仍由人完成</text>
+
+  <rect x="464" y="156" width="140" height="36" rx="10" fill="#FFF7ED"/>
+  <text x="534" y="171" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#9A3412">目标设定</text>
+  <text x="534" y="185" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6B7280">决定训练方向与边界</text>
+
+  <rect x="464" y="202" width="140" height="36" rx="10" fill="#FFF7ED"/>
+  <text x="534" y="217" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#9A3412">关键决策</text>
+  <text x="534" y="231" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6B7280">筛选方案与取舍</text>
+
+  <rect x="464" y="248" width="140" height="36" rx="10" fill="#FFF7ED"/>
+  <text x="534" y="263" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#9A3412">效果验证</text>
+  <text x="534" y="277" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6B7280">是否真能自我优化待观察</text>
+
+  <path d="M216 210 C232 210, 238 210, 254 210" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#arrowBlue)"/>
+  <path d="M406 210 C422 210, 428 210, 444 210" fill="none" stroke="#EA580C" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#arrowOrange)"/>
+
+  <rect x="194" y="346" width="272" height="34" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="330" y="367" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#111827">核心判断：当前更像“人类主导 + 模型深度协作”的训练模式</text>
+</svg>
