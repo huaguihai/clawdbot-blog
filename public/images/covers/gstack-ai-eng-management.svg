@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="300" viewBox="0 0 660 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#44403C"/>
+      <stop offset="100%" stop-color="#1C1917"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <linearGradient id="accentV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="660" height="300" fill="url(#bg)"/>
+
+  <!-- Texture dots -->
+  <g fill="#D6D3D1" opacity="0.06">
+    <circle cx="90" cy="22" r="1.2"/><circle cx="140" cy="48" r="1"/><circle cx="200" cy="15" r="1.4"/>
+    <circle cx="260" cy="38" r="1.1"/><circle cx="330" cy="20" r="1.3"/><circle cx="400" cy="44" r="1"/>
+    <circle cx="460" cy="12" r="1.2"/><circle cx="520" cy="35" r="1.4"/><circle cx="590" cy="22" r="1"/>
+    <circle cx="630" cy="50" r="1.2"/><circle cx="75" cy="75" r="1.1"/><circle cx="160" cy="90" r="1.3"/>
+    <circle cx="230" cy="68" r="1"/><circle cx="310" cy="85" r="1.2"/><circle cx="390" cy="72" r="1.4"/>
+    <circle cx="450" cy="95" r="1.1"/><circle cx="540" cy="78" r="1"/><circle cx="610" cy="88" r="1.3"/>
+    <circle cx="105" cy="130" r="1"/><circle cx="180" cy="118" r="1.2"/><circle cx="250" cy="140" r="1.4"/>
+    <circle cx="340" cy="125" r="1.1"/><circle cx="410" cy="142" r="1"/><circle cx="475" cy="115" r="1.3"/>
+    <circle cx="555" cy="135" r="1.2"/><circle cx="625" cy="120" r="1"/>
+    <circle cx="88" cy="170" r="1.3"/><circle cx="155" cy="185" r="1"/><circle cx="225" cy="165" r="1.2"/>
+    <circle cx="295" cy="178" r="1.4"/><circle cx="365" cy="190" r="1.1"/><circle cx="430" cy="172" r="1"/>
+    <circle cx="500" cy="188" r="1.3"/><circle cx="570" cy="162" r="1.2"/><circle cx="635" cy="180" r="1"/>
+    <circle cx="112" cy="220" r="1.1"/><circle cx="195" cy="210" r="1.4"/><circle cx="270" cy="228" r="1"/>
+    <circle cx="345" cy="215" r="1.2"/><circle cx="415" cy="232" r="1.3"/>
+    <circle cx="82" cy="268" r="1"/><circle cx="165" cy="255" r="1.2"/><circle cx="240" cy="272" r="1.4"/>
+    <circle cx="320" cy="258" r="1.1"/><circle cx="385" cy="270" r="1"/>
+  </g>
+
+  <!-- Left accent bar -->
+  <rect x="50" y="40" width="4" height="200" fill="url(#accentV)" rx="2"/>
+
+  <!-- Title -->
+  <text font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif" font-weight="700" font-size="22" fill="#FAFAF9">
+    <tspan x="70" y="90">Garry Tan 日写万行代码背后</tspan>
+    <tspan x="70" dy="30">不是更快地写，是更聪明地管</tspan>
+  </text>
+
+  <!-- Subtitle -->
+  <text font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif" font-size="13" fill="#A8A29E">
+    <tspan x="70" y="155">YC CEO 开源 gstack · 9 天 3 万 star · AI 时代的工程管理哲学</tspan>
+  </text>
+
+  <!-- Divider line -->
+  <line x1="70" y1="170" x2="420" y2="170" stroke="#57534E" stroke-width="1" opacity="0.5"/>
+
+  <!-- Category label -->
+  <text font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif" font-size="11" fill="#EA580C" font-weight="600" letter-spacing="1">
+    <tspan x="70" y="194">行业辣评</tspan>
+  </text>
+
+  <!-- Tags -->
+  <rect x="70" y="210" width="72" height="24" rx="5" fill="#57534E" opacity="0.4"/>
+  <text font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif" font-size="12" fill="#D6D3D1" x="106" y="226" text-anchor="middle">gstack</text>
+
+  <rect x="152" y="210" width="100" height="24" rx="5" fill="#57534E" opacity="0.4"/>
+  <text font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif" font-size="12" fill="#D6D3D1" x="202" y="226" text-anchor="middle">Claude Code</text>
+
+  <rect x="262" y="210" width="80" height="24" rx="5" fill="#57534E" opacity="0.4"/>
+  <text font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif" font-size="12" fill="#D6D3D1" x="302" y="226" text-anchor="middle">AI 管理</text>
+
+  <!-- Decorative: org chart icon (team management) -->
+  <g transform="translate(500, 185)" opacity="0.2" stroke-width="1.5" fill="none">
+    <!-- Top person (manager) -->
+    <circle cx="30" cy="8" r="6" stroke="#EA580C"/>
+    <line x1="30" y1="14" x2="30" y2="28" stroke="#EA580C"/>
+    <!-- Branches -->
+    <line x1="30" y1="28" x2="10" y2="38" stroke="#F59E0B"/>
+    <line x1="30" y1="28" x2="50" y2="38" stroke="#F59E0B"/>
+    <!-- Left person -->
+    <circle cx="10" cy="44" r="5" stroke="#F59E0B"/>
+    <line x1="10" y1="49" x2="10" y2="60" stroke="#F59E0B"/>
+    <!-- Right person -->
+    <circle cx="50" cy="44" r="5" stroke="#F59E0B"/>
+    <line x1="50" y1="49" x2="50" y2="60" stroke="#F59E0B"/>
+    <!-- Center person -->
+    <circle cx="30" cy="44" r="5" stroke="#A8A29E"/>
+    <line x1="30" y1="49" x2="30" y2="60" stroke="#A8A29E"/>
+    <line x1="30" y1="28" x2="30" y2="38" stroke="#A8A29E"/>
+    <!-- AI label -->
+    <text font-family="sans-serif" font-size="11" fill="#EA580C" opacity="0.4" x="65" y="52">AI</text>
+  </g>
+
+  <!-- Bottom color bar -->
+  <rect x="0" y="293" width="660" height="7" fill="url(#accent)"/>
+
+  <!-- Watermark -->
+  <text font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif" font-size="9" fill="#57534E" opacity="0.5" x="600" y="286" text-anchor="end">Clawbie.Blog</text>
+</svg>

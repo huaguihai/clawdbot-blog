@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="400" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="660" height="400" fill="#FAFAFA" rx="8"/>
+
+  <!-- Title -->
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="16" font-weight="700" fill="#1C1917" x="330" y="36" text-anchor="middle">两种 AI 编程思维模型</text>
+
+  <!-- Left card: Vibe Coding -->
+  <rect x="30" y="55" width="285" height="310" rx="10" fill="#FFF" filter="url(#shadow)"/>
+  <!-- Header bar -->
+  <rect x="30" y="55" width="285" height="38" rx="10" fill="#F87171"/>
+  <rect x="30" y="75" width="285" height="18" fill="#F87171"/>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#FFF" x="172" y="79" text-anchor="middle">Vibe Coding</text>
+
+  <!-- Vibe coding mental model -->
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#78716C" x="172" y="112" text-anchor="middle">思维模型：AI = 更快的笔</text>
+
+  <!-- Flow: idea → AI writes → ship -->
+  <rect x="60" y="125" width="225" height="30" rx="6" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="12" fill="#44403C" x="172" y="144" text-anchor="middle">想法 → 让 AI 写 → 直接上线</text>
+
+  <!-- Problems list -->
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#78716C" x="55" y="180">问题：</text>
+
+  <g font-family="-apple-system,'Segoe UI',sans-serif" font-size="12" fill="#44403C">
+    <text x="72" y="202">&#x2718;  没有 Code Review，埋隐患</text>
+    <text x="72" y="224">&#x2718;  没有测试，功能回归</text>
+    <text x="72" y="246">&#x2718;  没有流程，发布靠运气</text>
+    <text x="72" y="268">&#x2718;  简单项目能跑，复杂项目翻车</text>
+  </g>
+
+  <!-- Verdict -->
+  <rect x="55" y="290" width="220" height="28" rx="6" fill="#FEF2F2"/>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="12" font-weight="600" fill="#DC2626" x="165" y="309" text-anchor="middle">天花板：项目复杂度</text>
+
+  <!-- Verdict line -->
+  <line x1="55" y1="335" x2="275" y2="335" stroke="#E7E5E4" stroke-width="1"/>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#78716C" x="172" y="352" text-anchor="middle">关注点：速度</text>
+
+  <!-- Right card: AI Team Management -->
+  <rect x="345" y="55" width="285" height="310" rx="10" fill="#FFF" filter="url(#shadow)"/>
+  <!-- Header bar -->
+  <rect x="345" y="55" width="285" height="38" rx="10" fill="#2563EB"/>
+  <rect x="345" y="75" width="285" height="18" fill="#2563EB"/>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#FFF" x="487" y="79" text-anchor="middle">AI 团队管理（gstack）</text>
+
+  <!-- Mental model -->
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#78716C" x="487" y="112" text-anchor="middle">思维模型：AI = 初级工程师团队</text>
+
+  <!-- Flow: plan → build → review → test → ship -->
+  <rect x="375" y="125" width="225" height="30" rx="6" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#44403C" x="487" y="144" text-anchor="middle">规划 → 编写 → 审查 → 测试 → 发布</text>
+
+  <!-- Benefits list -->
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#78716C" x="370" y="180">优势：</text>
+
+  <g font-family="-apple-system,'Segoe UI',sans-serif" font-size="12" fill="#44403C">
+    <text x="387" y="202">&#x2714;  /review 自动审查每次提交</text>
+    <text x="387" y="224">&#x2714;  /qa 真实浏览器测试</text>
+    <text x="387" y="246">&#x2714;  /ship 标准化发布流程</text>
+    <text x="387" y="268">&#x2714;  15 个角色，并行 Sprint</text>
+  </g>
+
+  <!-- Verdict -->
+  <rect x="370" y="290" width="220" height="28" rx="6" fill="#EFF6FF"/>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="12" font-weight="600" fill="#2563EB" x="480" y="309" text-anchor="middle">天花板：管理能力</text>
+
+  <!-- Verdict line -->
+  <line x1="370" y1="335" x2="590" y2="335" stroke="#E7E5E4" stroke-width="1"/>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#78716C" x="487" y="352" text-anchor="middle">关注点：质量 + 治理</text>
+
+  <!-- VS divider -->
+  <circle cx="330" cy="210" r="18" fill="#F5F5F4" stroke="#E7E5E4" stroke-width="1"/>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="13" font-weight="700" fill="#78716C" x="330" y="215" text-anchor="middle">VS</text>
+
+  <!-- Bottom insight -->
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#78716C" x="330" y="390" text-anchor="middle">工具会变，但「AI 需要被管理」这个认知不会过时</text>
+</svg>
