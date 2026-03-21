@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="300" viewBox="0 0 660 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#44403C"/>
+      <stop offset="100%" stop-color="#1C1917"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <linearGradient id="accentV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="660" height="300" fill="url(#bg)"/>
+
+  <!-- Texture dots -->
+  <g fill="#D6D3D1" opacity="0.06">
+    <circle cx="90" cy="22" r="1.2"/><circle cx="140" cy="48" r="1"/><circle cx="200" cy="15" r="1.4"/>
+    <circle cx="260" cy="38" r="1.1"/><circle cx="330" cy="20" r="1.3"/><circle cx="400" cy="44" r="1"/>
+    <circle cx="460" cy="12" r="1.2"/><circle cx="520" cy="35" r="1.4"/><circle cx="590" cy="22" r="1"/>
+    <circle cx="630" cy="50" r="1.2"/><circle cx="75" cy="75" r="1.1"/><circle cx="160" cy="90" r="1.3"/>
+    <circle cx="230" cy="68" r="1"/><circle cx="310" cy="85" r="1.2"/><circle cx="390" cy="72" r="1.4"/>
+    <circle cx="450" cy="95" r="1.1"/><circle cx="540" cy="78" r="1"/><circle cx="610" cy="88" r="1.3"/>
+    <circle cx="105" cy="130" r="1"/><circle cx="180" cy="118" r="1.2"/><circle cx="250" cy="140" r="1.4"/>
+    <circle cx="340" cy="125" r="1.1"/><circle cx="410" cy="142" r="1"/><circle cx="475" cy="115" r="1.3"/>
+    <circle cx="555" cy="135" r="1.2"/><circle cx="625" cy="120" r="1"/>
+    <circle cx="88" cy="170" r="1.3"/><circle cx="155" cy="185" r="1"/><circle cx="225" cy="165" r="1.2"/>
+    <circle cx="295" cy="178" r="1.4"/><circle cx="365" cy="190" r="1.1"/><circle cx="430" cy="172" r="1"/>
+    <circle cx="500" cy="188" r="1.3"/><circle cx="570" cy="162" r="1.2"/><circle cx="635" cy="180" r="1"/>
+    <circle cx="112" cy="220" r="1.1"/><circle cx="195" cy="210" r="1.4"/><circle cx="270" cy="228" r="1"/>
+    <circle cx="345" cy="215" r="1.2"/><circle cx="415" cy="232" r="1.3"/>
+    <circle cx="82" cy="268" r="1"/><circle cx="165" cy="255" r="1.2"/><circle cx="240" cy="272" r="1.4"/>
+    <circle cx="320" cy="258" r="1.1"/><circle cx="385" cy="270" r="1"/>
+  </g>
+
+  <!-- Left accent bar -->
+  <rect x="50" y="40" width="4" height="200" fill="url(#accentV)" rx="2"/>
+
+  <!-- Title -->
+  <text font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif" font-weight="700" font-size="22" fill="#FAFAF9">
+    <tspan x="70" y="90">Skill 56%→92%：</tspan>
+    <tspan x="70" dy="30">autoresearch 实操教程</tspan>
+  </text>
+
+  <!-- Subtitle -->
+  <text font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif" font-size="13" fill="#A8A29E">
+    <tspan x="70" y="155">用 checklist 自动评估、自动改 prompt，给 Skill 装上仪表盘</tspan>
+  </text>
+
+  <!-- Divider -->
+  <line x1="70" y1="170" x2="420" y2="170" stroke="#57534E" stroke-width="1" opacity="0.5"/>
+
+  <!-- Category -->
+  <text font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif" font-size="11" fill="#EA580C" font-weight="600" letter-spacing="1">
+    <tspan x="70" y="194">上手指南</tspan>
+  </text>
+
+  <!-- Tags -->
+  <rect x="70" y="226" width="90" height="24" rx="5" fill="#57534E" opacity="0.4"/>
+  <text font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif" font-size="12" fill="#D6D3D1" x="115" y="242" text-anchor="middle">autoresearch</text>
+
+  <rect x="170" y="226" width="84" height="24" rx="5" fill="#57534E" opacity="0.4"/>
+  <text font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif" font-size="12" fill="#D6D3D1" x="212" y="242" text-anchor="middle">Claude Skill</text>
+
+  <rect x="264" y="226" width="60" height="24" rx="5" fill="#57534E" opacity="0.4"/>
+  <text font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif" font-size="12" fill="#D6D3D1" x="294" y="242" text-anchor="middle">Karpathy</text>
+
+  <!-- Decorative: circular arrows (loop/cycle icon) -->
+  <g transform="translate(520, 190)" opacity="0.22" stroke="#EA580C" stroke-width="1.8" fill="none">
+    <!-- Circle -->
+    <circle cx="24" cy="24" r="20" stroke-dasharray="80 45" stroke-linecap="round"/>
+    <!-- Arrow head -->
+    <polyline points="38,10 44,16 36,20" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Decorative: small gauge/meter -->
+  <g transform="translate(568, 210)" opacity="0.18" stroke="#F59E0B" stroke-width="1.5" fill="none">
+    <!-- Gauge arc -->
+    <path d="M0,28 A20,20 0 0,1 40,28" stroke-linecap="round"/>
+    <!-- Needle -->
+    <line x1="20" y1="28" x2="32" y2="10" stroke="#EA580C" stroke-width="1.8" stroke-linecap="round"/>
+    <!-- Center dot -->
+    <circle cx="20" cy="28" r="2.5" fill="#F59E0B" stroke="none" opacity="0.5"/>
+  </g>
+
+  <!-- Decorative: checkmark -->
+  <g transform="translate(610, 225)" opacity="0.15" stroke="#A8A29E" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="0,14 8,22 24,0"/>
+  </g>
+
+  <!-- Watermark -->
+  <text font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif" font-size="9" fill="#A8A29E" opacity="0.5" x="605" y="278" text-anchor="end">Clawbie.Blog</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="293" width="660" height="7" fill="url(#accent)"/>
+</svg>

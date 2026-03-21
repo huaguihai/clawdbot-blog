@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="400" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="660" height="400" fill="#FAFAFA" rx="8"/>
+
+  <!-- Title -->
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="16" font-weight="700" fill="#1C1917" x="330" y="36" text-anchor="middle">autoresearch 循环：自动评估 → 改 prompt → 保留或撤销</text>
+
+  <!-- Step 1: Run Skill -->
+  <rect x="200" y="56" width="260" height="48" rx="10" fill="#fff" filter="url(#shadow)" stroke="#E7E5E4" stroke-width="1"/>
+  <circle cx="228" cy="80" r="12" fill="#2563EB" opacity="0.12"/>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="13" font-weight="700" fill="#2563EB" x="228" y="84" text-anchor="middle">1</text>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="13" font-weight="600" fill="#1C1917" x="250" y="76">运行 Skill</text>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#78716C" x="250" y="92">用测试输入跑一次，拿到输出</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="330" y1="104" x2="330" y2="124" stroke="#E7E5E4" stroke-width="2"/>
+  <polygon points="325,120 330,130 335,120" fill="#E7E5E4"/>
+
+  <!-- Step 2: Score with Checklist -->
+  <rect x="200" y="132" width="260" height="48" rx="10" fill="#fff" filter="url(#shadow)" stroke="#E7E5E4" stroke-width="1"/>
+  <circle cx="228" cy="156" r="12" fill="#EA580C" opacity="0.12"/>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="13" font-weight="700" fill="#EA580C" x="228" y="160" text-anchor="middle">2</text>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="13" font-weight="600" fill="#1C1917" x="250" y="152">用 Checklist 打分</text>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#78716C" x="250" y="168">每条是/否，算出通过率</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="330" y1="180" x2="330" y2="200" stroke="#E7E5E4" stroke-width="2"/>
+  <polygon points="325,196 330,206 335,196" fill="#E7E5E4"/>
+
+  <!-- Step 3: Modify Prompt -->
+  <rect x="200" y="208" width="260" height="48" rx="10" fill="#fff" filter="url(#shadow)" stroke="#E7E5E4" stroke-width="1"/>
+  <circle cx="228" cy="232" r="12" fill="#9333EA" opacity="0.12"/>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="13" font-weight="700" fill="#9333EA" x="228" y="236" text-anchor="middle">3</text>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="13" font-weight="600" fill="#1C1917" x="250" y="228">改一处 Prompt</text>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#78716C" x="250" y="244">只改最薄弱项对应的地方</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="330" y1="256" x2="330" y2="276" stroke="#E7E5E4" stroke-width="2"/>
+  <polygon points="325,272 330,282 335,272" fill="#E7E5E4"/>
+
+  <!-- Step 4: Re-score & Decide -->
+  <rect x="200" y="284" width="260" height="48" rx="10" fill="#fff" filter="url(#shadow)" stroke="#E7E5E4" stroke-width="1"/>
+  <circle cx="228" cy="308" r="12" fill="#16A34A" opacity="0.12"/>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="13" font-weight="700" fill="#16A34A" x="228" y="312" text-anchor="middle">4</text>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="13" font-weight="600" fill="#1C1917" x="250" y="304">重新打分 → 决定</text>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#78716C" x="250" y="320">分数升 → 保留 ｜ 分数降 → 撤销</text>
+
+  <!-- Loop arrow: from Step 4 back up to Step 1 -->
+  <path d="M460,308 L500,308 Q520,308 520,288 L520,80 Q520,60 500,60 L460,60"
+        fill="none" stroke="#EA580C" stroke-width="2" stroke-dasharray="6 3" opacity="0.5"/>
+  <polygon points="464,55 454,60 464,65" fill="#EA580C" opacity="0.5"/>
+
+  <!-- Loop label -->
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" font-weight="600" fill="#EA580C" x="530" y="190" opacity="0.7" transform="rotate(90,530,190)">循环直到 ≥95%</text>
+
+  <!-- Score indicators on left -->
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="12" font-weight="700" fill="#EA580C" x="160" y="160" text-anchor="end">56%</text>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="10" fill="#78716C" x="160" y="174" text-anchor="end">起始分</text>
+
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="12" font-weight="700" fill="#16A34A" x="160" y="312" text-anchor="end">92%</text>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="10" fill="#78716C" x="160" y="326" text-anchor="end">目标分</text>
+
+  <!-- Dotted line connecting scores -->
+  <line x1="165" y1="178" x2="165" y2="300" stroke="#E7E5E4" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <!-- Footer note -->
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="10" fill="#A8A29E" x="330" y="380" text-anchor="middle">每轮只改一处，精确归因 ｜ 改坏了就撤销，不会越改越差</text>
+</svg>
