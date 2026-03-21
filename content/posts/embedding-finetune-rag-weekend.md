@@ -2,7 +2,7 @@
 title: "Embedding 微调上手：让 RAG 不再答非所问"
 date: "2026-03-21"
 category: "上手指南"
-excerpt: "Embedding 微调是把检索质量从"像别人家说话"拉回"像你家人说话"的最短路径。周末用 Hugging Face + sentence-transformers 做轻量监督对比学习，产线一键用 TEI 部署，立刻让 RAG 命中更稳。"
+excerpt: "Embedding 微调是把检索质量从「像别人家说话」拉回「像你家人说话」的最短路径。周末用 Hugging Face + sentence-transformers 做轻量监督对比学习，产线一键用 TEI 部署，立刻让 RAG 命中更稳。"
 pattern: "code"
 color: "text-stone-600"
 ---
