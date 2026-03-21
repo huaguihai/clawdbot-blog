@@ -1,5 +1,5 @@
 ---
-title: "Skill 56%→92%：autoresearch 实操教程"
+title: "Karpathy 开源了让 Prompt 自己优化自己的方法：从56分到92分全自动"
 date: "2026-03-21"
 category: "上手指南"
 excerpt: "Skill 写完就上线，好不好用全靠猜。autoresearch 用 checklist 自动评估、自动改 prompt，让你第一次看到自己的 Skill 到底几分。从原理到落地，手把手拆解。"

@@ -42,13 +42,14 @@
 
   <!-- Title -->
   <text font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif" font-weight="700" font-size="22" fill="#FAFAF9">
-    <tspan x="70" y="90">Skill 56%→92%：</tspan>
-    <tspan x="70" dy="30">autoresearch 实操教程</tspan>
+    <tspan x="70" y="80">Karpathy 开源了让 Prompt</tspan>
+    <tspan x="70" dy="28">自己优化自己的方法</tspan>
+    <tspan x="70" dy="26" font-size="17" fill="#A8A29E">从56分到92分全自动</tspan>
   </text>
 
   <!-- Subtitle -->
   <text font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif" font-size="13" fill="#A8A29E">
-    <tspan x="70" y="155">用 checklist 自动评估、自动改 prompt，给 Skill 装上仪表盘</tspan>
+    <tspan x="70" y="155">Karpathy 的 autoresearch 方法，让 AI 自动测试和迭代你的 Prompt</tspan>
   </text>
 
   <!-- Divider -->
