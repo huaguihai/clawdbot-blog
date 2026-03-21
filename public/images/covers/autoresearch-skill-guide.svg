@@ -42,9 +42,9 @@
 
   <!-- Title -->
   <text font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif" font-weight="700" font-size="22" fill="#FAFAF9">
-    <tspan x="70" y="80">Karpathy 开源了让 Prompt</tspan>
-    <tspan x="70" dy="28">自己优化自己的方法</tspan>
-    <tspan x="70" dy="26" font-size="17" fill="#A8A29E">从56分到92分全自动</tspan>
+    <tspan x="70" y="80">Karpathy 发了个东西，能让 AI</tspan>
+    <tspan x="70" dy="28">自己发现 Prompt 哪里烂、自己改好</tspan>
+    <tspan x="70" dy="26" font-size="17" fill="#A8A29E">autoresearch 方法实操拆解</tspan>
   </text>
 
   <!-- Subtitle -->
