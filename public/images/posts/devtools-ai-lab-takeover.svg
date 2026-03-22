@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="400" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="660" height="400" fill="#FAFAFA"/>
+
+  <!-- Title -->
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="16" font-weight="700" fill="#1C1917" x="330" y="35" text-anchor="middle">你的开发工具信任链</text>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#78716C" x="330" y="52" text-anchor="middle">每一环都可能在你不知道的情况下被替换</text>
+
+  <!-- Layer 1: 你 -->
+  <rect x="200" y="70" width="260" height="44" rx="10" fill="#FFFFFF" filter="url(#shadow)" stroke="#E7E5E4"/>
+  <circle cx="224" cy="92" r="10" fill="#16A34A" opacity="0.15"/>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="13" fill="#16A34A" font-weight="700" x="224" y="96" text-anchor="middle">你</text>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="13" fill="#1C1917" font-weight="600" x="248" y="89">开发者</text>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#78716C" x="248" y="104">唯一你能完全控制的环节</text>
+  <!-- Green checkmark -->
+  <g transform="translate(430, 82)" stroke="#16A34A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="0,8 5,14 14,2"/>
+  </g>
+
+  <!-- Arrow 1 -->
+  <line x1="330" y1="114" x2="330" y2="132" stroke="#E7E5E4" stroke-width="2"/>
+  <polygon points="326,130 330,138 334,130" fill="#E7E5E4"/>
+
+  <!-- Layer 2: IDE -->
+  <rect x="200" y="140" width="260" height="44" rx="10" fill="#FFFFFF" filter="url(#shadow)" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="6 3"/>
+  <circle cx="224" cy="162" r="10" fill="#F59E0B" opacity="0.15"/>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#F59E0B" font-weight="700" x="224" y="166" text-anchor="middle">⚠</text>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="13" fill="#1C1917" font-weight="600" x="248" y="159">IDE / 编辑器</text>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#78716C" x="248" y="174">Cursor → 底层已换成 Kimi k2.5</text>
+
+  <!-- Arrow 2 -->
+  <line x1="330" y1="184" x2="330" y2="202" stroke="#E7E5E4" stroke-width="2"/>
+  <polygon points="326,200 330,208 334,200" fill="#E7E5E4"/>
+
+  <!-- Layer 3: 模型 -->
+  <rect x="200" y="210" width="260" height="44" rx="10" fill="#FFFFFF" filter="url(#shadow)" stroke="#EA580C" stroke-width="1.5" stroke-dasharray="6 3"/>
+  <circle cx="224" cy="232" r="10" fill="#EA580C" opacity="0.15"/>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#EA580C" font-weight="700" x="224" y="236" text-anchor="middle">⚠</text>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="13" fill="#1C1917" font-weight="600" x="248" y="229">底层模型</text>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#78716C" x="248" y="244">可随时更换，无 breaking change 通知</text>
+
+  <!-- Arrow 3 -->
+  <line x1="330" y1="254" x2="330" y2="272" stroke="#E7E5E4" stroke-width="2"/>
+  <polygon points="326,270 330,278 334,270" fill="#E7E5E4"/>
+
+  <!-- Layer 4: 工具链 -->
+  <rect x="200" y="280" width="260" height="44" rx="10" fill="#FFFFFF" filter="url(#shadow)" stroke="#EA580C" stroke-width="1.5" stroke-dasharray="6 3"/>
+  <circle cx="224" cy="302" r="10" fill="#EA580C" opacity="0.15"/>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#EA580C" font-weight="700" x="224" y="306" text-anchor="middle">⚠</text>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="13" fill="#1C1917" font-weight="600" x="248" y="299">包管理器 / 运行时</text>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#78716C" x="248" y="314">uv → OpenAI · Bun → Anthropic</text>
+
+  <!-- Right side annotations -->
+  <!-- Bracket for bottom 3 layers -->
+  <path d="M470,150 L480,150 L480,310 L470,310" fill="none" stroke="#EA580C" stroke-width="1.5" opacity="0.5"/>
+  <line x1="480" y1="230" x2="490" y2="230" stroke="#EA580C" stroke-width="1.5" opacity="0.5"/>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#EA580C" font-weight="600" x="496" y="224">AI 实验室</text>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#EA580C" font-weight="600" x="496" y="240">控制区域</text>
+
+  <!-- Legend -->
+  <rect x="150" y="345" width="360" height="40" rx="8" fill="#FFFFFF" filter="url(#shadow)" stroke="#E7E5E4"/>
+  <line x1="170" y1="365" x2="192" y2="365" stroke="#16A34A" stroke-width="2"/>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#44403C" x="198" y="369">你控制</text>
+  <line x1="260" y1="365" x2="282" y2="365" stroke="#EA580C" stroke-width="2" stroke-dasharray="6 3"/>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#44403C" x="288" y="369">可被静默替换</text>
+  <circle cx="390" cy="365" r="5" fill="#F59E0B" opacity="0.15" stroke="#F59E0B" stroke-width="1"/>
+  <text font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#44403C" x="400" y="369">已发生替换</text>
+</svg>
