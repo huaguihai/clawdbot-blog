@@ -1,0 +1,65 @@
+<svg width="660" height="300" viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Git 打开后，coding agent 才敢放手干活">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#44403C"/>
+      <stop offset="100%" stop-color="#1C1917"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <pattern id="grain" width="36" height="36" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="8" r="1.1" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="18" cy="5" r="0.8" fill="#D6D3D1" opacity="0.05"/>
+      <circle cx="29" cy="10" r="1.2" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="10" cy="19" r="0.9" fill="#D6D3D1" opacity="0.05"/>
+      <circle cx="24" cy="18" r="1.1" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="33" cy="24" r="0.7" fill="#D6D3D1" opacity="0.05"/>
+      <circle cx="7" cy="30" r="1.2" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="19" cy="29" r="0.8" fill="#D6D3D1" opacity="0.05"/>
+      <circle cx="28" cy="33" r="1.0" fill="#D6D3D1" opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <rect width="660" height="300" fill="url(#bgGrad)"/>
+  <rect width="660" height="300" fill="url(#grain)"/>
+
+  <rect x="50" y="28" width="5" height="226" rx="2.5" fill="url(#accentGrad)"/>
+
+  <text x="70" y="82" fill="#FAFAF9" font-size="22" font-weight="700" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+    <tspan x="70" dy="0">Git 打开后，coding agent</tspan>
+    <tspan x="70" dy="28">才敢放手干活</tspan>
+  </text>
+
+  <text x="70" y="145" fill="#A8A29E" font-size="13" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+    Git 不开就让 coding agent 进场，相当于关掉监控交出钥匙。用最少
+  </text>
+
+  <g transform="translate(70,240)">
+    <rect x="0" y="0" width="78" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="39" y="16" text-anchor="middle" fill="#D6D3D1" font-size="12" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">Git 工作流</text>
+
+    <rect x="88" y="0" width="74" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="125" y="16" text-anchor="middle" fill="#D6D3D1" font-size="12" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">可撤销</text>
+
+    <rect x="172" y="0" width="84" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="214" y="16" text-anchor="middle" fill="#D6D3D1" font-size="12" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">Agent 协作</text>
+  </g>
+
+  <g opacity="0.22" stroke="#EA580C" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(500,188)">
+    <circle cx="18" cy="18" r="5"/>
+    <circle cx="52" cy="12" r="5"/>
+    <circle cx="60" cy="46" r="5"/>
+    <path d="M23 18H47"/>
+    <path d="M55 17L58 41"/>
+    <path d="M22 22L55 42"/>
+  </g>
+
+  <g opacity="0.18" stroke="#A8A29E" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(570,214)">
+    <rect x="8" y="22" width="30" height="22" rx="4"/>
+    <path d="M15 22v-6a8 8 0 0 1 16 0v6"/>
+    <path d="M23 33h0"/>
+  </g>
+
+  <rect x="0" y="293" width="660" height="7" fill="url(#accentGrad)"/>
+</svg>

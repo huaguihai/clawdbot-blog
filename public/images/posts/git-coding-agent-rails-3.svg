@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <text x="330" y="34" text-anchor="middle" font-size="22" font-weight="700" fill="#111827" font-family="-apple-system, 'Segoe UI', sans-serif">常用场景怎么提示 Agent</text>
+  <text x="330" y="58" text-anchor="middle" font-size="12" fill="#6B7280" font-family="-apple-system, 'Segoe UI', sans-serif">命令只是入口，关键是要求它解释判断依据</text>
+
+  <line x1="330" y1="115" x2="160" y2="155" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="330" y1="115" x2="500" y2="155" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="330" y1="255" x2="160" y2="305" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="330" y1="255" x2="500" y2="305" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <rect x="220" y="88" width="220" height="90" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="236" y="102" width="188" height="26" rx="13" fill="#2563EB" opacity="0.12"/>
+  <text x="330" y="120" text-anchor="middle" font-size="16" font-weight="700" fill="#2563EB" font-family="-apple-system, 'Segoe UI', sans-serif">关键原则：让它解释</text>
+  <text x="330" y="145" text-anchor="middle" font-size="12" fill="#374151" font-family="-apple-system, 'Segoe UI', sans-serif">不仅问“做什么”</text>
+  <text x="330" y="163" text-anchor="middle" font-size="12" fill="#374151" font-family="-apple-system, 'Segoe UI', sans-serif">还要问“为什么这样做、如何判断做对”</text>
+
+  <rect x="40" y="130" width="240" height="100" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="52" y="142" width="78" height="24" rx="12" fill="#16A34A" opacity="0.14"/>
+  <text x="91" y="158" text-anchor="middle" font-size="13" font-weight="700" fill="#16A34A" font-family="-apple-system, 'Segoe UI', sans-serif">接手旧活</text>
+  <text x="60" y="183" font-size="12" fill="#111827" font-family="-apple-system, 'Segoe UI', sans-serif">让它做：总结最近改动</text>
+  <text x="60" y="201" font-size="11" fill="#4B5563" font-family="-apple-system, 'Segoe UI', sans-serif">git log -3 --stat</text>
+  <text x="60" y="219" font-size="12" fill="#111827" font-family="-apple-system, 'Segoe UI', sans-serif">验收：返回具体文件和改动摘要</text>
+
+  <rect x="380" y="130" width="240" height="100" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="392" y="142" width="78" height="24" rx="12" fill="#2563EB" opacity="0.14"/>
+  <text x="431" y="158" text-anchor="middle" font-size="13" font-weight="700" fill="#2563EB" font-family="-apple-system, 'Segoe UI', sans-serif">拉主干更新</text>
+  <text x="400" y="183" font-size="12" fill="#111827" font-family="-apple-system, 'Segoe UI', sans-serif">让它做：同步主干代码</text>
+  <text x="400" y="201" font-size="11" fill="#4B5563" font-family="-apple-system, 'Segoe UI', sans-serif">git pull --rebase origin main</text>
+  <text x="400" y="219" font-size="12" fill="#111827" font-family="-apple-system, 'Segoe UI', sans-serif">验收：无冲突或说明解决方案</text>
+
+  <rect x="40" y="260" width="240" height="100" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="52" y="272" width="78" height="24" rx="12" fill="#EA580C" opacity="0.14"/>
+  <text x="91" y="288" text-anchor="middle" font-size="13" font-weight="700" fill="#EA580C" font-family="-apple-system, 'Segoe UI', sans-serif">处理冲突</text>
+  <text x="60" y="313" font-size="12" fill="#111827" font-family="-apple-system, 'Segoe UI', sans-serif">让它做：解释双方意图并合并</text>
+  <text x="60" y="331" font-size="12" fill="#111827" font-family="-apple-system, 'Segoe UI', sans-serif">验收：保留/删除理由清楚，测试通过</text>
+
+  <rect x="380" y="260" width="240" height="100" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="392" y="272" width="78" height="24" rx="12" fill="#9333EA" opacity="0.14"/>
+  <text x="431" y="288" text-anchor="middle" font-size="13" font-weight="700" fill="#9333EA" font-family="-apple-system, 'Segoe UI', sans-serif">找回代码</text>
+  <text x="400" y="313" font-size="12" fill="#111827" font-family="-apple-system, 'Segoe UI', sans-serif">让它做：搜索提交或 stash</text>
+  <text x="400" y="331" font-size="11" fill="#4B5563" font-family="-apple-system, 'Segoe UI', sans-serif">git reflog</text>
+  <text x="400" y="349" font-size="12" fill="#111827" font-family="-apple-system, 'Segoe UI', sans-serif">验收：给出 commit id 或 patch</text>
+
+  <rect x="220" y="188" width="220" height="62" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="236" y="201" width="188" height="22" rx="11" fill="#D97706" opacity="0.14"/>
+  <text x="330" y="217" text-anchor="middle" font-size="13" font-weight="700" fill="#D97706" font-family="-apple-system, 'Segoe UI', sans-serif">尤其适用于冲突处理</text>
+  <text x="330" y="238" text-anchor="middle" font-size="12" fill="#374151" font-family="-apple-system, 'Segoe UI', sans-serif">一听解释，就知道它是真理解还是在碰运气</text>
+</svg>
