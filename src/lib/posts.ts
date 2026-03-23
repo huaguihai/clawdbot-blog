@@ -16,6 +16,7 @@ export type Post = {
   coverImage?: string;
   source?: string;
   sourceUrl?: string;
+  _mtime: number;
 };
 
 const postsDirectory = path.join(process.cwd(), 'content/posts');
@@ -40,6 +41,7 @@ export function getPosts(): Post[] {
     const slug = fileName.replace(/\.md$/, '');
     const fullPath = path.join(postsDirectory, fileName);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
+    const fileMtime = fs.statSync(fullPath).mtimeMs;
 
     const { data, content } = matter(fileContents);
 
@@ -59,16 +61,16 @@ export function getPosts(): Post[] {
       coverImage,
       source: data.source,
       sourceUrl: data.sourceUrl,
+      _mtime: fileMtime,
     };
   });
 
-  // Sort posts by date
+  // Sort posts by date (descending), then by file mtime for same-day posts
   return allPostsData.sort((a, b) => {
-    if (a.date < b.date) {
-      return 1;
-    } else {
-      return -1;
+    if (a.date !== b.date) {
+      return a.date < b.date ? 1 : -1;
     }
+    return b._mtime - a._mtime;
   });
 }
 
