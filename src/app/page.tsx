@@ -48,6 +48,9 @@ export default function Home() {
               <p className="text-lg text-gray-600 leading-relaxed font-sans font-light">
                 {featuredPost.excerpt}
               </p>
+              <div className="text-sm text-gray-400 font-sans">
+                {featuredPost.displayDate} • {featuredPost.category}
+              </div>
               <Link href={`/posts/${featuredPost.slug}`} className="inline-flex items-center px-6 py-3 bg-gray-900 text-white font-medium rounded-xl hover:bg-gray-800 transition-all hover:shadow-lg transform hover:-translate-y-0.5 text-sm">
                 Start Reading
               </Link>

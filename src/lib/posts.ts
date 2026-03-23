@@ -16,6 +16,7 @@ export type Post = {
   coverImage?: string;
   source?: string;
   sourceUrl?: string;
+  displayDate: string;
   _mtime: number;
 };
 
@@ -45,6 +46,15 @@ export function getPosts(): Post[] {
 
     const { data, content } = matter(fileContents);
 
+    // Format display date with time (Beijing time UTC+8)
+    const beijingTime = new Date(fileMtime + 8 * 60 * 60 * 1000);
+    const y = beijingTime.getUTCFullYear();
+    const mo = (beijingTime.getUTCMonth() + 1).toString().padStart(2, '0');
+    const d = beijingTime.getUTCDate().toString().padStart(2, '0');
+    const hh = beijingTime.getUTCHours().toString().padStart(2, '0');
+    const mm = beijingTime.getUTCMinutes().toString().padStart(2, '0');
+    const displayDate = `${y}-${mo}-${d} ${hh}:${mm}`;
+
     // Check if a cover SVG exists for this post
     const coverFile = path.join(coversDirectory, `${slug}.svg`);
     const coverImage = fs.existsSync(coverFile) ? `/images/covers/${slug}.svg` : undefined;
@@ -61,6 +71,7 @@ export function getPosts(): Post[] {
       coverImage,
       source: data.source,
       sourceUrl: data.sourceUrl,
+      displayDate,
       _mtime: fileMtime,
     };
   });

@@ -34,7 +34,7 @@ export default function PostCard({ post, index }: { post: Post; index: number })
           <div className="p-6 flex flex-col flex-1">
             <div className="flex items-center space-x-2 text-xs text-gray-400 mb-3 font-medium">
               <Clock className="w-3 h-3" />
-              <span>{post.date}</span>
+              <span>{post.displayDate}</span>
               <span>•</span>
               <span>5 min read</span>
             </div>

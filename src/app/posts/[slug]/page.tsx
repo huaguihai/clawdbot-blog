@@ -103,7 +103,7 @@ export default async function PostPage(props: Props) {
             {post.title}
           </h1>
           <div className="flex items-center space-x-4 text-gray-500 text-sm font-sans">
-            <time dateTime={post.date}>{post.date}</time>
+            <time dateTime={post.date}>{post.displayDate}</time>
             <span>•</span>
             <span>{readingTime} min read</span>
           </div>
