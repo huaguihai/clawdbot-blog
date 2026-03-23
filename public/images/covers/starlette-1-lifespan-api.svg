@@ -1,0 +1,76 @@
+<svg width="660" height="300" viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="660" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#44403C"/>
+      <stop offset="1" stop-color="#1C1917"/>
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="660" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EA580C"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+
+    <!-- Paper grain texture -->
+    <filter id="grain" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7" />
+      <feColorMatrix type="matrix" values="
+        0 0 0 0 0.839
+        0 0 0 0 0.827
+        0 0 0 0 0.820
+        0 0 0 0.9 0"/>
+    </filter>
+
+    <style>
+      .title { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; font-size: 22px; font-weight: 700; fill: #FAFAF9; }
+      .sub { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; font-size: 13px; fill: #A8A29E; }
+      .tagText { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; font-size: 12px; fill: #D6D3D1; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="660" height="300" fill="url(#bgGrad)"/>
+  <rect x="0" y="0" width="660" height="300" fill="#D6D3D1" opacity="0.06" filter="url(#grain)"/>
+
+  <!-- Left accent line -->
+  <rect x="50" y="34" width="5" height="232" fill="url(#accentGrad)"/>
+
+  <!-- Text block (x from 70, can extend to 600) -->
+  <text class="title" x="70" y="102">
+    <tspan x="70" dy="0">Starlette 1.0 启动方式变了</tspan>
+    <tspan x="70" dy="28">别再让 AI 写旧代码</tspan>
+  </text>
+
+  <text class="sub" x="70" y="162">Starlette 1.0 最容易翻车的是启动/关闭钩子：模型常写的 on_st</text>
+
+  <!-- Tags (bottom area y≈240-260) -->
+  <g>
+    <rect x="70" y="238" width="86" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+    <text class="tagText" x="113" y="254" text-anchor="middle">lifespan</text>
+
+    <rect x="166" y="238" width="92" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+    <text class="tagText" x="212" y="254" text-anchor="middle">on_startup</text>
+
+    <rect x="268" y="238" width="90" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+    <text class="tagText" x="313" y="254" text-anchor="middle">单文件 API</text>
+  </g>
+
+  <!-- Decorative elements (right-bottom only, to the right of tags; x≥480,y≥180) -->
+  <g transform="translate(505,192)" opacity="0.24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Context manager braces -->
+    <path d="M18,10 C10,10 10,18 10,22 C10,28 6,30 4,31 C6,32 10,34 10,40 C10,44 10,52 18,52" stroke="#A8A29E" stroke-width="2"/>
+    <path d="M82,10 C90,10 90,18 90,22 C90,28 94,30 96,31 C94,32 90,34 90,40 C90,44 90,52 82,52" stroke="#A8A29E" stroke-width="2"/>
+
+    <!-- Lifespan timeline: start -> yield -> stop -->
+    <path d="M28,31 L72,31" stroke="#EA580C" stroke-width="2"/>
+    <circle cx="28" cy="31" r="4.5" stroke="#EA580C" stroke-width="2"/>
+    <circle cx="72" cy="31" r="4.5" stroke="#EA580C" stroke-width="2"/>
+
+    <!-- Yield marker -->
+    <path d="M50,18 L50,44" stroke="#EA580C" stroke-width="2" opacity="0.9"/>
+    <path d="M44,22 L50,16 L56,22" stroke="#EA580C" stroke-width="2" opacity="0.9"/>
+    <path d="M44,40 L50,46 L56,40" stroke="#EA580C" stroke-width="2" opacity="0.9"/>
+  </g>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="293" width="660" height="7" fill="url(#accentGrad)"/>
+</svg>

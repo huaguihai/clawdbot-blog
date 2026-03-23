@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#111827" flood-opacity="0.15"/>
+    </filter>
+    <style>
+      .bg { fill: #FAFAFA; }
+      .card { fill: #FFFFFF; stroke: #E5E7EB; stroke-width: 1; filter: url(#shadow); }
+      .title { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 16px; font-weight: 700; fill: #111827; }
+      .text { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 13px; fill: #111827; }
+      .muted { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 12px; fill: #6B7280; }
+      .pillText { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 12px; font-weight: 700; fill: #111827; }
+      .dash { stroke: #9CA3AF; stroke-width: 2; stroke-dasharray: 6 6; fill: none; }
+      .arrow { fill: #9CA3AF; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" x="0" y="0" width="660" height="400" rx="12"/>
+
+  <!-- Header -->
+  <text class="title" x="30" y="42">Starlette 1.0 单文件 API 骨架：lifespan + 两个路由</text>
+  <text class="muted" x="30" y="64">核心：启动初始化资源，运行期处理请求，关闭时释放资源</text>
+
+  <!-- Step 1 card -->
+  <rect class="card" x="30" y="90" width="190" height="120" rx="12"/>
+  <rect x="44" y="104" width="96" height="22" rx="11" fill="#D97706" opacity="0.18"/>
+  <text class="pillText" x="54" y="120">步骤 1</text>
+  <text class="text" x="44" y="148">装依赖并启动</text>
+  <text class="muted" x="44" y="170">pip install starlette</text>
+  <text class="muted" x="44" y="188">uvicorn app:app</text>
+
+  <!-- Step 2 / app.py card -->
+  <rect class="card" x="250" y="90" width="380" height="280" rx="12"/>
+  <rect x="264" y="104" width="120" height="22" rx="11" fill="#2563EB" opacity="0.18"/>
+  <text class="pillText" x="274" y="120">步骤 2</text>
+  <text class="text" x="264" y="148">app.py（Starlette 1.0）</text>
+  <text class="muted" x="264" y="170">app = Starlette(routes=..., lifespan=...)</text>
+
+  <!-- Lifespan block -->
+  <rect class="card" x="270" y="190" width="170" height="160" rx="12"/>
+  <rect x="284" y="204" width="82" height="22" rx="11" fill="#16A34A" opacity="0.18"/>
+  <text class="pillText" x="294" y="220">lifespan</text>
+
+  <rect x="284" y="238" width="142" height="44" rx="10" fill="#16A34A" opacity="0.10" stroke="#E5E7EB"/>
+  <text class="text" x="292" y="257">startup</text>
+  <text class="muted" x="292" y="276">初始化资源</text>
+
+  <rect x="284" y="292" width="142" height="44" rx="10" fill="#EA580C" opacity="0.10" stroke="#E5E7EB"/>
+  <text class="text" x="292" y="311">shutdown</text>
+  <text class="muted" x="292" y="330">释放资源</text>
+
+  <!-- Routes block -->
+  <rect class="card" x="460" y="190" width="150" height="160" rx="12"/>
+  <rect x="474" y="204" width="72" height="22" rx="11" fill="#9333EA" opacity="0.18"/>
+  <text class="pillText" x="484" y="220">routes</text>
+
+  <rect x="474" y="238" width="122" height="44" rx="10" fill="#2563EB" opacity="0.10" stroke="#E5E7EB"/>
+  <text class="text" x="482" y="257">GET /health</text>
+  <text class="muted" x="482" y="276">返回 ok, ready</text>
+
+  <rect x="474" y="292" width="122" height="44" rx="10" fill="#2563EB" opacity="0.10" stroke="#E5E7EB"/>
+  <text class="text" x="482" y="311">POST /webhook</text>
+  <text class="muted" x="482" y="330">接收 JSON payload</text>
+
+  <!-- Connections -->
+  <!-- Step1 -> Step2 -->
+  <path class="dash" d="M 220 150 C 235 150, 235 150, 250 150"/>
+  <polygon class="arrow" points="250,150 242,146 242,154"/>
+
+  <!-- Lifespan -> Routes (ready gates running) -->
+  <path class="dash" d="M 440 270 C 450 270, 450 270, 460 270"/>
+  <polygon class="arrow" points="460,270 452,266 452,274"/>
+  <text class="muted" x="336" y="262">运行期依赖资源状态</text>
+
+  <!-- Bottom note -->
+  <rect x="30" y="240" width="190" height="130" rx="12" fill="#FFFFFF" stroke="#E5E7EB" filter="url(#shadow)"/>
+  <rect x="44" y="254" width="110" height="22" rx="11" fill="#9333EA" opacity="0.18"/>
+  <text class="pillText" x="54" y="270">为什么重要</text>
+  <text class="muted" x="44" y="298">先把生命周期写对：</text>
+  <text class="muted" x="44" y="318">• 更稳的初始化/清理</text>
+  <text class="muted" x="44" y="338">• 业务代码更少返工</text>
+  <text class="muted" x="44" y="358">• webhook 可靠性更好</text>
+</svg>
