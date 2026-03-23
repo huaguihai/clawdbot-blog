@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .bg { fill: #FAFAFA; }
+      .card { fill: #FFFFFF; stroke: #E5E7EB; stroke-width: 1.2; filter: url(#shadow); }
+      .title { font-family: -apple-system, 'Segoe UI', sans-serif; font-weight: 700; fill: #111827; }
+      .text { font-family: -apple-system, 'Segoe UI', sans-serif; font-weight: 500; fill: #111827; }
+      .muted { font-family: -apple-system, 'Segoe UI', sans-serif; font-weight: 500; fill: #6B7280; }
+      .line { stroke: #6B7280; stroke-width: 1.6; stroke-dasharray: 6 6; fill: none; }
+      .chip { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 12px; font-weight: 700; fill: #FFFFFF; }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#6B7280"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" x="10" y="10" width="640" height="380" rx="12"/>
+
+  <!-- Header -->
+  <text class="title" x="40" y="52" font-size="18">自包含答案块：最低可行的垂直微调路线</text>
+  <text class="muted" x="40" y="74" font-size="13">从可用工作流到 LoRA，再到上线后的数据飞轮</text>
+
+  <!-- Step 1: Base + Workflow -->
+  <rect class="card" x="40" y="100" width="250" height="86" rx="12"/>
+  <rect x="52" y="112" width="70" height="22" rx="11" fill="#2563EB"/>
+  <text class="chip" x="68" y="128">STEP 1</text>
+  <text class="text" x="52" y="158" font-size="14">开源 base + 可用工作流</text>
+  <text class="muted" x="52" y="178" font-size="12">Qwen / Llama 等 + 规则/模板/工具</text>
+
+  <!-- Step 2: Samples -->
+  <rect class="card" x="360" y="100" width="260" height="86" rx="12"/>
+  <rect x="372" y="112" width="70" height="22" rx="11" fill="#D97706"/>
+  <text class="chip" x="388" y="128">STEP 2</text>
+  <text class="text" x="372" y="158" font-size="14">100–1000 条高质量行业样本</text>
+  <text class="muted" x="372" y="178" font-size="12">覆盖固定格式、术语、偏好与边界</text>
+
+  <!-- Step 3: LoRA Fine-tune -->
+  <rect class="card" x="40" y="220" width="250" height="92" rx="12"/>
+  <rect x="52" y="232" width="70" height="22" rx="11" fill="#16A34A"/>
+  <text class="chip" x="68" y="248">STEP 3</text>
+  <text class="text" x="52" y="278" font-size="14">LoRA 微调写入“行业习惯”</text>
+  <text class="muted" x="52" y="298" font-size="12">术语理解、格式稳定、风格偏好</text>
+
+  <!-- Step 4: Launch -->
+  <rect class="card" x="360" y="220" width="260" height="92" rx="12"/>
+  <rect x="372" y="232" width="70" height="22" rx="11" fill="#EA580C"/>
+  <text class="chip" x="388" y="248">STEP 4</text>
+  <text class="text" x="372" y="278" font-size="14">上线并收集真实对话</text>
+  <text class="muted" x="372" y="298" font-size="12">标注好/坏样本，准备回流</text>
+
+  <!-- Decision / When worth fine-tuning -->
+  <rect class="card" x="170" y="328" width="420" height="46" rx="12"/>
+  <rect x="182" y="339" width="96" height="24" rx="12" fill="#9333EA"/>
+  <text class="chip" x="194" y="356">WHEN</text>
+  <text class="text" x="290" y="357" font-size="13">API 成本吞利润 且 错误模式稳定重复</text>
+
+  <!-- Arrows -->
+  <path class="line" d="M290 143 C315 143, 330 143, 360 143" marker-end="url(#arrow)"/>
+  <path class="line" d="M490 186 C490 210, 490 210, 490 220" marker-end="url(#arrow)"/>
+  <path class="line" d="M360 266 C330 266, 315 266, 290 266" marker-end="url(#arrow)"/>
+  <path class="line" d="M165 186 C165 205, 165 205, 165 220" marker-end="url(#arrow)"/>
+
+  <!-- Data flywheel loop: Launch -> Samples (good/bad) -->
+  <path class="line" d="M620 266 C645 266, 645 140, 620 140" marker-end="url(#arrow)"/>
+  <text class="muted" x="532" y="112" font-size="12">好/坏样本回流</text>
+
+  <!-- Link to WHEN box -->
+  <path class="line" d="M490 312 C490 322, 490 322, 490 328" marker-end="url(#arrow)"/>
+</svg>

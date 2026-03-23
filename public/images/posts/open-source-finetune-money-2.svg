@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <text x="330" y="34" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#111827">垂直 AI 要不要微调？先看这张决策表</text>
+  <text x="330" y="56" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6B7280">核心判断：微调能否成为收费理由，而不只是技术动作</text>
+
+  <rect x="26" y="72" width="180" height="34" rx="10" fill="#DBEAFE" stroke="#2563EB" filter="url(#shadow)"/>
+  <rect x="240" y="72" width="180" height="34" rx="10" fill="#FFEDD5" stroke="#EA580C" filter="url(#shadow)"/>
+  <rect x="454" y="72" width="180" height="34" rx="10" fill="#DCFCE7" stroke="#16A34A" filter="url(#shadow)"/>
+  <text x="116" y="93" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#1E3A8A">你现在的情况</text>
+  <text x="330" y="93" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#9A3412">先别微调，先做这个</text>
+  <text x="544" y="93" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#166534">什么时候再考虑微调</text>
+
+  <line x1="206" y1="122" x2="240" y2="122" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="5 5"/>
+  <line x1="420" y1="122" x2="454" y2="122" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="5 5"/>
+  <rect x="26" y="110" width="180" height="38" rx="10" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="240" y="110" width="180" height="38" rx="10" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="454" y="110" width="180" height="38" rx="10" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="36" y="127" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#111827">想做 MVP，先验证有人付钱</text>
+  <text x="36" y="140" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#6B7280">先求跑通，不求模型最优</text>
+  <text x="250" y="127" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#111827">Prompt + RAG 先跑起来</text>
+  <text x="250" y="140" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#6B7280">最低成本验证需求</text>
+  <text x="464" y="127" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#111827">需求和流量稳定</text>
+  <text x="464" y="140" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#6B7280">API 成本开始咬利润</text>
+
+  <line x1="206" y1="164" x2="240" y2="164" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="5 5"/>
+  <line x1="420" y1="164" x2="454" y2="164" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="5 5"/>
+  <rect x="26" y="152" width="180" height="38" rx="10" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="240" y="152" width="180" height="38" rx="10" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="454" y="152" width="180" height="38" rx="10" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="36" y="169" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#111827">必须贴合固定格式/口吻</text>
+  <text x="36" y="182" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#6B7280">如报告体、模板、话术</text>
+  <text x="250" y="169" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#111827">结构化约束 + 示例</text>
+  <text x="250" y="182" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#6B7280">先用提示词顶一阵</text>
+  <text x="464" y="169" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#111827">总是“看似对但不像你们”</text>
+  <text x="464" y="182" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#6B7280">风格错位频繁翻车</text>
+
+  <line x1="206" y1="206" x2="240" y2="206" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="5 5"/>
+  <line x1="420" y1="206" x2="454" y2="206" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="5 5"/>
+  <rect x="26" y="194" width="180" height="38" rx="10" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="240" y="194" width="180" height="38" rx="10" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="454" y="194" width="180" height="38" rx="10" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="36" y="211" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#111827">内部黑话/缩写/别名很多</text>
+  <text x="36" y="224" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#6B7280">模型容易理解偏差</text>
+  <text x="250" y="211" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#111827">词表 + RAG</text>
+  <text x="250" y="224" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#6B7280">先把词表当知识库</text>
+  <text x="464" y="211" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#111827">理解偏差频繁且可被样本覆盖</text>
+  <text x="464" y="224" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#6B7280">这时才值得训练</text>
+
+  <line x1="206" y1="248" x2="240" y2="248" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="5 5"/>
+  <line x1="420" y1="248" x2="454" y2="248" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="5 5"/>
+  <rect x="26" y="236" width="180" height="38" rx="10" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="240" y="236" width="180" height="38" rx="10" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="454" y="236" width="180" height="38" rx="10" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="36" y="253" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#111827">你要的是偏好对齐</text>
+  <text x="36" y="266" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#6B7280">更保守、更激进或特定策略</text>
+  <text x="250" y="253" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#111827">先做评测集 + 人工打分</text>
+  <text x="250" y="266" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#6B7280">别急着训，先量化偏好</text>
+  <text x="464" y="253" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#111827">已有可复用偏好数据</text>
+  <text x="464" y="266" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#6B7280">好/坏对比足够稳定</text>
+
+  <line x1="206" y1="290" x2="240" y2="290" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="5 5"/>
+  <line x1="420" y1="290" x2="454" y2="290" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="5 5"/>
+  <rect x="26" y="278" width="180" height="38" rx="10" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="240" y="278" width="180" height="38" rx="10" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="454" y="278" width="180" height="38" rx="10" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="36" y="295" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#111827">完全没数据，只有想法</text>
+  <text x="36" y="308" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#6B7280">现在训练基本是空转</text>
+  <text x="250" y="295" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#111827">先做数据采集闭环</text>
+  <text x="250" y="308" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#6B7280">先建立稳定样本来源</text>
+  <text x="464" y="295" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#111827">每周稳定产出 50+ 高质量样本</text>
+  <text x="464" y="308" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#6B7280">再考虑微调更划算</text>
+
+  <rect x="26" y="334" width="608" height="46" rx="12" fill="#FEF3C7" stroke="#D97706" filter="url(#shadow)"/>
+  <circle cx="48" cy="357" r="12" fill="#D97706"/>
+  <text x="48" y="361" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">!</text>
+  <text x="68" y="352" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#92400E">最常见的亏钱姿势：还没赚到钱，就先花一周调模型</text>
+  <text x="68" y="368" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#78350F">微调不是起点，而是确认“这道招牌菜卖得动”后的加速器。</text>
+</svg>
