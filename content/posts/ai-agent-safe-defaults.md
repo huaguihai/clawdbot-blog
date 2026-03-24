@@ -5,8 +5,8 @@ category: "上手指南"
 excerpt: "AI Agent 安全默认，不是给模型多写几句提示词，而是把最小权限、可审计调用、dry-run 后再 commit 做成代码结构。你怕的不是它不聪明，而是它太能干。"
 pattern: "code"
 color: "text-stone-600"
-source: "Simon Willison"
-sourceUrl: "https://simonwillison.net/guides/agentic-engineering-patterns/using-git-with-coding-agents/"
+source: "NVIDIA Blog"
+sourceUrl: "https://blogs.nvidia.com/blog/secure-autonomous-ai-agents-openshell/"
 ---
 
 很多团队给 AI Agent 补安全，第一反应是多写几句提示词：谨慎一点、别乱调用、出手前三思。问题是，**真正会把系统搞出事故的，通常不是“它说错了”，而是“它做对了调用、做错了对象”。**
@@ -236,16 +236,13 @@ AI Agent 安全默认检查表
 
 ## FAQ
 
-## Agent 安全是不是会把效率拖死？
+**Q: Agent 安全是不是会把效率拖死？**<br>
+A: 会增加一点流程，但比起一次误发邮件、误写生产库，这点摩擦很值。安全默认的目标不是让 Agent 变慢，而是让它只在对的轨道上快。
 
-会增加一点流程，但比起一次误发邮件、误写生产库，这点摩擦很值。安全默认的目标不是让 Agent 变慢，而是让它只在对的轨道上快。
+**Q: 我只有一个内部小工具，也要做这么全吗？**<br>
+A: 不用一步到位，但最少要有默认 deny、trace ID、dry-run。内部工具最容易因为”先凑合能跑”而拿到过大的权限。
 
-## 我只有一个内部小工具，也要做这么全吗？
-
-不用一步到位，但最少要有默认 deny、trace ID、dry-run。内部工具最容易因为“先凑合能跑”而拿到过大的权限。
-
-## 可回滚是不是等于一定能撤销？
-
-不是。有些外部 API、真实邮件一旦发出，技术上只能补偿，不能真正撤回。所以回滚设计越早做，代价越低。
+**Q: 可回滚是不是等于一定能撤销？**<br>
+A: 不是。有些外部 API、真实邮件一旦发出，技术上只能补偿，不能真正撤回。所以回滚设计越早做，代价越低。
 
 如果你这周只能改一处，我会先改高风险工具的执行方式：别让它直接 commit，先让它吐出一份 dry-run 计划。等你第一次靠这份计划拦下一次“差点就发出去”的操作，你大概就会重新定义自己心里那句“已经能用了”。
