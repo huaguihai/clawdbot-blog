@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .font { font-family: -apple-system, 'Segoe UI', sans-serif; }
+      .title { font-size: 18px; font-weight: 700; fill: #111827; }
+      .subtitle { font-size: 12px; fill: #4B5563; }
+      .h { font-size: 13px; font-weight: 700; fill: #111827; }
+      .p { font-size: 12px; fill: #374151; }
+      .tiny { font-size: 11px; fill: #374151; }
+      .muted { fill: #6B7280; }
+      .card { fill: #FFFFFF; stroke: #E5E7EB; stroke-width: 1; rx: 12; filter: url(#shadow); }
+      .dash { stroke: #9CA3AF; stroke-width: 2; stroke-dasharray: 6 6; fill: none; }
+      .accentBlue { stroke: #2563EB; }
+      .accentOrange { stroke: #EA580C; }
+      .accentGreen { stroke: #16A34A; }
+      .badge { fill: #FAFAFA; stroke-width: 2; rx: 10; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect x="10" y="10" width="640" height="380" rx="12" fill="#FAFAFA" stroke="#E5E7EB"/>
+
+  <!-- Header -->
+  <text x="36" y="52" class="font title">把“允许/禁止”写死在代码里：三道硬闸门</text>
+  <text x="36" y="74" class="font subtitle">不要信“请谨慎”，要信白名单、校验器、隔离层</text>
+
+  <!-- Left: Agent -->
+  <rect x="36" y="120" width="150" height="92" class="card"/>
+  <text x="56" y="150" class="font h">Agent</text>
+  <text x="56" y="172" class="font p">提出调用请求</text>
+  <text x="56" y="192" class="font tiny muted">可能带风险参数</text>
+
+  <!-- Gate 1: Action-level scopes -->
+  <rect x="220" y="105" width="195" height="122" class="card"/>
+  <rect x="236" y="124" width="66" height="22" class="badge" stroke="#2563EB"/>
+  <text x="246" y="140" class="font tiny" fill="#2563EB" font-weight="700">Gate 1</text>
+  <text x="236" y="164" class="font h">动作级权限</text>
+  <text x="236" y="186" class="font p">按 action/scope 收口</text>
+  <text x="236" y="206" class="font tiny muted">例：允许查订单，禁止 delete</text>
+
+  <!-- Gate 2: Parameter validation -->
+  <rect x="220" y="245" width="195" height="122" class="card"/>
+  <rect x="236" y="264" width="66" height="22" class="badge" stroke="#EA580C"/>
+  <text x="246" y="280" class="font tiny" fill="#EA580C" font-weight="700">Gate 2</text>
+  <text x="236" y="304" class="font h">参数校验器</text>
+  <text x="236" y="326" class="font p">白名单 + 模板 + 阈值</text>
+  <text x="236" y="346" class="font tiny muted">域名/模板ID/traceID/数量</text>
+
+  <!-- Right: Isolation layer -->
+  <rect x="450" y="105" width="174" height="262" class="card"/>
+  <rect x="466" y="124" width="66" height="22" class="badge" stroke="#16A34A"/>
+  <text x="476" y="140" class="font tiny" fill="#16A34A" font-weight="700">Gate 3</text>
+  <text x="466" y="164" class="font h">资源隔离层</text>
+  <text x="466" y="186" class="font p">分环境硬隔离</text>
+
+  <!-- env chips -->
+  <rect x="466" y="208" width="142" height="44" rx="10" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <circle cx="482" cy="230" r="6" fill="#9333EA"/>
+  <text x="496" y="234" class="font tiny">dev：观察更多</text>
+
+  <rect x="466" y="258" width="142" height="44" rx="10" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <circle cx="482" cy="280" r="6" fill="#D97706"/>
+  <text x="496" y="284" class="font tiny">staging：沙箱/假数据</text>
+
+  <rect x="466" y="308" width="142" height="44" rx="10" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <circle cx="482" cy="330" r="6" fill="#16A34A"/>
+  <text x="496" y="334" class="font tiny">prod：最窄动作集</text>
+
+  <!-- Tools box (target) -->
+  <rect x="36" y="250" width="150" height="117" class="card"/>
+  <text x="56" y="280" class="font h">工具与资源</text>
+  <text x="56" y="302" class="font tiny muted">邮件 / 数据库 / 第三方API</text>
+  <text x="56" y="322" class="font tiny muted">只暴露受限函数</text>
+  <text x="56" y="342" class="font tiny muted">非任意SQL/任意Webhook</text>
+
+  <!-- Dashed arrows -->
+  <path d="M186 166 C 200 166, 205 166, 220 166" class="dash accentBlue"/>
+  <path d="M317 227 C 317 236, 317 240, 317 245" class="dash accentOrange"/>
+  <path d="M415 306 C 430 306, 435 306, 450 306" class="dash accentGreen"/>
+
+  <!-- Return path to tools (enforced interface) -->
+  <path d="M450 235 C 420 235, 410 235, 392 235 C 250 235, 230 235, 206 258 C 198 265, 194 272, 186 276" class="dash"/>
+
+  <!-- Note at bottom -->
+  <text x="36" y="392" class="font tiny muted">核心：权限按“动作”切分，参数必须可验证，环境隔离必须由代码强制而非仅靠配置。</text>
+</svg>
