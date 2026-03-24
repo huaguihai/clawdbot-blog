@@ -40,25 +40,38 @@ color: "text-stone-600"
 
 ### 第一步：编辑全局设置
 
-打开 `~/.claude/settings.json`。如果文件不存在，新建一个。把下面这段**完整粘进去**：
+打开 `~/.claude/settings.json`。如果文件不存在，新建一个。确保里面包含以下内容（已有其他配置的，把缺的字段补进去就行，别整个覆盖）：
 
 ```json
 {
   "env": {
-    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1"
-  }
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "DISABLE_INSTALLATION_CHECKS": "1",
+    "HTTP_PROXY": "http://127.0.0.1:7890",
+    "HTTPS_PROXY": "http://127.0.0.1:7890"
+  },
+  "cleanupPeriodDays": 720
 }
 ```
 
-这个开关同时关掉遥测、自动升级和错误上报。用第三方供应商时这些全是无谓请求，关掉干净。
+逐行解释：
 
-<mark>注意：值必须是带引号的字符串 `"1"`，不是数字 `1`。</mark>settings.json 里所有 env 值都是字符串，不带引号会报错。这是翻车率最高的坑。
+| 字段 | 作用 |
+|------|------|
+| `CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC` | 一包四：同时关掉**遥测、自动升级、错误上报、反馈命令**。用第三方供应商时这些全是无谓请求，关掉干净。如果你需要保留自动升级，就别设这个，改成分别设 `DISABLE_TELEMETRY`、`DISABLE_ERROR_REPORTING`、`DISABLE_FEEDBACK_COMMAND` 三个 |
+| `DISABLE_INSTALLATION_CHECKS` | 关掉安装方式检查。用 npm 装的用户每次启动都会看到黄色警告，设了就不会了 |
+| `HTTP_PROXY` / `HTTPS_PROXY` | 代理地址。国内直连不稳定的，在这里配一劳永逸，不用每次启动前 export。不需要代理的删掉这两行 |
+| `cleanupPeriodDays` | CC 默认 30 天自动清理旧会话，设大点等于不删。这个字段写在 `env` 外面，和 `env` 平级 |
 
-**做完检查**：终端跑一下 `cat ~/.claude/settings.json`，确认内容和上面一模一样。
+<mark>注意：`env` 里的值必须全部是带引号的字符串 `"1"`，不是数字 `1`。</mark>不带引号会报错，这是翻车率最高的坑。`cleanupPeriodDays` 不在 `env` 里，所以直接写数字。
+
+**做完检查**：终端跑一下 `cat ~/.claude/settings.json`，确认 JSON 格式没问题。
 
 ### 第二步：创建供应商配置文件
 
-新建 `~/.claude/settings.deepseek.json`，把下面这段**完整粘进去**，然后**只改一个地方**——把 `sk-替换成你的key` 换成你自己的 [DeepSeek API Key](https://platform.deepseek.com/api_keys)：
+先理解一个关键机制：<mark>`--settings` 加载的配置会**叠加**在全局 `settings.json` 之上，不是替换。</mark>优先级高于全局，相同字段以供应商配置为准，全局有而供应商没写的字段继续生效。所以你在上一步设的代理、遥测开关，不用在供应商配置里重复写。
+
+新建 `~/.claude/settings.deepseek.json`，把下面这段**完整粘进去**，然后把 `sk-替换成你的key` 换成你自己的 [DeepSeek API Key](https://platform.deepseek.com/api_keys)：
 
 ```json
 {
@@ -76,13 +89,28 @@ color: "text-stone-600"
 
 | 字段 | 填什么 | 注意 |
 |------|--------|------|
-| `ANTHROPIC_BASE_URL` | 供应商的 API 地址 | <mark>CC 会自动在后面拼 `/v1/messages`</mark>，所以你填的地址**不要**包含 `/v1`，否则变成 `/v1/v1/messages`，直接 404 |
-| `ANTHROPIC_AUTH_TOKEN` | 你的 API Key | 在 [DeepSeek 开放平台](https://platform.deepseek.com/api_keys) 创建 |
+| `ANTHROPIC_BASE_URL` | 供应商的 API 地址 | CC 底层的 Anthropic SDK 会在后面拼请求路径，所以你填的地址**不要**包含 `/v1`，否则路径重复直接 404 |
+| `ANTHROPIC_AUTH_TOKEN` | 你的 API Key | 作为 `Authorization: Bearer` 请求头发送。另一个变量 `ANTHROPIC_API_KEY` 走的是 `X-Api-Key` 请求头——两者区别在认证方式，大部分第三方供应商用 `AUTH_TOKEN` 就行，但如果报 401 可以试试换成 `API_KEY` |
 | `ANTHROPIC_DEFAULT_HAIKU_MODEL` | 供应商的轻量模型名 | DeepSeek 日常对话模型叫 `deepseek-chat` |
 | `ANTHROPIC_DEFAULT_SONNET_MODEL` | 供应商的日常模型名 | 同上 |
 | `ANTHROPIC_DEFAULT_OPUS_MODEL` | 供应商的强力模型名 | 如果想让 opus 用推理模型，改成 `deepseek-reasoner` |
 
-**什么时候这三个 `DEFAULT_*_MODEL` 可以不写？** 如果你用的是转发类服务（各种 API Router），它们本身能认 `claude-opus-4-6` 这类原生 ID——CC 发过去它认识，三行全省。但 DeepSeek、阿里云百炼这种自有模型供应商必须写，不然 CC 发个 `claude-opus-4-6` 过去人家不认识。
+**什么时候这三个 `DEFAULT_*_MODEL` 可以不写？** 取决于供应商认不认 Claude 的原生模型 ID。
+
+两种典型场景对比：
+
+- **API Router 类**（转发聚合服务）——它们能认 `claude-opus-4-6` 这类原生 ID，CC 发过去就能路由，三行全省。
+- **自有模型供应商**（DeepSeek、阿里云百炼等）——人家的模型叫 `deepseek-chat`、`qwen3.5-plus`，CC 发个 `claude-opus-4-6` 过去它不认识。这时候必须写，告诉 CC 每个槽位该发什么模型名。
+
+而且三个槽位不一定要填同一个模型。比如接阿里云百炼时，可以按能力分配：
+
+```json
+"ANTHROPIC_DEFAULT_HAIKU_MODEL": "qwen3.5-flash",
+"ANTHROPIC_DEFAULT_SONNET_MODEL": "qwen3.5-flash",
+"ANTHROPIC_DEFAULT_OPUS_MODEL": "qwen3.5-plus"
+```
+
+轻活给便宜快速的 flash，重活给能力更强的 plus——和 CC 原本的三槽分工逻辑完全对齐。
 
 ### 第三步：跳过登录引导（仅首次需要）
 
@@ -107,6 +135,12 @@ claude --settings ~/.claude/settings.deepseek.json
 ```
 
 看到 CC 的对话界面后，发一句"你好"测试。有回复 = 配置成功。
+
+`--settings` 可以和其他参数组合使用。比如 `-c` 继续上次对话、`-r` 恢复指定会话：
+
+```bash
+claude --settings ~/.claude/settings.deepseek.json -c
+```
 
 **如果报错，按顺序查：**
 
@@ -152,16 +186,19 @@ function cc-pro { claude }
 
 <mark>进阶提示：</mark>如果你用的是一个支持多模型的 API Router 服务（能同时转发 DeepSeek 和 Claude 的请求），可以在一个配置文件里混搭——haiku 和 sonnet 指向第三方模型，opus 保留 Claude。但直连 DeepSeek 这种单一供应商做不到，因为 BASE_URL 只能填一个地址。
 
+还有个隐性行为值得知道：<mark>当 `ANTHROPIC_BASE_URL` 指向非 Anthropic 官方地址时，CC 会自动关掉 Tool Search 功能</mark>（一种延迟加载工具的机制）。绝大部分情况下不影响使用，但如果你的供应商明确支持 `tool_reference`，可以手动加 `"ENABLE_TOOL_SEARCH": "true"` 重新打开。
+
 ---
 
 ## 换别的供应商怎么改？
 
 只要供应商支持 Anthropic Messages API 格式，都能接。差别只是三个字段，其他步骤完全一样：
 
-| 供应商 | `ANTHROPIC_BASE_URL` | 模型名示例 |
-|--------|----------------------|-----------|
-| [DeepSeek](https://platform.deepseek.com/) | `https://api.deepseek.com/anthropic` | `deepseek-chat`、`deepseek-reasoner` |
-| API Router 类（API 转发聚合服务） | 看供应商文档 | 通常兼容 Claude 原生模型名，三个 DEFAULT_MODEL 可以不设 |
+| 供应商 | `ANTHROPIC_BASE_URL` | 需要写 DEFAULT_MODEL？ | 模型名示例 |
+|--------|----------------------|----------------------|-----------|
+| [DeepSeek](https://platform.deepseek.com/) | `https://api.deepseek.com/anthropic` | 是，自有 ID | `deepseek-chat`、`deepseek-reasoner` |
+| [阿里云百炼](https://bailian.console.aliyun.com/) | `https://dashscope.aliyuncs.com/apps/anthropic` | 是，自有 ID | `qwen3.5-flash`、`qwen3.5-plus` |
+| API Router 类（转发聚合服务） | 看供应商文档 | 否，兼容原生 ID | `claude-opus-4-6` 等原名直接用 |
 
 怎么查供应商有哪些模型？大部分提供 `/v1/models` 端点，拿你的 Key 发个 GET 请求就能看到完整列表。
 
@@ -175,7 +212,7 @@ function cc-pro { claude }
 
 **切了供应商，之前的对话还能续吗？**
 
-不能直接续。但 CC 的项目记忆（CLAUDE.md、memory 文件等）是本地文件，换供应商不会丢。
+可以。`--settings` 和 `-c`（继续上次对话）、`-r`（恢复指定会话）可以组合使用。但换了模型之后，新模型对之前的上下文理解可能有偏差，复杂对话建议重开。CC 的项目记忆（CLAUDE.md、memory 文件等）是本地文件，换供应商不会丢。
 
 **模型能力不够会怎样？**
 
