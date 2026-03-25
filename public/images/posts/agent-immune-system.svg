@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="660" height="400" fill="#FAFAFA" rx="8"/>
+
+  <!-- Title -->
+  <text x="330" y="35" text-anchor="middle" fill="#1C1917" font-size="16" font-weight="700" font-family="-apple-system,'Segoe UI',sans-serif">
+    Sentinel 三层纵深防御
+  </text>
+  <text x="330" y="55" text-anchor="middle" fill="#78716C" font-size="12" font-family="-apple-system,'Segoe UI',sans-serif">
+    pip install / npm install 全链路防护
+  </text>
+
+  <!-- Layer 1: Pre-Install Gate -->
+  <rect x="40" y="75" width="580" height="85" rx="10" fill="white" filter="url(#shadow)"/>
+  <rect x="40" y="75" width="6" height="85" rx="3" fill="#2563EB"/>
+  <text x="65" y="98" fill="#2563EB" font-size="12" font-weight="700" font-family="-apple-system,'Segoe UI',sans-serif">第一道门：安装前拦截</text>
+  <text x="65" y="116" fill="#44403C" font-size="11" font-family="-apple-system,'Segoe UI',sans-serif">PreToolUse Hook 自动触发</text>
+
+  <!-- Layer 1 checks -->
+  <g transform="translate(65, 128)">
+    <rect x="0" y="0" width="100" height="22" rx="4" fill="#EFF6FF"/>
+    <text x="50" y="15" text-anchor="middle" fill="#2563EB" font-size="10" font-family="-apple-system,'Segoe UI',sans-serif">版本发布时间</text>
+
+    <rect x="110" y="0" width="90" height="22" rx="4" fill="#EFF6FF"/>
+    <text x="155" y="15" text-anchor="middle" fill="#2563EB" font-size="10" font-family="-apple-system,'Segoe UI',sans-serif">维护者变更</text>
+
+    <rect x="210" y="0" width="80" height="22" rx="4" fill="#EFF6FF"/>
+    <text x="250" y="15" text-anchor="middle" fill="#2563EB" font-size="10" font-family="-apple-system,'Segoe UI',sans-serif">OSV 漏洞</text>
+
+    <rect x="300" y="0" width="100" height="22" rx="4" fill="#EFF6FF"/>
+    <text x="350" y="15" text-anchor="middle" fill="#2563EB" font-size="10" font-family="-apple-system,'Segoe UI',sans-serif">typosquatting</text>
+
+    <rect x="410" y="0" width="80" height="22" rx="4" fill="#EFF6FF"/>
+    <text x="450" y="15" text-anchor="middle" fill="#2563EB" font-size="10" font-family="-apple-system,'Segoe UI',sans-serif">恶意名单</text>
+  </g>
+
+  <!-- Arrow 1→2 -->
+  <text x="330" y="176" text-anchor="middle" fill="#78716C" font-size="11" font-family="-apple-system,'Segoe UI',sans-serif">🟢 通过 ↓ 执行安装</text>
+
+  <!-- Layer 2: Post-Install Scan -->
+  <rect x="40" y="190" width="580" height="85" rx="10" fill="white" filter="url(#shadow)"/>
+  <rect x="40" y="190" width="6" height="85" rx="3" fill="#EA580C"/>
+  <text x="65" y="213" fill="#EA580C" font-size="12" font-weight="700" font-family="-apple-system,'Segoe UI',sans-serif">第二道门：安装后扫描（防传递依赖）</text>
+  <text x="65" y="231" fill="#44403C" font-size="11" font-family="-apple-system,'Segoe UI',sans-serif">PostToolUse Hook 自动触发 — 对比快照，扫描所有新增包</text>
+
+  <!-- Layer 2 checks -->
+  <g transform="translate(65, 243)">
+    <rect x="0" y="0" width="70" height="22" rx="4" fill="#FFF7ED"/>
+    <text x="35" y="15" text-anchor="middle" fill="#EA580C" font-size="10" font-family="-apple-system,'Segoe UI',sans-serif">.pth 文件</text>
+
+    <rect x="80" y="0" width="90" height="22" rx="4" fill="#FFF7ED"/>
+    <text x="125" y="15" text-anchor="middle" fill="#EA580C" font-size="10" font-family="-apple-system,'Segoe UI',sans-serif">base64 编码</text>
+
+    <rect x="180" y="0" width="90" height="22" rx="4" fill="#FFF7ED"/>
+    <text x="225" y="15" text-anchor="middle" fill="#EA580C" font-size="10" font-family="-apple-system,'Segoe UI',sans-serif">凭证访问</text>
+
+    <rect x="280" y="0" width="90" height="22" rx="4" fill="#FFF7ED"/>
+    <text x="325" y="15" text-anchor="middle" fill="#EA580C" font-size="10" font-family="-apple-system,'Segoe UI',sans-serif">网络外传</text>
+
+    <rect x="380" y="0" width="100" height="22" rx="4" fill="#FFF7ED"/>
+    <text x="430" y="15" text-anchor="middle" fill="#EA580C" font-size="10" font-family="-apple-system,'Segoe UI',sans-serif">exec + 编码</text>
+  </g>
+
+  <!-- Arrow 2→3 -->
+  <text x="330" y="291" text-anchor="middle" fill="#78716C" font-size="11" font-family="-apple-system,'Segoe UI',sans-serif">🟡🔴 可疑 ↓ 自动升级</text>
+
+  <!-- Layer 3: Deep Inspect -->
+  <rect x="40" y="305" width="580" height="75" rx="10" fill="white" filter="url(#shadow)"/>
+  <rect x="40" y="305" width="6" height="75" rx="3" fill="#16A34A"/>
+  <text x="65" y="328" fill="#16A34A" font-size="12" font-weight="700" font-family="-apple-system,'Segoe UI',sans-serif">第三道门：深度检查（下载不安装）</text>
+  <text x="65" y="346" fill="#44403C" font-size="11" font-family="-apple-system,'Segoe UI',sans-serif">pip download → 解压 → 全面扫描 setup.py / __init__.py / cmdclass / 混淆代码</text>
+  <text x="65" y="366" fill="#78716C" font-size="11" font-family="-apple-system,'Segoe UI',sans-serif">扫描通过才真正安装 · 恶意代码永远不会执行</text>
+
+  <!-- Right side: traffic lights -->
+  <g transform="translate(540, 88)">
+    <circle cx="0" cy="0" r="8" fill="#16A34A" opacity="0.9"/>
+    <text x="18" y="4" fill="#44403C" font-size="10" font-family="-apple-system,'Segoe UI',sans-serif">放行</text>
+  </g>
+  <g transform="translate(540, 203)">
+    <circle cx="0" cy="0" r="8" fill="#F59E0B" opacity="0.9"/>
+    <text x="18" y="4" fill="#44403C" font-size="10" font-family="-apple-system,'Segoe UI',sans-serif">警告</text>
+  </g>
+  <g transform="translate(540, 318)">
+    <circle cx="0" cy="0" r="8" fill="#DC2626" opacity="0.9"/>
+    <text x="18" y="4" fill="#44403C" font-size="10" font-family="-apple-system,'Segoe UI',sans-serif">拦截</text>
+  </g>
+</svg>

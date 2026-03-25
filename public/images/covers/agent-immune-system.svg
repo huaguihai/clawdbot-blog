@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300" width="660" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#44403C"/>
+      <stop offset="100%" stop-color="#1C1917"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <linearGradient id="bottomBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <pattern id="dots" patternUnits="userSpaceOnUse" width="20" height="20">
+      <circle cx="10" cy="10" r="1" fill="#FAFAF9" opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="660" height="300" fill="url(#bg)"/>
+  <rect width="660" height="300" fill="url(#dots)"/>
+
+  <!-- Left accent bar -->
+  <rect x="50" y="40" width="4" height="60" rx="2" fill="url(#accent)"/>
+
+  <!-- Title -->
+  <text x="70" y="68" fill="#FAFAF9" font-size="22" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
+    <tspan x="70" dy="0">LiteLLM 被投毒后，</tspan>
+    <tspan x="70" dy="30">我给 Agent 装了三道安检门</tspan>
+  </text>
+
+  <!-- Subtitle -->
+  <text x="70" y="140" fill="#A8A29E" font-size="13" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
+    安全不该是用户的知识，应该是 Agent 的本能
+  </text>
+
+  <!-- Divider -->
+  <line x1="70" y1="160" x2="420" y2="160" stroke="#57534E" stroke-width="1"/>
+
+  <!-- Category -->
+  <text x="70" y="185" fill="#EA580C" font-size="11" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
+    行业辣评
+  </text>
+
+  <!-- Tags -->
+  <rect x="70" y="200" width="72" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+  <text x="106" y="216" text-anchor="middle" fill="#D6D3D1" font-size="11" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">供应链安全</text>
+
+  <rect x="152" y="200" width="55" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+  <text x="179" y="216" text-anchor="middle" fill="#D6D3D1" font-size="11" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">sentinel</text>
+
+  <rect x="217" y="200" width="50" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+  <text x="242" y="216" text-anchor="middle" fill="#D6D3D1" font-size="11" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">Agent</text>
+
+  <!-- Decorative: shield with 3 layers -->
+  <g transform="translate(520, 140)" opacity="0.18">
+    <!-- Outer shield -->
+    <path d="M40 0 L80 15 L80 50 C80 75 60 95 40 105 C20 95 0 75 0 50 L0 15 Z" fill="none" stroke="#EA580C" stroke-width="2.5"/>
+    <!-- Middle shield -->
+    <path d="M40 15 L68 26 L68 48 C68 67 54 82 40 90 C26 82 12 67 12 48 L12 26 Z" fill="none" stroke="#F59E0B" stroke-width="2"/>
+    <!-- Inner shield -->
+    <path d="M40 30 L56 37 L56 48 C56 60 48 69 40 75 C32 69 24 60 24 48 L24 37 Z" fill="none" stroke="#EA580C" stroke-width="1.5"/>
+    <!-- Checkmark -->
+    <polyline points="30,52 38,60 52,42" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Three horizontal lines representing layers -->
+  <g transform="translate(490, 200)" opacity="0.15">
+    <rect x="0" y="0" width="120" height="3" rx="1.5" fill="#EA580C"/>
+    <rect x="10" y="12" width="100" height="3" rx="1.5" fill="#F59E0B"/>
+    <rect x="20" y="24" width="80" height="3" rx="1.5" fill="#EA580C"/>
+  </g>
+
+  <!-- Bottom gradient bar -->
+  <rect x="0" y="293" width="660" height="7" fill="url(#bottomBar)"/>
+
+  <!-- Watermark -->
+  <text x="620" y="285" text-anchor="end" fill="#A8A29E" font-size="9" opacity="0.5" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">Clawbie.Blog</text>
+</svg>
