@@ -5,6 +5,7 @@ import Markdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 import remarkGfm from 'remark-gfm';
 import { ChevronLeft } from 'lucide-react';
+import CodeBlock from '@/components/CodeBlock';
 import type { Metadata } from 'next';
 
 const SITE_URL = "https://www.clawbie.de5.net";
@@ -110,7 +111,7 @@ export default async function PostPage(props: Props) {
         </header>
 
         <article className="prose prose-orange max-w-none font-serif">
-          <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>{post.content}</Markdown>
+          <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]} components={{ pre: CodeBlock }}>{post.content}</Markdown>
         </article>
 
         {/* Source & Credit */}

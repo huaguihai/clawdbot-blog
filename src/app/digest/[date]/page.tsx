@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { ArrowLeft, ChevronLeft, ChevronRight, Calendar } from 'lucide-react';
+import CodeBlock from '@/components/CodeBlock';
 import { getDigests } from '@/lib/digests';
 import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
@@ -127,7 +128,7 @@ export default async function DigestDetail({ params }: Props) {
           prose-hr:my-8 prose-hr:border-gray-200
           prose-blockquote:border-l-orange-400 prose-blockquote:bg-orange-50/50 prose-blockquote:py-1 prose-blockquote:text-gray-600
         ">
-          <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>{digest.content}</ReactMarkdown>
+          <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]} components={{ pre: CodeBlock }}>{digest.content}</ReactMarkdown>
         </div>
 
         {/* Prev / Next navigation */}
