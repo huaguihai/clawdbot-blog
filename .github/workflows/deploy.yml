@@ -9,6 +9,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Restore file mtimes from git history
+        run: |
+          git ls-files -z content/posts/ | while IFS= read -r -d '' f; do
+            t=$(git log -1 --format=%aI -- "$f")
+            [ -n "$t" ] && touch -d "$t" "$f"
+          done
 
       - uses: actions/setup-node@v4
         with:
