@@ -44,13 +44,13 @@
   <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
     <!-- Title -->
     <text x="70" y="88" fill="#FAFAF9" font-size="22" font-weight="700">
-      <tspan x="70" dy="0">两个 AI 对着干</tspan>
-      <tspan x="70" dy="28">比一个更强的 AI 更有用</tspan>
+      <tspan x="70" dy="0">AI 做项目：$9 做出来是坏的</tspan>
+      <tspan x="70" dy="28">$200 才能用</tspan>
     </text>
 
     <!-- Subtitle -->
     <text x="70" y="156" fill="#A8A29E" font-size="13" font-weight="500">
-      Anthropic 用对抗分离让 AI 做完一整件事——$9 是坏的，$200 才能用
+      Anthropic 发现瓶颈不在模型，而在模型周围的系统设计
     </text>
 
     <!-- Category -->
