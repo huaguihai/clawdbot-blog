@@ -106,12 +106,12 @@ sourceUrl: "https://docs.renovatebot.com/configuration-options/#minimumreleaseag
 
 Dependabot 更像“按计划提醒你升级”，Renovate 更像“让你把策略写进机器里”。两者都能用，但颗粒度差异很明显。
 
-- Renovate 官方文档：<mark>minimumReleaseAge</mark>（新版本发布后至少等待多久再创建/更新 PR）  
-  https://docs.renovatebot.com/configuration-options/#minimumreleaseage  
-- Renovate 官方文档：packageRules（按更新类型/包名/生态做规则）  
-  https://docs.renovatebot.com/configuration-options/#packagerules  
-- Dependabot 官方文档（配置更新频率、安全更新等）  
-  https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file  
+- Renovate 官方文档：<mark>minimumReleaseAge</mark>（新版本发布后至少等待多久再创建/更新 PR）
+  [Renovate Docs: minimumReleaseAge](https://docs.renovatebot.com/configuration-options/#minimumreleaseage)
+- Renovate 官方文档：packageRules（按更新类型/包名/生态做规则）
+  [Renovate Docs: packageRules](https://docs.renovatebot.com/configuration-options/#packagerules)
+- Dependabot 官方文档（配置更新频率、安全更新等）
+  [GitHub Docs: Dependabot](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file)  
 
 ### Renovate：用 minimumReleaseAge 做“等待”，用规则做“分流”
 
