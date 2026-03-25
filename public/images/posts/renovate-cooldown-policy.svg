@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .bg { fill: #FAFAFA; }
+      .card { fill: #FFFFFF; stroke: #E5E7EB; stroke-width: 1; filter: url(#shadow); }
+      .title { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 18px; font-weight: 700; fill: #111827; }
+      .label { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 13px; fill: #111827; }
+      .muted { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 12px; fill: #6B7280; }
+      .tagText { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 12px; font-weight: 700; fill: #FFFFFF; }
+      .line { stroke: #9CA3AF; stroke-width: 2; stroke-dasharray: 6 6; fill: none; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#9CA3AF"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" x="0" y="0" width="660" height="400" rx="12"/>
+
+  <!-- Header -->
+  <text class="title" x="36" y="52">依赖更新为什么需要“冷却期”</text>
+  <text class="muted" x="36" y="74">用时间换确定性：按更新类型分流风险，而非一刀切</text>
+
+  <!-- Left: Update detected -->
+  <rect class="card" x="36" y="110" width="168" height="88" rx="12"/>
+  <rect x="48" y="124" width="72" height="22" rx="11" fill="#2563EB"/>
+  <text class="tagText" x="84" y="140" text-anchor="middle">触发</text>
+  <text class="label" x="48" y="168">发现依赖新版本</text>
+  <text class="muted" x="48" y="188">进入分流决策</text>
+
+  <!-- Decision card -->
+  <rect class="card" x="228" y="110" width="192" height="88" rx="12"/>
+  <rect x="240" y="124" width="96" height="22" rx="11" fill="#9333EA"/>
+  <text class="tagText" x="288" y="140" text-anchor="middle">分类</text>
+  <text class="label" x="240" y="168">更新类型？</text>
+  <text class="muted" x="240" y="188">安全 / 小版本 / 大版本</text>
+
+  <!-- Lines from left to decision -->
+  <path class="line" d="M204 154 L228 154" marker-end="url(#arrow)"/>
+
+  <!-- Three lanes -->
+  <!-- Lane 1: Security -->
+  <rect class="card" x="36" y="228" width="588" height="48" rx="12"/>
+  <rect x="48" y="240" width="96" height="24" rx="12" fill="#16A34A"/>
+  <text class="tagText" x="96" y="257" text-anchor="middle">安全补丁</text>
+  <text class="label" x="160" y="257">冷却期：几乎为 0 → 优先合入</text>
+  <text class="muted" x="420" y="257">目标：快速止血</text>
+
+  <!-- Lane 2: Minor -->
+  <rect class="card" x="36" y="288" width="588" height="48" rx="12"/>
+  <rect x="48" y="300" width="96" height="24" rx="12" fill="#D97706"/>
+  <text class="tagText" x="96" y="317" text-anchor="middle">普通小版本</text>
+  <text class="label" x="160" y="317">冷却期：等待社区反馈（如 3–7 天）</text>
+  <text class="muted" x="468" y="317">目标：避开首批坑</text>
+
+  <!-- Lane 3: Major -->
+  <rect class="card" x="36" y="348" width="588" height="48" rx="12"/>
+  <rect x="48" y="360" width="96" height="24" rx="12" fill="#EA580C"/>
+  <text class="tagText" x="96" y="377" text-anchor="middle">大版本升级</text>
+  <text class="label" x="160" y="377">冷却期：更长 + 人工审查 + 金丝雀发布</text>
+
+  <!-- Dashed lines from decision to lanes -->
+  <path class="line" d="M324 198 L324 224" marker-end="url(#arrow)"/>
+  <path class="line" d="M324 198 L324 284" marker-end="url(#arrow)"/>
+  <path class="line" d="M324 198 L324 344" marker-end="url(#arrow)"/>
+
+  <!-- Footer note -->
+  <text class="muted" x="36" y="104">提示：CI 不一定能覆盖真实世界的边界情况，冷却期用于降低“刚发布不稳定风险”</text>
+</svg>

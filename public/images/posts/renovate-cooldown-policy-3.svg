@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .txt{font-family:-apple-system,'Segoe UI',sans-serif;fill:#0f172a}
+      .muted{fill:#475569}
+      .small{font-size:12px}
+      .base{font-size:13px}
+      .h{font-size:16px;font-weight:700}
+      .hb{font-size:13px;font-weight:700}
+      .pill{font-size:12px;font-weight:700;fill:#ffffff}
+      .dash{stroke:#94a3b8;stroke-width:1.2;stroke-dasharray:5 5;fill:none}
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect x="10" y="10" width="640" height="380" rx="12" fill="#FAFAFA"/>
+
+  <!-- Title -->
+  <text x="30" y="44" class="txt h">怎么给依赖分级：变更类型 × 影响半径</text>
+  <text x="30" y="66" class="txt small muted">用二维交叉，决定冷却期、测试与人工评审强度</text>
+
+  <!-- Matrix Card -->
+  <rect x="30" y="84" width="600" height="240" rx="12" fill="#ffffff" filter="url(#shadow)"/>
+
+  <!-- Axes labels -->
+  <rect x="52" y="102" width="118" height="28" rx="8" fill="#2563EB"/>
+  <text x="111" y="121" text-anchor="middle" class="pill">变更类型</text>
+
+  <rect x="190" y="102" width="418" height="28" rx="8" fill="#EA580C"/>
+  <text x="399" y="121" text-anchor="middle" class="pill">影响半径（高 / 中 / 低）</text>
+
+  <!-- Column headers -->
+  <text x="258" y="152" class="txt hb" text-anchor="middle">高</text>
+  <text x="399" y="152" class="txt hb" text-anchor="middle">中</text>
+  <text x="540" y="152" class="txt hb" text-anchor="middle">低</text>
+
+  <!-- Row headers -->
+  <text x="111" y="182" class="txt hb" text-anchor="middle">安全补丁</text>
+  <text x="111" y="224" class="txt hb" text-anchor="middle">patch</text>
+  <text x="111" y="266" class="txt hb" text-anchor="middle">minor</text>
+  <text x="111" y="308" class="txt hb" text-anchor="middle">major</text>
+
+  <!-- Grid dashed lines -->
+  <!-- vertical -->
+  <path class="dash" d="M190 164 L608 164"/>
+  <path class="dash" d="M190 206 L608 206"/>
+  <path class="dash" d="M190 248 L608 248"/>
+  <path class="dash" d="M190 290 L608 290"/>
+  <path class="dash" d="M190 332 L608 332"/>
+
+  <path class="dash" d="M258 138 L258 332"/>
+  <path class="dash" d="M399 138 L399 332"/>
+  <path class="dash" d="M540 138 L540 332"/>
+
+  <!-- Cell strategy text (kept short) -->
+  <!-- Security -->
+  <text x="204" y="186" class="txt small">立即更新</text>
+  <text x="204" y="200" class="txt small muted">灰度 + 回滚预案</text>
+
+  <text x="345" y="186" class="txt small">尽快更新</text>
+  <text x="345" y="200" class="txt small muted">集成测试</text>
+
+  <text x="486" y="186" class="txt small">尽快批量</text>
+  <text x="486" y="200" class="txt small muted">自动化通过</text>
+
+  <!-- Patch -->
+  <text x="204" y="228" class="txt small">延长冷却</text>
+  <text x="204" y="242" class="txt small muted">禁止直通生产</text>
+
+  <text x="345" y="228" class="txt small">正常冷却</text>
+  <text x="345" y="242" class="txt small muted">要求集测</text>
+
+  <text x="486" y="228" class="txt small">批量更新</text>
+  <text x="486" y="242" class="txt small muted">降低人工</text>
+
+  <!-- Minor -->
+  <text x="204" y="270" class="txt small">延长冷却</text>
+  <text x="204" y="284" class="txt small muted">人工看变更</text>
+
+  <text x="345" y="270" class="txt small">正常冷却</text>
+  <text x="345" y="284" class="txt small muted">回归/集测</text>
+
+  <text x="486" y="270" class="txt small">分批更新</text>
+  <text x="486" y="284" class="txt small muted">观察指标</text>
+
+  <!-- Major -->
+  <text x="204" y="312" class="txt small">必须评审</text>
+  <text x="204" y="326" class="txt small muted">演练 + 预案</text>
+
+  <text x="345" y="312" class="txt small">必须评审</text>
+  <text x="345" y="326" class="txt small muted">完整回归</text>
+
+  <text x="486" y="312" class="txt small">择机升级</text>
+  <text x="486" y="326" class="txt small muted">避免频繁折腾</text>
+
+  <!-- Legend pills -->
+  <rect x="30" y="336" width="600" height="46" rx="12" fill="#ffffff" filter="url(#shadow)"/>
+
+  <rect x="48" y="350" width="140" height="24" rx="12" fill="#16A34A"/>
+  <text x="118" y="367" text-anchor="middle" class="pill">冷却期/门禁</text>
+
+  <rect x="200" y="350" width="140" height="24" rx="12" fill="#9333EA"/>
+  <text x="270" y="367" text-anchor="middle" class="pill">测试强度</text>
+
+  <rect x="352" y="350" width="250" height="24" rx="12" fill="#D97706"/>
+  <text x="477" y="367" text-anchor="middle" class="pill">不要只看 direct，要看坏了多疼</text>
+
+  <!-- Connector dash from matrix to legend -->
+  <path class="dash" d="M330 324 L330 336"/>
+</svg>
