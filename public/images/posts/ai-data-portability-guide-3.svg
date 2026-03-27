@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <text x="330" y="36" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#111827">JSON、Markdown、CSV 怎么选？</text>
+  <text x="330" y="60" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">主格式保结构，副格式保可读，索引格式保检索</text>
+
+  <rect x="40" y="92" width="170" height="190" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="40" y="92" width="170" height="8" rx="14" fill="#2563EB"/>
+  <text x="125" y="126" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#2563EB">JSON</text>
+  <text x="125" y="148" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">机器可读主格式</text>
+  <text x="56" y="178" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#111827">适合：完整会话、角色、时间戳</text>
+  <text x="56" y="200" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#16A34A">优点：结构完整，最适合再导入</text>
+  <text x="56" y="222" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#EA580C">坑点：普通用户不易直接阅读</text>
+  <rect x="56" y="242" width="72" height="24" rx="12" fill="#DBEAFE"/>
+  <text x="92" y="258" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#2563EB">必须有</text>
+
+  <rect x="245" y="92" width="170" height="190" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="245" y="92" width="170" height="8" rx="14" fill="#16A34A"/>
+  <text x="330" y="126" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#16A34A">Markdown</text>
+  <text x="330" y="148" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">人类可读副格式</text>
+  <text x="261" y="178" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#111827">适合：单条对话、草稿、整理</text>
+  <text x="261" y="200" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#16A34A">优点：直接查看，便于进笔记工具</text>
+  <text x="261" y="222" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#EA580C">坑点：部分结构信息容易丢失</text>
+  <rect x="261" y="242" width="84" height="24" rx="12" fill="#DCFCE7"/>
+  <text x="303" y="258" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#16A34A">建议提供</text>
+
+  <rect x="450" y="92" width="170" height="190" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="450" y="92" width="170" height="8" rx="14" fill="#EA580C"/>
+  <text x="535" y="126" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#EA580C">CSV</text>
+  <text x="535" y="148" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">检索与分析索引</text>
+  <text x="466" y="178" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#111827">适合：会话索引、导出清单、统计</text>
+  <text x="466" y="200" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#16A34A">优点：方便筛选、统计、批处理</text>
+  <text x="466" y="222" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#EA580C">坑点：不适合保存完整上下文</text>
+  <rect x="466" y="242" width="72" height="24" rx="12" fill="#FFEDD5"/>
+  <text x="502" y="258" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#EA580C">可选</text>
+
+  <line x1="125" y1="302" x2="330" y2="330" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="330" y1="302" x2="330" y2="330" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="535" y1="302" x2="330" y2="330" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <rect x="150" y="330" width="360" height="46" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="330" y="350" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#111827">最小实现推荐组合</text>
+  <text x="330" y="367" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#9333EA">JSON 主文件 + 每会话 Markdown + 一份 CSV 索引</text>
+
+  <text x="330" y="392" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">效果：机器能吃、用户能看、运营能排查</text>
+</svg>

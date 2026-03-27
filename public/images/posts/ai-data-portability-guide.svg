@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <style>
+      .bg { fill:#FAFAFA; }
+      .card { fill:#FFFFFF; stroke:#E5E7EB; stroke-width:1; }
+      .title { font-family:-apple-system, 'Segoe UI', sans-serif; font-size:14px; font-weight:700; fill:#111827; }
+      .text { font-family:-apple-system, 'Segoe UI', sans-serif; font-size:12px; fill:#374151; }
+      .muted { font-family:-apple-system, 'Segoe UI', sans-serif; font-size:11px; fill:#6B7280; }
+      .dash { stroke:#9CA3AF; stroke-width:2; stroke-dasharray:6 6; fill:none; }
+      .shadow { filter:url(#shadow); }
+    </style>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#9CA3AF"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" x="0" y="0" width="660" height="400" rx="12"/>
+
+  <!-- Card 1: Platform education -->
+  <rect class="card shadow" x="40" y="60" width="190" height="120" rx="12"/>
+  <circle cx="60" cy="82" r="8" fill="#2563EB"/>
+  <text class="title" x="75" y="87">主流平台已“教育用户”</text>
+  <text class="text" x="60" y="112">ChatGPT / Claude 等提供：</text>
+  <text class="muted" x="60" y="132">• 数据访问</text>
+  <text class="muted" x="60" y="148">• 导出通道</text>
+  <text class="muted" x="60" y="164">• 隐私/删除请求</text>
+
+  <!-- Card 2: User expectation -->
+  <rect class="card shadow" x="250" y="60" width="190" height="120" rx="12"/>
+  <circle cx="270" cy="82" r="8" fill="#EA580C"/>
+  <text class="title" x="285" y="87">用户默认你也该有答案</text>
+  <text class="text" x="270" y="115">“大平台都能导”</text>
+  <text class="text" x="270" y="135">→ 你也应支持可带走</text>
+  <text class="muted" x="270" y="158">（否则：不敢投入）</text>
+
+  <!-- Card 3: Chat becomes asset -->
+  <rect class="card shadow" x="460" y="40" width="170" height="160" rx="12"/>
+  <circle cx="480" cy="62" r="8" fill="#16A34A"/>
+  <text class="title" x="495" y="67">聊天记录不只是聊天</text>
+  <text class="muted" x="480" y="92">• 客户访谈原文</text>
+  <text class="muted" x="480" y="108">• 选题库/草稿</text>
+  <text class="muted" x="480" y="124">• 代码/报错记录</text>
+  <text class="muted" x="480" y="140">• 合同/发票/邮箱</text>
+  <text class="muted" x="480" y="156">• 偏好与工作流程</text>
+  <rect x="480" y="168" width="130" height="22" rx="11" fill="#DCFCE7"/>
+  <text class="text" x="490" y="184" fill="#166534" font-weight="700">沉淀为“用户资产”</text>
+
+  <!-- Bottom result card -->
+  <rect class="card shadow" x="165" y="235" width="330" height="120" rx="12"/>
+  <circle cx="185" cy="257" r="8" fill="#9333EA"/>
+  <text class="title" x="200" y="262">结果：信任门槛抬高</text>
+  <text class="text" x="185" y="290">当内容变“值钱”，用户更在意：</text>
+  <text class="muted" x="185" y="312">• 是否能导出/迁移（搬家方案）</text>
+  <text class="muted" x="185" y="330">• 是否可控、可删除、可审计</text>
+  <rect x="185" y="340" width="290" height="10" rx="5" fill="#FEF3C7"/>
+  <text class="muted" x="185" y="368" fill="#92400E">没有可带走能力 → 不敢把“贵重物品”放进来</text>
+
+  <!-- Connectors -->
+  <path class="dash" marker-end="url(#arrow)" d="M 230 120 C 240 120, 240 120, 250 120"/>
+  <path class="dash" marker-end="url(#arrow)" d="M 440 120 C 450 120, 450 120, 460 120"/>
+  <path class="dash" marker-end="url(#arrow)" d="M 345 180 C 345 205, 330 215, 320 235"/>
+  <path class="dash" marker-end="url(#arrow)" d="M 545 205 C 540 225, 515 235, 495 245"/>
+
+  <!-- Small label -->
+  <text class="muted" x="40" y="25">核心概念：平台示范 → 用户预期 → 聊天沉淀为资产 → 需要可迁移与可控</text>
+</svg>
