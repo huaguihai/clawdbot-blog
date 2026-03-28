@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563EB"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#16A34A"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#EA580C"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+
+  <text x="36" y="42" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#111827">先筛任务，不要先挑模型</text>
+  <text x="36" y="66" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#6B7280">首批 AI 试点更适合边界清楚、可复核、能算账的任务</text>
+
+  <rect x="36" y="110" width="128" height="176" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="36" y="110" width="128" height="40" rx="14" fill="#2563EB"/>
+  <text x="100" y="135" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">候选任务</text>
+  <text x="100" y="176" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">客户邮件初稿</text>
+  <text x="100" y="200" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">会议纪要整理</text>
+  <text x="100" y="224" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">双语翻译润色</text>
+  <text x="100" y="248" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#9CA3AF">或其他知识任务</text>
+
+  <rect x="228" y="96" width="180" height="54" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <circle cx="252" cy="123" r="11" fill="#2563EB"/>
+  <text x="252" y="127" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">1</text>
+  <text x="273" y="118" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#111827">任务高频</text>
+  <text x="273" y="136" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">值得反复使用，才有产品化价值</text>
+
+  <rect x="228" y="160" width="180" height="54" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <circle cx="252" cy="187" r="11" fill="#9333EA"/>
+  <text x="252" y="191" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">2</text>
+  <text x="273" y="182" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#111827">输出边界清楚</text>
+  <text x="273" y="200" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">格式、口径、目标都能定义</text>
+
+  <rect x="228" y="224" width="180" height="54" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <circle cx="252" cy="251" r="11" fill="#16A34A"/>
+  <text x="252" y="255" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">3</text>
+  <text x="273" y="246" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#111827">结果易审核</text>
+  <text x="273" y="264" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">人类 30 秒能判断好坏</text>
+
+  <rect x="228" y="288" width="180" height="54" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <circle cx="252" cy="315" r="11" fill="#D97706"/>
+  <text x="252" y="319" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">4</text>
+  <text x="273" y="310" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#111827">节省首稿时间</text>
+  <text x="273" y="328" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">AI 帮起草，人类做最终判断</text>
+
+  <line x1="164" y1="198" x2="220" y2="198" stroke="#2563EB" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#arrowBlue)"/>
+  <line x1="418" y1="198" x2="458" y2="198" stroke="#16A34A" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#arrowGreen)"/>
+  <line x1="418" y1="238" x2="458" y2="286" stroke="#EA580C" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#arrowOrange)"/>
+
+  <text x="438" y="186" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#16A34A" font-weight="700">全部满足</text>
+  <text x="426" y="258" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#EA580C" font-weight="700">任一不满足</text>
+
+  <rect x="468" y="104" width="156" height="126" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="468" y="104" width="156" height="38" rx="14" fill="#16A34A"/>
+  <text x="546" y="128" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">适合先做</text>
+  <text x="486" y="164" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 客户邮件初稿</text>
+  <text x="486" y="188" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 会议纪要整理</text>
+  <text x="486" y="212" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 双语翻译与润色</text>
+
+  <rect x="468" y="252" width="156" height="112" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="468" y="252" width="156" height="38" rx="14" fill="#EA580C"/>
+  <text x="546" y="276" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">先别做</text>
+  <text x="486" y="312" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 需求优先级判断</text>
+  <text x="486" y="336" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 绩效评价撰写</text>
+  <text x="486" y="360" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 商业战略分析</text>
+
+  <rect x="36" y="320" width="166" height="44" rx="12" fill="#FFF7ED" stroke="#FDBA74"/>
+  <text x="50" y="347" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12.5" fill="#9A3412">标准：人类看 30 秒就能判断好坏</text>
+</svg>

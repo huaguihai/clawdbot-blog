@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563EB"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#EA580C"/>
+    </marker>
+  </defs>
+
+  <text x="330" y="36" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#111827">双语翻译 GPT 的核心不是模型，而是术语资产</text>
+  <text x="330" y="60" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">用固定规则降低返工，保证术语与语气一致</text>
+
+  <rect x="250" y="86" width="160" height="62" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="250" y="86" width="160" height="62" rx="12" fill="none" stroke="#2563EB" stroke-width="2"/>
+  <text x="330" y="112" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#2563EB">双语翻译 GPT</text>
+  <text x="330" y="132" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">执行翻译与润色</text>
+
+  <rect x="55" y="190" width="150" height="90" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="55" y="190" width="150" height="90" rx="12" fill="none" stroke="#16A34A" stroke-width="2"/>
+  <text x="130" y="218" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#16A34A">术语对照表</text>
+  <text x="130" y="240" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">固定产品名</text>
+  <text x="130" y="258" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">统一功能译法</text>
+
+  <rect x="255" y="190" width="150" height="90" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="255" y="190" width="150" height="90" rx="12" fill="none" stroke="#9333EA" stroke-width="2"/>
+  <text x="330" y="218" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#9333EA">品牌语气说明</text>
+  <text x="330" y="240" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">专业 清晰</text>
+  <text x="330" y="258" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">不过度浮夸</text>
+
+  <rect x="455" y="190" width="150" height="90" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="455" y="190" width="150" height="90" rx="12" fill="none" stroke="#D97706" stroke-width="2"/>
+  <text x="530" y="218" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#D97706">高质量历史样本</text>
+  <text x="530" y="240" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">参考已发布内容</text>
+  <text x="530" y="258" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">学习稳定风格</text>
+
+  <line x1="130" y1="190" x2="290" y2="148" stroke="#2563EB" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrowBlue)"/>
+  <line x1="330" y1="190" x2="330" y2="148" stroke="#2563EB" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrowBlue)"/>
+  <line x1="530" y1="190" x2="370" y2="148" stroke="#2563EB" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrowBlue)"/>
+
+  <rect x="180" y="315" width="300" height="56" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="180" y="315" width="300" height="56" rx="12" fill="none" stroke="#EA580C" stroke-width="2"/>
+  <text x="330" y="338" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#EA580C">结果：减少返工成本</text>
+  <text x="330" y="358" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">术语一致、审校更快、重改更少</text>
+
+  <line x1="330" y1="148" x2="330" y2="315" stroke="#EA580C" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrowOrange)"/>
+</svg>
