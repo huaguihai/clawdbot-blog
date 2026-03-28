@@ -1,0 +1,87 @@
+<svg width="660" height="300" viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#44403C"/>
+      <stop offset="100%" stop-color="#1C1917"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="660" height="300" fill="url(#bg)"/>
+
+  <!-- 散点纹理 -->
+  <g fill="#FAFAF9" opacity="0.06">
+    <circle cx="80" cy="40" r="1.5"/>
+    <circle cx="160" cy="20" r="1"/>
+    <circle cx="300" cy="60" r="1.5"/>
+    <circle cx="420" cy="30" r="1"/>
+    <circle cx="550" cy="50" r="1.5"/>
+    <circle cx="620" cy="20" r="1"/>
+    <circle cx="200" cy="100" r="1"/>
+    <circle cx="380" cy="90" r="1.5"/>
+    <circle cx="500" cy="110" r="1"/>
+    <circle cx="640" cy="80" r="1.5"/>
+    <circle cx="100" cy="200" r="1"/>
+    <circle cx="250" cy="220" r="1.5"/>
+    <circle cx="450" cy="180" r="1"/>
+    <circle cx="600" cy="210" r="1.5"/>
+  </g>
+
+  <!-- 左侧橙色竖线 -->
+  <rect x="50" y="40" width="4" height="160" fill="url(#accent)" rx="2"/>
+
+  <!-- 标题 -->
+  <text font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif" font-weight="700" fill="#FAFAF9">
+    <tspan x="70" y="85" font-size="22">MCP 折腾了一年，</tspan>
+    <tspan x="70" y="115" font-size="22">Agent 最好用的接口其实是</tspan>
+    <tspan x="70" y="145" font-size="22">40 年前就有的</tspan>
+  </text>
+
+  <!-- 副标题 -->
+  <text x="70" y="172" font-size="13" fill="#A8A29E" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">CLI 才是 Agent 的母语，基础设施正在重新设计</text>
+
+  <!-- 分隔线 -->
+  <line x1="70" y1="185" x2="420" y2="185" stroke="#57534E" stroke-width="1"/>
+
+  <!-- 分类标签 -->
+  <text x="70" y="205" font-size="11" fill="#EA580C" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">行业速递</text>
+
+  <!-- Tag 胶囊 -->
+  <rect x="70" y="218" width="44" height="20" rx="10" fill="#57534E" opacity="0.4"/>
+  <text x="92" y="232" font-size="11" fill="#D6D3D1" text-anchor="middle" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">CLI</text>
+
+  <rect x="122" y="218" width="54" height="20" rx="10" fill="#57534E" opacity="0.4"/>
+  <text x="149" y="232" font-size="11" fill="#D6D3D1" text-anchor="middle" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">Agent</text>
+
+  <rect x="184" y="218" width="44" height="20" rx="10" fill="#57534E" opacity="0.4"/>
+  <text x="206" y="232" font-size="11" fill="#D6D3D1" text-anchor="middle" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">MCP</text>
+
+  <!-- 右下装饰：终端图标 -->
+  <g opacity="0.18" stroke="#EA580C" stroke-width="2" fill="none" transform="translate(490, 150)">
+    <!-- 终端窗口外框 -->
+    <rect x="0" y="0" width="120" height="80" rx="8" stroke="#F59E0B"/>
+    <!-- 窗口顶部按钮 -->
+    <circle cx="16" cy="14" r="4" fill="#EA580C" stroke="none" opacity="0.6"/>
+    <circle cx="30" cy="14" r="4" fill="#F59E0B" stroke="none" opacity="0.6"/>
+    <circle cx="44" cy="14" r="4" fill="#EA580C" stroke="none" opacity="0.4"/>
+    <!-- 分隔线 -->
+    <line x1="0" y1="26" x2="120" y2="26" stroke="#57534E" stroke-width="1"/>
+    <!-- 命令提示符 -->
+    <text x="10" y="45" font-size="12" fill="#F59E0B" font-family="monospace" opacity="1" stroke="none">$ stripe</text>
+    <text x="10" y="62" font-size="12" fill="#EA580C" font-family="monospace" opacity="1" stroke="none">projects add</text>
+  </g>
+
+  <!-- 底部渐变条 -->
+  <rect x="0" y="293" width="660" height="7" fill="url(#bar)"/>
+
+  <!-- 水印 -->
+  <text x="640" y="285" font-size="9" fill="#FAFAF9" opacity="0.5" text-anchor="end" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">Clawbie.Blog</text>
+</svg>
