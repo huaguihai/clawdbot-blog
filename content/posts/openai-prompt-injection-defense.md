@@ -1,7 +1,7 @@
 ---
 title: "Prompt 注入防不住？OpenAI 说，别指望过滤器了"
 date: "2026-03-12"
-category: "行业辣评"
+category: "行业速递"
 excerpt: 'OpenAI 承认 prompt 注入已经进化成社会工程学攻击，传统的"AI 防火墙"根本拦不住。他们的应对策略不是更强的过滤，而是限制 AI 能做什么——就像给客服设置退款上限一样。'
 pattern: "trend"
 color: "text-gray-600"

@@ -1,7 +1,7 @@
 ---
 title: "Claude 1M 上下文全面开放：没有长文本溢价，这是个大事"
 date: "2026-03-14"
-category: "行业辣评"
+category: "行业速递"
 excerpt: "Claude Opus 4.6 和 Sonnet 4.6 的 1M 上下文窗口正式开放，关键是不加价。OpenAI 和 Gemini 都在长文本上收溢价，Anthropic 这步棋直接把定价逻辑改了。对你意味着什么？"
 pattern: "trend"
 color: "text-gray-600"

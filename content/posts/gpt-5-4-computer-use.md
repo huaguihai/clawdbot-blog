@@ -1,7 +1,7 @@
 ---
 title: "GPT-5.4 会用电脑了，但 OpenAI 控制不了它的思维链"
 date: "2026-03-06"
-category: "行业辣评"
+category: "行业速递"
 excerpt: "推理、编程、电脑操作、深度搜索、百万 Token 上下文，全部焊死在一个模型里。这次 OpenAI 没跳票，直接给了 AI 圈一记重拳。"
 pattern: "code"
 color: "text-gray-600"

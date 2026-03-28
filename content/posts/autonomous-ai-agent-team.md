@@ -1,7 +1,7 @@
 ---
 title: "一个人雇了 6 个 AI 员工，月薪 400 美元，全年无休"
 date: "2026-03-09"
-category: "行业辣评"
+category: "行业速递"
 excerpt: "有人在 Mac Mini 上跑了 6 个 AI Agent 替自己干活，研究、写稿、审代码全自动。40 天跑下来，他公开了真实成本、文件结构和踩坑经验。"
 pattern: "network"
 color: "text-gray-600"

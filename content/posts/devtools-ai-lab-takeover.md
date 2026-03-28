@@ -1,7 +1,7 @@
 ---
 title: "OpenAI 买了 uv，Cursor 换了 Kimi——开发工具不再中立"
 date: "2026-03-22"
-category: "行业辣评"
+category: "行业速递"
 excerpt: "三家 AI 实验室同时收购开发工具，Cursor 底层悄悄换成 Kimi k2.5。你天天用的包管理器、运行时、IDE 正在变成模型分发渠道。工具中立性这个假设，可能已经不成立了。"
 pattern: "trend"
 color: "text-gray-600"

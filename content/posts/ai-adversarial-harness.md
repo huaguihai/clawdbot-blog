@@ -1,7 +1,7 @@
 ---
 title: "AI 越聊越敷衍不是错觉，Anthropic 找到了根因和解法"
 date: "2026-03-25"
-category: "行业辣评"
+category: "行业速递"
 excerpt: "AI demo 5 分钟做个 App，自己试总差一口气。Anthropic 工程师发现瓶颈不在模型，而在模型周围的系统设计——最有效的杠杆是让两个 AI 互相挑刺。"
 pattern: "trend"
 color: "text-gray-600"

@@ -1,7 +1,7 @@
 ---
 title: "LiteLLM 被投毒后，我给 Agent 装了三道安检门"
 date: "2026-03-25"
-category: "行业辣评"
+category: "行业速递"
 excerpt: "一行 pip install 就能偷光你的 SSH 密钥和 AWS 凭证，9700 万月下载量的 LiteLLM 被投毒了。安全建议都是给程序员的，非技术用户怎么办？我给 Agent 装了三层自动防御。"
 tags: ["供应链安全", "Agent", "LiteLLM", "sentinel"]
 sourceUrl: "https://x.com/karpathy/status/2036487306585268612"

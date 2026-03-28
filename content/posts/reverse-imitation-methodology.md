@@ -1,7 +1,7 @@
 ---
 title: "别抄好产品了：反向模仿烂产品，才是独立开发者的蓝海"
 date: "2026-02-26"
-category: "行业辣评"
+category: "行业速递"
 excerpt: "人人都在抄 Notion、抄 Linear，但有人靠模仿「老年养生号」的风格反向劝导父母，火遍全网。烂产品的壳 + 好内容的核 = 下一个流量密码。"
 pattern: "trend"
 color: "text-gray-600"

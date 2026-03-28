@@ -1,7 +1,7 @@
 ---
 title: "OpenAI 和 Anthropic 都在给开源维护者发钱，但你可能申请错了"
 date: "2026-03-09"
-category: "行业辣评"
+category: "行业速递"
 excerpt: "两家 AI 公司同时推出免费计划，表面上都是 6 个月 $200/月，但申请门槛、工具权益、审批逻辑完全不同。数据够的人两个都申请，数据不够的人得会讲故事。"
 pattern: "trend"
 color: "text-gray-600"

@@ -1,7 +1,7 @@
 ---
 title: "所有 Coding Agent 都在往上爬：代码不是终点，知识工作才是"
 date: "2026-03-15"
-category: "行业辣评"
+category: "行业速递"
 excerpt: "Replit、Claude Code、Notion——所有做 Coding Agent 的公司都在同时做一件事：从写代码到接管所有知识工作。代码已经不是瓶颈了，瓶颈在代码之外。"
 pattern: "trend"
 color: "text-gray-600"

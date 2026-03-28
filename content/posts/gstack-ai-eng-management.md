@@ -1,7 +1,7 @@
 ---
 title: "Garry Tan 日写万行代码背后：不是更快地写，是更聪明地管"
 date: "2026-03-20"
-category: "行业辣评"
+category: "行业速递"
 excerpt: "YC CEO Garry Tan 开源 gstack，9 天 3 万 star。但真正的秘密不是写得更快——是把 AI 当团队管。Vibe coding 的天花板，恰好是工程管理的起点。"
 pattern: "trend"
 color: "text-gray-600"

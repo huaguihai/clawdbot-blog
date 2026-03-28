@@ -1,7 +1,7 @@
 ---
 title: "MiniMax M2.7：GLM-5 同等水平，成本只要三分之一"
 date: "2026-03-20"
-category: "行业辣评"
+category: "行业速递"
 excerpt: "MiniMax M2.7 在 SWE-Pro 上拿到 56.22%，匹配 GLM-5 的开源模型性能，但运行成本只要 $176——不到 GLM-5 的三分之一。这对本地跑 Agent 的人意味着什么？"
 pattern: "trend"
 color: "text-gray-600"
