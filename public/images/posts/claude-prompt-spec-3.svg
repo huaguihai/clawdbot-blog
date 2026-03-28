@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .font { font-family: -apple-system, 'Segoe UI', sans-serif; }
+      .title { font-size: 18px; font-weight: 700; fill: #111827; }
+      .h { font-size: 13px; font-weight: 700; fill: #111827; }
+      .t { font-size: 12px; fill: #374151; }
+      .chip { font-size: 12px; font-weight: 700; fill: #111827; }
+      .muted { font-size: 11px; fill: #6B7280; }
+    </style>
+  </defs>
+
+  <!-- background -->
+  <rect x="10" y="10" width="640" height="380" rx="12" fill="#FAFAFA"/>
+
+  <!-- Header -->
+  <text x="40" y="52" class="font title">Model Spec：把模型行为写出来，产品才稳定</text>
+  <text x="40" y="74" class="font muted">不是靠“神 prompt”，而是显式行为规则 + 可评测、可替换</text>
+
+  <!-- Center card: Behavior Spec -->
+  <rect x="165" y="105" width="330" height="150" rx="12" fill="#FFFFFF" filter="url(#shadow)" stroke="#E5E7EB"/>
+  <rect x="165" y="105" width="330" height="32" rx="12" fill="#2563EB"/>
+  <text x="185" y="127" class="font" font-size="13" font-weight="800" fill="#FFFFFF">行为说明书（Behavior Spec）</text>
+
+  <!-- steps inside -->
+  <!-- Step chips -->
+  <rect x="185" y="152" width="135" height="28" rx="10" fill="#EEF2FF" stroke="#C7D2FE"/>
+  <circle cx="198" cy="166" r="6" fill="#2563EB"/>
+  <text x="210" y="170" class="font chip">1 定义角色</text>
+
+  <rect x="340" y="152" width="135" height="28" rx="10" fill="#FFF7ED" stroke="#FED7AA"/>
+  <circle cx="353" cy="166" r="6" fill="#EA580C"/>
+  <text x="365" y="170" class="font chip">2 定义边界</text>
+
+  <rect x="185" y="192" width="135" height="28" rx="10" fill="#F5F3FF" stroke="#DDD6FE"/>
+  <circle cx="198" cy="206" r="6" fill="#9333EA"/>
+  <text x="210" y="210" class="font chip">3 冲突优先级</text>
+
+  <rect x="340" y="192" width="135" height="28" rx="10" fill="#ECFDF5" stroke="#BBF7D0"/>
+  <circle cx="353" cy="206" r="6" fill="#16A34A"/>
+  <text x="365" y="210" class="font chip">4 例子钉灰区</text>
+
+  <text x="185" y="238" class="font t">把隐性默契变成可复用、可审计的规则资产</text>
+
+  <!-- Left benefits -->
+  <rect x="40" y="115" width="200" height="70" rx="12" fill="#FFFFFF" filter="url(#shadow)" stroke="#E5E7EB"/>
+  <rect x="40" y="115" width="6" height="70" rx="12" fill="#16A34A"/>
+  <text x="55" y="140" class="font h">约束/训练不同模型</text>
+  <text x="55" y="160" class="font t">同一规则，适配多供应商</text>
+
+  <rect x="40" y="205" width="200" height="70" rx="12" fill="#FFFFFF" filter="url(#shadow)" stroke="#E5E7EB"/>
+  <rect x="40" y="205" width="6" height="70" rx="12" fill="#D97706"/>
+  <text x="55" y="230" class="font h">做评测，防跑偏</text>
+  <text x="55" y="250" class="font t">规则即测试用例与指标</text>
+
+  <!-- Right benefits -->
+  <rect x="420" y="265" width="200" height="70" rx="12" fill="#FFFFFF" filter="url(#shadow)" stroke="#E5E7EB"/>
+  <rect x="614" y="265" width="6" height="70" rx="12" fill="#2563EB"/>
+  <text x="435" y="290" class="font h">出事故，快速定位</text>
+  <text x="435" y="310" class="font t">模型问题 vs 规则问题</text>
+
+  <rect x="420" y="115" width="200" height="70" rx="12" fill="#FFFFFF" filter="url(#shadow)" stroke="#E5E7EB"/>
+  <rect x="614" y="115" width="6" height="70" rx="12" fill="#9333EA"/>
+  <text x="435" y="140" class="font h">换模型/供应商不重写</text>
+  <text x="435" y="160" class="font t">产品能力可迁移、可迭代</text>
+
+  <!-- Connectors (dashed) -->
+  <line x1="165" y1="160" x2="240" y2="150" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="165" y1="220" x2="240" y2="240" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <line x1="495" y1="150" x2="420" y2="150" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="495" y1="240" x2="420" y2="300" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- Bottom summary -->
+  <rect x="40" y="315" width="580" height="55" rx="12" fill="#FFFFFF" filter="url(#shadow)" stroke="#E5E7EB"/>
+  <text x="60" y="340" class="font h">核心结论</text>
+  <text x="140" y="340" class="font t">AI 助手要稳定：先写清行为规则，再用它训练/约束、评测、排障与迁移</text>
+</svg>

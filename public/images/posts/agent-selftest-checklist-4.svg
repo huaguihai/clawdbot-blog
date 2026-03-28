@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .bg{fill:#FAFAFA;}
+      .card{fill:#FFFFFF;stroke:#E5E7EB;stroke-width:1;filter:url(#shadow);}
+      .title{font-family:-apple-system,'Segoe UI',sans-serif;font-size:16px;fill:#111827;font-weight:700;}
+      .text{font-family:-apple-system,'Segoe UI',sans-serif;font-size:13px;fill:#374151;}
+      .muted{font-family:-apple-system,'Segoe UI',sans-serif;font-size:12px;fill:#6B7280;}
+      .badgeText{font-family:-apple-system,'Segoe UI',sans-serif;font-size:12px;fill:#FFFFFF;font-weight:700;}
+      .line{stroke:#9CA3AF;stroke-width:2;stroke-dasharray:6 6;fill:none;}
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" x="0" y="0" width="660" height="400" rx="12"/>
+
+  <!-- Header -->
+  <text x="36" y="52" class="title">修复优先级路线图（先把“事故做不实”）</text>
+  <text x="36" y="76" class="muted">按返工最少的顺序推进：隔离与最小权限 → 可审计与可回滚 → 自动化回归</text>
+
+  <!-- Step 1 card -->
+  <rect class="card" x="36" y="110" width="588" height="78" rx="12"/>
+  <rect x="52" y="129" width="34" height="34" rx="10" fill="#2563EB"/>
+  <text x="69" y="151" text-anchor="middle" class="badgeText">1</text>
+  <text x="100" y="140" class="title" fill="#2563EB">隔离与最小权限</text>
+  <text x="100" y="162" class="text">沙箱工具 / 测试数据 / 按角色发放能力；高风险动作默认关闭</text>
+
+  <!-- Connector 1 -->
+  <path class="line" d="M330 188 L330 212"/>
+  <path d="M330 212 L324 204 L336 204 Z" fill="#9CA3AF"/>
+
+  <!-- Step 2 card -->
+  <rect class="card" x="36" y="214" width="588" height="78" rx="12"/>
+  <rect x="52" y="233" width="34" height="34" rx="10" fill="#16A34A"/>
+  <text x="69" y="255" text-anchor="middle" class="badgeText">2</text>
+  <text x="100" y="244" class="title" fill="#16A34A">可审计与可回滚</text>
+  <text x="100" y="266" class="text">工具调用留痕；关键状态可撤销；能回答“谁让它做的”</text>
+
+  <!-- Connector 2 -->
+  <path class="line" d="M330 292 L330 316"/>
+  <path d="M330 316 L324 308 L336 308 Z" fill="#9CA3AF"/>
+
+  <!-- Step 3 card -->
+  <rect class="card" x="36" y="318" width="588" height="66" rx="12"/>
+  <rect x="52" y="335" width="34" height="34" rx="10" fill="#9333EA"/>
+  <text x="69" y="357" text-anchor="middle" class="badgeText">3</text>
+  <text x="100" y="346" class="title" fill="#9333EA">自动化回归</text>
+  <text x="100" y="368" class="text">把攻击提示词纳入用例库；每次发版 CI 跑一遍（或发布前手跑）</text>
+
+  <!-- Highlight note -->
+  <rect x="418" y="92" width="206" height="26" rx="10" fill="#EA580C" opacity="0.10"/>
+  <text x="428" y="110" class="muted" fill="#EA580C" font-weight="700">做到第 2 步后，注入风险显著下降</text>
+
+</svg>

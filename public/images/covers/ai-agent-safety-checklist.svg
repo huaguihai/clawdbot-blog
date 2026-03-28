@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="300" viewBox="0 0 660 300">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="660" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#44403C"/>
+      <stop offset="1" stop-color="#1C1917"/>
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="660" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EA580C"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+
+    <!-- paper-like grain -->
+    <pattern id="grain" width="90" height="70" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="14" r="1.2" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="28" cy="8" r="1.0" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="44" cy="22" r="0.9" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="62" cy="12" r="1.1" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="79" cy="28" r="0.8" fill="#D6D3D1" opacity="0.06"/>
+
+      <circle cx="16" cy="40" r="0.9" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="36" cy="48" r="1.1" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="55" cy="38" r="0.8" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="72" cy="54" r="1.0" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="84" cy="46" r="0.9" fill="#D6D3D1" opacity="0.06"/>
+
+      <circle cx="8" cy="62" r="0.8" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="24" cy="60" r="1.0" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="48" cy="64" r="0.9" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="68" cy="66" r="0.8" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="86" cy="62" r="1.1" fill="#D6D3D1" opacity="0.06"/>
+    </pattern>
+
+    <style>
+      .title { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; font-weight: 800; font-size: 22px; fill: #FAFAF9; }
+      .subtitle { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; font-weight: 500; font-size: 13px; fill: #A8A29E; }
+      .tagText { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; font-weight: 600; font-size: 12px; fill: #D6D3D1; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="660" height="300" fill="url(#bgGrad)"/>
+  <rect x="0" y="0" width="660" height="300" fill="url(#grain)"/>
+
+  <!-- Left accent line -->
+  <rect x="50" y="22" width="5" height="256" rx="2.5" fill="url(#accentGrad)" opacity="0.95"/>
+
+  <!-- Text block (x from 70 to 600) -->
+  <text x="70" y="86" class="title">
+    <tspan x="70" dy="0">AI助手上线前，</tspan>
+    <tspan x="70" dy="28">先过这份安全自测表</tspan>
+  </text>
+
+  <text x="70" y="150" class="subtitle">
+    AI助手上线前，先别急着发给用户。OpenAI 最近把 Agent 风险写进赏金
+  </text>
+
+  <!-- Tags (bottom area y≈240-260) -->
+  <g>
+    <rect x="70" y="242" width="76" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+    <text x="108" y="259" text-anchor="middle" class="tagText">注入</text>
+
+    <rect x="156" y="242" width="76" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+    <text x="194" y="259" text-anchor="middle" class="tagText">泄密</text>
+
+    <rect x="242" y="242" width="88" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+    <text x="286" y="259" text-anchor="middle" class="tagText">越权操作</text>
+  </g>
+
+  <!-- Decorative elements (right-bottom corner; must be right of tags) -->
+  <!-- Place decorations to the right of last tag (ends at x=330), so start >=480 -->
+  <g transform="translate(498,188)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Shield icon -->
+    <path d="M52 6 L76 16 V42 C76 61 63 74 52 78 C41 74 28 61 28 42 V16 Z"
+          stroke="#EA580C" stroke-width="2.2" opacity="0.22"/>
+    <path d="M52 22 V46"
+          stroke="#A8A29E" stroke-width="2.2" opacity="0.20"/>
+    <path d="M52 55 L52 56"
+          stroke="#A8A29E" stroke-width="4" opacity="0.20"/>
+
+    <!-- Checklist card -->
+    <rect x="96" y="18" width="56" height="70" rx="10" stroke="#A8A29E" stroke-width="2" opacity="0.18"/>
+    <path d="M110 36 L116 42 L126 30" stroke="#EA580C" stroke-width="2.2" opacity="0.22"/>
+    <path d="M110 54 L116 60 L126 48" stroke="#EA580C" stroke-width="2.2" opacity="0.22"/>
+    <path d="M110 72 L116 78 L126 66" stroke="#EA580C" stroke-width="2.2" opacity="0.22"/>
+    <path d="M132 36 H144" stroke="#A8A29E" stroke-width="2" opacity="0.18"/>
+    <path d="M132 54 H144" stroke="#A8A29E" stroke-width="2" opacity="0.18"/>
+    <path d="M132 72 H144" stroke="#A8A29E" stroke-width="2" opacity="0.18"/>
+  </g>
+
+  <!-- Bottom color bar -->
+  <rect x="0" y="293" width="660" height="7" fill="url(#accentGrad)"/>
+</svg>

@@ -1,0 +1,64 @@
+<svg width="660" height="300" viewBox="0 0 660 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="660" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#44403C"/>
+      <stop offset="100%" stop-color="#1C1917"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="50" y1="0" x2="50" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <pattern id="texture" x="0" y="0" width="66" height="50" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="10" r="1.1" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="24" cy="18" r="0.9" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="41" cy="7" r="1.2" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="57" cy="21" r="0.8" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="14" cy="33" r="1.0" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="31" cy="42" r="0.7" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="52" cy="36" r="1.1" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="61" cy="46" r="0.9" fill="#D6D3D1" opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <rect width="660" height="300" fill="url(#bgGrad)"/>
+  <rect width="660" height="300" fill="url(#texture)"/>
+
+  <rect x="50" y="28" width="5" height="214" rx="2.5" fill="url(#accentGrad)"/>
+
+  <text x="70" y="74" fill="#FAFAF9" font-size="22" font-weight="700" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <tspan x="70" dy="0">Agent自测清单：上线前</tspan>
+    <tspan x="70" dy="28">抓出4类致命坑</tspan>
+  </text>
+
+  <text x="70" y="134" fill="#A8A29E" font-size="13" font-weight="400" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    Agent自测清单不是「更谨慎点」四个字。照着 OpenAI 近期安全文档/赏金
+  </text>
+
+  <g>
+    <rect x="70" y="242" width="78" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="109" y="258" text-anchor="middle" fill="#D6D3D1" font-size="13" font-weight="500" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">提示注入</text>
+
+    <rect x="158" y="242" width="78" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="197" y="258" text-anchor="middle" fill="#D6D3D1" font-size="13" font-weight="500" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">数据外泄</text>
+
+    <rect x="246" y="242" width="90" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="291" y="258" text-anchor="middle" fill="#D6D3D1" font-size="13" font-weight="500" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">越权调用</text>
+  </g>
+
+  <g opacity="0.22" stroke="#A8A29E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <rect x="505" y="188" width="56" height="42" rx="8"/>
+    <path d="M517 202H549"/>
+    <path d="M517 212H541"/>
+    <path d="M517 222H534"/>
+    <circle cx="551" cy="220" r="10" stroke="#EA580C"/>
+    <path d="M558 227L566 235" stroke="#EA580C"/>
+  </g>
+
+  <g opacity="0.18" stroke="#EA580C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M585 212L597 200L609 212L609 234C609 240 604 245 597 245C590 245 585 240 585 234V212Z"/>
+    <path d="M593 222V229"/>
+    <circle cx="597" cy="217" r="1.5" fill="#EA580C" stroke="none"/>
+  </g>
+
+  <rect x="0" y="293" width="660" height="7" fill="url(#accentGrad)"/>
+</svg>

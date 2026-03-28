@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .bg { fill:#FAFAFA; }
+      .card { fill:#FFFFFF; stroke:#E5E7EB; stroke-width:1; filter:url(#shadow); }
+      .title { font-family:-apple-system,'Segoe UI',sans-serif; font-size:16px; font-weight:700; fill:#111827; }
+      .text { font-family:-apple-system,'Segoe UI',sans-serif; font-size:13px; fill:#111827; }
+      .muted { font-family:-apple-system,'Segoe UI',sans-serif; font-size:12px; fill:#6B7280; }
+      .small { font-family:-apple-system,'Segoe UI',sans-serif; font-size:12px; fill:#111827; }
+      .dash { fill:none; stroke:#9CA3AF; stroke-width:2; stroke-dasharray:6 6; }
+      .dashBlue { fill:none; stroke:#2563EB; stroke-width:2; stroke-dasharray:6 6; }
+      .dashOrange { fill:none; stroke:#EA580C; stroke-width:2; stroke-dasharray:6 6; }
+      .pillBlue { fill:#DBEAFE; stroke:#2563EB; stroke-width:1; }
+      .pillOrange { fill:#FFEDD5; stroke:#EA580C; stroke-width:1; }
+      .pillGreen { fill:#DCFCE7; stroke:#16A34A; stroke-width:1; }
+      .pillPurple { fill:#EDE9FE; stroke:#9333EA; stroke-width:1; }
+      .pillYellow { fill:#FEF3C7; stroke:#D97706; stroke-width:1; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#9CA3AF"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#2563EB"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#EA580C"/>
+    </marker>
+  </defs>
+
+  <!-- background -->
+  <rect class="bg" x="0" y="0" width="660" height="400" rx="12"/>
+
+  <!-- Left: third-party content sources -->
+  <rect class="card" x="28" y="52" width="210" height="300" rx="12"/>
+  <text class="title" x="44" y="84">第三方内容（会被读取）</text>
+  <text class="muted" x="44" y="106">攻击把“命令”藏在这里</text>
+
+  <rect class="pillBlue" x="44" y="128" width="178" height="28" rx="10"/>
+  <text class="small" x="58" y="147">网页正文 / 页面底部</text>
+
+  <rect class="pillPurple" x="44" y="166" width="178" height="28" rx="10"/>
+  <text class="small" x="58" y="185">PDF / 附件第一页</text>
+
+  <rect class="pillGreen" x="44" y="204" width="178" height="28" rx="10"/>
+  <text class="small" x="58" y="223">邮件内容 / 工单备注</text>
+
+  <rect class="pillYellow" x="44" y="242" width="178" height="28" rx="10"/>
+  <text class="small" x="58" y="261">日历邀请说明</text>
+
+  <rect class="pillOrange" x="44" y="280" width="178" height="56" rx="10"/>
+  <text class="small" x="58" y="304">表格 / 知识库备注列</text>
+  <text class="muted" x="58" y="324">可能夹带：忽略规则、转发、删除…</text>
+
+  <!-- Center: AI assistant -->
+  <rect class="card" x="260" y="120" width="170" height="160" rx="12"/>
+  <text class="title" x="275" y="152">AI 助手</text>
+  <text class="muted" x="275" y="174">关键判断：</text>
+  <text class="text" x="275" y="196">把“看到的内容”</text>
+  <text class="text" x="275" y="216">当成“应执行的命令”？</text>
+  <rect x="275" y="232" width="140" height="30" rx="10" fill="#F3F4F6" stroke="#E5E7EB"/>
+  <text class="small" x="285" y="252">内容 vs 命令 边界</text>
+
+  <!-- Dashed flow from sources to assistant -->
+  <path class="dash" d="M238 202 C 252 202, 250 202, 260 202" marker-end="url(#arrow)"/>
+
+  <!-- Right: two outcomes -->
+  <!-- Safe -->
+  <rect class="card" x="454" y="70" width="178" height="130" rx="12"/>
+  <text class="title" x="470" y="102" fill="#16A34A">安全路径</text>
+  <text class="text" x="470" y="126">只把外部内容当素材</text>
+  <text class="text" x="470" y="148">不改变原任务目标</text>
+  <text class="text" x="470" y="170">高风险动作先二次确认</text>
+
+  <!-- Risky -->
+  <rect class="card" x="454" y="224" width="178" height="128" rx="12"/>
+  <text class="title" x="470" y="256" fill="#EA580C">危险信号</text>
+  <text class="text" x="470" y="280">泄露系统/开发者提示</text>
+  <text class="text" x="470" y="302">越界调用工具（外发/删除）</text>
+  <text class="text" x="470" y="324">把“内容里的命令”提权</text>
+
+  <!-- Split arrows from assistant -->
+  <path class="dashBlue" d="M430 166 C 450 150, 444 132, 454 126" marker-end="url(#arrowBlue)"/>
+  <path class="dashOrange" d="M430 234 C 450 250, 444 270, 454 288" marker-end="url(#arrowOrange)"/>
+
+  <!-- Caption -->
+  <text class="muted" x="28" y="382">测试第三方 prompt injection：观察读取外部内容后是否“改任务 / 动工具 / 泄露提示词”。</text>
+</svg>

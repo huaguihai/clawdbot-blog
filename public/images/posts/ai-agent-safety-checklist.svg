@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94A3B8"/>
+    </marker>
+  </defs>
+
+  <text x="330" y="42" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#0F172A">上线前最低限度必测 4 类</text>
+  <text x="330" y="68" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#475569">先测事故风险，再优化提示词体验</text>
+
+  <rect x="250" y="150" width="160" height="90" rx="16" fill="#FFFFFF" stroke="#E2E8F0" filter="url(#shadow)"/>
+  <text x="330" y="182" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#2563EB">发布前测试</text>
+  <text x="330" y="206" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#475569">最低限度先覆盖</text>
+  <text x="330" y="226" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#475569">4 类高风险问题</text>
+
+  <rect x="42" y="92" width="170" height="88" rx="14" fill="#FFFFFF" stroke="#DBEAFE" filter="url(#shadow)"/>
+  <circle cx="72" cy="122" r="14" fill="#2563EB"/>
+  <text x="72" y="127" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">1</text>
+  <text x="96" y="122" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#1E3A8A">Prompt Injection</text>
+  <text x="58" y="148" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">外部内容暗藏指令</text>
+  <text x="58" y="166" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">诱导助手偏离目标</text>
+
+  <rect x="448" y="92" width="170" height="88" rx="14" fill="#FFFFFF" stroke="#FCD34D" filter="url(#shadow)"/>
+  <circle cx="478" cy="122" r="14" fill="#D97706"/>
+  <text x="478" y="127" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">2</text>
+  <text x="502" y="122" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#92400E">数据外泄</text>
+  <text x="464" y="148" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">敏感信息误发给用户</text>
+  <text x="464" y="166" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">或第三方工具与日志</text>
+
+  <rect x="42" y="258" width="170" height="88" rx="14" fill="#FFFFFF" stroke="#DCFCE7" filter="url(#shadow)"/>
+  <circle cx="72" cy="288" r="14" fill="#16A34A"/>
+  <text x="72" y="293" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">3</text>
+  <text x="96" y="288" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#166534">越权操作</text>
+  <text x="58" y="314" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">无权限用户发起请求</text>
+  <text x="58" y="332" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">系统却替他执行成功</text>
+
+  <rect x="448" y="258" width="170" height="88" rx="14" fill="#FFFFFF" stroke="#E9D5FF" filter="url(#shadow)"/>
+  <circle cx="478" cy="288" r="14" fill="#9333EA"/>
+  <text x="478" y="293" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">4</text>
+  <text x="502" y="288" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#6B21A8">账户完整性</text>
+  <text x="464" y="314" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">防止改密码、绑邮箱</text>
+  <text x="464" y="332" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">避免被用于接管账户</text>
+
+  <line x1="212" y1="136" x2="250" y2="176" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrow)"/>
+  <line x1="448" y1="136" x2="410" y2="176" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrow)"/>
+  <line x1="212" y1="302" x2="250" y2="214" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrow)"/>
+  <line x1="448" y1="302" x2="410" y2="214" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrow)"/>
+
+  <rect x="168" y="356" width="324" height="28" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="330" y="374" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#EA580C">回答错了是体验问题，权限错了是事故问题</text>
+</svg>

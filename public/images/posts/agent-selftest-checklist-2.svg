@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563EB"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#16A34A"/>
+    </marker>
+  </defs>
+
+  <text x="330" y="34" text-anchor="middle" fill="#0F172A" font-size="22" font-weight="700" font-family="-apple-system, 'Segoe UI', sans-serif">把模型风险翻译成系统故障形态</text>
+  <text x="330" y="58" text-anchor="middle" fill="#475569" font-size="12" font-family="-apple-system, 'Segoe UI', sans-serif">核心思路：识别风险 → 映射故障 → 找根因 → 加栏杆 → 固化为上线前演习</text>
+
+  <rect x="28" y="86" width="110" height="248" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="28" y="86" width="110" height="36" rx="12" fill="#EFF6FF"/>
+  <text x="83" y="109" text-anchor="middle" fill="#2563EB" font-size="16" font-weight="700" font-family="-apple-system, 'Segoe UI', sans-serif">风险类别</text>
+  <rect x="40" y="136" width="86" height="40" rx="10" fill="#DBEAFE"/>
+  <text x="83" y="153" text-anchor="middle" fill="#1E3A8A" font-size="12" font-weight="600" font-family="-apple-system, 'Segoe UI', sans-serif">提示注入</text>
+  <text x="83" y="168" text-anchor="middle" fill="#1E3A8A" font-size="11" font-family="-apple-system, 'Segoe UI', sans-serif">第三方内容带偏</text>
+  <rect x="40" y="186" width="86" height="40" rx="10" fill="#FFEDD5"/>
+  <text x="83" y="203" text-anchor="middle" fill="#9A3412" font-size="12" font-weight="600" font-family="-apple-system, 'Segoe UI', sans-serif">数据外泄</text>
+  <text x="83" y="218" text-anchor="middle" fill="#9A3412" font-size="11" font-family="-apple-system, 'Segoe UI', sans-serif">敏感信息暴露</text>
+  <rect x="40" y="236" width="86" height="40" rx="10" fill="#EDE9FE"/>
+  <text x="83" y="253" text-anchor="middle" fill="#6B21A8" font-size="12" font-weight="600" font-family="-apple-system, 'Segoe UI', sans-serif">越权调用</text>
+  <text x="83" y="268" text-anchor="middle" fill="#6B21A8" font-size="11" font-family="-apple-system, 'Segoe UI', sans-serif">查改了不该动的</text>
+  <rect x="40" y="286" width="86" height="40" rx="10" fill="#DCFCE7"/>
+  <text x="83" y="303" text-anchor="middle" fill="#166534" font-size="12" font-weight="600" font-family="-apple-system, 'Segoe UI', sans-serif">账号完整性</text>
+  <text x="83" y="318" text-anchor="middle" fill="#166534" font-size="11" font-family="-apple-system, 'Segoe UI', sans-serif">高危账号动作</text>
+
+  <rect x="154" y="86" width="144" height="248" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="154" y="86" width="144" height="36" rx="12" fill="#EFF6FF"/>
+  <text x="226" y="109" text-anchor="middle" fill="#2563EB" font-size="16" font-weight="700" font-family="-apple-system, 'Segoe UI', sans-serif">故障形态</text>
+  <text x="170" y="148" fill="#0F172A" font-size="12" font-weight="600" font-family="-apple-system, 'Segoe UI', sans-serif">• 外部文本像“系统指令”</text>
+  <text x="170" y="167" fill="#475569" font-size="11" font-family="-apple-system, 'Segoe UI', sans-serif">网页、邮件、工单内容遥控工具</text>
+  <text x="170" y="206" fill="#0F172A" font-size="12" font-weight="600" font-family="-apple-system, 'Segoe UI', sans-serif">• 回复夹带不该出现的数据</text>
+  <text x="170" y="225" fill="#475569" font-size="11" font-family="-apple-system, 'Segoe UI', sans-serif">API Key、客户数据、内部链接</text>
+  <text x="170" y="264" fill="#0F172A" font-size="12" font-weight="600" font-family="-apple-system, 'Segoe UI', sans-serif">• 用户无权却能查到或改到</text>
+  <text x="170" y="283" fill="#475569" font-size="11" font-family="-apple-system, 'Segoe UI', sans-serif">甚至把 A 的数据发给 B</text>
+  <text x="170" y="322" fill="#0F172A" font-size="12" font-weight="600" font-family="-apple-system, 'Segoe UI', sans-serif">• 被诱导改邮箱 / 重置 MFA</text>
+
+  <rect x="314" y="86" width="144" height="248" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="314" y="86" width="144" height="36" rx="12" fill="#FEF3C7"/>
+  <text x="386" y="109" text-anchor="middle" fill="#D97706" font-size="16" font-weight="700" font-family="-apple-system, 'Segoe UI', sans-serif">最常见根因</text>
+  <text x="330" y="148" fill="#0F172A" font-size="12" font-weight="600" font-family="-apple-system, 'Segoe UI', sans-serif">• 没有来源标记与降权</text>
+  <text x="330" y="167" fill="#475569" font-size="11" font-family="-apple-system, 'Segoe UI', sans-serif">把外部文本当成高优先级输入</text>
+  <text x="330" y="206" fill="#0F172A" font-size="12" font-weight="600" font-family="-apple-system, 'Segoe UI', sans-serif">• 缺少数据分级与输出拦截</text>
+  <text x="330" y="225" fill="#475569" font-size="11" font-family="-apple-system, 'Segoe UI', sans-serif">回答前不做脱敏和泄露检查</text>
+  <text x="330" y="264" fill="#0F172A" font-size="12" font-weight="600" font-family="-apple-system, 'Segoe UI', sans-serif">• 只靠 Prompt，不靠权限系统</text>
+  <text x="330" y="283" fill="#475569" font-size="11" font-family="-apple-system, 'Segoe UI', sans-serif">RBAC 没下沉到工具层</text>
+  <text x="330" y="322" fill="#0F172A" font-size="12" font-weight="600" font-family="-apple-system, 'Segoe UI', sans-serif">• 高风险动作未单独升级</text>
+
+  <rect x="474" y="86" width="158" height="248" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="474" y="86" width="158" height="36" rx="12" fill="#DCFCE7"/>
+  <text x="553" y="109" text-anchor="middle" fill="#16A34A" font-size="16" font-weight="700" font-family="-apple-system, 'Segoe UI', sans-serif">应该补的栏杆</text>
+  <text x="490" y="148" fill="#0F172A" font-size="12" font-weight="600" font-family="-apple-system, 'Segoe UI', sans-serif">• 外部内容强制降权</text>
+  <text x="490" y="167" fill="#475569" font-size="11" font-family="-apple-system, 'Segoe UI', sans-serif">工具调用前二次确认或策略判定</text>
+  <text x="490" y="206" fill="#0F172A" font-size="12" font-weight="600" font-family="-apple-system, 'Segoe UI', sans-serif">• 敏感字段识别 + 输出拦截</text>
+  <text x="490" y="225" fill="#475569" font-size="11" font-family="-apple-system, 'Segoe UI', sans-serif">按最少可见原则取数</text>
+  <text x="490" y="264" fill="#0F172A" font-size="12" font-weight="600" font-family="-apple-system, 'Segoe UI', sans-serif">• 工具端硬权限校验</text>
+  <text x="490" y="283" fill="#475569" font-size="11" font-family="-apple-system, 'Segoe UI', sans-serif">按主体身份签名审计</text>
+  <text x="490" y="322" fill="#0F172A" font-size="12" font-weight="600" font-family="-apple-system, 'Segoe UI', sans-serif">• 人类确认 + 可回滚 + 强审计</text>
+
+  <line x1="138" y1="210" x2="154" y2="210" stroke="#2563EB" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrowBlue)"/>
+  <line x1="298" y1="210" x2="314" y2="210" stroke="#2563EB" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrowBlue)"/>
+  <line x1="458" y1="210" x2="474" y2="210" stroke="#16A34A" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrowGreen)"/>
+
+  <rect x="160" y="348" width="340" height="34" rx="10" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="330" y="369" text-anchor="middle" fill="#0F172A" font-size="13" font-weight="700" font-family="-apple-system, 'Segoe UI', sans-serif">落地动作：每类风险固定 3-5 条“演习口令”，上线前回归一次</text>
+</svg>
