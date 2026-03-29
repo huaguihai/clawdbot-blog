@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .bg { fill:#FAFAFA; }
+      .card { fill:#FFFFFF; stroke:#E5E7EB; stroke-width:1; filter:url(#shadow); }
+      .title { font-family:-apple-system, 'Segoe UI', sans-serif; font-size:18px; font-weight:700; fill:#0F172A; }
+      .h { font-family:-apple-system, 'Segoe UI', sans-serif; font-size:13px; font-weight:700; fill:#0F172A; }
+      .t { font-family:-apple-system, 'Segoe UI', sans-serif; font-size:12px; fill:#334155; }
+      .small { font-family:-apple-system, 'Segoe UI', sans-serif; font-size:11px; fill:#475569; }
+      .pill { fill:#F1F5F9; stroke:#E2E8F0; }
+      .dash { stroke:#94A3B8; stroke-width:2; stroke-dasharray:6 6; fill:none; }
+      .muted { fill:#64748B; }
+    </style>
+  </defs>
+
+  <!-- background -->
+  <rect x="10" y="10" width="640" height="380" rx="12" class="bg"/>
+
+  <!-- header -->
+  <text x="40" y="55" class="title">怎么量化“值不值”：首周只看 3 个指标</text>
+  <text x="40" y="78" class="t">用“首周试点表”逐条记录，周末拉趋势图复盘</text>
+
+  <!-- left: pilot sheet -->
+  <rect x="40" y="105" width="180" height="120" rx="12" class="card"/>
+  <text x="60" y="135" class="h">首周试点表</text>
+  <text x="60" y="156" class="small">（Sheets / Notion）</text>
+
+  <!-- table icon -->
+  <rect x="60" y="170" width="140" height="38" rx="8" class="pill"/>
+  <line x1="60" y1="184" x2="200" y2="184" stroke="#CBD5E1"/>
+  <line x1="106" y1="170" x2="106" y2="208" stroke="#CBD5E1"/>
+  <line x1="152" y1="170" x2="152" y2="208" stroke="#CBD5E1"/>
+  <text x="68" y="199" class="small" fill="#0F172A">任务</text>
+  <text x="114" y="199" class="small" fill="#0F172A">指标</text>
+  <text x="160" y="199" class="small" fill="#0F172A">备注</text>
+
+  <!-- center: 3 metrics -->
+  <rect x="250" y="105" width="370" height="170" rx="12" class="card"/>
+  <text x="270" y="135" class="h">三指标（目标线：首周）</text>
+
+  <!-- metric cards -->
+  <rect x="270" y="150" width="110" height="105" rx="12" class="card"/>
+  <rect x="388" y="150" width="110" height="105" rx="12" class="card"/>
+  <rect x="506" y="150" width="110" height="105" rx="12" class="card"/>
+
+  <!-- metric 1 -->
+  <circle cx="285" cy="170" r="6" fill="#2563EB"/>
+  <text x="298" y="174" class="h" font-size="12">首稿时间</text>
+  <text x="285" y="196" class="small">提交→可用初稿</text>
+  <text x="285" y="216" class="small"><tspan fill="#2563EB" font-weight="700">目标：</tspan>缩短 ≥ 40%</text>
+  <text x="285" y="236" class="small"><tspan class="muted">采集：</tspan>开始/结束时间</text>
+
+  <!-- metric 2 -->
+  <circle cx="403" cy="170" r="6" fill="#16A34A"/>
+  <text x="416" y="174" class="h" font-size="12">采纳率</text>
+  <text x="403" y="196" class="small">直接/微调即可用</text>
+  <text x="403" y="216" class="small"><tspan fill="#16A34A" font-weight="700">目标：</tspan>≥ 70%</text>
+  <text x="403" y="236" class="small"><tspan class="muted">采集：</tspan>采纳/退回勾选</text>
+
+  <!-- metric 3 -->
+  <circle cx="521" cy="170" r="6" fill="#EA580C"/>
+  <text x="534" y="174" class="h" font-size="12">返工次数</text>
+  <text x="521" y="196" class="small">二次以上重写</text>
+  <text x="521" y="216" class="small"><tspan fill="#EA580C" font-weight="700">目标：</tspan>≤ 1 次/任务</text>
+  <text x="521" y="236" class="small"><tspan class="muted">采集：</tspan>退回原因+样本</text>
+
+  <!-- dashed connectors -->
+  <path class="dash" d="M220 165 C235 165, 235 165, 250 165"/>
+  <path class="dash" d="M435 275 C435 300, 435 300, 435 325"/>
+
+  <!-- bottom: weekend trend + guidance -->
+  <rect x="40" y="255" width="580" height="120" rx="12" class="card"/>
+
+  <!-- mini trend chart -->
+  <text x="60" y="285" class="h">周末看趋势（不要把“调用次数”当核心指标）</text>
+  <text x="60" y="307" class="small">高调用可能只是“修指令的 bug”，不代表产出价值</text>
+
+  <!-- chart axes -->
+  <line x1="60" y1="350" x2="320" y2="350" stroke="#CBD5E1"/>
+  <line x1="60" y1="350" x2="60" y2="325" stroke="#CBD5E1"/>
+  <text x="60" y="367" class="small" fill="#64748B">周一</text>
+  <text x="140" y="367" class="small" fill="#64748B">周三</text>
+  <text x="230" y="367" class="small" fill="#64748B">周五</text>
+
+  <!-- simple adoption line: 58 -> 74 -->
+  <circle cx="80" cy="343" r="3" fill="#16A34A"/>
+  <circle cx="160" cy="336" r="3" fill="#16A34A"/>
+  <circle cx="240" cy="330" r="3" fill="#16A34A"/>
+  <polyline points="80,343 160,336 240,330" fill="none" stroke="#16A34A" stroke-width="2"/>
+
+  <!-- callout: context field improves -->
+  <rect x="350" y="290" width="250" height="70" rx="12" class="pill"/>
+  <text x="365" y="315" class="h" font-size="13">常见返工原因：缺上下文</text>
+  <text x="365" y="338" class="small">将“上下文”设为必填</text>
+  <text x="365" y="359" class="small"><tspan fill="#16A34A" font-weight="700">采纳率：</tspan>58% → 74%</text>
+
+  <!-- arrow from chart to callout -->
+  <path class="dash" d="M320 335 C335 335, 335 335, 350 325"/>
+
+  <!-- small note pill -->
+  <rect x="40" y="88" width="235" height="20" rx="10" class="pill"/>
+  <text x="52" y="102" class="small" fill="#475569">每条任务一行：三指标各一列</text>
+</svg>

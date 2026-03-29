@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563EB"/>
+    </marker>
+    <marker id="arrowOrange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#EA580C"/>
+    </marker>
+  </defs>
+
+  <text x="330" y="38" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#0F172A">为什么不是再做一个聊天机器人？</text>
+  <text x="330" y="62" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#475569">核心：把 AI 放在“打首稿”的工位，而不是替人拍板</text>
+
+  <rect x="38" y="88" width="228" height="232" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="38" y="88" width="228" height="44" rx="16" fill="#FFF7ED"/>
+  <text x="152" y="116" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#EA580C">聊天机器人</text>
+
+  <circle cx="68" cy="160" r="6" fill="#EA580C"/>
+  <text x="84" y="165" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" fill="#334155">输入开放，边界模糊</text>
+  <circle cx="68" cy="198" r="6" fill="#EA580C"/>
+  <text x="84" y="203" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" fill="#334155">输出漂移，难以验收</text>
+  <circle cx="68" cy="236" r="6" fill="#EA580C"/>
+  <text x="84" y="241" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" fill="#334155">一上来追求全自动，风险高</text>
+  <circle cx="68" cy="274" r="6" fill="#EA580C"/>
+  <text x="84" y="279" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" fill="#334155">难沉淀成可复用资产</text>
+
+  <path d="M 282 205 C 312 205, 320 205, 350 205" fill="none" stroke="#EA580C" stroke-width="2.5" stroke-dasharray="7 6" marker-end="url(#arrowOrange)"/>
+  <text x="316" y="192" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#EA580C">不要直接走这条路</text>
+
+  <rect x="372" y="88" width="250" height="232" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="372" y="88" width="250" height="44" rx="16" fill="#EFF6FF"/>
+  <text x="497" y="116" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#2563EB">工位化 AI</text>
+
+  <rect x="392" y="150" width="92" height="58" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="438" y="173" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#2563EB">固定输入</text>
+  <text x="438" y="193" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">模板化材料</text>
+
+  <rect x="505" y="150" width="92" height="58" rx="12" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="551" y="173" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#16A34A">AI 首稿</text>
+  <text x="551" y="193" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">只负责起草</text>
+
+  <rect x="392" y="228" width="92" height="58" rx="12" fill="#FFFFFF" stroke="#9333EA" stroke-width="1.5"/>
+  <text x="438" y="251" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#9333EA">人工审核</text>
+  <text x="438" y="271" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">保留拍板权</text>
+
+  <rect x="505" y="228" width="92" height="58" rx="12" fill="#FFFFFF" stroke="#D97706" stroke-width="1.5"/>
+  <text x="551" y="251" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#D97706">固定输出</text>
+  <text x="551" y="271" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">可验收可复用</text>
+
+  <path d="M 484 179 L 505 179" fill="none" stroke="#2563EB" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arrowBlue)"/>
+  <path d="M 551 208 L 551 228" fill="none" stroke="#2563EB" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arrowBlue)"/>
+  <path d="M 505 257 L 484 257" fill="none" stroke="#2563EB" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arrowBlue)"/>
+
+  <text x="497" y="336" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#475569">先跑稳“半成品工位”，再谈全自动</text>
+
+  <rect x="64" y="338" width="88" height="32" rx="16" fill="#FFFFFF" stroke="#2563EB" stroke-width="1"/>
+  <text x="108" y="358" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#2563EB">邮件首稿</text>
+  <rect x="162" y="338" width="88" height="32" rx="16" fill="#FFFFFF" stroke="#16A34A" stroke-width="1"/>
+  <text x="206" y="358" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#16A34A">会议纪要</text>
+  <rect x="260" y="338" width="88" height="32" rx="16" fill="#FFFFFF" stroke="#9333EA" stroke-width="1"/>
+  <text x="304" y="358" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#9333EA">双语翻译</text>
+
+  <rect x="384" y="338" width="72" height="32" rx="16" fill="#FFFFFF" stroke="#2563EB" stroke-width="1"/>
+  <text x="420" y="358" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#2563EB">首稿时间</text>
+  <rect x="466" y="338" width="72" height="32" rx="16" fill="#FFFFFF" stroke="#16A34A" stroke-width="1"/>
+  <text x="502" y="358" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#16A34A">采纳率</text>
+  <rect x="548" y="338" width="72" height="32" rx="16" fill="#FFFFFF" stroke="#D97706" stroke-width="1"/>
+  <text x="584" y="358" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#D97706">返工次数</text>
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .bg { fill:#FAFAFA; }
+      .card { fill:#FFFFFF; stroke:#E5E7EB; stroke-width:1; filter:url(#shadow); }
+      .title { font-family:-apple-system, 'Segoe UI', sans-serif; font-size:18px; font-weight:700; fill:#111827; }
+      .text { font-family:-apple-system, 'Segoe UI', sans-serif; font-size:13px; fill:#111827; }
+      .muted { font-family:-apple-system, 'Segoe UI', sans-serif; font-size:12px; fill:#374151; }
+      .pillText { font-family:-apple-system, 'Segoe UI', sans-serif; font-size:12px; font-weight:700; fill:#111827; }
+      .line { stroke:#9CA3AF; stroke-width:2; stroke-dasharray:6 6; fill:none; }
+      .ok { fill:#16A34A; }
+      .no { fill:#EA580C; }
+      .accentBlue { fill:#2563EB; }
+      .accentPurple { fill:#9333EA; }
+      .accentYellow { fill:#D97706; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" x="12" y="12" width="636" height="376" rx="12"/>
+
+  <!-- Header -->
+  <text class="title" x="36" y="56">哪些任务适合先交给 AI？</text>
+  <text class="muted" x="36" y="78">先把 AI 放在“半成品工位”：打底稿 + 人审，30 秒内能做采纳或退回</text>
+
+  <!-- Left: Checklist -->
+  <rect class="card" x="36" y="104" width="280" height="260" rx="12"/>
+  <text class="text" x="56" y="136" font-weight="700">入场条件（4 条）</text>
+
+  <!-- Checklist items -->
+  <circle cx="58" cy="164" r="6" class="accentBlue"/>
+  <text class="text" x="74" y="169">高频：反复出现的重复工作</text>
+
+  <circle cx="58" cy="196" r="6" class="accentBlue"/>
+  <text class="text" x="74" y="201">低风险：出错成本可控</text>
+
+  <circle cx="58" cy="228" r="6" class="accentPurple"/>
+  <text class="text" x="74" y="233">格式明确：输出可模板化</text>
+
+  <circle cx="58" cy="260" r="6" class="accentYellow"/>
+  <text class="text" x="74" y="265">易审核：30 秒判断好坏</text>
+
+  <!-- Note card inside -->
+  <rect x="56" y="286" width="240" height="64" rx="10" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text class="muted" x="68" y="310">做法：AI 生成首稿</text>
+  <text class="muted" x="68" y="332">人类审阅后再发送/提交</text>
+
+  <!-- Connector to outcomes -->
+  <path class="line" d="M 316 234 C 360 234, 360 234, 404 234"/>
+
+  <!-- Right: Outcomes container -->
+  <rect class="card" x="404" y="104" width="220" height="260" rx="12"/>
+  <text class="text" x="424" y="136" font-weight="700">示例落点</text>
+
+  <!-- Suitable -->
+  <rect x="424" y="154" width="180" height="104" rx="12" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="424" y="154" width="180" height="28" rx="12" class="ok"/>
+  <text x="436" y="174" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="800" fill="#FFFFFF">适合先做</text>
+  <text class="muted" x="436" y="204">• 客户邮件首稿</text>
+  <text class="muted" x="436" y="226">• 会议纪要整理</text>
+  <text class="muted" x="436" y="248">• 双语翻译/润色</text>
+
+  <!-- Not suitable -->
+  <rect x="424" y="276" width="180" height="72" rx="12" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="424" y="276" width="180" height="28" rx="12" class="no"/>
+  <text x="436" y="296" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="800" fill="#FFFFFF">暂不优先</text>
+  <text class="muted" x="436" y="326">• 需求优先级判断</text>
+  <text class="muted" x="436" y="346">• 绩效评价撰写</text>
+
+  <!-- Small decision hint -->
+  <path class="line" d="M 316 234 C 350 180, 372 180, 404 180"/>
+  <path class="line" d="M 316 234 C 350 290, 372 290, 404 290"/>
+
+  <!-- Legend chip -->
+  <rect x="36" y="88" width="170" height="26" rx="13" fill="#FFFFFF" stroke="#E5E7EB" filter="url(#shadow)"/>
+  <circle cx="52" cy="101" r="5" class="accentYellow"/>
+  <text class="pillText" x="64" y="106">核心标准：30 秒可审</text>
+</svg>
