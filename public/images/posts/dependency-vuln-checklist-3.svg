@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .txt{font-family:-apple-system,'Segoe UI',sans-serif;fill:#0f172a}
+      .muted{fill:#475569}
+      .card{fill:#ffffff;stroke:#e5e7eb;stroke-width:1;filter:url(#shadow)}
+      .dash{stroke:#94a3b8;stroke-width:2;stroke-dasharray:6 6;fill:none}
+      .badge{fill:#ffffff;stroke:#e5e7eb;stroke-width:1}
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="330" y="42" text-anchor="middle" class="txt" font-size="18" font-weight="700">发版前到底该查什么？轻量三步</text>
+  <text x="330" y="66" text-anchor="middle" class="txt muted" font-size="12">先固定“最常见、最易落地、最影响发版”的检查</text>
+
+  <!-- Step 1 -->
+  <rect x="60" y="110" width="170" height="110" rx="12" class="card"/>
+  <circle cx="84" cy="138" r="14" fill="#2563EB"/>
+  <text x="84" y="142" text-anchor="middle" class="txt" font-size="12" font-weight="700" fill="#ffffff">1</text>
+  <text x="100" y="142" class="txt" font-size="14" font-weight="700">查依赖已知漏洞</text>
+  <text x="76" y="170" class="txt muted" font-size="12">聚焦：已安装依赖</text>
+  <text x="76" y="190" class="txt muted" font-size="12">目标：快速发现高风险项</text>
+
+  <!-- Step 2 -->
+  <rect x="245" y="110" width="170" height="110" rx="12" class="card"/>
+  <circle cx="269" cy="138" r="14" fill="#9333EA"/>
+  <text x="269" y="142" text-anchor="middle" class="txt" font-size="12" font-weight="700" fill="#ffffff">2</text>
+  <text x="285" y="142" class="txt" font-size="14" font-weight="700">看版本影响范围</text>
+  <text x="261" y="170" class="txt muted" font-size="12">识别：受影响版本</text>
+  <text x="261" y="190" class="txt muted" font-size="12">确认：修复版本/替代方案</text>
+
+  <!-- Step 3 -->
+  <rect x="430" y="110" width="170" height="110" rx="12" class="card"/>
+  <circle cx="454" cy="138" r="14" fill="#EA580C"/>
+  <text x="454" y="142" text-anchor="middle" class="txt" font-size="12" font-weight="700" fill="#ffffff">3</text>
+  <text x="470" y="142" class="txt" font-size="14" font-weight="700">做上线决策</text>
+  <text x="446" y="170" class="txt muted" font-size="12">以发版为中心的判断</text>
+  <text x="446" y="190" class="txt muted" font-size="12">把结论写进发布记录</text>
+
+  <!-- Arrows between steps -->
+  <path d="M230 165 L245 165" class="dash"/>
+  <path d="M415 165 L430 165" class="dash"/>
+  <path d="M245 165 l-10 -6 v12 z" fill="#94a3b8"/>
+  <path d="M430 165 l-10 -6 v12 z" fill="#94a3b8"/>
+
+  <!-- Decision outcomes -->
+  <path d="M515 220 L515 255" class="dash"/>
+  <path d="M515 255 l-6 -10 h12 z" fill="#94a3b8"/>
+
+  <rect x="80" y="270" width="160" height="85" rx="12" class="card"/>
+  <rect x="92" y="286" width="66" height="20" rx="10" fill="#16A34A"/>
+  <text x="125" y="300" text-anchor="middle" class="txt" font-size="11" font-weight="700" fill="#ffffff">立刻修</text>
+  <text x="96" y="328" class="txt muted" font-size="12">升级/打补丁</text>
+  <text x="96" y="346" class="txt muted" font-size="12">再发版</text>
+
+  <rect x="250" y="270" width="160" height="85" rx="12" class="card"/>
+  <rect x="262" y="286" width="88" height="20" rx="10" fill="#D97706"/>
+  <text x="306" y="300" text-anchor="middle" class="txt" font-size="11" font-weight="700" fill="#ffffff">降级风险后发</text>
+  <text x="266" y="328" class="txt muted" font-size="12">临时措施/隔离</text>
+  <text x="266" y="346" class="txt muted" font-size="12">限定影响面</text>
+
+  <rect x="420" y="270" width="160" height="85" rx="12" class="card"/>
+  <rect x="432" y="286" width="88" height="20" rx="10" fill="#2563EB"/>
+  <text x="476" y="300" text-anchor="middle" class="txt" font-size="11" font-weight="700" fill="#ffffff">记录后补</text>
+  <text x="436" y="328" class="txt muted" font-size="12">接受风险/建工单</text>
+  <text x="436" y="346" class="txt muted" font-size="12">设定补救期限</text>
+
+  <!-- Connect step 3 to outcomes -->
+  <path d="M515 255 C515 265 160 250 160 270" class="dash"/>
+  <path d="M515 255 C515 265 330 250 330 270" class="dash"/>
+  <path d="M515 255 C515 265 500 250 500 270" class="dash"/>
+
+  <!-- Footer note -->
+  <rect x="60" y="82" width="540" height="18" rx="9" class="badge"/>
+  <circle cx="76" cy="91" r="4" fill="#9333EA"/>
+  <text x="88" y="95" class="txt muted" font-size="11">核心：先把三步跑顺，比堆工具更有用</text>
+</svg>

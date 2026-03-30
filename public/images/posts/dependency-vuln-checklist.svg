@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563EB"/>
+    </marker>
+    <marker id="arrowOrange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#EA580C"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#16A34A"/>
+    </marker>
+  </defs>
+
+  <text x="330" y="40" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#111827">独立开发者也要做依赖漏洞检查</text>
+  <text x="330" y="64" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">团队小 ≠ 攻击面小，风险常沿自动化链路发生</text>
+
+  <rect x="38" y="104" width="170" height="196" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="38" y="104" width="170" height="10" rx="10" fill="#2563EB"/>
+  <text x="123" y="136" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="17" font-weight="700" fill="#1F2937">你以为是“小项目”</text>
+  <rect x="56" y="154" width="134" height="36" rx="10" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <text x="123" y="177" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#1E3A8A">只有一个人维护</text>
+  <rect x="56" y="200" width="134" height="36" rx="10" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <text x="123" y="223" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#1E3A8A">用户量暂时不大</text>
+  <rect x="56" y="246" width="134" height="36" rx="10" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <text x="123" y="269" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#1E3A8A">只是个工具产品</text>
+
+  <rect x="245" y="104" width="170" height="196" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="245" y="104" width="170" height="10" rx="10" fill="#9333EA"/>
+  <text x="330" y="136" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="17" font-weight="700" fill="#1F2937">实际上已有攻击面</text>
+  <rect x="263" y="154" width="134" height="36" rx="10" fill="#F5F3FF" stroke="#DDD6FE"/>
+  <text x="330" y="177" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#5B21B6">产品已经上线</text>
+  <rect x="263" y="200" width="134" height="36" rx="10" fill="#F5F3FF" stroke="#DDD6FE"/>
+  <text x="330" y="223" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#5B21B6">使用第三方依赖</text>
+  <rect x="263" y="246" width="134" height="36" rx="10" fill="#F5F3FF" stroke="#DDD6FE"/>
+  <text x="330" y="269" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#5B21B6">接收用户输入</text>
+
+  <rect x="452" y="104" width="170" height="196" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="452" y="104" width="170" height="10" rx="10" fill="#EA580C"/>
+  <text x="537" y="136" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="17" font-weight="700" fill="#1F2937">风险不是“被盯上”</text>
+  <rect x="470" y="154" width="134" height="36" rx="10" fill="#FFF7ED" stroke="#FED7AA"/>
+  <text x="537" y="177" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#9A3412">扫描器批量探测</text>
+  <rect x="470" y="200" width="134" height="36" rx="10" fill="#FFF7ED" stroke="#FED7AA"/>
+  <text x="537" y="223" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#9A3412">公开 PoC 跟进利用</text>
+  <rect x="470" y="246" width="134" height="36" rx="10" fill="#FFF7ED" stroke="#FED7AA"/>
+  <text x="537" y="269" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#9A3412">扫到谁就打谁</text>
+
+  <line x1="208" y1="202" x2="245" y2="202" stroke="#2563EB" stroke-width="2.5" stroke-dasharray="7 7" marker-end="url(#arrowBlue)"/>
+  <line x1="415" y1="202" x2="452" y2="202" stroke="#EA580C" stroke-width="2.5" stroke-dasharray="7 7" marker-end="url(#arrowOrange)"/>
+
+  <rect x="110" y="326" width="440" height="46" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="110" y="326" width="440" height="46" rx="14" fill="none" stroke="#BBF7D0"/>
+  <text x="330" y="345" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#166534">快节奏发版 → 依赖检查被一拖再拖 → 往往在事故后补课</text>
+  <text x="330" y="363" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#16A34A">结论：把依赖漏洞检查前置到每次发布流程</text>
+
+  <line x1="537" y1="300" x2="537" y2="326" stroke="#16A34A" stroke-width="2.5" stroke-dasharray="7 7" marker-end="url(#arrowGreen)"/>
+</svg>
