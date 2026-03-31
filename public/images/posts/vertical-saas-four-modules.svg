@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .bg { fill:#FAFAFA; }
+      .card { fill:#FFFFFF; filter:url(#shadow); }
+      .title { font-family:-apple-system,'Segoe UI',sans-serif; font-size:18px; font-weight:700; fill:#0F172A; }
+      .h { font-family:-apple-system,'Segoe UI',sans-serif; font-size:14px; font-weight:700; }
+      .t { font-family:-apple-system,'Segoe UI',sans-serif; font-size:12.5px; fill:#111827; }
+      .muted { fill:#475569; }
+      .badgeText { font-family:-apple-system,'Segoe UI',sans-serif; font-size:12px; font-weight:700; fill:#FFFFFF; }
+      .line { stroke:#94A3B8; stroke-width:2; stroke-dasharray:6 6; fill:none; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" x="10" y="10" width="640" height="380" rx="12"/>
+
+  <!-- Title -->
+  <text class="title" x="36" y="52">为什么“万能 AI 助手”最难卖？</text>
+  <text class="t muted" x="36" y="74">关键差异：能聊天（demo） vs 能回放/可审计（业务动作）</text>
+
+  <!-- Left card: demo/chat -->
+  <rect class="card" x="36" y="105" width="260" height="220" rx="12"/>
+  <rect x="52" y="122" width="88" height="24" rx="12" fill="#2563EB"/>
+  <text class="badgeText" x="96" y="139" text-anchor="middle">Demo阶段</text>
+  <text class="h" x="52" y="170" fill="#2563EB">万能助手（会聊天）</text>
+  <text class="t" x="52" y="196">• 输入不明确</text>
+  <text class="t" x="52" y="218">• 输出不可审计</text>
+  <text class="t" x="52" y="240">• 指标不可度量</text>
+  <text class="t" x="52" y="262">• 只能证明“它懂”</text>
+  <text class="t muted" x="52" y="292">付费决策：仅是起点</text>
+
+  <!-- Right card: workflow/panel -->
+  <rect class="card" x="364" y="105" width="260" height="220" rx="12"/>
+  <rect x="380" y="122" width="110" height="24" rx="12" fill="#16A34A"/>
+  <text class="badgeText" x="435" y="139" text-anchor="middle">企业落地</text>
+  <text class="h" x="380" y="170" fill="#16A34A">嵌入流程（工作面板）</text>
+  <text class="t" x="380" y="196">• 明确输入 → 触发动作</text>
+  <text class="t" x="380" y="218">• 可审计输出（记录/证据）</text>
+  <text class="t" x="380" y="240">• 责任人/审批链清晰</text>
+  <text class="t" x="380" y="262">• 可回放（复盘与追责）</text>
+  <text class="t muted" x="380" y="292">续费关键：稳定可控</text>
+
+  <!-- Connecting dashed arrow -->
+  <path class="line" d="M 296 215 C 320 215, 340 215, 364 215"/>
+  <polygon points="364,215 354,209 354,221" fill="#94A3B8"/>
+  <rect x="292" y="186" width="76" height="22" rx="11" fill="#9333EA"/>
+  <text class="badgeText" x="330" y="201" text-anchor="middle">落到流程</text>
+
+  <!-- Bottom outcome card -->
+  <rect class="card" x="160" y="336" width="340" height="44" rx="12"/>
+  <rect x="176" y="346" width="86" height="24" rx="12" fill="#EA580C"/>
+  <text class="badgeText" x="219" y="363" text-anchor="middle">结果</text>
+  <text class="t" x="272" y="363">可度量 ROI（少做/少错） → 更容易续费</text>
+
+  <!-- Dashed lines down to outcome -->
+  <path class="line" d="M 166 325 C 190 332, 210 336, 240 336"/>
+  <path class="line" d="M 494 325 C 470 332, 450 336, 420 336"/>
+</svg>

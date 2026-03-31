@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" font-family="-apple-system, 'Segoe UI', sans-serif">
+  <defs>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748B"/>
+    </marker>
+    <style>
+      .card{fill:#FFFFFF; rx:10; filter:url(#shadow)}
+      .bar{height:18px; rx:10}
+      .line{stroke:#94A3B8; stroke-width:2; fill:none; stroke-dasharray:5 5; marker-end:url(#arrow)}
+      .cap{font-size:12px; fill:#0F172A}
+      .small{font-size:11px; fill:#334155}
+      .title{font-size:16px; font-weight:700; fill:#0F172A}
+    </style>
+  </defs>
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <text x="20" y="36" class="title">信息汇总最小闭环：从信号到事件卡片</text>
+
+  <!-- Sources -->
+  <g>
+    <rect x="20" y="70" width="120" height="48" class="card"/>
+    <rect x="20" y="70" width="120" height="18" fill="#2563EB" rx="10"/>
+    <text x="30" y="84" font-size="12" fill="#FFFFFF">群聊</text>
+    <text x="30" y="104" class="small">消息片段</text>
+
+    <rect x="20" y="132" width="120" height="48" class="card"/>
+    <rect x="20" y="132" width="120" height="18" fill="#EA580C" rx="10"/>
+    <text x="30" y="146" font-size="12" fill="#FFFFFF">邮件</text>
+    <text x="30" y="166" class="small">告警/沟通</text>
+
+    <rect x="20" y="194" width="120" height="48" class="card"/>
+    <rect x="20" y="194" width="120" height="18" fill="#9333EA" rx="10"/>
+    <text x="30" y="208" font-size="12" fill="#FFFFFF">工单</text>
+    <text x="30" y="228" class="small">事件记录</text>
+
+    <rect x="20" y="256" width="120" height="48" class="card"/>
+    <rect x="20" y="256" width="120" height="18" fill="#D97706" rx="10"/>
+    <text x="30" y="270" font-size="12" fill="#FFFFFF">传感器/表格</text>
+    <text x="30" y="290" class="small">日志/Excel</text>
+  </g>
+
+  <!-- Ingest API -->
+  <g>
+    <rect x="170" y="126" width="160" height="60" class="card"/>
+    <rect x="170" y="126" width="160" height="18" fill="#EA580C" rx="10"/>
+    <text x="180" y="140" font-size="12" fill="#FFFFFF">POST /signals:ingest</text>
+    <text x="180" y="162" class="small">接收信号并标准化</text>
+  </g>
+
+  <!-- Signals table -->
+  <g>
+    <rect x="350" y="80" width="140" height="64" class="card"/>
+    <rect x="350" y="80" width="140" height="18" fill="#2563EB" rx="10"/>
+    <text x="360" y="94" font-size="12" fill="#FFFFFF">signals 表</text>
+    <text x="360" y="116" class="small">source_type, occurred_at</text>
+  </g>
+
+  <!-- Merge API -->
+  <g>
+    <rect x="350" y="170" width="140" height="64" class="card"/>
+    <rect x="350" y="170" width="140" height="18" fill="#9333EA" rx="10"/>
+    <text x="360" y="184" font-size="12" fill="#FFFFFF">POST /incidents:merge</text>
+    <text x="360" y="206" class="small">归并同一事件</text>
+  </g>
+
+  <!-- Incidents table -->
+  <g>
+    <rect x="510" y="80" width="130" height="64" class="card"/>
+    <rect x="510" y="80" width="130" height="18" fill="#16A34A" rx="10"/>
+    <text x="520" y="94" font-size="12" fill="#FFFFFF">incidents 表</text>
+    <text x="520" y="116" class="small">title, severity, owner</text>
+  </g>
+
+  <!-- Entities table -->
+  <g>
+    <rect x="510" y="170" width="130" height="64" class="card"/>
+    <rect x="510" y="170" width="130" height="18" fill="#D97706" rx="10"/>
+    <text x="520" y="184" font-size="12" fill="#FFFFFF">entities 表</text>
+    <text x="520" y="206" class="small">人/设备/地点等</text>
+  </g>
+
+  <!-- Output Incident Card -->
+  <g>
+    <rect x="350" y="260" width="290" height="110" class="card"/>
+    <rect x="350" y="260" width="290" height="18" fill="#16A34A" rx="10"/>
+    <text x="360" y="274" font-size="12" fill="#FFFFFF">GET /incidents/{id}</text>
+    <text x="360" y="296" class="cap">事件卡片 Incident</text>
+    <text x="360" y="316" class="small">- 时间线 Timeline</text>
+    <text x="360" y="334" class="small">- 引用 Evidence（可追溯来源）</text>
+  </g>
+
+  <!-- RBAC & Audit -->
+  <g>
+    <rect x="170" y="260" width="160" height="48" class="card"/>
+    <rect x="170" y="260" width="160" height="18" fill="#2563EB" rx="10"/>
+    <text x="180" y="274" font-size="12" fill="#FFFFFF">权限与审计</text>
+    <text x="180" y="294" class="small">RBAC + 审计日志</text>
+  </g>
+
+  <!-- Connectors -->
+  <path class="line" d="M140 94 H170"/>
+  <path class="line" d="M140 156 H170"/>
+  <path class="line" d="M140 218 H170"/>
+  <path class="line" d="M140 280 H170"/>
+
+  <path class="line" d="M330 156 L350 112"/>
+  <path class="line" d="M420 144 V170"/>
+  <path class="line" d="M490 202 H510 V112"/>
+
+  <!-- incidents to entities via incident_entities -->
+  <path class="line" d="M575 144 V170"/>
+  <rect x="545" y="150" width="60" height="20" rx="10" fill="#FFFFFF" stroke="#D97706"/>
+  <text x="550" y="164" class="small">incident_entities</text>
+
+  <!-- incidents to output -->
+  <path class="line" d="M575 144 V200 H495 V260"/>
+
+  <!-- audit box connection to merge/incidents -->
+  <path class="line" d="M250 260 V230 H350"/>
+</svg>
