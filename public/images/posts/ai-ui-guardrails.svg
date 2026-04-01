@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" font-family="-apple-system, 'Segoe UI', sans-serif">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" markerUnits="strokeWidth" markerWidth="10" markerHeight="8" orient="auto" refX="9" refY="4">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#6B7280"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+
+  <text x="330" y="36" text-anchor="middle" font-size="18" fill="#111827" font-weight="600">从能跑通到敢长期用：建立信任的护栏</text>
+
+  <!-- 左侧：能跑通 -->
+  <rect x="40" y="100" width="180" height="70" rx="10" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="130" y="124" text-anchor="middle" font-size="16" font-weight="700" fill="#2563EB">能跑通</text>
+  <text x="130" y="148" text-anchor="middle" font-size="12" fill="#374151">看模型输出 / 生成结果</text>
+
+  <!-- 右侧：敢长期用 -->
+  <rect x="440" y="100" width="180" height="70" rx="10" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="530" y="124" text-anchor="middle" font-size="16" font-weight="700" fill="#16A34A">敢长期用</text>
+  <text x="530" y="148" text-anchor="middle" font-size="12" fill="#374151">边界 权限 确认 留痕</text>
+
+  <!-- 过渡虚线（需要护栏） -->
+  <line x1="220" y1="135" x2="440" y2="135" stroke="#6B7280" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrow)"/>
+  <text x="330" y="94" text-anchor="middle" font-size="12" fill="#6B7280">需要清晰护栏</text>
+
+  <!-- 护栏要素连接线（从过渡线到各要素卡片） -->
+  <path d="M240,135 L130,200" stroke="#9CA3AF" stroke-width="1.5" stroke-dasharray="5 5" fill="none"/>
+  <path d="M300,135 L260,200" stroke="#9CA3AF" stroke-width="1.5" stroke-dasharray="5 5" fill="none"/>
+  <path d="M360,135 L390,200" stroke="#9CA3AF" stroke-width="1.5" stroke-dasharray="5 5" fill="none"/>
+  <path d="M420,135 L520,200" stroke="#9CA3AF" stroke-width="1.5" stroke-dasharray="5 5" fill="none"/>
+
+  <!-- 护栏要素卡片：边界 -->
+  <g>
+    <rect x="70" y="200" width="120" height="56" rx="10" fill="#FFFFFF" filter="url(#shadow)"/>
+    <rect x="70" y="200" width="6" height="56" rx="10" fill="#EA580C"/>
+    <text x="135" y="222" font-size="14" font-weight="700" fill="#EA580C">边界</text>
+    <text x="135" y="242" font-size="12" fill="#374151">不该做什么/何时停</text>
+  </g>
+
+  <!-- 护栏要素卡片：权限 -->
+  <g>
+    <rect x="200" y="200" width="120" height="56" rx="10" fill="#FFFFFF" filter="url(#shadow)"/>
+    <rect x="200" y="200" width="6" height="56" rx="10" fill="#9333EA"/>
+    <text x="265" y="222" font-size="14" font-weight="700" fill="#9333EA">权限</text>
+    <text x="265" y="242" font-size="12" fill="#374151">默认只读/最小权限</text>
+  </g>
+
+  <!-- 护栏要素卡片：确认 -->
+  <g>
+    <rect x="330" y="200" width="120" height="56" rx="10" fill="#FFFFFF" filter="url(#shadow)"/>
+    <rect x="330" y="200" width="6" height="56" rx="10" fill="#2563EB"/>
+    <text x="395" y="222" font-size="14" font-weight="700" fill="#2563EB">确认</text>
+    <text x="395" y="242" font-size="12" fill="#374151">重要动作需确认</text>
+  </g>
+
+  <!-- 护栏要素卡片：留痕 -->
+  <g>
+    <rect x="460" y="200" width="120" height="56" rx="10" fill="#FFFFFF" filter="url(#shadow)"/>
+    <rect x="460" y="200" width="6" height="56" rx="10" fill="#16A34A"/>
+    <text x="525" y="222" font-size="14" font-weight="700" fill="#16A34A">留痕</text>
+    <text x="525" y="242" font-size="12" fill="#374151">可回放/可追责</text>
+  </g>
+
+  <!-- 心理模型差异提示 -->
+  <rect x="60" y="310" width="540" height="60" rx="10" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="60" y="310" width="8" height="60" rx="10" fill="#D97706"/>
+  <text x="78" y="332" font-size="13" font-weight="700" fill="#D97706">心理模型差异</text>
+  <text x="78" y="352" font-size="12" fill="#374151">普通功能出错=Bug；AI功能出错=失控 → 因此护栏需显式、可见、可回放</text>
+  <path d="M330,310 L330,170" stroke="#9CA3AF" stroke-width="1.5" stroke-dasharray="5 5" fill="none"/>
+</svg>

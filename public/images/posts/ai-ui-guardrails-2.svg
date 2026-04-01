@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" font-family="-apple-system, 'Segoe UI', sans-serif">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <style>
+      .title{font-size:18px; fill:#111827; font-weight:600}
+      .label{font-size:12px; fill:#374151}
+      .badge{font-size:12px; fill:#fff; font-weight:600}
+      .card-title{font-size:16px; fill:#111827; font-weight:600}
+      .card-sub{font-size:12px; fill:#6B7280}
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+
+  <text x="330" y="32" text-anchor="middle" class="title">接口即治理：把治理做进交互层</text>
+
+  <!-- Connections (dashed) -->
+  <line x1="330" y1="205" x2="330" y2="95" stroke="#9CA3AF" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <line x1="330" y1="205" x2="125" y2="195" stroke="#9CA3AF" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <line x1="330" y1="205" x2="535" y2="195" stroke="#9CA3AF" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <line x1="330" y1="205" x2="330" y2="320" stroke="#9CA3AF" stroke-width="1.5" stroke-dasharray="6 6"/>
+
+  <!-- Top card: 能做什么 / 规则 -->
+  <g filter="url(#shadow)">
+    <rect x="220" y="60" width="220" height="70" rx="12" fill="#FFFFFF"/>
+  </g>
+  <text x="240" y="85" class="card-title">能做什么</text>
+  <text x="240" y="106" class="card-sub">边界与规则明确</text>
+  <rect x="390" y="76" width="42" height="20" rx="10" fill="#2563EB"/>
+  <text x="411" y="90" class="badge" text-anchor="middle">规则</text>
+
+  <!-- Left card: 动哪些资源 / 权限 -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="150" width="170" height="90" rx="12" fill="#FFFFFF"/>
+  </g>
+  <text x="60" y="175" class="card-title">动哪些资源</text>
+  <text x="60" y="196" class="card-sub">数据、接口、外发通道</text>
+  <rect x="160" y="164" width="42" height="20" rx="10" fill="#EA580C"/>
+  <text x="181" y="178" class="badge" text-anchor="middle">权限</text>
+
+  <!-- Right card: 基于什么做 / 依据 -->
+  <g filter="url(#shadow)">
+    <rect x="450" y="150" width="170" height="90" rx="12" fill="#FFFFFF"/>
+  </g>
+  <text x="470" y="175" class="card-title">基于什么做</text>
+  <text x="470" y="196" class="card-sub">数据/准则/上下文</text>
+  <rect x="560" y="164" width="42" height="20" rx="10" fill="#9333EA"/>
+  <text x="581" y="178" class="badge" text-anchor="middle">依据</text>
+
+  <!-- Bottom card: 谁来拍板 / 确认 -->
+  <g filter="url(#shadow)">
+    <rect x="220" y="280" width="220" height="80" rx="12" fill="#FFFFFF"/>
+  </g>
+  <text x="240" y="305" class="card-title">谁来拍板</text>
+  <text x="240" y="326" class="card-sub">人在回路/自动阈值</text>
+  <rect x="390" y="294" width="42" height="20" rx="10" fill="#16A34A"/>
+  <text x="411" y="308" class="badge" text-anchor="middle">确认</text>
+
+  <!-- Center card: 接口即治理 -->
+  <g filter="url(#shadow)">
+    <rect x="220" y="150" width="220" height="100" rx="12" fill="#FFFFFF"/>
+  </g>
+  <text x="330" y="185" class="card-title" text-anchor="middle">接口即治理</text>
+  <text x="330" y="206" class="card-sub" text-anchor="middle">四件事在界面端明确</text>
+
+  <!-- Audit/Record pill -->
+  <rect x="278" y="222" width="104" height="22" rx="11" fill="#D97706"/>
+  <text x="330" y="237" class="badge" text-anchor="middle">记录/审计</text>
+
+  <!-- Legend note -->
+  <text x="330" y="370" text-anchor="middle" class="label">从“黑盒输出”走向“可治理、可落地”的交互</text>
+</svg>
