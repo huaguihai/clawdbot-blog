@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563EB"/>
+    </marker>
+    <marker id="arrowOrange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#EA580C"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#16A34A"/>
+    </marker>
+  </defs>
+
+  <text x="330" y="34" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#111827">Agent 最容易被注入的环节</text>
+  <text x="330" y="56" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">风险不在聊天框本身，而在“读取外部内容后直接调工具”</text>
+
+  <rect x="36" y="92" width="168" height="196" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="120" y="118" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#2563EB">外部不可信内容</text>
+  <rect x="52" y="132" width="136" height="28" rx="10" fill="#DBEAFE"/>
+  <text x="120" y="150" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#1E3A8A">邮件 / 附件文本</text>
+  <rect x="52" y="168" width="136" height="28" rx="10" fill="#DBEAFE"/>
+  <text x="120" y="186" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#1E3A8A">网页正文 / 隐藏文本</text>
+  <rect x="52" y="204" width="136" height="28" rx="10" fill="#DBEAFE"/>
+  <text x="120" y="222" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#1E3A8A">PDF / 共享文档</text>
+  <rect x="52" y="240" width="136" height="28" rx="10" fill="#DBEAFE"/>
+  <text x="120" y="258" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#1E3A8A">CRM备注 / API返回</text>
+
+  <rect x="246" y="104" width="168" height="172" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="330" y="130" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#EA580C">高风险环节</text>
+  <text x="330" y="154" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">读外部内容</text>
+  <text x="330" y="174" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">+</text>
+  <text x="330" y="194" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">与系统指令混放</text>
+  <text x="330" y="214" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">+</text>
+  <text x="330" y="234" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">直接触发工具调用</text>
+  <rect x="278" y="248" width="104" height="18" rx="9" fill="#FFEDD5"/>
+  <text x="330" y="261" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#9A3412">最容易被带偏</text>
+
+  <rect x="456" y="92" width="168" height="196" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="540" y="118" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#9333EA">可能后果</text>
+  <rect x="472" y="132" width="136" height="28" rx="10" fill="#F3E8FF"/>
+  <text x="540" y="150" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#581C87">误发邮件 / 误归档</text>
+  <rect x="472" y="168" width="136" height="28" rx="10" fill="#F3E8FF"/>
+  <text x="540" y="186" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#581C87">抓错信息 / 越权操作</text>
+  <rect x="472" y="204" width="136" height="28" rx="10" fill="#F3E8FF"/>
+  <text x="540" y="222" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#581C87">泄露信息 / 乱改状态</text>
+  <rect x="472" y="240" width="136" height="28" rx="10" fill="#F3E8FF"/>
+  <text x="540" y="258" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#581C87">错误触发后续动作</text>
+
+  <line x1="204" y1="190" x2="246" y2="190" stroke="#2563EB" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#arrowBlue)"/>
+  <line x1="414" y1="190" x2="456" y2="190" stroke="#EA580C" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#arrowOrange)"/>
+
+  <rect x="58" y="314" width="544" height="58" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="80" y="336" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#16A34A">护栏重点</text>
+  <text x="80" y="356" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">① 不可信内容与系统指令隔离</text>
+  <text x="244" y="356" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">② 工具最小权限</text>
+  <text x="370" y="356" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">③ 高风险动作加确认</text>
+  <text x="520" y="356" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">④ 明确标记不可信内容</text>
+  <line x1="330" y1="276" x2="330" y2="314" stroke="#16A34A" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#arrowGreen)"/>
+</svg>
