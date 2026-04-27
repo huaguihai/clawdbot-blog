@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+
+  <!-- Title -->
+  <text x="36" y="52" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#111827">GPT-5.5 vs 上一代：提示词习惯该怎么改</text>
+  <text x="36" y="78" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#6B7280">核心：少靠它猜，多让它对齐（稳定性来自约束）</text>
+
+  <!-- Center principle card -->
+  <rect x="188" y="96" width="284" height="64" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="188" y="96" width="6" height="64" rx="12" fill="#2563EB"/>
+  <text x="206" y="124" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#111827">从“让它猜” → 到“让它对齐”</text>
+  <text x="206" y="146" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">把意图、边界、步骤与参考说明清楚</text>
+
+  <!-- Dashed connectors from center -->
+  <line x1="330" y1="160" x2="152" y2="206" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="330" y1="160" x2="330" y2="206" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="330" y1="160" x2="508" y2="206" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- Card 1: Instruction layering -->
+  <rect x="44" y="206" width="216" height="150" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="44" y="206" width="6" height="150" rx="12" fill="#EA580C"/>
+  <text x="62" y="234" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#111827">1) 指令要分层</text>
+  <text x="62" y="256" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">问题：更听指令，但你没分层</text>
+  <text x="62" y="278" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">改法：</text>
+  <text x="78" y="300" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#111827">• 目标（要什么）</text>
+  <text x="78" y="322" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#111827">• 约束（不要什么）</text>
+  <text x="78" y="344" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#111827">• 输出格式（怎么交付）</text>
+
+  <!-- Card 2: Step stop points -->
+  <rect x="222" y="206" width="216" height="150" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="222" y="206" width="6" height="150" rx="12" fill="#16A34A"/>
+  <text x="240" y="234" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#111827">2) 步骤要有停止点</text>
+  <text x="240" y="256" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">问题：会按步骤做，但不停</text>
+  <text x="240" y="278" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">改法：</text>
+  <text x="256" y="300" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#111827">• 每步完成条件</text>
+  <text x="256" y="322" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#111827">• 何时提问/确认</text>
+  <text x="256" y="344" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#111827">• 何时结束并输出</text>
+
+  <!-- Card 3: Reference vs copy -->
+  <rect x="400" y="206" width="216" height="150" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="400" y="206" width="6" height="150" rx="12" fill="#9333EA"/>
+  <text x="418" y="234" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#111827">3) 风格要说清“参考/照写”</text>
+  <text x="418" y="256" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">问题：更会模仿，但你没定义</text>
+  <text x="418" y="278" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">改法：</text>
+  <text x="434" y="300" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#111827">• 参考：学结构/语气</text>
+  <text x="434" y="322" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#111827">• 照写：按模板填充</text>
+  <text x="434" y="344" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#111827">• 明确可改/不可改项</text>
+
+  <!-- Footer tag -->
+  <rect x="36" y="366" width="588" height="22" rx="11" fill="#FFFFFF"/>
+  <text x="54" y="381" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6B7280">不稳定 ≠ 质量差，通常是“约束不清”导致输出漂移</text>
+</svg>
