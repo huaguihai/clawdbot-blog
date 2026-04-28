@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+
+  <text x="40" y="42" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#0F172A">Agent 到底该测什么？</text>
+  <text x="40" y="68" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#475569">别只看最终答案，至少覆盖：结果、过程、工具调用、安全边界</text>
+
+  <line x1="330" y1="95" x2="330" y2="340" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <rect x="70" y="100" width="520" height="58" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="88" y="114" width="78" height="30" rx="15" fill="#DBEAFE"/>
+  <text x="127" y="134" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#2563EB">结果</text>
+  <text x="190" y="126" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#0F172A">Outcome</text>
+  <text x="190" y="145" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">检查：输出是否正确、完整、可交付</text>
+  <text x="465" y="126" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#2563EB">最小可行</text>
+  <text x="465" y="145" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">固定格式 + 基础规则校验</text>
+
+  <circle cx="330" cy="166" r="5" fill="#2563EB"/>
+
+  <rect x="70" y="176" width="520" height="58" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="88" y="190" width="78" height="30" rx="15" fill="#F3E8FF"/>
+  <text x="127" y="210" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#9333EA">过程</text>
+  <text x="190" y="202" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#0F172A">Trajectory</text>
+  <text x="190" y="221" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">检查：步骤、计划、停止条件是否合理</text>
+  <text x="465" y="202" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#9333EA">失败表现</text>
+  <text x="465" y="221" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">无限循环、反复改同一处</text>
+
+  <circle cx="330" cy="242" r="5" fill="#9333EA"/>
+
+  <rect x="70" y="252" width="520" height="58" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="88" y="266" width="78" height="30" rx="15" fill="#FFEDD5"/>
+  <text x="127" y="286" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#EA580C">工具</text>
+  <text x="190" y="278" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#0F172A">Tools</text>
+  <text x="190" y="297" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">检查：工具名、参数 schema、调用顺序</text>
+  <text x="465" y="278" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#EA580C">高风险点</text>
+  <text x="465" y="297" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">调错工具、参数越权</text>
+
+  <circle cx="330" cy="318" r="5" fill="#EA580C"/>
+
+  <rect x="70" y="328" width="520" height="48" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="88" y="337" width="78" height="30" rx="15" fill="#DCFCE7"/>
+  <text x="127" y="357" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#16A34A">安全</text>
+  <text x="190" y="350" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#0F172A">Safety / Policy</text>
+  <text x="380" y="350" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">权限分级 + 高风险动作二次确认，避免未授权读写</text>
+
+  <rect x="430" y="96" width="160" height="34" rx="10" fill="#FEF3C7"/>
+  <text x="510" y="117" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#D97706">只测最终答案远远不够</text>
+</svg>

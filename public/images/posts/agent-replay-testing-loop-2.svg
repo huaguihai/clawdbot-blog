@@ -1,0 +1,83 @@
+<svg viewBox="0 0 660 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .bg { fill:#FAFAFA; }
+      .card { fill:#FFFFFF; stroke:#E5E7EB; stroke-width:1; filter:url(#shadow); }
+      .title { font-family:-apple-system,'Segoe UI',sans-serif; font-size:16px; font-weight:700; fill:#111827; }
+      .text { font-family:-apple-system,'Segoe UI',sans-serif; font-size:12.5px; fill:#374151; }
+      .muted { font-family:-apple-system,'Segoe UI',sans-serif; font-size:12px; fill:#6B7280; }
+      .pill { rx:10; ry:10; }
+      .line { stroke:#9CA3AF; stroke-width:2; stroke-dasharray:6 6; fill:none; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" x="0" y="0" width="660" height="400" rx="12"/>
+
+  <!-- Header -->
+  <text x="28" y="42" class="title">没有“标准答案”的任务：用回放集做回归</text>
+  <text x="28" y="64" class="muted">核心闭环：采集可重跑轨迹 → 规则+裁判评分 → 失败沉淀 → 迭代后重放</text>
+
+  <!-- Card 1: Replay set -->
+  <rect class="card" x="28" y="92" width="184" height="228" rx="12"/>
+  <rect x="44" y="108" width="152" height="24" fill="#2563EB" rx="10" class="pill"/>
+  <text x="54" y="125" class="text" fill="#FFFFFF" style="font-weight:700;">1) 回放集 Replay Set</text>
+  <text x="44" y="152" class="text">保存“可重跑”的一次运行</text>
+  <text x="44" y="176" class="text">• 输入对话 input_messages</text>
+  <text x="44" y="198" class="text">• tool_calls: args/result/延迟</text>
+  <text x="44" y="220" class="text">• final_output</text>
+  <text x="44" y="242" class="text">• context: 权限/租户/引用id</text>
+  <text x="44" y="264" class="text">• labels: 场景标签</text>
+  <text x="44" y="292" class="muted">目标：改prompt/工具/模型后能重放</text>
+
+  <!-- Card 2: Scoring -->
+  <rect class="card" x="238" y="92" width="184" height="228" rx="12"/>
+  <rect x="254" y="108" width="152" height="24" fill="#EA580C" rx="10" class="pill"/>
+  <text x="264" y="125" class="text" fill="#FFFFFF" style="font-weight:700;">2) 评分 Scoring</text>
+  <text x="254" y="152" class="text">最小组合：硬+软两层</text>
+
+  <rect x="254" y="164" width="152" height="62" fill="#FFF7ED" stroke="#EA580C" stroke-width="1" rx="10"/>
+  <text x="264" y="184" class="text" style="font-weight:700;" fill="#9A3412">规则评分（硬指标）</text>
+  <text x="264" y="204" class="text">结构可parse / 禁止工具</text>
+  <text x="264" y="222" class="text">schema校验 / 步数阈值</text>
+
+  <rect x="254" y="236" width="152" height="72" fill="#F5F3FF" stroke="#9333EA" stroke-width="1" rx="10"/>
+  <text x="264" y="256" class="text" style="font-weight:700;" fill="#6B21A8">LLM-as-judge（软指标）</text>
+  <text x="264" y="276" class="text">按rubric打分 + must_fix</text>
+  <text x="264" y="294" class="text">同一把尺子量质量</text>
+
+  <!-- Card 3: Failure library -->
+  <rect class="card" x="448" y="92" width="184" height="228" rx="12"/>
+  <rect x="464" y="108" width="152" height="24" fill="#16A34A" rx="10" class="pill"/>
+  <text x="474" y="125" class="text" fill="#FFFFFF" style="font-weight:700;">3) 失败用例库</text>
+  <text x="464" y="152" class="text">每次翻车沉淀为“永久资产”</text>
+  <text x="464" y="176" class="text">• P0/P1 必落 replay case</text>
+  <text x="464" y="198" class="text">• 失败类型：越权/乱调/超时</text>
+  <text x="464" y="220" class="text">• 修复手段：prompt/guardrail</text>
+  <text x="464" y="242" class="text">  tool schema/二次确认</text>
+
+  <rect x="464" y="262" width="152" height="46" fill="#FFFBEB" stroke="#D97706" stroke-width="1" rx="10"/>
+  <text x="474" y="282" class="text" style="font-weight:700;" fill="#92400E">阈值拦截</text>
+  <text x="474" y="300" class="text">低于阈值：不准上线</text>
+
+  <!-- Arrows -->
+  <path class="line" d="M 212 206 C 224 206, 226 206, 238 206"/>
+  <path class="line" d="M 422 206 C 434 206, 436 206, 448 206"/>
+
+  <!-- Loop back arrow (replay) -->
+  <path class="line" d="M 540 330 C 540 360, 120 360, 120 330"/>
+  <path class="line" d="M 120 330 L 112 340 M 120 330 L 128 340" stroke="#9CA3AF" stroke-width="2"/>
+  <text x="258" y="372" class="muted">迭代后重放：每次改动都用同一批回放集回归</text>
+
+  <!-- Small legend -->
+  <rect x="28" y="334" width="220" height="44" class="card" rx="12"/>
+  <circle cx="46" cy="356" r="6" fill="#2563EB"/>
+  <text x="58" y="360" class="text">采集</text>
+  <circle cx="106" cy="356" r="6" fill="#EA580C"/>
+  <text x="118" y="360" class="text">评分</text>
+  <circle cx="166" cy="356" r="6" fill="#16A34A"/>
+  <text x="178" y="360" class="text">沉淀</text>
+</svg>
