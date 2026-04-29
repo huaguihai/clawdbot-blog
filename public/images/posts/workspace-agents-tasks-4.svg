@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <text x="330" y="36" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#111827">哪些任务最适合当第一个试点</text>
+  <text x="330" y="60" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#4B5563">共同点：省时间明显，风险相对可控</text>
+
+  <rect x="220" y="84" width="220" height="64" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="330" y="110" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#2563EB">首批 AI Agent 试点</text>
+  <text x="330" y="132" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">优先选固定输入、固定输出、人工可复核的任务</text>
+
+  <line x1="330" y1="148" x2="140" y2="188" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="330" y1="148" x2="300" y2="188" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="330" y1="148" x2="460" y2="188" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="330" y1="148" x2="620" y2="188" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <rect x="40" y="188" width="200" height="128" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="56" y="204" width="72" height="24" rx="8" fill="#DBEAFE"/>
+  <text x="92" y="221" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#2563EB">低风险</text>
+  <text x="140" y="223" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#111827">报告汇总类</text>
+  <text x="56" y="252" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• 分散材料，固定模板输出</text>
+  <text x="56" y="274" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• 擅长收集、归纳、成稿</text>
+  <text x="56" y="296" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• 写得一般也只需人工润色</text>
+
+  <rect x="250" y="188" width="200" height="128" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="266" y="204" width="72" height="24" rx="8" fill="#DCFCE7"/>
+  <text x="302" y="221" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#16A34A">高价值</text>
+  <text x="350" y="223" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#111827">反馈分流类</text>
+  <text x="266" y="252" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• 收集、去重、主题分类</text>
+  <text x="266" y="274" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• 识别 bug / 需求 / 咨询</text>
+  <text x="266" y="296" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• 推给负责人，不替负责人拍板</text>
+
+  <rect x="460" y="188" width="160" height="128" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="476" y="204" width="72" height="24" rx="8" fill="#FEF3C7"/>
+  <text x="512" y="221" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#D97706">最易自动化</text>
+  <text x="540" y="223" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#111827">定时报表类</text>
+  <text x="476" y="252" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• 固定频率</text>
+  <text x="476" y="274" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• 固定数据源与格式</text>
+  <text x="476" y="296" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• 仅需最后审阅</text>
+
+  <rect x="145" y="332" width="370" height="48" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="161" y="344" width="88" height="24" rx="8" fill="#F3E8FF"/>
+  <text x="205" y="361" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#9333EA">边界最重要</text>
+  <text x="272" y="361" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#111827">线索跟进前半段</text>
+  <text x="390" y="361" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">适合做资料汇总、打分、草稿，不适合最终报价与承诺</text>
+</svg>

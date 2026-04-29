@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#D97706"/>
+    </marker>
+  </defs>
+
+  <text x="330" y="36" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#111827">最容易翻车的 Agent 自动化任务</text>
+
+  <rect x="240" y="160" width="180" height="80" rx="16" fill="#FFF7ED" stroke="#EA580C" stroke-width="2" filter="url(#shadow)"/>
+  <text x="330" y="190" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#EA580C">不宜直接闭环</text>
+  <text x="330" y="214" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">先做草稿、建议、提示</text>
+
+  <rect x="40" y="80" width="170" height="96" rx="14" fill="#FFFFFF" stroke="#2563EB" stroke-width="2" filter="url(#shadow)"/>
+  <text x="125" y="108" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#2563EB">开放式判断</text>
+  <text x="56" y="132" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• 路线优先级</text>
+  <text x="56" y="150" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• 高风险沟通</text>
+  <text x="56" y="168" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• 复杂方案取舍</text>
+
+  <rect x="450" y="80" width="170" height="96" rx="14" fill="#FFFFFF" stroke="#16A34A" stroke-width="2" filter="url(#shadow)"/>
+  <text x="535" y="108" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#16A34A">低频多变流程</text>
+  <text x="466" y="132" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• 一年只跑几次</text>
+  <text x="466" y="150" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• 每次步骤不同</text>
+  <text x="466" y="168" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• 搭建维护成本高</text>
+
+  <rect x="40" y="258" width="170" height="96" rx="14" fill="#FFFFFF" stroke="#9333EA" stroke-width="2" filter="url(#shadow)"/>
+  <text x="125" y="286" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#9333EA">高权限直写</text>
+  <text x="56" y="310" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• 外部邮件发送</text>
+  <text x="56" y="328" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• 生产数据修改</text>
+  <text x="56" y="346" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• 不可逆账户操作</text>
+
+  <rect x="450" y="258" width="170" height="96" rx="14" fill="#FFFFFF" stroke="#D97706" stroke-width="2" filter="url(#shadow)"/>
+  <text x="535" y="286" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#D97706">脏数据输入</text>
+  <text x="466" y="310" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• CRM / 文档混乱</text>
+  <text x="466" y="328" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• 字段命名不统一</text>
+  <text x="466" y="346" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• 输出像样但底子有误</text>
+
+  <line x1="210" y1="128" x2="240" y2="176" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="450" y1="128" x2="420" y2="176" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="210" y1="306" x2="240" y2="224" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="450" y1="306" x2="420" y2="224" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <line x1="330" y1="240" x2="330" y2="300" stroke="#D97706" stroke-width="2.5" stroke-dasharray="7 7" marker-end="url(#arrow)"/>
+  <rect x="245" y="300" width="170" height="52" rx="12" fill="#FFFFFF" stroke="#D97706" stroke-width="2" filter="url(#shadow)"/>
+  <text x="330" y="322" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#D97706">更稳妥的做法</text>
+  <text x="330" y="342" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">保留人工审批口，不直接执行</text>
+
+  <rect x="150" y="44" width="360" height="26" rx="10" fill="#FEF3C7"/>
+  <text x="330" y="62" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#92400E">核心原则：越不确定、越高风险、越脏数据，越要有人确认</text>
+</svg>
