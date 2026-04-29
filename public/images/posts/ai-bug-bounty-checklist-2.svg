@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA" />
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.10" />
+    </filter>
+  </defs>
+
+  <text x="330" y="34" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#111827">先做威胁建模：先想清楚防谁、护什么</text>
+
+  <line x1="330" y1="200" x2="180" y2="105" stroke="#2563EB" stroke-width="2" stroke-dasharray="6 6" />
+  <line x1="330" y1="200" x2="480" y2="105" stroke="#16A34A" stroke-width="2" stroke-dasharray="6 6" />
+  <line x1="330" y1="200" x2="180" y2="295" stroke="#EA580C" stroke-width="2" stroke-dasharray="6 6" />
+  <line x1="330" y1="200" x2="480" y2="295" stroke="#9333EA" stroke-width="2" stroke-dasharray="6 6" />
+
+  <rect x="250" y="150" width="160" height="100" rx="16" fill="#FFFFFF" filter="url(#shadow)" />
+  <rect x="250" y="150" width="160" height="100" rx="16" fill="none" stroke="#D1D5DB" />
+  <text x="330" y="182" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#111827">威胁建模</text>
+  <text x="330" y="206" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#4B5563">一张“我最怕丢什么”的清单</text>
+  <text x="330" y="228" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#D97706">目标：找到最小可测的失败现象</text>
+
+  <rect x="45" y="55" width="230" height="100" rx="14" fill="#FFFFFF" filter="url(#shadow)" />
+  <rect x="45" y="55" width="230" height="100" rx="14" fill="none" stroke="#BFDBFE" />
+  <text x="65" y="82" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#2563EB">1. 谁会搞我？</text>
+  <text x="65" y="106" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 普通用户误操作</text>
+  <text x="65" y="126" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 恶意用户 / 竞争对手</text>
+  <text x="65" y="146" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 内部人员</text>
+
+  <rect x="385" y="55" width="230" height="100" rx="14" fill="#FFFFFF" filter="url(#shadow)" />
+  <rect x="385" y="55" width="230" height="100" rx="14" fill="none" stroke="#BBF7D0" />
+  <text x="405" y="82" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#16A34A">2. 我最怕丢什么？</text>
+  <text x="405" y="106" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 用户数据 / 私密文档</text>
+  <text x="405" y="126" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 系统提示词 / 权限边界</text>
+  <text x="405" y="146" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 钱 / 可写操作权限</text>
+
+  <rect x="45" y="245" width="230" height="110" rx="14" fill="#FFFFFF" filter="url(#shadow)" />
+  <rect x="45" y="245" width="230" height="110" rx="14" fill="none" stroke="#FED7AA" />
+  <text x="65" y="272" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#EA580C">3. 攻击从哪里进来？</text>
+  <text x="65" y="296" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 聊天输入 / 文件上传</text>
+  <text x="65" y="316" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 检索结果（RAG）</text>
+  <text x="65" y="336" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 插件、工具返回、网页内容</text>
+
+  <rect x="385" y="245" width="230" height="110" rx="14" fill="#FFFFFF" filter="url(#shadow)" />
+  <rect x="385" y="245" width="230" height="110" rx="14" fill="none" stroke="#E9D5FF" />
+  <text x="405" y="272" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#9333EA">4. 出事会变成什么？</text>
+  <text x="405" y="296" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 数据泄漏 / 提示词曝光</text>
+  <text x="405" y="316" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 越权操作 / 账单爆炸</text>
+  <text x="405" y="336" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 声誉损伤</text>
+
+  <rect x="170" y="364" width="320" height="24" rx="12" fill="#FEF3C7" />
+  <text x="330" y="381" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#92400E">安全测试重点：不是模型会不会做事，而是会不会被带去做不该做的事</text>
+</svg>

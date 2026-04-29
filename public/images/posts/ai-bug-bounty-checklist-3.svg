@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .bg { fill:#FAFAFA; }
+      .card { fill:#FFFFFF; filter:url(#shadow); }
+      .title { font-family:-apple-system,'Segoe UI',sans-serif; font-size:18px; font-weight:700; fill:#111827; }
+      .h { font-family:-apple-system,'Segoe UI',sans-serif; font-size:14px; font-weight:700; fill:#111827; }
+      .t { font-family:-apple-system,'Segoe UI',sans-serif; font-size:12px; fill:#374151; }
+      .muted { fill:#6B7280; }
+      .dash { stroke:#9CA3AF; stroke-width:2; stroke-dasharray:6 6; fill:none; }
+      .solid { stroke:#9CA3AF; stroke-width:1.5; fill:none; }
+      .pillText { font-family:-apple-system,'Segoe UI',sans-serif; font-size:12px; font-weight:700; fill:#FFFFFF; }
+      .small { font-family:-apple-system,'Segoe UI',sans-serif; font-size:11px; fill:#374151; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" x="0" y="0" width="660" height="400" rx="12"/>
+
+  <!-- Header -->
+  <text class="title" x="36" y="44">最小权限：把“能做什么”锁在服务端，不锁在提示词里</text>
+  <text class="t muted" x="36" y="66">两层拆分：模型侧告知能力范围；服务端决定是否允许执行</text>
+
+  <!-- Left card: Model side -->
+  <rect class="card" x="36" y="90" width="280" height="150" rx="12"/>
+  <text class="h" x="56" y="120">模型侧（提示词/工具说明）</text>
+  <text class="t" x="56" y="145">让模型知道“你可能能做什么”</text>
+  <text class="t" x="56" y="168">• 可用工具列表与参数说明</text>
+  <text class="t" x="56" y="190">• 何时需要请求用户确认</text>
+  <text class="t" x="56" y="212">• 只做行为引导，不做最终授权</text>
+
+  <!-- Right card: Server side -->
+  <rect class="card" x="344" y="90" width="280" height="150" rx="12"/>
+  <text class="h" x="364" y="120">服务端（真正的权限边界）</text>
+  <text class="t" x="364" y="145">决定“你实际上能不能做”</text>
+  <text class="t" x="364" y="168">• 鉴权 / 租户隔离 / allowlist</text>
+  <text class="t" x="364" y="190">• 额度限制 / 幂等 / 风控校验</text>
+  <text class="t" x="364" y="212">• 审计日志与可追溯</text>
+
+  <!-- Connection -->
+  <path class="dash" d="M 316 165 C 330 165, 330 165, 344 165"/>
+  <text class="small muted" x="295" y="155">请求执行</text>
+
+  <!-- Bottom card: Risk levels -->
+  <rect class="card" x="36" y="260" width="588" height="112" rx="12"/>
+  <text class="h" x="56" y="290">工具风险分级 → 对应确认策略（落在服务端）</text>
+
+  <!-- Risk pills -->
+  <rect x="56" y="306" width="86" height="26" rx="13" fill="#16A34A"/>
+  <text class="pillText" x="76" y="324">低风险</text>
+  <text class="t" x="150" y="324">可自动执行，但必须记录审计日志</text>
+
+  <rect x="56" y="336" width="86" height="26" rx="13" fill="#EA580C"/>
+  <text class="pillText" x="76" y="354">高风险</text>
+  <text class="t" x="150" y="354">必须二次确认 + 服务端强校验</text>
+
+  <rect x="380" y="336" width="104" height="26" rx="13" fill="#9333EA"/>
+  <text class="pillText" x="396" y="354">最高风险</text>
+  <text class="t" x="492" y="354">默认禁用或灰度给少数用户</text>
+
+  <!-- Divider line in bottom card -->
+  <line class="solid" x1="56" y1="300" x2="604" y2="300"/>
+
+  <!-- Footer note -->
+  <text class="t muted" x="36" y="392">底线：不要让模型直接拿到“万能写权限”</text>
+</svg>
