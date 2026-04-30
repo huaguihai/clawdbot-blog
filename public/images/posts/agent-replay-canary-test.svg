@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <!-- Background -->
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+
+    <style>
+      .t { font-family: -apple-system, 'Segoe UI', sans-serif; fill:#111827; }
+      .muted { fill:#6B7280; }
+      .card { fill:#FFFFFF; stroke:#E5E7EB; stroke-width:1; filter:url(#shadow); }
+      .dash { stroke:#9CA3AF; stroke-width:2; stroke-dasharray:6 6; fill:none; }
+      .solid { stroke-width:2; fill:none; }
+      .h { font-weight:700; }
+      .s { font-size:12px; }
+      .m { font-size:14px; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="24" y="34" class="t h" font-size="18">传统断言在 Agent 上为什么失灵</text>
+  <text x="24" y="56" class="t muted" font-size="12">输出受措辞、工具返回、长链路决策与随机性共同影响 → 测试目标从“相等断言”转为“可回放、可打分、可灰度对照”</text>
+
+  <!-- Top comparison cards -->
+  <rect x="24" y="74" width="300" height="120" rx="12" class="card"/>
+  <rect x="336" y="74" width="300" height="120" rx="12" class="card"/>
+
+  <!-- Left: Traditional unit test -->
+  <text x="44" y="102" class="t h m">传统单测</text>
+  <text x="44" y="122" class="t muted s">给定 input → 断言 output</text>
+
+  <rect x="44" y="140" width="78" height="34" rx="10" fill="#2563EB"/>
+  <text x="83" y="162" text-anchor="middle" class="t" font-size="12" fill="#FFFFFF">input</text>
+
+  <path d="M 122 157 L 170 157" class="dash"/>
+  <polygon points="170,157 162,152 162,162" fill="#9CA3AF"/>
+
+  <rect x="176" y="140" width="104" height="34" rx="10" fill="#16A34A"/>
+  <text x="228" y="162" text-anchor="middle" class="t" font-size="12" fill="#FFFFFF">assert output</text>
+
+  <!-- Right: Agent shape -->
+  <text x="356" y="102" class="t h m">Agent 实态</text>
+  <text x="356" y="122" class="t muted s">prompt → 计划 → 工具/数据 → 输出（可漂移）</text>
+
+  <rect x="356" y="140" width="76" height="34" rx="10" fill="#2563EB"/>
+  <text x="394" y="162" text-anchor="middle" class="t" font-size="12" fill="#FFFFFF">prompt</text>
+
+  <path d="M 432 157 L 458 157" class="dash"/>
+  <polygon points="458,157 450,152 450,162" fill="#9CA3AF"/>
+
+  <rect x="464" y="140" width="64" height="34" rx="10" fill="#9333EA"/>
+  <text x="496" y="162" text-anchor="middle" class="t" font-size="12" fill="#FFFFFF">计划</text>
+
+  <path d="M 528 157 L 554 157" class="dash"/>
+  <polygon points="554,157 546,152 546,162" fill="#9CA3AF"/>
+
+  <rect x="560" y="140" width="76" height="34" rx="10" fill="#EA580C"/>
+  <text x="598" y="162" text-anchor="middle" class="t" font-size="12" fill="#FFFFFF">工具/数据</text>
+
+  <!-- Down arrow to output -->
+  <path d="M 598 174 L 598 186" class="dash"/>
+  <polygon points="598,186 593,178 603,178" fill="#9CA3AF"/>
+  <rect x="560" y="188" width="76" height="0" rx="10" fill="#FAFAFA"/>
+
+  <rect x="560" y="182" width="76" height="0" rx="10" fill="#FAFAFA"/>
+
+  <rect x="560" y="182" width="76" height="0" rx="10" fill="#FAFAFA"/>
+
+  <rect x="560" y="182" width="76" height="0" rx="10" fill="#FAFAFA"/>
+
+  <rect x="560" y="182" width="76" height="0" rx="10" fill="#FAFAFA"/>
+
+  <rect x="560" y="182" width="76" height="0" rx="10" fill="#FAFAFA"/>
+
+  <rect x="560" y="182" width="76" height="0" rx="10" fill="#FAFAFA"/>
+
+  <!-- Output bubble -->
+  <rect x="520" y="182" width="116" height="34" rx="10" fill="#16A34A"/>
+  <text x="578" y="204" text-anchor="middle" class="t" font-size="12" fill="#FFFFFF">输出（抖动）</text>
+
+  <!-- Callout: shift in what to test -->
+  <rect x="24" y="206" width="612" height="44" rx="12" fill="#FFFFFF" stroke="#E5E7EB" filter="url(#shadow)"/>
+  <text x="44" y="234" class="t" font-size="14"><tspan class="h">测什么：</tspan><tspan class="muted">不再盯“到没到终点”，而是约束</tspan><tspan fill="#D97706" class="h">成本/安全/路径合理性</tspan><tspan class="muted">，并支持回放与对照。</tspan></text>
+
+  <!-- Bottom 4 cards (failure -> change) -->
+  <!-- Card 1 -->
+  <rect x="24" y="264" width="306" height="112" rx="12" class="card"/>
+  <rect x="24" y="264" width="306" height="30" rx="12" fill="#2563EB" opacity="0.10"/>
+  <text x="44" y="284" class="t h m">输入不稳定</text>
+  <text x="44" y="305" class="t muted s">同一意图多措辞，注入夹带指令</text>
+  <path d="M 44 324 L 310 324" class="dash"/>
+  <text x="44" y="346" class="t s"><tspan class="h" fill="#2563EB">改测：</tspan><tspan class="muted">覆盖“意图簇”回放集</tspan></text>
+  <text x="44" y="364" class="t s"><tspan class="muted">而非少量固定样例</tspan></text>
+
+  <!-- Card 2 -->
+  <rect x="330" y="264" width="306" height="112" rx="12" class="card"/>
+  <rect x="330" y="264" width="306" height="30" rx="12" fill="#EA580C" opacity="0.10"/>
+  <text x="350" y="284" class="t h m">工具链有副作用</text>
+  <text x="350" y="305" class="t muted s">真打会发邮件/写库/扣费</text>
+  <path d="M 350 324 L 616 324" class="dash"/>
+  <text x="350" y="346" class="t s"><tspan class="h" fill="#EA580C">改测：</tspan><tspan class="muted">工具沙箱、shadow 执行</tspan></text>
+  <text x="350" y="364" class="t s"><tspan class="muted">与副作用预算</tspan></text>
+
+  <!-- Footer small legend (non-determinism & long-chain drift) as badges to keep one-core diagram compact -->
+  <rect x="24" y="382" width="300" height="0" rx="10" fill="#FAFAFA"/>
+
+  <!-- Two small badges inside callout area (visual hint of remaining two) -->
+  <rect x="372" y="214" width="124" height="28" rx="10" fill="#9333EA" opacity="0.12" stroke="#9333EA" stroke-opacity="0.35"/>
+  <text x="434" y="233" text-anchor="middle" class="t s"><tspan class="h" fill="#9333EA">长链路漂移</tspan></text>
+
+  <rect x="504" y="214" width="132" height="28" rx="10" fill="#D97706" opacity="0.14" stroke="#D97706" stroke-opacity="0.35"/>
+  <text x="570" y="233" text-anchor="middle" class="t s"><tspan class="h" fill="#D97706">非确定性抖动</tspan></text>
+
+  <!-- Tiny note for badges -->
+  <text x="44" y="248" class="t muted" font-size="11">其余常见失灵点：长链路漂移（需记录中间产物做回放对齐）、非确定性（用评分器+阈值替代字符串相等）</text>
+</svg>

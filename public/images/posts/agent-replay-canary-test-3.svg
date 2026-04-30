@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .bg { fill:#FAFAFA; }
+      .card { fill:#FFFFFF; stroke:#E5E7EB; stroke-width:1; filter:url(#shadow); }
+      .title { font-family:-apple-system,'Segoe UI',sans-serif; font-size:16px; font-weight:700; fill:#111827; }
+      .text { font-family:-apple-system,'Segoe UI',sans-serif; font-size:13px; fill:#374151; }
+      .muted { font-family:-apple-system,'Segoe UI',sans-serif; font-size:12px; fill:#6B7280; }
+      .tag { font-family:-apple-system,'Segoe UI',sans-serif; font-size:12px; font-weight:700; fill:#111827; }
+      .dash { stroke:#9CA3AF; stroke-width:2; stroke-dasharray:6 6; fill:none; }
+      .dot { fill:#9CA3AF; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" x="10" y="10" width="640" height="380" rx="12"/>
+
+  <!-- Card 1: Logs -->
+  <rect class="card" x="40" y="70" width="190" height="260" rx="12"/>
+  <text class="title" x="60" y="105">生产日志（最低配）</text>
+
+  <!-- bullet 1 -->
+  <circle class="dot" cx="62" cy="135" r="3"/>
+  <text class="text" x="74" y="140">用户输入（原文）</text>
+
+  <!-- bullet 2 -->
+  <circle class="dot" cx="62" cy="165" r="3"/>
+  <text class="text" x="74" y="170">工具调用记录</text>
+  <text class="muted" x="74" y="190">工具名/参数/返回/耗时/失败</text>
+
+  <!-- bullet 3 -->
+  <circle class="dot" cx="62" cy="220" r="3"/>
+  <text class="text" x="74" y="225">最终输出 + 中间产物</text>
+  <text class="muted" x="74" y="245">计划/证据片段/文档ID等</text>
+
+  <rect x="55" y="270" width="160" height="38" rx="10" fill="#2563EB" opacity="0.10" stroke="#2563EB"/>
+  <text class="tag" x="68" y="294" fill="#2563EB">先统一日志结构</text>
+
+  <!-- Card 2: Bucketing -->
+  <rect class="card" x="250" y="70" width="220" height="260" rx="12"/>
+  <text class="title" x="270" y="105">分桶抽样（不瞎抽）</text>
+
+  <!-- Risk bucket -->
+  <rect x="265" y="125" width="190" height="95" rx="12" fill="#EA580C" opacity="0.08" stroke="#EA580C"/>
+  <text class="tag" x="278" y="150" fill="#EA580C">风险桶（优先级高→低）</text>
+  <text class="text" x="278" y="172">1 写操作（下单/写库/改配置）</text>
+  <text class="text" x="278" y="192">2 成本敏感（多检索/并行/长上下文）</text>
+  <text class="text" x="278" y="212">3 合规安全（隐私/跨租户/附件）</text>
+
+  <!-- Diversity bucket -->
+  <rect x="265" y="235" width="190" height="85" rx="12" fill="#9333EA" opacity="0.08" stroke="#9333EA"/>
+  <text class="tag" x="278" y="260" fill="#9333EA">多样性桶（保覆盖）</text>
+  <text class="text" x="278" y="282">语言/长度/入口/工具组合</text>
+  <text class="muted" x="278" y="302">短问句/长文档/代码块等</text>
+
+  <!-- Card 3: Replay set -->
+  <rect class="card" x="490" y="70" width="130" height="260" rx="12"/>
+  <text class="title" x="505" y="105">回放集</text>
+  <text class="muted" x="505" y="126">可重放样本库</text>
+
+  <rect x="505" y="145" width="100" height="70" rx="12" fill="#16A34A" opacity="0.10" stroke="#16A34A"/>
+  <text class="tag" x="518" y="174" fill="#16A34A">50–200</text>
+  <text class="text" x="518" y="194">真实常见</text>
+
+  <rect x="505" y="230" width="100" height="85" rx="12" fill="#D97706" opacity="0.10" stroke="#D97706"/>
+  <text class="tag" x="518" y="258" fill="#D97706">发布前</text>
+  <text class="text" x="518" y="278">重放评估</text>
+  <text class="muted" x="518" y="298">替代手编用例</text>
+
+  <!-- Dashed arrows -->
+  <path class="dash" d="M230 200 C 240 200, 240 200, 250 200"/>
+  <path class="dash" d="M470 200 C 480 200, 480 200, 490 200"/>
+
+  <!-- Top caption -->
+  <text class="muted" x="40" y="45">核心流程：从线上真实日志抽取 → 按风险与多样性分桶 → 得到可重放的回放集</text>
+</svg>

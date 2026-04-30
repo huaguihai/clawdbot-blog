@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <text x="330" y="36" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#0F172A">离线评估发布门槛</text>
+  <text x="330" y="58" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">先判断“有没有退步”，再定位“退步在哪”</text>
+
+  <rect x="220" y="130" width="220" height="110" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="330" y="160" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#2563EB">发布门禁</text>
+  <text x="330" y="186" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#334155">相对上版是否退步</text>
+  <text x="330" y="206" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#334155">退步出现在哪类任务</text>
+  <text x="330" y="226" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#64748B">指标 + 评分器 + 回放验证</text>
+
+  <line x1="220" y1="185" x2="126" y2="110" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="220" y1="185" x2="126" y2="185" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="220" y1="185" x2="126" y2="260" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="440" y1="185" x2="534" y2="110" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="440" y1="185" x2="534" y2="185" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="440" y1="185" x2="534" y2="260" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <rect x="34" y="78" width="184" height="64" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="46" y="92" width="10" height="10" rx="3" fill="#2563EB"/>
+  <text x="64" y="101" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#0F172A">任务完成率</text>
+  <text x="46" y="122" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">信号：成功率下降但回复更长</text>
+
+  <rect x="34" y="153" width="184" height="64" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="46" y="167" width="10" height="10" rx="3" fill="#D97706"/>
+  <text x="64" y="176" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#0F172A">成本（Token/¥）</text>
+  <text x="46" y="197" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">信号：P95飙升，少数任务爆炸</text>
+
+  <rect x="34" y="228" width="184" height="64" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="46" y="242" width="10" height="10" rx="3" fill="#16A34A"/>
+  <text x="64" y="251" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#0F172A">工具调用异常率</text>
+  <text x="46" y="272" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">信号：同一工具重试、超时变多</text>
+
+  <rect x="442" y="78" width="184" height="64" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="454" y="92" width="10" height="10" rx="3" fill="#EA580C"/>
+  <text x="472" y="101" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#0F172A">不必要工具率</text>
+  <text x="454" y="122" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">信号：本不该用却用了</text>
+
+  <rect x="442" y="153" width="184" height="64" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="454" y="167" width="10" height="10" rx="3" fill="#9333EA"/>
+  <text x="472" y="176" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#0F172A">人工复核命中率</text>
+  <text x="454" y="197" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">信号：抽样发现问题变多</text>
+
+  <rect x="442" y="228" width="184" height="64" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="454" y="242" width="10" height="10" rx="3" fill="#2563EB"/>
+  <text x="472" y="251" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#0F172A">安全/越权尝试率</text>
+  <text x="454" y="272" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">信号：敏感工具提及更频繁</text>
+
+  <rect x="110" y="315" width="440" height="56" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="132" y="338" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#0F172A">评分器设计</text>
+  <text x="132" y="358" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">规则评分：可解析、禁用字段、参数越界</text>
+  <text x="350" y="358" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">模型评分：任务达成、证据一致、风险控制、工具纪律、成本意识</text>
+</svg>
