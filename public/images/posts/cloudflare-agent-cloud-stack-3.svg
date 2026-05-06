@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <text x="330" y="36" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#111827">Cloudflare Agent Cloud 适合谁，用来解决什么</text>
+
+  <rect x="36" y="88" width="180" height="220" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="126" y="118" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#2563EB">更适合谁</text>
+  <rect x="56" y="138" width="140" height="56" rx="12" fill="#EFF6FF"/>
+  <text x="126" y="161" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#1E3A8A">把 Agent 当</text>
+  <text x="126" y="181" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#1E3A8A">线上产品卖/用的团队</text>
+  <rect x="56" y="212" width="140" height="70" rx="12" fill="#FFF7ED"/>
+  <text x="126" y="238" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#9A3412">不只是</text>
+  <text x="126" y="258" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#9A3412">写 Demo</text>
+  <text x="126" y="276" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#7C2D12">而是要真正上线运营</text>
+
+  <rect x="246" y="128" width="168" height="144" rx="18" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="266" y="148" width="128" height="34" rx="10" fill="#F3E8FF"/>
+  <text x="330" y="170" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#6B21A8">Agent Cloud</text>
+  <text x="330" y="206" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#374151">核心关注点不是</text>
+  <text x="330" y="228" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#EA580C">模型能力</text>
+  <text x="330" y="252" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#6B7280">而是上线后的工程化运营能力</text>
+
+  <rect x="444" y="72" width="180" height="256" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="534" y="102" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#16A34A">解决的四件苦活</text>
+
+  <rect x="462" y="120" width="144" height="38" rx="10" fill="#DBEAFE"/>
+  <circle cx="480" cy="139" r="6" fill="#2563EB"/>
+  <text x="494" y="144" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#1F2937">稳定执行：跑得住</text>
+
+  <rect x="462" y="168" width="144" height="38" rx="10" fill="#DCFCE7"/>
+  <circle cx="480" cy="187" r="6" fill="#16A34A"/>
+  <text x="494" y="192" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#1F2937">持久状态与队列</text>
+
+  <rect x="462" y="216" width="144" height="38" rx="10" fill="#F3E8FF"/>
+  <circle cx="480" cy="235" r="6" fill="#9333EA"/>
+  <text x="494" y="240" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#1F2937">权限与审计</text>
+
+  <rect x="462" y="264" width="144" height="46" rx="10" fill="#FFEDD5"/>
+  <circle cx="480" cy="287" r="6" fill="#D97706"/>
+  <text x="494" y="284" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#1F2937">成本与限流</text>
+  <text x="494" y="301" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#7C2D12">避免账单失控</text>
+
+  <line x1="216" y1="198" x2="246" y2="198" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="414" y1="198" x2="444" y2="198" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <rect x="188" y="336" width="284" height="38" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="330" y="360" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">如果已在用 Cloudflare Workers，可把分散工程能力收拢到一条链路</text>
+</svg>

@@ -1,0 +1,62 @@
+<svg width="660" height="300" viewBox="0 0 660 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="660" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#44403C"/>
+      <stop offset="1" stop-color="#1C1917"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="50" y1="0" x2="610" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EA580C"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+    <pattern id="texture" width="48" height="48" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="10" r="1.2" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="22" cy="6" r="0.9" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="36" cy="14" r="1.1" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="14" cy="26" r="0.8" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="30" cy="30" r="1.3" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="42" cy="40" r="0.9" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="6" cy="42" r="1.1" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="24" cy="44" r="0.7" fill="#D6D3D1" opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <rect width="660" height="300" fill="url(#bg)"/>
+  <rect width="660" height="300" fill="url(#texture)"/>
+
+  <rect x="50" y="34" width="5" height="206" rx="2.5" fill="url(#accent)"/>
+
+  <text x="70" y="92" fill="#FAFAF9" font-size="22" font-weight="700" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
+    <tspan x="70" dy="0">Cloudflare Agent Cloud：</tspan>
+    <tspan x="70" dy="28">AI Agent 上线少踩 4 个坑</tspan>
+  </text>
+
+  <text x="70" y="152" fill="#A8A29E" font-size="13" font-weight="400" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
+    Cloudflare Agent Cloud 把 AI Agent 的执行、状态
+  </text>
+
+  <g>
+    <rect x="70" y="238" width="82" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="111" y="254" text-anchor="middle" fill="#D6D3D1" font-size="12" font-weight="500" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">执行环境</text>
+
+    <rect x="162" y="238" width="82" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="203" y="254" text-anchor="middle" fill="#D6D3D1" font-size="12" font-weight="500" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">状态队列</text>
+
+    <rect x="254" y="238" width="82" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="295" y="254" text-anchor="middle" fill="#D6D3D1" font-size="12" font-weight="500" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">审计追溯</text>
+  </g>
+
+  <g opacity="0.22" stroke="#EA580C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M520 226C520 217.716 526.716 211 535 211H545C548.42 211 551.572 212.146 554.091 214.074C556.01 209.914 560.214 207 565.1 207C571.798 207 577.3 212.213 577.763 218.794C583.079 219.172 587.275 223.603 587.275 229C587.275 234.645 582.699 239.221 577.054 239.221H535C526.716 239.221 520 232.505 520 224.221V226Z"/>
+    <path d="M544 251L552 259L568 243"/>
+  </g>
+
+  <g opacity="0.18" stroke="#A8A29E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <rect x="594" y="198" width="28" height="36" rx="4"/>
+    <path d="M601 210H615"/>
+    <path d="M601 218H615"/>
+    <path d="M601 226H611"/>
+    <path d="M600 246L606 252L617 241"/>
+  </g>
+
+  <rect x="0" y="293" width="660" height="7" fill="url(#accent)"/>
+</svg>

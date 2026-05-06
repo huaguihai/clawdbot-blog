@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <text x="330" y="38" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#0F172A">为什么 Agent 本地很强，上线就失控？</text>
+  <text x="330" y="64" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#475569">核心原因：本地 Demo 只验证生成能力，线上系统要求可运营能力</text>
+
+  <rect x="48" y="98" width="220" height="240" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="392" y="98" width="220" height="240" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+
+  <rect x="68" y="116" width="180" height="40" rx="12" fill="#DBEAFE"/>
+  <text x="158" y="141" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#2563EB">本地 Demo</text>
+  <text x="158" y="168" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#475569">你看到的是“答案”</text>
+
+  <rect x="412" y="116" width="180" height="40" rx="12" fill="#FEE2E2"/>
+  <text x="502" y="141" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#EA580C">线上系统</text>
+  <text x="502" y="168" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#475569">暴露的是“过程”</text>
+
+  <rect x="74" y="188" width="168" height="42" rx="10" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.2"/>
+  <text x="158" y="214" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="600" fill="#1E3A8A">生成文本效果</text>
+
+  <rect x="74" y="242" width="168" height="42" rx="10" fill="#F5F3FF" stroke="#9333EA" stroke-width="1.2"/>
+  <text x="158" y="268" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="600" fill="#6B21A8">Prompt 与样例</text>
+
+  <rect x="74" y="296" width="168" height="24" rx="8" fill="#FEF3C7"/>
+  <text x="158" y="313" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#92400E">关注点单一：输出像不像人</text>
+
+  <rect x="412" y="186" width="180" height="34" rx="10" fill="#ECFDF5" stroke="#16A34A" stroke-width="1.1"/>
+  <text x="502" y="208" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#166534">运行位置 / 并发 / 超时</text>
+
+  <rect x="412" y="228" width="180" height="34" rx="10" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.1"/>
+  <text x="502" y="250" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#1D4ED8">状态持久化 / 失败重试</text>
+
+  <rect x="412" y="270" width="180" height="34" rx="10" fill="#F5F3FF" stroke="#9333EA" stroke-width="1.1"/>
+  <text x="502" y="292" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#7E22CE">权限边界 / 审计追溯</text>
+
+  <rect x="412" y="312" width="180" height="34" rx="10" fill="#FFF7ED" stroke="#D97706" stroke-width="1.1"/>
+  <text x="502" y="334" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#C2410C">预算控制 / 降级策略</text>
+
+  <line x1="268" y1="220" x2="392" y2="220" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="268" y1="262" x2="392" y2="245" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="268" y1="262" x2="392" y2="287" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="268" y1="304" x2="392" y2="329" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <rect x="210" y="83" width="240" height="34" rx="17" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="330" y="105" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#0F172A">本质变化：从“会回答”到“可运营”</text>
+
+  <rect x="111" y="350" width="438" height="30" rx="10" fill="#111827"/>
+  <text x="330" y="370" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">只盯文本输出，会让 Agent “错得像对”，并吞掉成本与稳定性</text>
+</svg>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <text x="36" y="42" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#111827">上线自检清单</text>
+  <text x="36" y="66" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">把“心虚”变成可检查：指标、回放、权限、降级</text>
+
+  <line x1="180" y1="200" x2="280" y2="200" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="380" y1="200" x2="480" y2="200" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="130" y1="120" x2="130" y2="280" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="530" y1="120" x2="530" y2="280" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <g>
+    <rect x="40" y="90" width="180" height="110" rx="14" fill="#FFFFFF" stroke="#DBEAFE"/>
+    <rect x="44" y="94" width="180" height="110" rx="14" fill="none" stroke="#E5E7EB" opacity="0.5"/>
+    <circle cx="70" cy="120" r="16" fill="#DBEAFE"/>
+    <text x="70" y="125" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#2563EB">1</text>
+    <text x="96" y="124" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#1F2937">指标</text>
+    <text x="58" y="152" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• 任务ID、租户、起止时间、状态</text>
+    <text x="58" y="172" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• 工具名、参数hash、耗时、重试</text>
+    <text x="58" y="192" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• token成本、越权尝试、跳过确认</text>
+  </g>
+
+  <g>
+    <rect x="240" y="90" width="180" height="110" rx="14" fill="#FFFFFF" stroke="#FDE68A"/>
+    <rect x="244" y="94" width="180" height="110" rx="14" fill="none" stroke="#E5E7EB" opacity="0.5"/>
+    <circle cx="270" cy="120" r="16" fill="#FEF3C7"/>
+    <text x="270" y="125" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#D97706">2</text>
+    <text x="296" y="124" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#1F2937">回放</text>
+    <text x="258" y="152" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• 超时、工具异常、429/5xx</text>
+    <text x="258" y="172" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• 计划漂移：同意图走不同工具链</text>
+    <text x="258" y="192" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• 写操作被拦也要可重演</text>
+  </g>
+
+  <g>
+    <rect x="440" y="90" width="180" height="110" rx="14" fill="#FFFFFF" stroke="#E9D5FF"/>
+    <rect x="444" y="94" width="180" height="110" rx="14" fill="none" stroke="#E5E7EB" opacity="0.5"/>
+    <circle cx="470" cy="120" r="16" fill="#F3E8FF"/>
+    <text x="470" y="125" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#9333EA">3</text>
+    <text x="496" y="124" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#1F2937">权限</text>
+    <text x="458" y="152" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• 写库、改配置默认关闭</text>
+    <text x="458" y="172" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• 发消息需确认 + 白名单</text>
+    <text x="458" y="192" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">• URL与跨租户访问默认受限</text>
+  </g>
+
+  <g>
+    <rect x="140" y="235" width="380" height="115" rx="16" fill="#FFFFFF" stroke="#BBF7D0"/>
+    <rect x="144" y="239" width="380" height="115" rx="16" fill="none" stroke="#E5E7EB" opacity="0.5"/>
+    <circle cx="175" cy="270" r="18" fill="#DCFCE7"/>
+    <text x="175" y="276" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#16A34A">4</text>
+    <text x="205" y="275" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#1F2937">降级策略</text>
+
+    <rect x="164" y="292" width="104" height="36" rx="10" fill="#EFF6FF" stroke="#BFDBFE"/>
+    <text x="216" y="314" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#2563EB">暂停并请求确认</text>
+
+    <line x1="268" y1="310" x2="310" y2="310" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6 6"/>
+
+    <rect x="310" y="292" width="104" height="36" rx="10" fill="#FFF7ED" stroke="#FED7AA"/>
+    <text x="362" y="314" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#EA580C">切低成本路径</text>
+
+    <line x1="414" y1="310" x2="456" y2="310" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6 6"/>
+
+    <rect x="456" y="292" width="48" height="36" rx="10" fill="#F0FDF4" stroke="#BBF7D0"/>
+    <text x="480" y="314" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#16A34A">限重试</text>
+  </g>
+
+  <text x="36" y="378" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#9CA3AF">核心原则：先可观测，再可重演，再最小权限，最后可控降级</text>
+</svg>
