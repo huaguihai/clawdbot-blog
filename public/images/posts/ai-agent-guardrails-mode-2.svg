@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563EB"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#EA580C"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#16A34A"/>
+    </marker>
+  </defs>
+
+  <text x="330" y="34" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#0F172A">你以为在审批，其实在打卡</text>
+  <text x="330" y="58" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#475569">核心问题：高频弹窗让人机械点击，真正风险反而被淹没</text>
+
+  <rect x="36" y="84" width="274" height="272" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="350" y="84" width="274" height="272" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+
+  <text x="173" y="115" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#EA580C">手动权限弹窗模式</text>
+  <text x="487" y="115" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#16A34A">Auto Mode 自动模式</text>
+
+  <rect x="64" y="136" width="218" height="44" rx="12" fill="#FFF7ED" stroke="#EA580C"/>
+  <text x="173" y="163" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#9A3412">每次请求都弹窗确认</text>
+
+  <line x1="173" y1="180" x2="173" y2="208" stroke="#EA580C" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrowOrange)"/>
+
+  <rect x="64" y="214" width="218" height="64" rx="12" fill="#FFFFFF" stroke="#FDBA74"/>
+  <text x="173" y="238" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#EA580C">93% 请求被直接允许</text>
+  <text x="173" y="258" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#64748B">看似审批，实际接近机械打卡</text>
+
+  <line x1="173" y1="278" x2="173" y2="304" stroke="#EA580C" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrowOrange)"/>
+
+  <rect x="64" y="308" width="218" height="28" rx="10" fill="#FEE2E2"/>
+  <text x="173" y="327" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#B91C1C">结果：审批疲劳，注意力被低价值确认耗尽</text>
+
+  <rect x="378" y="136" width="218" height="44" rx="12" fill="#F0FDF4" stroke="#16A34A"/>
+  <text x="487" y="163" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#166534">模型分类器先判断请求</text>
+
+  <line x1="487" y1="180" x2="487" y2="208" stroke="#16A34A" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrowGreen)"/>
+
+  <rect x="378" y="214" width="218" height="64" rx="12" fill="#FFFFFF" stroke="#86EFAC"/>
+  <text x="487" y="238" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#16A34A">替代 93% 无意义确认</text>
+  <text x="487" y="258" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#64748B">把弹窗从“全量”变成“有选择”</text>
+
+  <line x1="487" y1="278" x2="487" y2="304" stroke="#16A34A" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrowGreen)"/>
+
+  <rect x="378" y="308" width="218" height="28" rx="10" fill="#DCFCE7"/>
+  <text x="487" y="327" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#166534">结果：把人工注意力留给真正危险的 7%</text>
+
+  <line x1="310" y1="220" x2="350" y2="220" stroke="#2563EB" stroke-width="3" stroke-dasharray="8 6" marker-end="url(#arrowBlue)"/>
+  <rect x="292" y="190" width="76" height="60" rx="14" fill="#EFF6FF" stroke="#93C5FD"/>
+  <text x="330" y="212" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#2563EB">优化目标</text>
+  <text x="330" y="231" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#1D4ED8">少点确认</text>
+  <text x="330" y="245" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#1D4ED8">不全放权</text>
+
+  <circle cx="72" cy="52" r="6" fill="#EA580C" opacity="0.85"/>
+  <circle cx="90" cy="52" r="6" fill="#D97706" opacity="0.85"/>
+  <circle cx="108" cy="52" r="6" fill="#9333EA" opacity="0.85"/>
+</svg>

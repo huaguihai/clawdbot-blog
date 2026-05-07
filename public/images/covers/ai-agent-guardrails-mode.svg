@@ -1,0 +1,97 @@
+<svg width="660" height="300" viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AI agent 越权别靠点确认：双层护栏更稳">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="660" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#44403C"/>
+      <stop offset="1" stop-color="#1C1917"/>
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="660" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EA580C"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+
+    <style>
+      .title { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",Arial,sans-serif; font-weight: 700; font-size: 22px; fill: #FAFAF9; }
+      .sub   { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",Arial,sans-serif; font-weight: 500; font-size: 13px; fill: #A8A29E; }
+      .tagText { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",Arial,sans-serif; font-weight: 600; font-size: 12px; fill: #D6D3D1; letter-spacing: 0.2px; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="660" height="300" fill="url(#bgGrad)"/>
+
+  <!-- Paper-like texture (opacity 0.06) -->
+  <g fill="#D6D3D1" opacity="0.06">
+    <circle cx="38" cy="46" r="1.2"/><circle cx="92" cy="30" r="1.0"/><circle cx="140" cy="58" r="1.4"/>
+    <circle cx="210" cy="36" r="1.1"/><circle cx="260" cy="66" r="1.3"/><circle cx="318" cy="28" r="1.0"/>
+    <circle cx="372" cy="54" r="1.5"/><circle cx="428" cy="34" r="1.1"/><circle cx="486" cy="62" r="1.4"/>
+    <circle cx="544" cy="40" r="1.0"/><circle cx="612" cy="58" r="1.3"/>
+
+    <circle cx="60" cy="104" r="1.3"/><circle cx="118" cy="96" r="1.0"/><circle cx="176" cy="120" r="1.5"/>
+    <circle cx="236" cy="98" r="1.1"/><circle cx="296" cy="126" r="1.4"/><circle cx="354" cy="104" r="1.0"/>
+    <circle cx="412" cy="120" r="1.3"/><circle cx="470" cy="98" r="1.1"/><circle cx="528" cy="126" r="1.5"/>
+    <circle cx="596" cy="110" r="1.2"/>
+
+    <circle cx="44" cy="170" r="1.1"/><circle cx="104" cy="156" r="1.4"/><circle cx="162" cy="184" r="1.0"/>
+    <circle cx="220" cy="160" r="1.3"/><circle cx="278" cy="190" r="1.1"/><circle cx="336" cy="166" r="1.5"/>
+    <circle cx="394" cy="186" r="1.0"/><circle cx="452" cy="160" r="1.3"/><circle cx="510" cy="190" r="1.1"/>
+    <circle cx="568" cy="168" r="1.4"/><circle cx="626" cy="186" r="1.0"/>
+
+    <circle cx="72" cy="236" r="1.4"/><circle cx="132" cy="220" r="1.0"/><circle cx="190" cy="248" r="1.3"/>
+    <circle cx="248" cy="226" r="1.1"/><circle cx="306" cy="254" r="1.5"/><circle cx="364" cy="230" r="1.0"/>
+    <circle cx="422" cy="250" r="1.2"/><circle cx="480" cy="226" r="1.4"/><circle cx="538" cy="254" r="1.1"/>
+    <circle cx="608" cy="242" r="1.3"/>
+  </g>
+
+  <!-- Left accent line -->
+  <rect x="50" y="34" width="5" height="232" rx="2.5" fill="url(#accentGrad)"/>
+
+  <!-- Text block (x starts at 70; can span to 600) -->
+  <g>
+    <text x="70" y="86" class="title">
+      <tspan x="70" y="86">AI agent 越权别靠点确认</tspan>
+      <tspan x="70" dy="28">双层护栏更稳</tspan>
+    </text>
+
+    <text x="70" y="146" class="sub">AI agent 越权最可怕的不是「它会做坏事」，而是它会「顺手多做一点」…</text>
+  </g>
+
+  <!-- Tags (bottom area y≈240-260); keep well left so decor can sit to the right -->
+  <g>
+    <rect x="70"  y="238" width="82" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+    <text x="111" y="255" class="tagText" text-anchor="middle">双层护栏</text>
+
+    <rect x="164" y="238" width="82" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+    <text x="205" y="255" class="tagText" text-anchor="middle">Prompt 注入</text>
+
+    <rect x="258" y="238" width="82" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+    <text x="299" y="255" class="tagText" text-anchor="middle">动作闸门</text>
+  </g>
+
+  <!-- Decorative elements (ONLY right-bottom corner; x>=480,y>=180; to the right of tags; no overlap with any text) -->
+  <g fill="none" stroke="#EA580C" stroke-width="2" opacity="0.24" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Shield icon (approx 64x72) -->
+    <path d="M530 190 L560 202 Q560 238 530 254 Q500 238 500 202 Z"/>
+    <path d="M530 205 V238"/>
+    <path d="M515 222 H545"/>
+
+    <!-- Gate / barrier icon (approx 72x52) -->
+    <path d="M585 210 V252"/>
+    <path d="M635 210 V252"/>
+    <path d="M585 210 H635"/>
+    <path d="M595 226 H625"/>
+    <path d="M595 238 H625"/>
+    <path d="M595 250 H625"/>
+    <path d="M610 210 V252"/>
+  </g>
+
+  <!-- Subtle secondary geometry behind decor (still within right-bottom region) -->
+  <g fill="none" stroke="#A8A29E" stroke-width="1.6" opacity="0.18">
+    <circle cx="612" cy="196" r="18"/>
+    <path d="M598 196 H626"/>
+    <path d="M612 182 V210"/>
+  </g>
+
+  <!-- Bottom color bar -->
+  <rect x="0" y="293" width="660" height="7" fill="url(#accentGrad)"/>
+</svg>

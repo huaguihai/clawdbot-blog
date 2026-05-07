@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+
+    <style>
+      .title{font-family:-apple-system,'Segoe UI',sans-serif;font-size:18px;font-weight:700;fill:#111827}
+      .text{font-family:-apple-system,'Segoe UI',sans-serif;font-size:13px;fill:#111827}
+      .muted{font-family:-apple-system,'Segoe UI',sans-serif;font-size:12px;fill:#374151}
+      .card{fill:#ffffff;stroke:#E5E7EB;stroke-width:1;filter:url(#shadow)}
+      .dash{stroke:#9CA3AF;stroke-width:2;stroke-dasharray:6 6;fill:none}
+      .badgeText{font-family:-apple-system,'Segoe UI',sans-serif;font-size:12px;font-weight:700;fill:#ffffff}
+      .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace;font-size:12px;fill:#111827}
+    </style>
+  </defs>
+
+  <text x="28" y="44" class="title">输入层探针（Prompt-Injection Probe）如何挡住注入</text>
+  <text x="28" y="66" class="muted">核心：把工具输出当作不可信输入，进入上下文前先扫描、标记、降权</text>
+
+  <!-- Left: Tool outputs -->
+  <rect x="28" y="110" width="190" height="220" rx="12" class="card"/>
+  <rect x="44" y="128" width="72" height="22" rx="11" fill="#EA580C"/>
+  <text x="58" y="144" class="badgeText">高危入口</text>
+
+  <text x="44" y="176" class="text">工具输出 / 外部内容</text>
+  <text x="44" y="202" class="mono">1) cat / 读配置</text>
+  <text x="44" y="226" class="mono">2) curl / 网页抓取</text>
+  <text x="44" y="250" class="mono">3) issue / PR 评论</text>
+
+  <rect x="44" y="272" width="158" height="42" rx="10" fill="#FFF7ED" stroke="#FDBA74"/>
+  <text x="54" y="292" class="muted">常见伪装：像“事实来源”</text>
+  <text x="54" y="310" class="muted">夹带指令诱导执行</text>
+
+  <!-- Middle: Probe -->
+  <rect x="242" y="140" width="176" height="160" rx="12" class="card"/>
+  <rect x="258" y="158" width="88" height="22" rx="11" fill="#2563EB"/>
+  <text x="270" y="174" class="badgeText">输入层探针</text>
+
+  <text x="258" y="204" class="text">扫描 / 识别劫持语气</text>
+  <text x="258" y="228" class="muted">• 指令样式：忽略用户、改目标</text>
+  <text x="258" y="248" class="muted">• 危险操作：泄密/执行命令</text>
+  <text x="258" y="268" class="muted">• 社工：把内容当“老板”</text>
+
+  <!-- Right: Context + Agent -->
+  <rect x="442" y="110" width="190" height="220" rx="12" class="card"/>
+  <rect x="458" y="128" width="88" height="22" rx="11" fill="#16A34A"/>
+  <text x="474" y="144" class="badgeText">安全上下文</text>
+
+  <text x="458" y="176" class="text">进入 Agent 上下文</text>
+  <text x="458" y="202" class="muted">1) 插入警告（可见）</text>
+  <text x="458" y="224" class="muted">2) 标记为不可信</text>
+  <text x="458" y="246" class="muted">3) 降权（不当作指令）</text>
+
+  <rect x="458" y="268" width="158" height="52" rx="10" fill="#F5F3FF" stroke="#C4B5FD"/>
+  <text x="468" y="290" class="muted">锚定：用户原始需求优先</text>
+  <text x="468" y="310" class="muted">“内容可看，但不是老板”</text>
+
+  <!-- Dashed connectors -->
+  <path d="M 218 220 C 232 220, 232 220, 242 220" class="dash"/>
+  <path d="M 418 220 C 432 220, 432 220, 442 220" class="dash"/>
+
+  <!-- Warning tag between probe and context -->
+  <rect x="420" y="184" width="96" height="26" rx="13" fill="#D97706"/>
+  <text x="440" y="202" class="badgeText">插入警告</text>
+
+  <!-- Bottom note -->
+  <rect x="28" y="346" width="604" height="34" rx="10" fill="#ffffff" stroke="#E5E7EB" filter="url(#shadow)"/>
+  <text x="42" y="368" class="muted">要点：注入检测别只盯用户输入，工具输出更像“可信事实”，更容易夹带指令。</text>
+</svg>

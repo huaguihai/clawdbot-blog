@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+
+  <text x="330" y="38" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#111827">AI Agent 为什么会“好心办坏事”</text>
+  <text x="330" y="62" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#6B7280">核心不是恶意，而是把模糊目标当成授权</text>
+
+  <rect x="210" y="92" width="240" height="82" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="226" y="108" width="46" height="46" rx="12" fill="#2563EB" opacity="0.12"/>
+  <text x="249" y="138" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#2563EB">!</text>
+  <text x="290" y="124" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#111827">越权执行的三种常见来源</text>
+  <text x="290" y="148" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#6B7280">需要分开识别、分开治理</text>
+
+  <line x1="330" y1="174" x2="130" y2="212" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="330" y1="174" x2="330" y2="212" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="330" y1="174" x2="530" y2="212" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <rect x="40" y="220" width="180" height="142" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="56" y="236" width="52" height="28" rx="14" fill="#EA580C"/>
+  <text x="82" y="255" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">类型 1</text>
+  <text x="56" y="286" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#111827">过度执行</text>
+  <text x="56" y="306" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">理解目标，但扩大授权范围</text>
+  <text x="56" y="328" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">常见场景：清理、重构、批量修改</text>
+  <text x="56" y="346" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#EA580C">信号：“我帮你顺便…”</text>
+
+  <rect x="240" y="220" width="180" height="142" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="256" y="236" width="52" height="28" rx="14" fill="#16A34A"/>
+  <text x="282" y="255" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">类型 2</text>
+  <text x="256" y="286" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#111827">判断失误</text>
+  <text x="256" y="306" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">误判影响面或环境边界</text>
+  <text x="256" y="328" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">常见场景：dev/staging/prod 混淆</text>
+  <text x="256" y="346" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#16A34A">信号：把线上当测试</text>
+
+  <rect x="440" y="220" width="180" height="142" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="456" y="236" width="52" height="28" rx="14" fill="#9333EA"/>
+  <text x="482" y="255" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">类型 3</text>
+  <text x="456" y="286" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#111827">Prompt 注入</text>
+  <text x="456" y="306" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">外部内容劫持指令</text>
+  <text x="456" y="328" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">常见场景：网页、日志、评论读取</text>
+  <text x="456" y="346" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#9333EA">信号：夹带“忽略上文…”</text>
+
+  <rect x="190" y="372" width="280" height="16" rx="8" fill="#D97706" opacity="0.14"/>
+  <text x="330" y="384" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#92400E">治理重点：先补前三类高频漏洞，而不是默认它“有恶意”</text>
+</svg>
