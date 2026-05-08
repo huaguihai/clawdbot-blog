@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .bg { fill:#FAFAFA; }
+      .frame { fill:#FAFAFA; stroke:#E5E7EB; stroke-width:1; }
+      .card { fill:#FFFFFF; stroke:#E5E7EB; stroke-width:1; filter:url(#shadow); }
+      .title { font-family:-apple-system,'Segoe UI',sans-serif; font-size:16px; font-weight:700; fill:#111827; }
+      .text { font-family:-apple-system,'Segoe UI',sans-serif; font-size:12px; fill:#374151; }
+      .muted { font-family:-apple-system,'Segoe UI',sans-serif; font-size:11px; fill:#6B7280; }
+      .chip { font-family:-apple-system,'Segoe UI',sans-serif; font-size:11px; font-weight:600; fill:#111827; }
+      .dash { stroke:#9CA3AF; stroke-width:2; stroke-dasharray:6 6; fill:none; }
+      .arrow { fill:#9CA3AF; }
+    </style>
+  </defs>
+
+  <!-- Background frame -->
+  <rect x="10" y="10" width="640" height="380" rx="12" class="frame"/>
+
+  <!-- Header -->
+  <text x="34" y="48" class="title">语音落地卡点：延迟与打断（轮次切换感）</text>
+  <text x="34" y="70" class="muted">核心思路：让用户尽快听到反馈，并正确处理“谁在说话/能否打断”</text>
+
+  <!-- Main pipeline card -->
+  <rect x="34" y="92" width="592" height="118" rx="12" class="card"/>
+  <text x="52" y="120" class="text" style="font-weight:700;">端到端语音链路（任一段慢，体感都慢）</text>
+
+  <!-- Pipeline nodes -->
+  <rect x="52" y="136" width="96" height="52" rx="10" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="100" y="160" text-anchor="middle" class="text">采集/上传</text>
+  <text x="100" y="177" text-anchor="middle" class="muted">分片更快</text>
+
+  <rect x="176" y="136" width="88" height="52" rx="10" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="220" y="160" text-anchor="middle" class="text">转写ASR</text>
+  <text x="220" y="177" text-anchor="middle" class="muted">实时</text>
+
+  <rect x="292" y="136" width="88" height="52" rx="10" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="336" y="160" text-anchor="middle" class="text">生成LLM</text>
+  <text x="336" y="177" text-anchor="middle" class="muted">流式</text>
+
+  <rect x="408" y="136" width="88" height="52" rx="10" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="452" y="160" text-anchor="middle" class="text">合成TTS</text>
+  <text x="452" y="177" text-anchor="middle" class="muted">边合成边播</text>
+
+  <rect x="524" y="136" width="86" height="52" rx="10" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="567" y="160" text-anchor="middle" class="text">播报/回放</text>
+  <text x="567" y="177" text-anchor="middle" class="muted">可中止</text>
+
+  <!-- Dashed connections + arrows -->
+  <path d="M 148 162 L 176 162" class="dash"/>
+  <polygon points="176,162 168,157 168,167" class="arrow"/>
+
+  <path d="M 264 162 L 292 162" class="dash"/>
+  <polygon points="292,162 284,157 284,167" class="arrow"/>
+
+  <path d="M 380 162 L 408 162" class="dash"/>
+  <polygon points="408,162 400,157 400,167" class="arrow"/>
+
+  <path d="M 496 162 L 524 162" class="dash"/>
+  <polygon points="524,162 516,157 516,167" class="arrow"/>
+
+  <!-- Four key actions (cards) -->
+  <rect x="34" y="230" width="292" height="140" rx="12" class="card"/>
+  <text x="52" y="258" class="text" style="font-weight:700;">必须落地的 4 个交互动作</text>
+
+  <!-- Action 1: Streaming -->
+  <rect x="52" y="272" width="128" height="82" rx="12" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="52" y="272" width="8" height="82" rx="12" fill="#2563EB"/>
+  <text x="70" y="296" class="chip">1 流式返回</text>
+  <text x="70" y="316" class="muted">不要等整段齐再播</text>
+  <text x="70" y="334" class="muted">先让用户知道“活着”</text>
+
+  <!-- Action 2: VAD -->
+  <rect x="190" y="272" width="118" height="82" rx="12" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="190" y="272" width="8" height="82" rx="12" fill="#16A34A"/>
+  <text x="208" y="296" class="chip">2 VAD</text>
+  <text x="208" y="316" class="muted">判断用户是否还在说</text>
+  <text x="208" y="334" class="muted">避免靠静音硬切</text>
+
+  <!-- Right side: interrupt + interim prompt -->
+  <rect x="334" y="230" width="292" height="140" rx="12" class="card"/>
+  <text x="352" y="258" class="text" style="font-weight:700;">把“轮到谁说”做清楚</text>
+
+  <!-- Action 3: Barge-in -->
+  <rect x="352" y="272" width="128" height="82" rx="12" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="352" y="272" width="8" height="82" rx="12" fill="#EA580C"/>
+  <text x="370" y="296" class="chip">3 支持打断</text>
+  <text x="370" y="316" class="muted">用户一开口系统立刻停</text>
+  <text x="370" y="334" class="muted">客服/陪练/录入关键</text>
+
+  <!-- Action 4: Interim -->
+  <rect x="490" y="272" width="118" height="82" rx="12" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="490" y="272" width="8" height="82" rx="12" fill="#9333EA"/>
+  <text x="508" y="296" class="chip">4 中间态提示</text>
+  <text x="508" y="316" class="muted">正在识别/整理…</text>
+  <text x="508" y="334" class="muted">提供心理缓冲带</text>
+
+  <!-- Link from pipeline to actions (dashed) -->
+  <path d="M 336 210 C 336 222 180 222 180 230" class="dash"/>
+  <path d="M 336 210 C 336 222 480 222 480 230" class="dash"/>
+
+  <!-- Small note -->
+  <text x="34" y="388" class="muted">提示：低延迟不只看模型速度，播放策略（如等整句再播）会放大体感延迟</text>
+</svg>
