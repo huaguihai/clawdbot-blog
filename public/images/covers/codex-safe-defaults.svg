@@ -1,0 +1,79 @@
+<svg width="660" height="300" viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="660" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#44403C"/>
+      <stop offset="1" stop-color="#1C1917"/>
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="660" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EA580C"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+
+    <pattern id="grain" width="120" height="120" patternUnits="userSpaceOnUse">
+      <rect width="120" height="120" fill="none"/>
+      <g fill="#D6D3D1" opacity="0.06">
+        <circle cx="10" cy="18" r="1.1"/><circle cx="28" cy="12" r="0.9"/><circle cx="44" cy="20" r="1.0"/>
+        <circle cx="66" cy="14" r="0.8"/><circle cx="86" cy="22" r="1.1"/><circle cx="104" cy="10" r="0.9"/>
+        <circle cx="16" cy="44" r="0.9"/><circle cx="36" cy="52" r="1.2"/><circle cx="58" cy="42" r="0.8"/>
+        <circle cx="78" cy="56" r="1.0"/><circle cx="96" cy="46" r="0.9"/><circle cx="112" cy="60" r="1.1"/>
+        <circle cx="14" cy="78" r="1.0"/><circle cx="30" cy="90" r="0.8"/><circle cx="48" cy="76" r="1.1"/>
+        <circle cx="64" cy="92" r="0.9"/><circle cx="88" cy="84" r="1.2"/><circle cx="106" cy="94" r="0.8"/>
+        <circle cx="22" cy="110" r="1.1"/><circle cx="54" cy="112" r="0.9"/><circle cx="82" cy="108" r="1.0"/>
+        <circle cx="110" cy="112" r="1.1"/>
+      </g>
+    </pattern>
+
+    <style>
+      .title { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; font-size: 22px; font-weight: 700; fill: #FAFAF9; }
+      .subtitle { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; font-size: 13px; font-weight: 500; fill: #A8A29E; }
+      .tagText { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; font-size: 12px; font-weight: 600; fill: #D6D3D1; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="660" height="300" fill="url(#bgGrad)"/>
+  <rect x="0" y="0" width="660" height="300" fill="url(#grain)"/>
+
+  <!-- Left accent line -->
+  <rect x="50" y="26" width="5" height="252" rx="2.5" fill="url(#accentGrad)" opacity="0.95"/>
+
+  <!-- Text block (x starts at 70; may span to 600) -->
+  <text class="title" x="70" y="86">
+    <tspan x="70" dy="0">Codex 安全跑法</tspan>
+    <tspan x="70" dy="28">别让它摸到你的密钥</tspan>
+  </text>
+
+  <text class="subtitle" x="70" y="148">
+    Codex 安全跑法的关键不是「少给权限」，而是把权限拆成三道闸：沙箱隔离、分级
+  </text>
+
+  <!-- Tags (bottom area y≈240-260) -->
+  <g>
+    <rect x="70" y="242" width="86" height="24" rx="12" fill="#57534E" opacity="0.40"/>
+    <text class="tagText" x="113" y="258" text-anchor="middle">沙箱隔离</text>
+
+    <rect x="166" y="242" width="86" height="24" rx="12" fill="#57534E" opacity="0.40"/>
+    <text class="tagText" x="209" y="258" text-anchor="middle">分级授权</text>
+
+    <rect x="262" y="242" width="96" height="24" rx="12" fill="#57534E" opacity="0.40"/>
+    <text class="tagText" x="310" y="258" text-anchor="middle">密钥最小暴露</text>
+  </g>
+
+  <!-- Decorative elements: right-bottom corner only; to the right of tags; no overlap with any text -->
+  <g opacity="0.22" stroke="#EA580C" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Simple lock icon -->
+    <path d="M542 210 v-10 c0-10 8-18 18-18 s18 8 18 18 v10"/>
+    <rect x="536" y="210" width="48" height="44" rx="10"/>
+    <path d="M560 232 v10"/>
+    <circle cx="560" cy="229" r="3.5" fill="#EA580C" opacity="0.22" stroke="none"/>
+
+    <!-- Small terminal window (geometric) -->
+    <rect x="596" y="196" width="56" height="40" rx="8"/>
+    <path d="M604 210 l10 8 l-10 8"/>
+    <path d="M622 226 h18"/>
+  </g>
+
+  <!-- Bottom color bar -->
+  <rect x="0" y="293" width="660" height="7" fill="url(#accentGrad)"/>
+</svg>
