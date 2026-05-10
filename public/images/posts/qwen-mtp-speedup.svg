@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <style>
+      .font{font-family:-apple-system,'Segoe UI',sans-serif}
+      .title{font-size:18px;font-weight:700;fill:#0f172a}
+      .sub{font-size:12px;fill:#475569}
+      .h{font-size:13px;font-weight:700;fill:#0f172a}
+      .t{font-size:12px;fill:#334155}
+      .card{fill:#ffffff;stroke:#e5e7eb;stroke-width:1}
+      .shadow{filter:url(#sh)}
+      .dash{stroke:#94a3b8;stroke-width:2;stroke-dasharray:6 6;fill:none}
+      .pillText{font-size:12px;font-weight:700;fill:#ffffff}
+    </style>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect x="10" y="10" width="640" height="380" rx="12" fill="#FAFAFA"/>
+
+  <!-- header -->
+  <text x="40" y="55" class="font title">你的本地 27B 为什么体感卡？</text>
+  <text x="40" y="78" class="font sub">把“慢”拆成三件事：首 token 延迟（TTFT） / 吞吐（tok/s） / 长上下文退化</text>
+
+  <!-- column labels -->
+  <text x="70" y="115" class="font sub">你感受到的慢</text>
+  <text x="285" y="115" class="font sub">更可能对应的指标</text>
+  <text x="470" y="115" class="font sub">常见原因（本地 27B）</text>
+
+  <!-- Row 1 cards -->
+  <g class="shadow">
+    <rect x="40" y="130" width="190" height="72" rx="12" class="card"/>
+    <text x="55" y="158" class="font h">沉默很久才出字</text>
+    <text x="55" y="180" class="font t">你问一句，它等 6–10s</text>
+  </g>
+
+  <g class="shadow">
+    <rect x="250" y="130" width="170" height="72" rx="12" class="card"/>
+    <rect x="264" y="144" width="142" height="22" rx="11" fill="#2563EB"/>
+    <text x="280" y="160" class="font pillText">首 token 延迟（TTFT）</text>
+    <text x="265" y="187" class="font t">加载/初始化阶段</text>
+  </g>
+
+  <g class="shadow">
+    <rect x="440" y="130" width="180" height="72" rx="12" class="card"/>
+    <text x="455" y="156" class="font t">• 首次编译/加载</text>
+    <text x="455" y="176" class="font t">• KV cache 初始化</text>
+    <text x="455" y="196" class="font t">• CPU/GPU 切换、上下文过长</text>
+  </g>
+
+  <!-- Row 2 cards -->
+  <g class="shadow">
+    <rect x="40" y="220" width="190" height="72" rx="12" class="card"/>
+    <text x="55" y="248" class="font h">输出像挤牙膏</text>
+    <text x="55" y="270" class="font t">开始后仍然很慢</text>
+  </g>
+
+  <g class="shadow">
+    <rect x="250" y="220" width="170" height="72" rx="12" class="card"/>
+    <rect x="264" y="234" width="142" height="22" rx="11" fill="#16A34A"/>
+    <text x="300" y="250" class="font pillText">吞吐（tok/s）</text>
+    <text x="265" y="277" class="font t">持续生成效率</text>
+  </g>
+
+  <g class="shadow">
+    <rect x="440" y="220" width="180" height="72" rx="12" class="card"/>
+    <text x="455" y="246" class="font t">• 量化不合适</text>
+    <text x="455" y="266" class="font t">• 显存不够频繁换页</text>
+    <text x="455" y="286" class="font t">• 并行/批处理没吃满 GPU</text>
+  </g>
+
+  <!-- Row 3 cards -->
+  <g class="shadow">
+    <rect x="40" y="310" width="190" height="72" rx="12" class="card"/>
+    <text x="55" y="338" class="font h">越聊越慢甚至崩</text>
+    <text x="55" y="360" class="font t">长对话后明显退化</text>
+  </g>
+
+  <g class="shadow">
+    <rect x="250" y="310" width="170" height="72" rx="12" class="card"/>
+    <rect x="264" y="324" width="142" height="22" rx="11" fill="#9333EA"/>
+    <text x="285" y="340" class="font pillText">长上下文退化</text>
+    <text x="265" y="367" class="font t">上下文越长越吃资源</text>
+  </g>
+
+  <g class="shadow">
+    <rect x="440" y="310" width="180" height="72" rx="12" class="card"/>
+    <text x="455" y="336" class="font t">• KV cache 爆显存</text>
+    <text x="455" y="356" class="font t">• RoPE/长上下文配置不当</text>
+    <text x="455" y="376" class="font t">• prefix cache 未开/命中率低</text>
+  </g>
+
+  <!-- dashed connectors -->
+  <path d="M230 166 L250 166" class="dash"/>
+  <path d="M420 166 L440 166" class="dash"/>
+
+  <path d="M230 256 L250 256" class="dash"/>
+  <path d="M420 256 L440 256" class="dash"/>
+
+  <path d="M230 346 L250 346" class="dash"/>
+  <path d="M420 346 L440 346" class="dash"/>
+
+  <!-- footer note -->
+  <g class="shadow">
+    <rect x="40" y="92" width="580" height="28" rx="10" fill="#ffffff" stroke="#e5e7eb"/>
+    <circle cx="55" cy="106" r="6" fill="#D97706"/>
+    <text x="70" y="110" class="font sub">别只看 tok/s：先拆开测三项指标，再对症下药。</text>
+  </g>
+</svg>

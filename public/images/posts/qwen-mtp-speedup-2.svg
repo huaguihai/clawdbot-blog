@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <text x="330" y="42" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#111827">本地模型测速三步法</text>
+  <text x="330" y="66" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">固定任务 · 分离指标 · 分档复测</text>
+
+  <line x1="206" y1="155" x2="236" y2="155" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="424" y1="155" x2="454" y2="155" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <g filter="url(#shadow)">
+    <rect x="36" y="94" width="170" height="122" rx="16" fill="#FFFFFF"/>
+    <circle cx="66" cy="122" r="18" fill="#2563EB"/>
+    <text x="66" y="128" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">1</text>
+    <text x="92" y="126" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#1F2937">固定同一段 Prompt</text>
+    <text x="54" y="156" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#4B5563">• 输入材料保持一致</text>
+    <text x="54" y="177" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#4B5563">• 输出长度固定 300–500 token</text>
+    <text x="54" y="198" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#4B5563">• 贴近真实任务场景</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="236" y="94" width="188" height="122" rx="16" fill="#FFFFFF"/>
+    <circle cx="266" cy="122" r="18" fill="#16A34A"/>
+    <text x="266" y="128" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">2</text>
+    <text x="292" y="126" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#1F2937">分开记录 3 个数</text>
+    <text x="254" y="156" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#4B5563">• TTFT：首 token 延迟</text>
+    <text x="254" y="177" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#4B5563">• tok/s：稳定输出阶段吞吐</text>
+    <text x="254" y="198" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#4B5563">• Context 退化：8k→16k→32k</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="454" y="94" width="170" height="122" rx="16" fill="#FFFFFF"/>
+    <circle cx="484" cy="122" r="18" fill="#EA580C"/>
+    <text x="484" y="128" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">3</text>
+    <text x="510" y="126" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#1F2937">逐项改动并复测</text>
+    <text x="472" y="156" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#4B5563">• 每次只改一个变量</text>
+    <text x="472" y="177" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#4B5563">• 统一写入同一张记录表</text>
+    <text x="472" y="198" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#4B5563">• 比较前后差异再下结论</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="36" y="250" width="388" height="110" rx="16" fill="#FFFFFF"/>
+    <text x="56" y="278" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#1F2937">记录表最少字段</text>
+    <rect x="56" y="292" width="348" height="46" rx="10" fill="#F8FAFC" stroke="#E5E7EB"/>
+    <text x="68" y="311" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#475569">模型/量化</text>
+    <text x="136" y="311" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#475569">Backend</text>
+    <text x="200" y="311" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#475569">上下文</text>
+    <text x="254" y="311" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#475569">MTP</text>
+    <text x="292" y="311" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#475569">TTFT</text>
+    <text x="334" y="311" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#475569">tok/s</text>
+    <line x1="64" y1="318" x2="396" y2="318" stroke="#CBD5E1" stroke-width="1" stroke-dasharray="4 4"/>
+    <text x="68" y="333" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#64748B">质量备注 / 稳定性备注</text>
+    <text x="56" y="352" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">把“感觉更快”变成可对比的工程记录</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="444" y="250" width="180" height="110" rx="16" fill="#FFFFFF"/>
+    <text x="464" y="278" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#1F2937">异常回滚顺序</text>
+    <text x="464" y="304" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#9333EA">1. 关 MTP</text>
+    <text x="464" y="326" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#D97706">2. 降上下文</text>
+    <text x="464" y="348" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#EA580C">3. 换量化 / 降模型</text>
+  </g>
+</svg>
