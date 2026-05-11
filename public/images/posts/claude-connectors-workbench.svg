@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <style>
+    text { font-family: -apple-system, 'Segoe UI', sans-serif; fill: #0F172A; }
+    .title { font-size: 24px; font-weight: 700; }
+    .subtitle { font-size: 13px; fill: #475569; }
+    .card-title { font-size: 18px; font-weight: 700; }
+    .label { font-size: 13px; font-weight: 600; }
+    .body { font-size: 12px; fill: #334155; }
+    .small { font-size: 11px; fill: #64748B; }
+  </style>
+
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563EB"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#16A34A"/>
+    </marker>
+  </defs>
+
+  <text x="36" y="42" class="title">连接器解决的，不是“多一个插件”</text>
+  <text x="36" y="64" class="subtitle">核心变化：从手动搬运信息，变成持续可查询、可复核的入口</text>
+
+  <rect x="36" y="92" width="268" height="230" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="356" y="92" width="268" height="230" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+
+  <rect x="56" y="108" width="110" height="30" rx="15" fill="#DBEAFE"/>
+  <text x="111" y="128" text-anchor="middle" class="card-title" fill="#2563EB">现在的做法</text>
+
+  <rect x="376" y="108" width="110" height="30" rx="15" fill="#DCFCE7"/>
+  <text x="431" y="128" text-anchor="middle" class="card-title" fill="#16A34A">连接器方式</text>
+
+  <rect x="56" y="154" width="228" height="48" rx="12" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <text x="70" y="173" class="label" fill="#2563EB">1. 复制 Slack / Notion 到 Claude</text>
+  <text x="70" y="191" class="body">上下文不全、版本易错、敏感信息四处扩散</text>
+
+  <rect x="56" y="214" width="228" height="48" rx="12" fill="#FFF7ED" stroke="#FED7AA"/>
+  <text x="70" y="233" class="label" fill="#EA580C">2. 写周报靠回忆拼凑</text>
+  <text x="70" y="251" class="body">漏项、重复、口径不一致，周周重来一遍</text>
+
+  <rect x="56" y="274" width="228" height="48" rx="12" fill="#F5F3FF" stroke="#DDD6FE"/>
+  <text x="70" y="293" class="label" fill="#9333EA">3. 会议纪要写完就沉底</text>
+  <text x="70" y="311" class="body">任务难追踪，决策无法复盘，后续没人对齐</text>
+
+  <rect x="376" y="154" width="228" height="48" rx="12" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <text x="390" y="173" class="label" fill="#16A34A">1. 直接在源头查询</text>
+  <text x="390" y="191" class="body">回答附带引用线索，减少手动搬运和误贴</text>
+
+  <rect x="376" y="214" width="228" height="48" rx="12" fill="#FEFCE8" stroke="#FDE68A"/>
+  <text x="390" y="233" class="label" fill="#D97706">2. 固定问题 + 固定数据源</text>
+  <text x="390" y="251" class="body">周报按同一模板稳定产出，可重复核对</text>
+
+  <rect x="376" y="274" width="228" height="48" rx="12" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <text x="390" y="293" class="label" fill="#16A34A">3. 会议 → 任务 → 进展可追问</text>
+  <text x="390" y="311" class="body">信息链路连起来，便于复盘与定位问题</text>
+
+  <line x1="304" y1="178" x2="356" y2="178" stroke="#2563EB" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#arrowBlue)"/>
+  <line x1="304" y1="238" x2="356" y2="238" stroke="#2563EB" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#arrowBlue)"/>
+  <line x1="304" y1="298" x2="356" y2="298" stroke="#2563EB" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#arrowBlue)"/>
+
+  <rect x="126" y="338" width="408" height="42" rx="14" fill="#FFFFFF" stroke="#E2E8F0" filter="url(#shadow)"/>
+  <path d="M154 359 C194 359, 194 359, 234 359" stroke="#16A34A" stroke-width="2.5" stroke-dasharray="5 5" fill="none" marker-end="url(#arrowGreen)"/>
+  <path d="M296 359 C336 359, 336 359, 376 359" stroke="#16A34A" stroke-width="2.5" stroke-dasharray="5 5" fill="none" marker-end="url(#arrowGreen)"/>
+  <text x="146" y="354" class="small">源数据</text>
+  <text x="252" y="354" class="small">可重复提问</text>
+  <text x="394" y="354" class="small">答案随数据更新</text>
+  <text x="330" y="367" text-anchor="middle" class="label" fill="#16A34A">最值钱的点：同一个问题能反复问、反复核对</text>
+</svg>
