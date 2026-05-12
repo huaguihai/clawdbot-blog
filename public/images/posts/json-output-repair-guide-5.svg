@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .bg { fill: #FAFAFA; }
+      .card { fill: #FFFFFF; stroke: #E5E7EB; stroke-width: 1; filter: url(#shadow); }
+      .title { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 13px; font-weight: 700; fill: #111827; }
+      .text { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 12px; fill: #374151; }
+      .muted { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 11px; fill: #6B7280; }
+      .arrow { stroke: #9CA3AF; stroke-width: 1.5; stroke-dasharray: 5 5; fill: none; }
+      .badge { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 11px; font-weight: 700; fill: #FFFFFF; }
+    </style>
+    <marker id="arrowHead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#9CA3AF"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect x="10" y="10" width="640" height="380" rx="12" class="bg"/>
+
+  <!-- Header -->
+  <text x="30" y="42" class="title">通用工作流：把错误限制在可控范围</text>
+  <text x="30" y="62" class="muted">提示词约束 → 预清洗 → repair → Schema 校验 → 定向重试 → 回退</text>
+
+  <!-- Step 1: Model call -->
+  <rect x="30" y="90" width="190" height="56" rx="12" class="card"/>
+  <rect x="30" y="90" width="8" height="56" rx="12" fill="#2563EB"/>
+  <text x="48" y="113" class="title">1 调用模型</text>
+  <text x="48" y="133" class="text">窄结构提示词，限制字段/类型</text>
+
+  <!-- Step 2: Pre-clean -->
+  <rect x="245" y="90" width="190" height="56" rx="12" class="card"/>
+  <rect x="245" y="90" width="8" height="56" rx="12" fill="#D97706"/>
+  <text x="263" y="113" class="title">2 预清洗</text>
+  <text x="263" y="133" class="text">去代码块/说明/多余空白</text>
+
+  <!-- Step 3: Parse -->
+  <rect x="460" y="90" width="170" height="56" rx="12" class="card"/>
+  <rect x="460" y="90" width="8" height="56" rx="12" fill="#16A34A"/>
+  <text x="478" y="113" class="title">3 尝试解析</text>
+  <text x="478" y="133" class="text">parse JSON 是否成功？</text>
+
+  <!-- Repair -->
+  <rect x="460" y="175" width="170" height="56" rx="12" class="card"/>
+  <rect x="460" y="175" width="8" height="56" rx="12" fill="#EA580C"/>
+  <text x="478" y="198" class="title">4 repair</text>
+  <text x="478" y="218" class="text">只修语法，不脑补字段</text>
+
+  <!-- Schema validate -->
+  <rect x="245" y="260" width="190" height="56" rx="12" class="card"/>
+  <rect x="245" y="260" width="8" height="56" rx="12" fill="#9333EA"/>
+  <text x="263" y="283" class="title">5 Schema 校验</text>
+  <text x="263" y="303" class="text">必填/类型/枚举/结构</text>
+
+  <!-- Targeted retry -->
+  <rect x="30" y="260" width="190" height="56" rx="12" class="card"/>
+  <rect x="30" y="260" width="8" height="56" rx="12" fill="#2563EB"/>
+  <text x="48" y="283" class="title">6 定向重试</text>
+  <text x="48" y="303" class="text">把失败原因喂回模型</text>
+
+  <!-- Accept -->
+  <rect x="460" y="260" width="170" height="56" rx="12" class="card"/>
+  <rect x="460" y="260" width="8" height="56" rx="12" fill="#16A34A"/>
+  <text x="478" y="283" class="title">通过</text>
+  <text x="478" y="303" class="text">进入下游：写库/触发动作</text>
+
+  <!-- Fallback -->
+  <rect x="460" y="335" width="170" height="44" rx="12" class="card"/>
+  <rect x="460" y="335" width="8" height="44" rx="12" fill="#EA580C"/>
+  <text x="478" y="362" class="title">7 失败回退</text>
+
+  <!-- Arrows top row -->
+  <path d="M 220 118 L 245 118" class="arrow" marker-end="url(#arrowHead)"/>
+  <path d="M 435 118 L 460 118" class="arrow" marker-end="url(#arrowHead)"/>
+
+  <!-- Parse decision labels -->
+  <text x="610" y="156" class="muted" text-anchor="end">失败 →</text>
+  <text x="610" y="86" class="muted" text-anchor="end">成功 ↓</text>
+
+  <!-- From Parse to Schema (success path) -->
+  <path d="M 545 146 L 545 196 L 440 196" class="arrow" marker-end="url(#arrowHead)"/>
+  <text x="504" y="190" class="muted">成功后进入校验</text>
+
+  <!-- From Parse to Repair (failure path) -->
+  <path d="M 545 146 L 545 175" class="arrow" marker-end="url(#arrowHead)"/>
+
+  <!-- From Repair back to Parse -->
+  <path d="M 460 203 L 405 203 L 405 118 L 460 118" class="arrow" marker-end="url(#arrowHead)"/>
+  <text x="310" y="207" class="muted">修完再 parse</text>
+
+  <!-- From Schema to Accept (pass) -->
+  <path d="M 435 288 L 460 288" class="arrow" marker-end="url(#arrowHead)"/>
+
+  <!-- From Schema to Targeted retry (fail) -->
+  <path d="M 245 288 L 220 288" class="arrow" marker-end="url(#arrowHead)"/>
+  <text x="232" y="250" class="muted">不通过 →</text>
+
+  <!-- From Targeted retry to Schema -->
+  <path d="M 220 288 L 245 288" class="arrow" marker-end="url(#arrowHead)"/>
+
+  <!-- From Schema / Retry to Fallback (still fail) -->
+  <path d="M 545 316 L 545 335" class="arrow" marker-end="url(#arrowHead)"/>
+  <text x="555" y="330" class="muted">仍失败</text>
+
+  <!-- Footnote hint -->
+  <rect x="30" y="335" width="405" height="44" rx="12" fill="#FFFFFF" stroke="#E5E7EB" filter="url(#shadow)"/>
+  <rect x="30" y="335" width="8" height="44" rx="12" fill="#D97706"/>
+  <text x="48" y="360" class="text">注意：先确认你修的是“模型输出”还是“平台二次转义后的字符串”</text>
+</svg>

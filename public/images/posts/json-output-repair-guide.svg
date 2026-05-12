@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+
+  <text x="330" y="34" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#111827">本地模型为什么更容易把 JSON 弄坏</text>
+  <text x="330" y="58" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">问题不只在模型，而在整条生成链路</text>
+
+  <rect x="30" y="86" width="95" height="84" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="30" y="86" width="95" height="8" rx="12" fill="#2563EB"/>
+  <text x="77.5" y="116" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#1F2937">聊天模板</text>
+  <text x="77.5" y="138" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6B7280">提示包装不稳</text>
+  <text x="77.5" y="155" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#EA580C">前面多解释</text>
+
+  <rect x="135" y="86" width="95" height="84" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="135" y="86" width="95" height="8" rx="12" fill="#EA580C"/>
+  <text x="182.5" y="116" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#1F2937">采样参数</text>
+  <text x="182.5" y="138" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6B7280">温度 top_p 偏高</text>
+  <text x="182.5" y="155" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#EA580C">字段漂移</text>
+
+  <rect x="240" y="86" width="95" height="84" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="240" y="86" width="95" height="8" rx="12" fill="#16A34A"/>
+  <text x="287.5" y="116" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#1F2937">上下文长度</text>
+  <text x="287.5" y="138" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6B7280">输出被截断</text>
+  <text x="287.5" y="155" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#EA580C">缺少闭合符</text>
+
+  <rect x="345" y="86" width="95" height="84" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="345" y="86" width="95" height="8" rx="12" fill="#9333EA"/>
+  <text x="392.5" y="116" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#1F2937">停止词设置</text>
+  <text x="392.5" y="138" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6B7280">切得过早或过晚</text>
+  <text x="392.5" y="155" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#EA580C">半截 JSON</text>
+
+  <rect x="450" y="86" width="95" height="84" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="450" y="86" width="95" height="8" rx="12" fill="#D97706"/>
+  <text x="497.5" y="116" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#1F2937">模型习惯</text>
+  <text x="497.5" y="138" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6B7280">讨好式回答</text>
+  <text x="497.5" y="155" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#EA580C">代码块或注释</text>
+
+  <rect x="555" y="86" width="75" height="84" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="555" y="86" width="75" height="8" rx="12" fill="#2563EB"/>
+  <text x="592.5" y="116" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#1F2937">量化/运行时</text>
+  <text x="592.5" y="138" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#6B7280">环境差异</text>
+  <text x="592.5" y="155" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#EA580C">同提示不同结果</text>
+
+  <line x1="125" y1="128" x2="135" y2="128" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="5 5"/>
+  <line x1="230" y1="128" x2="240" y2="128" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="5 5"/>
+  <line x1="335" y1="128" x2="345" y2="128" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="5 5"/>
+  <line x1="440" y1="128" x2="450" y2="128" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="5 5"/>
+  <line x1="545" y1="128" x2="555" y2="128" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="5 5"/>
+
+  <path d="M77 180 C77 220, 210 220, 210 248" fill="none" stroke="#2563EB" stroke-width="2" stroke-dasharray="6 6"/>
+  <path d="M182 180 C182 220, 250 220, 250 248" fill="none" stroke="#EA580C" stroke-width="2" stroke-dasharray="6 6"/>
+  <path d="M287 180 C287 220, 290 220, 290 248" fill="none" stroke="#16A34A" stroke-width="2" stroke-dasharray="6 6"/>
+  <path d="M392 180 C392 220, 370 220, 370 248" fill="none" stroke="#9333EA" stroke-width="2" stroke-dasharray="6 6"/>
+  <path d="M497 180 C497 220, 410 220, 410 248" fill="none" stroke="#D97706" stroke-width="2" stroke-dasharray="6 6"/>
+  <path d="M593 180 C593 220, 450 220, 450 248" fill="none" stroke="#2563EB" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <rect x="170" y="248" width="150" height="88" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="170" y="248" width="150" height="8" rx="14" fill="#EA580C"/>
+  <text x="245" y="281" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#1F2937">语法错误</text>
+  <text x="245" y="306" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">parse 失败</text>
+  <text x="245" y="326" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#EA580C">缺 }、尾逗号、半截输出</text>
+
+  <rect x="340" y="248" width="150" height="88" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="340" y="248" width="150" height="8" rx="14" fill="#16A34A"/>
+  <text x="415" y="281" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#1F2937">结构错误</text>
+  <text x="415" y="306" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">业务校验失败</text>
+  <text x="415" y="326" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#16A34A">字段错、类型漂移、必填缺失</text>
+
+  <line x1="320" y1="292" x2="340" y2="292" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="5 5"/>
+
+  <rect x="145" y="348" width="370" height="34" rx="10" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <text x="330" y="370" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#1E3A8A">关键结论：提示词只能约束一部分，链路任一层波动都可能让 JSON 不稳定地坏</text>
+</svg>

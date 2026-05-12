@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="300" viewBox="0 0 660 300">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#44403C"/>
+      <stop offset="1" stop-color="#1C1917"/>
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#EA580C"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+
+    <filter id="soften" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="660" height="300" fill="url(#bgGrad)"/>
+
+  <!-- Paper-like texture -->
+  <g opacity="0.06" fill="#D6D3D1" filter="url(#soften)">
+    <circle cx="48" cy="42" r="1.4"/><circle cx="92" cy="68" r="1.1"/><circle cx="135" cy="36" r="1.6"/>
+    <circle cx="178" cy="82" r="1.2"/><circle cx="220" cy="44" r="1.0"/><circle cx="260" cy="74" r="1.7"/>
+    <circle cx="305" cy="52" r="1.1"/><circle cx="350" cy="88" r="1.5"/><circle cx="392" cy="40" r="1.2"/>
+    <circle cx="440" cy="76" r="1.0"/><circle cx="486" cy="54" r="1.6"/><circle cx="532" cy="84" r="1.2"/>
+    <circle cx="584" cy="46" r="1.1"/><circle cx="618" cy="78" r="1.5"/>
+
+    <circle cx="66" cy="128" r="1.0"/><circle cx="118" cy="156" r="1.4"/><circle cx="162" cy="132" r="1.1"/>
+    <circle cx="208" cy="168" r="1.6"/><circle cx="248" cy="140" r="1.2"/><circle cx="292" cy="162" r="1.0"/>
+    <circle cx="334" cy="126" r="1.5"/><circle cx="382" cy="154" r="1.2"/><circle cx="426" cy="132" r="1.1"/>
+    <circle cx="470" cy="166" r="1.5"/><circle cx="520" cy="138" r="1.2"/><circle cx="566" cy="160" r="1.0"/>
+    <circle cx="622" cy="134" r="1.4"/>
+
+    <circle cx="54" cy="216" r="1.2"/><circle cx="98" cy="244" r="1.0"/><circle cx="146" cy="222" r="1.5"/>
+    <circle cx="190" cy="252" r="1.2"/><circle cx="236" cy="228" r="1.1"/><circle cx="284" cy="246" r="1.6"/>
+    <circle cx="330" cy="220" r="1.1"/><circle cx="374" cy="250" r="1.4"/><circle cx="418" cy="226" r="1.0"/>
+    <circle cx="464" cy="248" r="1.5"/><circle cx="510" cy="224" r="1.2"/><circle cx="556" cy="254" r="1.0"/>
+    <circle cx="606" cy="230" r="1.4"/><circle cx="636" cy="258" r="1.1"/>
+  </g>
+
+  <!-- Left accent line -->
+  <rect x="50" y="24" width="5" height="252" rx="2.5" fill="url(#accentGrad)" opacity="0.95"/>
+
+  <!-- Text layer -->
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif">
+    <!-- Title -->
+    <text x="70" y="92" fill="#FAFAF9" font-size="22" font-weight="700" letter-spacing="0.2">
+      <tspan x="70" dy="0">JSON 输出总翻车？</tspan>
+      <tspan x="70" dy="28">先补这份结构化避坑清单</tspan>
+    </text>
+
+    <!-- Subtitle -->
+    <text x="70" y="156" fill="#A8A29E" font-size="13" font-weight="500">
+      JSON 输出一旦不稳，AI 就很难真正接进脚本、工作流和小工具。
+    </text>
+
+    <!-- Tag capsules (bottom area) -->
+    <g>
+      <rect x="70" y="238" width="86" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+      <text x="113" y="255" text-anchor="middle" fill="#D6D3D1" font-size="12" font-weight="600">结构化输出</text>
+
+      <rect x="166" y="238" width="78" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+      <text x="205" y="255" text-anchor="middle" fill="#D6D3D1" font-size="12" font-weight="600">Repair</text>
+
+      <rect x="254" y="238" width="78" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+      <text x="293" y="255" text-anchor="middle" fill="#D6D3D1" font-size="12" font-weight="600">提示词边界</text>
+    </g>
+  </g>
+
+  <!-- Decorative elements (right-bottom only, to the right of tags; no overlap with text) -->
+  <g opacity="0.24" fill="none" stroke="#EA580C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Simple { } icon -->
+    <path d="M522 196
+             c-14 0 -14 12 -14 18
+             c0 7 -3 11 -10 13
+             c7 2 10 6 10 13
+             c0 6 0 18 14 18" />
+    <path d="M594 196
+             c14 0 14 12 14 18
+             c0 7 3 11 10 13
+             c-7 2 -10 6 -10 13
+             c0 6 0 18 -14 18" />
+    <!-- Small wrench-like line glyph -->
+    <path d="M548 248 l18 -18"/>
+    <path d="M567 232
+             c4 -6 12 -8 18 -4
+             l-8 8 l6 6 l8 -8
+             c4 6 2 14 -4 18
+             c-6 4 -14 2 -18 -4
+             z"/>
+  </g>
+
+  <!-- Secondary faint geometric dot-grid (right-bottom) -->
+  <g opacity="0.18" fill="#A8A29E">
+    <circle cx="516" cy="268" r="1.2"/><circle cx="536" cy="268" r="1.2"/><circle cx="556" cy="268" r="1.2"/>
+    <circle cx="576" cy="268" r="1.2"/><circle cx="596" cy="268" r="1.2"/>
+    <circle cx="526" cy="284" r="1.2"/><circle cx="546" cy="284" r="1.2"/><circle cx="566" cy="284" r="1.2"/>
+    <circle cx="586" cy="284" r="1.2"/><circle cx="606" cy="284" r="1.2"/>
+  </g>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="293" width="660" height="7" fill="url(#accentGrad)"/>
+</svg>
