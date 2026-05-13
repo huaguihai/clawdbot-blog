@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .bg { fill:#FAFAFA; }
+      .card { fill:#FFFFFF; stroke:#E5E7EB; stroke-width:1; filter:url(#shadow); }
+      .title { font-family:-apple-system,'Segoe UI',sans-serif; font-size:16px; font-weight:700; fill:#111827; }
+      .text { font-family:-apple-system,'Segoe UI',sans-serif; font-size:13px; fill:#374151; }
+      .small { font-family:-apple-system,'Segoe UI',sans-serif; font-size:12px; fill:#4B5563; }
+      .dash { stroke:#9CA3AF; stroke-width:2; stroke-dasharray:6 6; fill:none; }
+      .tag { font-family:-apple-system,'Segoe UI',sans-serif; font-size:12px; font-weight:700; }
+    </style>
+  </defs>
+
+  <!-- background -->
+  <rect class="bg" x="0" y="0" width="660" height="400" rx="12"/>
+
+  <!-- Header -->
+  <text x="28" y="38" class="title">为什么“没写隐私”也会中招？</text>
+  <text x="28" y="60" class="small">排障复制粘贴的上下文，常把 PII / Secrets 一并带出</text>
+
+  <!-- Source card -->
+  <rect class="card" x="28" y="90" width="200" height="78" rx="12"/>
+  <text x="44" y="120" class="tag" fill="#2563EB">输入来源</text>
+  <text x="44" y="144" class="text">排障时复制粘贴</text>
+  <text x="44" y="164" class="small">日志 / headers / trace / 输出</text>
+
+  <!-- Three traits -->
+  <rect class="card" x="260" y="90" width="372" height="78" rx="12"/>
+  <text x="276" y="120" class="tag" fill="#16A34A">特征 1</text>
+  <text x="276" y="146" class="text">机器生成：倾向吐全上下文</text>
+
+  <rect class="card" x="260" y="180" width="372" height="78" rx="12"/>
+  <text x="276" y="210" class="tag" fill="#9333EA">特征 2</text>
+  <text x="276" y="236" class="text">跨系统拼接：组合后可复现会话</text>
+
+  <rect class="card" x="260" y="270" width="372" height="78" rx="12"/>
+  <text x="276" y="300" class="tag" fill="#EA580C">特征 3</text>
+  <text x="276" y="326" class="text">差一点就有权限：token 足够访问</text>
+
+  <!-- Risk + Outbound -->
+  <rect class="card" x="28" y="190" width="200" height="78" rx="12"/>
+  <text x="44" y="220" class="tag" fill="#D97706">风险结果</text>
+  <text x="44" y="244" class="text">不经意夹带</text>
+  <text x="44" y="264" class="small">PII / Secrets / 会话信息</text>
+
+  <rect class="card" x="28" y="280" width="200" height="88" rx="12"/>
+  <text x="44" y="310" class="tag" fill="#2563EB">关键认知</text>
+  <text x="44" y="334" class="text">发给 LLM = 对外发包</text>
+  <text x="44" y="354" class="small">不是普通问答，而是出站数据</text>
+
+  <!-- Mitigation -->
+  <rect class="card" x="260" y="356" width="372" height="36" rx="12"/>
+  <text x="276" y="379" class="text">更稳做法：发出前自动拦截（而非事后侥幸）</text>
+
+  <!-- Dashed connections -->
+  <path class="dash" d="M228 129 C 242 129, 244 129, 260 129"/>
+  <path class="dash" d="M228 229 C 242 229, 244 229, 260 129"/>
+  <path class="dash" d="M228 229 C 242 229, 244 229, 260 219"/>
+  <path class="dash" d="M228 229 C 242 229, 244 229, 260 309"/>
+
+  <path class="dash" d="M444 168 C 444 188, 444 188, 444 180"/>
+  <path class="dash" d="M444 258 C 444 268, 444 268, 444 270"/>
+
+  <path class="dash" d="M128 268 C 128 280, 128 280, 128 280"/>
+  <path class="dash" d="M228 324 C 244 324, 246 324, 260 374"/>
+
+  <!-- small legend -->
+  <text x="28" y="386" class="small">虚线表示：信息在忙乱排障中被“上下文裹挟”向外流动</text>
+</svg>
