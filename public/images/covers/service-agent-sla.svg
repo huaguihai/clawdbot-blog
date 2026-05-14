@@ -1,0 +1,68 @@
+<svg width="660" height="300" viewBox="0 0 660 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="660" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#44403C"/>
+      <stop offset="1" stop-color="#1C1917"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="50" y1="0" x2="660" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EA580C"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+    <pattern id="grain" width="36" height="36" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="7" r="1" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="17" cy="11" r="0.8" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="29" cy="6" r="1.1" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="10" cy="22" r="0.9" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="24" cy="19" r="1" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="31" cy="29" r="0.8" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="7" cy="31" r="1.2" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="18" cy="30" r="0.7" fill="#D6D3D1" opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <rect width="660" height="300" fill="url(#bg)"/>
+  <rect width="660" height="300" fill="url(#grain)"/>
+
+  <rect x="50" y="36" width="5" height="224" rx="2.5" fill="url(#accent)"/>
+
+  <text x="70" y="104" fill="#FAFAF9" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, Arial, sans-serif">
+    <tspan x="70" dy="0">客服 Agent 先做对话 SLA：</tspan>
+    <tspan x="70" dy="28">你缺的不是模型</tspan>
+  </text>
+
+  <text x="70" y="170" fill="#A8A29E" font-size="13" font-weight="400" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, Arial, sans-serif">
+    客服 Agent 体验差，往往不是模型不聪明，而是没有对话 SLA 和兜底流程：
+  </text>
+
+  <g>
+    <rect x="70" y="240" width="84" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="112" y="256" text-anchor="middle" fill="#D6D3D1" font-size="12" font-weight="500" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, Arial, sans-serif">对话 SLA</text>
+
+    <rect x="164" y="240" width="84" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="206" y="256" text-anchor="middle" fill="#D6D3D1" font-size="12" font-weight="500" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, Arial, sans-serif">兜底流程</text>
+
+    <rect x="258" y="240" width="78" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="297" y="256" text-anchor="middle" fill="#D6D3D1" font-size="12" font-weight="500" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, Arial, sans-serif">转人工</text>
+  </g>
+
+  <g opacity="0.22" stroke="#A8A29E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <rect x="500" y="188" width="58" height="72" rx="10"/>
+    <path d="M514 205H544"/>
+    <path d="M514 219H538"/>
+    <path d="M514 233H541"/>
+    <path d="M510 205L512.5 207.5L517 202.5"/>
+    <path d="M510 219L512.5 221.5L517 216.5"/>
+    <path d="M510 233L512.5 235.5L517 230.5"/>
+  </g>
+
+  <g opacity="0.18" stroke="#EA580C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M575 222C575 210 584 201 596 201C608 201 617 210 617 222V235"/>
+    <path d="M581 235V224"/>
+    <path d="M611 235V224"/>
+    <rect x="578" y="235" width="8" height="14" rx="3"/>
+    <rect x="606" y="235" width="8" height="14" rx="3"/>
+    <path d="M586 248C589 252 594 254 599 254C605 254 610 252 613 248"/>
+  </g>
+
+  <rect x="0" y="293" width="660" height="7" fill="url(#accent)"/>
+</svg>

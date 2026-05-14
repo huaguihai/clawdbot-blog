@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .bg { fill: #FAFAFA; }
+      .card { fill: #FFFFFF; filter: url(#shadow); }
+      .title { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 16px; font-weight: 700; fill: #0F172A; }
+      .h2 { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 13px; font-weight: 700; fill: #0F172A; }
+      .text { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 12px; fill: #334155; }
+      .muted { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 11px; fill: #64748B; }
+      .chipText { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 12px; font-weight: 700; fill: #FFFFFF; }
+      .dash { stroke: #94A3B8; stroke-width: 2; stroke-dasharray: 6 6; fill: none; }
+    </style>
+  </defs>
+
+  <!-- background -->
+  <rect class="bg" x="0" y="0" width="660" height="400" rx="12"/>
+
+  <!-- Header card -->
+  <rect class="card" x="30" y="24" width="600" height="92" rx="12"/>
+  <text class="title" x="50" y="58">用户在乎的不是“答对”，而是体验可收尾</text>
+
+  <!-- three expectation chips -->
+  <rect x="50" y="72" width="118" height="28" rx="14" fill="#2563EB"/>
+  <text class="chipText" x="109" y="91" text-anchor="middle">少折腾</text>
+
+  <rect x="178" y="72" width="118" height="28" rx="14" fill="#16A34A"/>
+  <text class="chipText" x="237" y="91" text-anchor="middle">可预期</text>
+
+  <rect x="306" y="72" width="118" height="28" rx="14" fill="#9333EA"/>
+  <text class="chipText" x="365" y="91" text-anchor="middle">能收尾</text>
+
+  <text class="muted" x="440" y="90">核心：动线（推进） + 收口（兜底）</text>
+
+  <!-- Dashed connectors from header to cards -->
+  <path class="dash" d="M330 116 L145 150"/>
+  <path class="dash" d="M330 116 L330 150"/>
+  <path class="dash" d="M330 116 L515 150"/>
+
+  <!-- Left card: 烦 -->
+  <rect class="card" x="30" y="150" width="200" height="210" rx="12"/>
+  <rect x="46" y="166" width="54" height="24" rx="12" fill="#EA580C"/>
+  <text class="chipText" x="73" y="183" text-anchor="middle">烦</text>
+  <text class="h2" x="46" y="212">用户OS</text>
+  <text class="text" x="46" y="232">“它到底要我干嘛？”</text>
+  <text class="h2" x="46" y="258">典型原因</text>
+  <text class="text" x="46" y="278">• 缺少开场确认</text>
+  <text class="text" x="46" y="296">• 收集信息像审讯</text>
+  <text class="text" x="46" y="314">• 反复让用户重复输入</text>
+  <text class="h2" x="46" y="340">要补的能力</text>
+  <text class="text" x="46" y="360">对话节奏：先定目标再收信息</text>
+
+  <!-- Middle card: 慢 -->
+  <rect class="card" x="230" y="150" width="200" height="210" rx="12"/>
+  <rect x="246" y="166" width="54" height="24" rx="12" fill="#D97706"/>
+  <text class="chipText" x="273" y="183" text-anchor="middle">慢</text>
+  <text class="h2" x="246" y="212">用户OS</text>
+  <text class="text" x="246" y="232">“我不想等。”</text>
+  <text class="h2" x="246" y="258">典型原因</text>
+  <text class="text" x="246" y="278">• 每轮都查库/查API</text>
+  <text class="text" x="246" y="296">• 语音场景首字延迟高</text>
+  <text class="text" x="246" y="314">• 输出太长、无结论</text>
+  <text class="h2" x="246" y="340">要补的能力</text>
+  <text class="text" x="246" y="360">延迟预算：分段输出、先结论后细节</text>
+
+  <!-- Right card: 不可信 -->
+  <rect class="card" x="430" y="150" width="200" height="210" rx="12"/>
+  <rect x="446" y="166" width="78" height="24" rx="12" fill="#2563EB"/>
+  <text class="chipText" x="485" y="183" text-anchor="middle">不可信</text>
+  <text class="h2" x="446" y="212">用户OS</text>
+  <text class="text" x="446" y="232">“它会不会瞎编？”</text>
+  <text class="h2" x="446" y="258">典型原因</text>
+  <text class="text" x="446" y="278">• 不复述确认信息</text>
+  <text class="text" x="446" y="296">• 不解释依据/来源</text>
+  <text class="text" x="446" y="314">• 不敢承诺下一步</text>
+  <text class="h2" x="446" y="340">要补的能力</text>
+  <text class="text" x="446" y="360">复述确认 + 逐步授权 + 明确转人工阈值</text>
+
+  <!-- Footer note -->
+  <text class="muted" x="30" y="388">提示：多为“流程/SLA/兜底”问题，往往比换模型更快见效</text>
+</svg>

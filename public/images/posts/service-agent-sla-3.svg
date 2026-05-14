@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2563EB"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#EA580C"/>
+    </marker>
+  </defs>
+
+  <text x="330" y="42" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#0F172A">把客服对话变成“分阶段办理”</text>
+  <text x="330" y="68" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#475569">每一阶段都有明确的输入、输出和失败出口</text>
+
+  <line x1="140" y1="180" x2="250" y2="180" stroke="#2563EB" stroke-width="2.5" stroke-dasharray="7 6" marker-end="url(#arrowBlue)"/>
+  <line x1="300" y1="180" x2="410" y2="180" stroke="#2563EB" stroke-width="2.5" stroke-dasharray="7 6" marker-end="url(#arrowBlue)"/>
+  <line x1="460" y1="180" x2="570" y2="180" stroke="#2563EB" stroke-width="2.5" stroke-dasharray="7 6" marker-end="url(#arrowBlue)"/>
+
+  <rect x="40" y="110" width="100" height="140" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="52" y="122" width="34" height="34" rx="10" fill="#DBEAFE"/>
+  <text x="69" y="144" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#2563EB">1</text>
+  <text x="90" y="178" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#2563EB">先分诊</text>
+  <text x="90" y="204" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">识别用户要办什么</text>
+  <text x="90" y="222" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">确定问题类型</text>
+
+  <rect x="200" y="110" width="100" height="140" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="212" y="122" width="34" height="34" rx="10" fill="#FFEDD5"/>
+  <text x="229" y="144" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#EA580C">2</text>
+  <text x="250" y="178" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#EA580C">再采样</text>
+  <text x="250" y="204" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">收集办理所需信息</text>
+  <text x="250" y="222" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">补齐关键字段</text>
+
+  <rect x="360" y="110" width="100" height="140" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="372" y="122" width="34" height="34" rx="10" fill="#DCFCE7"/>
+  <text x="389" y="144" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#16A34A">3</text>
+  <text x="410" y="178" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#16A34A">再处置</text>
+  <text x="410" y="204" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">执行可完成的步骤</text>
+  <text x="410" y="222" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">给出当前结果</text>
+
+  <rect x="520" y="110" width="100" height="140" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="532" y="122" width="34" height="34" rx="10" fill="#F3E8FF"/>
+  <text x="549" y="144" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#9333EA">4</text>
+  <text x="570" y="178" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#9333EA">转诊升级</text>
+  <text x="570" y="204" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">办不了就打包材料</text>
+  <text x="570" y="222" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">移交给能办的人</text>
+
+  <path d="M410 250 C410 300, 570 300, 570 250" fill="none" stroke="#EA580C" stroke-width="2.5" stroke-dasharray="7 6" marker-end="url(#arrowOrange)"/>
+  <text x="490" y="318" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#EA580C">失败出口：无法处理时升级</text>
+
+  <rect x="50" y="320" width="560" height="46" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="74" y="348" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#D97706">核心收益</text>
+  <text x="146" y="348" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#475569">从“随便聊聊”变成“阶段推进”，文本客服和语音客服都能复用同一套脚本骨架</text>
+</svg>
