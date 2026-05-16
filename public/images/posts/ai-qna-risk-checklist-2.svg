@@ -1,0 +1,78 @@
+<svg viewBox="0 0 660 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .bg { fill: #FAFAFA; }
+      .card { fill: #FFFFFF; stroke: #E5E7EB; stroke-width: 1; filter: url(#shadow); }
+      .title { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 16px; font-weight: 700; fill: #111827; }
+      .text { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 12.5px; fill: #374151; }
+      .muted { fill: #6B7280; }
+      .dash { stroke: #9CA3AF; stroke-width: 1.5; stroke-dasharray: 6 6; fill: none; }
+      .pillText { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 12px; font-weight: 700; fill: #111827; }
+      .tagText { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 11.5px; fill: #111827; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" x="0" y="0" width="660" height="400" rx="12"/>
+
+  <!-- Header -->
+  <text class="title" x="28" y="40">边界先定：三层风险分流，再让模型“填空”</text>
+  <text class="text muted" x="28" y="62">系统先做风险分层与路由，模型只在允许范围内生成表述</text>
+
+  <!-- Left: User question -->
+  <rect class="card" x="28" y="110" width="160" height="74" rx="12"/>
+  <text class="text" x="44" y="140">用户问题</text>
+  <text class="text muted" x="44" y="162">进入问答入口</text>
+
+  <!-- Middle: Policy boundary box -->
+  <rect class="card" x="220" y="96" width="220" height="102" rx="12"/>
+  <text class="text" x="238" y="126" style="font-weight:700; fill:#2563EB;">产品/风控预定义边界</text>
+  <text class="text muted" x="238" y="148">按“是否涉及风险点”</text>
+  <text class="text muted" x="238" y="168">分层，而非像不像医学问题</text>
+
+  <!-- Risk tags inside boundary -->
+  <rect x="238" y="176" width="186" height="22" rx="11" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <text class="tagText" x="248" y="191">诊断 / 用药 / 紧急 / 特殊人群 / 延误风险</text>
+
+  <!-- Right: Model box -->
+  <rect class="card" x="472" y="110" width="160" height="74" rx="12"/>
+  <text class="text" x="488" y="140" style="font-weight:700; fill:#9333EA;">模型生成表述</text>
+  <text class="text muted" x="488" y="162">在路由结果内输出</text>
+
+  <!-- Connectors top row -->
+  <path class="dash" d="M188 147 L220 147"/>
+  <path class="dash" d="M440 147 L472 147"/>
+
+  <!-- Bottom: Three-layer routing cards -->
+  <!-- Low risk -->
+  <rect class="card" x="40" y="246" width="180" height="118" rx="12"/>
+  <rect x="54" y="262" width="82" height="22" rx="11" fill="#DCFCE7" stroke="#86EFAC"/>
+  <text class="pillText" x="66" y="277" style="fill:#16A34A;">低风险</text>
+  <text class="text" x="54" y="308">允许自动回答</text>
+  <text class="text muted" x="54" y="330">常识科普、一般信息</text>
+
+  <!-- Medium risk -->
+  <rect class="card" x="240" y="246" width="180" height="118" rx="12"/>
+  <rect x="254" y="262" width="82" height="22" rx="11" fill="#FEF3C7" stroke="#FDE68A"/>
+  <text class="pillText" x="266" y="277" style="fill:#D97706;">中风险</text>
+  <text class="text" x="254" y="308">提醒 + 确认后回答</text>
+  <text class="text muted" x="254" y="330">需提示就医、补充信息</text>
+
+  <!-- High risk -->
+  <rect class="card" x="440" y="246" width="180" height="118" rx="12"/>
+  <rect x="454" y="262" width="82" height="22" rx="11" fill="#FFEDD5" stroke="#FDBA74"/>
+  <text class="pillText" x="466" y="277" style="fill:#EA580C;">高风险</text>
+  <text class="text" x="454" y="308">拒答或转人工</text>
+  <text class="text muted" x="454" y="330">避免个体诊断/用药决策</text>
+
+  <!-- Routing lines from boundary box to three layers -->
+  <path class="dash" d="M330 198 L130 246"/>
+  <path class="dash" d="M330 198 L330 246"/>
+  <path class="dash" d="M330 198 L530 246"/>
+
+  <!-- Note footer -->
+  <text class="text muted" x="28" y="388">核心：边界不定=模型替你拍板；边界先定=模型只负责表达</text>
+</svg>
