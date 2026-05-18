@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .bg { fill: #FAFAFA; }
+      .card { fill: #FFFFFF; stroke: #E5E7EB; stroke-width: 1; filter: url(#shadow); }
+      .title { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 16px; font-weight: 700; fill: #111827; }
+      .text { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 13px; fill: #111827; }
+      .muted { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 12px; fill: #6B7280; }
+      .tag { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 12px; font-weight: 700; fill: #FFFFFF; }
+      .dash { stroke: #9CA3AF; stroke-width: 2; stroke-dasharray: 6 6; fill: none; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" x="0" y="0" width="660" height="400" rx="12"/>
+
+  <!-- Header -->
+  <text class="title" x="28" y="42">机制 1：用“必填字段”锁住澄清问题</text>
+  <text class="muted" x="28" y="64">核心：先收集最小信息集合（≤3个字段），缺什么一次问齐，避免逐条追问</text>
+
+  <!-- Left: User Request -->
+  <rect class="card" x="28" y="110" width="180" height="86" rx="12"/>
+  <rect x="40" y="124" width="56" height="22" rx="11" fill="#2563EB"/>
+  <text class="tag" x="50" y="140">输入</text>
+  <text class="text" x="40" y="166">用户请求</text>
+  <text class="muted" x="40" y="186">查询/修改/退款等</text>
+
+  <!-- Middle top: Classify Task -->
+  <rect class="card" x="240" y="96" width="200" height="92" rx="12"/>
+  <rect x="252" y="110" width="82" height="22" rx="11" fill="#9333EA"/>
+  <text class="tag" x="262" y="126">步骤 1</text>
+  <text class="text" x="252" y="152">判断任务类型</text>
+  <text class="muted" x="252" y="172">订单/退款/发票/账号等</text>
+
+  <!-- Middle bottom: Required Fields -->
+  <rect class="card" x="240" y="214" width="200" height="108" rx="12"/>
+  <rect x="252" y="228" width="82" height="22" rx="11" fill="#16A34A"/>
+  <text class="tag" x="262" y="244">步骤 2</text>
+  <text class="text" x="252" y="270">定义必填字段（≤3）</text>
+  <text class="muted" x="252" y="290">缺失字段 → 一次性问齐</text>
+  <text class="muted" x="252" y="308">禁止逐条追问/重复问</text>
+
+  <!-- Right: Ask Once + Echo -->
+  <rect class="card" x="472" y="110" width="160" height="212" rx="12"/>
+  <rect x="484" y="124" width="82" height="22" rx="11" fill="#EA580C"/>
+  <text class="tag" x="494" y="140">输出</text>
+  <text class="text" x="484" y="166">一次性提问</text>
+  <text class="muted" x="484" y="186">把缺失字段全部问齐</text>
+  <rect x="484" y="204" width="120" height="1" fill="#E5E7EB"/>
+  <text class="text" x="484" y="228">字段回显确认</text>
+  <text class="muted" x="484" y="248">字段名 + 末尾4位</text>
+  <rect x="484" y="266" width="120" height="1" fill="#E5E7EB"/>
+  <text class="text" x="484" y="290">继续下一步动作</text>
+  <text class="muted" x="484" y="310">查询系统/执行操作</text>
+
+  <!-- Connectors (dashed) -->
+  <path class="dash" d="M 208 153 C 225 153, 225 142, 240 142"/>
+  <path class="dash" d="M 340 188 C 340 202, 340 202, 340 214"/>
+  <path class="dash" d="M 440 166 C 456 166, 456 166, 472 166"/>
+  <path class="dash" d="M 440 270 C 456 270, 456 270, 472 270"/>
+
+  <!-- Note card: Tip -->
+  <rect class="card" x="28" y="320" width="412" height="58" rx="12"/>
+  <rect x="40" y="334" width="56" height="22" rx="11" fill="#D97706"/>
+  <text class="tag" x="50" y="350">技巧</text>
+  <text class="text" x="104" y="350">必填字段别贪多：问 2-3 个，再用系统查询补齐</text>
+</svg>

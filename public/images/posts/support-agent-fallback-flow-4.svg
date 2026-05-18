@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94A3B8"/>
+    </marker>
+  </defs>
+
+  <text x="330" y="34" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#0F172A">上下文管理：别记所有话，只记录事实与下一步</text>
+
+  <rect x="34" y="78" width="156" height="116" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="112" y="106" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#2563EB">对话输入</text>
+  <text x="54" y="134" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#334155">用户原话持续变化</text>
+  <text x="54" y="156" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#334155">不做全文记忆</text>
+  <text x="54" y="178" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#EA580C">避免串台与冗余存储</text>
+
+  <rect x="252" y="58" width="156" height="156" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="330" y="86" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#16A34A">事实抽取</text>
+  <rect x="270" y="101" width="120" height="28" rx="10" fill="#DBEAFE"/>
+  <text x="330" y="120" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#1D4ED8">身份：user_id / 邮箱</text>
+  <rect x="270" y="136" width="120" height="28" rx="10" fill="#FEF3C7"/>
+  <text x="330" y="155" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#B45309">目标：退款 / 查订单</text>
+  <rect x="270" y="171" width="120" height="28" rx="10" fill="#EDE9FE"/>
+  <text x="330" y="190" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#7E22CE">对象：订单号 / 发票号</text>
+
+  <rect x="470" y="48" width="156" height="176" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="548" y="76" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#2563EB">记录源</text>
+  <text x="548" y="96" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#64748B">system of record</text>
+  <text x="488" y="124" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#334155">ticket_id: T-xxxxx</text>
+  <text x="488" y="144" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#334155">user_id: U-xxxxx</text>
+  <text x="488" y="164" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#334155">intent: refund_status</text>
+  <text x="488" y="184" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#334155">entities.order_id: xxxx</text>
+  <text x="488" y="204" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#334155">last_action: queried_api</text>
+
+  <rect x="182" y="258" width="296" height="96" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="330" y="286" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#9333EA">真正要记住的内容</text>
+  <text x="330" y="314" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#334155">last_action ＋ next_step</text>
+  <text x="330" y="338" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#D97706">例如：已查询退款接口 → 等待渠道结算</text>
+
+  <path d="M190 136 L252 136" fill="none" stroke="#94A3B8" stroke-width="2.2" stroke-dasharray="6 6" marker-end="url(#arrow)"/>
+  <path d="M408 136 L470 136" fill="none" stroke="#94A3B8" stroke-width="2.2" stroke-dasharray="6 6" marker-end="url(#arrow)"/>
+  <path d="M548 224 L548 258 L478 258" fill="none" stroke="#94A3B8" stroke-width="2.2" stroke-dasharray="6 6" marker-end="url(#arrow)"/>
+  <path d="M330 214 L330 258" fill="none" stroke="#94A3B8" stroke-width="2.2" stroke-dasharray="6 6" marker-end="url(#arrow)"/>
+
+  <text x="548" y="276" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#64748B">可用于转人工与续接</text>
+</svg>
