@@ -1,0 +1,95 @@
+<svg width="660" height="300" viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="660" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#44403C"/>
+      <stop offset="1" stop-color="#1C1917"/>
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="660" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EA580C"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+
+    <filter id="soften" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="660" height="300" fill="url(#bgGrad)"/>
+
+  <!-- Paper grain texture (irregular speckles) -->
+  <g opacity="0.06" fill="#D6D3D1" filter="url(#soften)">
+    <circle cx="22" cy="34" r="1.2"/><circle cx="46" cy="78" r="0.9"/><circle cx="88" cy="40" r="1.1"/>
+    <circle cx="130" cy="62" r="0.8"/><circle cx="170" cy="28" r="1.0"/><circle cx="210" cy="84" r="0.9"/>
+    <circle cx="252" cy="46" r="1.2"/><circle cx="292" cy="72" r="0.8"/><circle cx="336" cy="30" r="1.0"/>
+    <circle cx="378" cy="88" r="0.9"/><circle cx="418" cy="54" r="1.2"/><circle cx="456" cy="26" r="0.8"/>
+    <circle cx="502" cy="70" r="1.1"/><circle cx="548" cy="44" r="0.9"/><circle cx="606" cy="82" r="1.0"/>
+
+    <circle cx="34" cy="136" r="0.9"/><circle cx="76" cy="162" r="1.1"/><circle cx="118" cy="128" r="0.8"/>
+    <circle cx="160" cy="170" r="1.2"/><circle cx="202" cy="142" r="0.9"/><circle cx="246" cy="156" r="1.0"/>
+    <circle cx="286" cy="132" r="0.8"/><circle cx="328" cy="168" r="1.1"/><circle cx="372" cy="140" r="0.9"/>
+    <circle cx="412" cy="164" r="1.2"/><circle cx="452" cy="134" r="0.8"/><circle cx="494" cy="158" r="1.0"/>
+    <circle cx="534" cy="130" r="0.9"/><circle cx="576" cy="170" r="1.1"/><circle cx="624" cy="146" r="0.8"/>
+
+    <circle cx="18" cy="218" r="1.0"/><circle cx="56" cy="244" r="0.8"/><circle cx="96" cy="210" r="1.2"/>
+    <circle cx="138" cy="252" r="0.9"/><circle cx="180" cy="226" r="1.1"/><circle cx="224" cy="246" r="0.8"/>
+    <circle cx="266" cy="214" r="1.0"/><circle cx="308" cy="254" r="1.2"/><circle cx="350" cy="228" r="0.9"/>
+    <circle cx="392" cy="248" r="1.1"/><circle cx="434" cy="216" r="0.8"/><circle cx="476" cy="256" r="1.0"/>
+    <circle cx="520" cy="222" r="1.2"/><circle cx="564" cy="250" r="0.9"/><circle cx="636" cy="232" r="1.1"/>
+  </g>
+
+  <!-- Left accent line -->
+  <rect x="50" y="28" width="5" height="244" rx="2.5" fill="url(#accentGrad)" opacity="0.95"/>
+
+  <!-- Text block -->
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif">
+    <!-- Title (2 lines, max 20 Chinese chars per line) -->
+    <text x="70" y="92" fill="#FAFAF9" font-size="22" font-weight="700" letter-spacing="0.2">
+      <tspan x="70" dy="0">AI Agent 变慢？先查 CPU</tspan>
+      <tspan x="70" dy="28">别急着买显卡</tspan>
+    </text>
+
+    <!-- Subtitle -->
+    <text x="70" y="158" fill="#A8A29E" font-size="13" font-weight="500">
+      AI Agent 变慢不一定是 GPU 不够。很多卡顿其实卡在 CPU/内存/IO
+    </text>
+
+    <!-- Tag pills -->
+    <g>
+      <rect x="70" y="238" width="86" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+      <text x="113" y="254" text-anchor="middle" fill="#D6D3D1" font-size="12" font-weight="600">CPU 瓶颈</text>
+
+      <rect x="166" y="238" width="76" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+      <text x="204" y="254" text-anchor="middle" fill="#D6D3D1" font-size="12" font-weight="600">内存/IO</text>
+
+      <rect x="252" y="238" width="72" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+      <text x="288" y="254" text-anchor="middle" fill="#D6D3D1" font-size="12" font-weight="600">RAG</text>
+    </g>
+  </g>
+
+  <!-- Decorations (right-bottom only; to the right of tags; no overlap with text) -->
+  <g opacity="0.24" stroke="#EA580C" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- CPU chip icon -->
+    <g transform="translate(508,188)">
+      <rect x="18" y="18" width="64" height="64" rx="10"/>
+      <rect x="34" y="34" width="32" height="32" rx="6"/>
+      <!-- pins -->
+      <line x1="8" y1="30" x2="18" y2="30"/><line x1="8" y1="44" x2="18" y2="44"/><line x1="8" y1="58" x2="18" y2="58"/><line x1="8" y1="72" x2="18" y2="72"/>
+      <line x1="82" y1="30" x2="92" y2="30"/><line x1="82" y1="44" x2="92" y2="44"/><line x1="82" y1="58" x2="92" y2="58"/><line x1="82" y1="72" x2="92" y2="72"/>
+      <line x1="30" y1="8" x2="30" y2="18"/><line x1="44" y1="8" x2="44" y2="18"/><line x1="58" y1="8" x2="58" y2="18"/><line x1="72" y1="8" x2="72" y2="18"/>
+      <line x1="30" y1="82" x2="30" y2="92"/><line x1="44" y1="82" x2="44" y2="92"/><line x1="58" y1="82" x2="58" y2="92"/><line x1="72" y1="82" x2="72" y2="92"/>
+    </g>
+
+    <!-- IO / disk icon -->
+    <g transform="translate(596,218)" opacity="0.22" stroke="#A8A29E">
+      <path d="M10 16c0-6 10-10 22-10s22 4 22 10v22c0 6-10 10-22 10S10 44 10 38z"/>
+      <path d="M10 16c0 6 10 10 22 10s22-4 22-10"/>
+      <path d="M10 27c0 6 10 10 22 10s22-4 22-10"/>
+      <circle cx="46" cy="40" r="2.2" fill="#A8A29E" stroke="none" opacity="0.55"/>
+    </g>
+  </g>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="293" width="660" height="7" fill="url(#accentGrad)"/>
+</svg>

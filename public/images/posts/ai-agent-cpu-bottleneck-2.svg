@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .bg { fill: #FAFAFA; }
+      .panel { fill: #FFFFFF; stroke: #E5E7EB; stroke-width: 1; filter: url(#shadow); }
+      .title { font-family: -apple-system, 'Segoe UI', sans-serif; font-weight: 700; fill: #111827; font-size: 16px; }
+      .text { font-family: -apple-system, 'Segoe UI', sans-serif; fill: #111827; font-size: 13px; }
+      .muted { font-family: -apple-system, 'Segoe UI', sans-serif; fill: #6B7280; font-size: 12px; }
+      .chip { font-family: -apple-system, 'Segoe UI', sans-serif; fill: #FFFFFF; font-size: 12px; font-weight: 600; }
+      .dashed { stroke: #9CA3AF; stroke-width: 2; stroke-dasharray: 6 6; fill: none; }
+      .arrow { fill: #9CA3AF; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" x="0" y="0" width="660" height="400" rx="12"/>
+
+  <!-- Header -->
+  <text class="title" x="24" y="38">为什么 GPU 很强，整体还是卡？</text>
+  <text class="muted" x="24" y="60">总耗时 = 多段链路之和；GPU 只加速其中“推理”一段</text>
+
+  <!-- Top: Timeline blocks -->
+  <!-- Block 1 -->
+  <rect class="panel" x="24" y="86" width="148" height="88" rx="12"/>
+  <text class="text" x="38" y="116">上下文拼装</text>
+  <text class="muted" x="38" y="138">CPU / 内存带宽</text>
+  <rect x="38" y="150" width="72" height="18" rx="9" fill="#2563EB"/>
+  <text class="chip" x="46" y="163">CPU/内存</text>
+
+  <!-- Arrow 1 -->
+  <path class="dashed" d="M 172 130 L 200 130"/>
+  <polygon class="arrow" points="200,130 192,125 192,135"/>
+
+  <!-- Block 2 -->
+  <rect class="panel" x="204" y="86" width="148" height="88" rx="12"/>
+  <text class="text" x="218" y="116">RAG 检索</text>
+  <text class="muted" x="218" y="138">磁盘IO / 内存 / CPU</text>
+  <rect x="218" y="150" width="44" height="18" rx="9" fill="#16A34A"/>
+  <text class="chip" x="228" y="163">SSD</text>
+  <rect x="266" y="150" width="54" height="18" rx="9" fill="#2563EB"/>
+  <text class="chip" x="276" y="163">CPU</text>
+
+  <!-- Arrow 2 -->
+  <path class="dashed" d="M 352 130 L 380 130"/>
+  <polygon class="arrow" points="380,130 372,125 372,135"/>
+
+  <!-- Block 3 -->
+  <rect class="panel" x="384" y="86" width="120" height="88" rx="12"/>
+  <text class="text" x="398" y="116">工具并发调用</text>
+  <text class="muted" x="398" y="138">CPU / 网络延迟</text>
+  <rect x="398" y="150" width="54" height="18" rx="9" fill="#D97706"/>
+  <text class="chip" x="410" y="163">网络</text>
+
+  <!-- Arrow 3 -->
+  <path class="dashed" d="M 504 130 L 532 130"/>
+  <polygon class="arrow" points="532,130 524,125 524,135"/>
+
+  <!-- Block 4 (GPU inference) -->
+  <rect class="panel" x="536" y="78" width="100" height="104" rx="12" stroke="#2563EB"/>
+  <text class="text" x="552" y="110">模型推理</text>
+  <text class="muted" x="552" y="132">主要吃 GPU</text>
+  <rect x="552" y="146" width="50" height="18" rx="9" fill="#9333EA"/>
+  <text class="chip" x="565" y="159">GPU</text>
+  <text class="muted" x="552" y="174">仅占一段</text>
+
+  <!-- Bottom: Write & logging -->
+  <rect class="panel" x="24" y="206" width="612" height="80" rx="12"/>
+  <text class="text" x="40" y="238">落库与日志</text>
+  <text class="muted" x="40" y="260">磁盘随机读写 / IO 队列</text>
+  <rect x="40" y="268" width="44" height="18" rx="9" fill="#16A34A"/>
+  <text class="chip" x="50" y="281">SSD</text>
+
+  <!-- Connector from pipeline to write/log -->
+  <path class="dashed" d="M 330 182 L 330 206"/>
+  <polygon class="arrow" points="330,206 325,198 335,198"/>
+
+  <!-- Note: stronger GPU amplifies upstream pressure -->
+  <rect class="panel" x="24" y="304" width="612" height="72" rx="12"/>
+  <text class="text" x="40" y="334">关键现象：GPU 越强，越可能放大上游压力</text>
+  <text class="muted" x="40" y="356">并发调高 → CPU 线程打满 / 内存抖动 / 磁盘排队 / 网络长尾 → 卡顿与超时</text>
+
+  <!-- Small legend chips -->
+  <rect x="468" y="318" width="54" height="18" rx="9" fill="#2563EB"/>
+  <text class="chip" x="482" y="331">CPU</text>
+  <rect x="528" y="318" width="54" height="18" rx="9" fill="#16A34A"/>
+  <text class="chip" x="542" y="331">SSD</text>
+  <rect x="588" y="318" width="44" height="18" rx="9" fill="#D97706"/>
+  <text class="chip" x="598" y="331">网络</text>
+</svg>

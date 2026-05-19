@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .bg { fill:#FAFAFA; }
+      .card { fill:#FFFFFF; rx:10; filter:url(#shadow); }
+      .t { font-family:-apple-system, 'Segoe UI', sans-serif; fill:#0F172A; }
+      .muted { fill:#475569; }
+      .line { stroke:#94A3B8; stroke-width:1.5; stroke-dasharray:5 5; fill:none; }
+      .pill { rx:999; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" x="0" y="0" width="660" height="400" rx="12"/>
+
+  <!-- Title -->
+  <text class="t" x="26" y="34" font-size="18" font-weight="700">症状 → 真凶 → 钱该砸在哪</text>
+  <text class="t muted" x="26" y="56" font-size="12">别只盯 GPU：先按现象定位瓶颈，再决定升级顺序</text>
+
+  <!-- Column headers -->
+  <text class="t muted" x="50" y="88" font-size="12" font-weight="700">你看到的现象</text>
+  <text class="t muted" x="295" y="88" font-size="12" font-weight="700">更可能的瓶颈</text>
+  <text class="t muted" x="500" y="88" font-size="12" font-weight="700">优先升级建议</text>
+
+  <!-- Cards: Left column (Symptoms) -->
+  <rect class="card" x="26" y="100" width="220" height="44"/>
+  <text class="t" x="40" y="127" font-size="12">GPU 利用率低，但整体慢</text>
+
+  <rect class="card" x="26" y="152" width="220" height="44"/>
+  <text class="t" x="40" y="179" font-size="12">偶发卡死 / 长尾很长</text>
+
+  <rect class="card" x="26" y="204" width="220" height="44"/>
+  <text class="t" x="40" y="231" font-size="12">没死但很慢，磁盘灯狂闪</text>
+
+  <rect class="card" x="26" y="256" width="220" height="44"/>
+  <text class="t" x="40" y="283" font-size="12">工具调用占大头，波动大</text>
+
+  <rect class="card" x="26" y="308" width="220" height="44"/>
+  <text class="t" x="40" y="335" font-size="12">并发一上去就雪崩</text>
+
+  <rect class="card" x="26" y="360" width="220" height="32"/>
+  <text class="t" x="40" y="381" font-size="12">llm_done 占绝对大头</text>
+
+  <!-- Middle column (Bottlenecks) pills -->
+  <!-- CPU (orange) -->
+  <rect x="270" y="108" width="170" height="28" fill="#EA580C" class="pill"/>
+  <text class="t" x="355" y="127" font-size="12" text-anchor="middle" fill="#FFFFFF" font-weight="700">CPU / 单核性能</text>
+
+  <!-- Memory (green) -->
+  <rect x="270" y="160" width="170" height="28" fill="#16A34A" class="pill"/>
+  <text class="t" x="355" y="179" font-size="12" text-anchor="middle" fill="#FFFFFF" font-weight="700">内存 / swap</text>
+
+  <!-- Disk (purple) -->
+  <rect x="270" y="212" width="170" height="28" fill="#9333EA" class="pill"/>
+  <text class="t" x="355" y="231" font-size="12" text-anchor="middle" fill="#FFFFFF" font-weight="700">SSD / 随机读写</text>
+
+  <!-- Network (yellow) -->
+  <rect x="270" y="264" width="170" height="28" fill="#D97706" class="pill"/>
+  <text class="t" x="355" y="283" font-size="12" text-anchor="middle" fill="#FFFFFF" font-weight="700">网络 / 外部服务</text>
+
+  <!-- CPU+IO (orange) -->
+  <rect x="270" y="316" width="170" height="28" fill="#EA580C" class="pill"/>
+  <text class="t" x="355" y="335" font-size="12" text-anchor="middle" fill="#FFFFFF" font-weight="700">CPU 调度 + IO 竞争</text>
+
+  <!-- GPU (blue) -->
+  <rect x="270" y="360" width="170" height="28" fill="#2563EB" class="pill"/>
+  <text class="t" x="355" y="379" font-size="12" text-anchor="middle" fill="#FFFFFF" font-weight="700">GPU / 模型本体</text>
+
+  <!-- Right column (Actions) -->
+  <rect class="card" x="460" y="100" width="174" height="44"/>
+  <text class="t" x="474" y="120" font-size="12" font-weight="700">先升 CPU</text>
+  <text class="t muted" x="474" y="138" font-size="11">高频 + 更多核</text>
+
+  <rect class="card" x="460" y="152" width="174" height="44"/>
+  <text class="t" x="474" y="172" font-size="12" font-weight="700">先加内存</text>
+  <text class="t muted" x="474" y="190" font-size="11">再降并发/调缓存</text>
+
+  <rect class="card" x="460" y="204" width="174" height="44"/>
+  <text class="t" x="474" y="224" font-size="12" font-weight="700">换更强 SSD</text>
+  <text class="t muted" x="474" y="242" font-size="11">NVMe，索引同盘</text>
+
+  <rect class="card" x="460" y="256" width="174" height="44"/>
+  <text class="t" x="474" y="276" font-size="12" font-weight="700">先做缓存/退避</text>
+  <text class="t muted" x="474" y="294" font-size="11">再谈带宽/地域</text>
+
+  <rect class="card" x="460" y="308" width="174" height="44"/>
+  <text class="t" x="474" y="328" font-size="12" font-weight="700">限并发 + 批处理</text>
+  <text class="t muted" x="474" y="346" font-size="11">看核心数/带宽</text>
+
+  <rect class="card" x="460" y="360" width="174" height="32"/>
+  <text class="t" x="474" y="381" font-size="12" font-weight="700">再考虑加 GPU</text>
+
+  <!-- Dashed connectors (symptom -> bottleneck -> action) -->
+  <path class="line" d="M 246 122 L 270 122"/>
+  <path class="line" d="M 440 122 L 460 122"/>
+
+  <path class="line" d="M 246 174 L 270 174"/>
+  <path class="line" d="M 440 174 L 460 174"/>
+
+  <path class="line" d="M 246 226 L 270 226"/>
+  <path class="line" d="M 440 226 L 460 226"/>
+
+  <path class="line" d="M 246 278 L 270 278"/>
+  <path class="line" d="M 440 278 L 460 278"/>
+
+  <path class="line" d="M 246 330 L 270 330"/>
+  <path class="line" d="M 440 330 L 460 330"/>
+
+  <path class="line" d="M 246 376 L 270 376"/>
+  <path class="line" d="M 440 376 L 460 376"/>
+
+  <!-- Bottom emphasis note -->
+  <rect x="26" y="70" width="608" height="18" fill="#FFFFFF" rx="9" opacity="0.85"/>
+  <text class="t" x="330" y="83" font-size="11" text-anchor="middle">
+    “先换显卡”只覆盖最后一种情况；多数慢在 CPU / 内存 / IO / 网络
+  </text>
+</svg>
