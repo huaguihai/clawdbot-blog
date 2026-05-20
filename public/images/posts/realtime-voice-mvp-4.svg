@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .bg { fill:#FAFAFA; }
+      .frame { fill:#FAFAFA; }
+      .title { font-family:-apple-system,'Segoe UI',sans-serif; font-size:18px; font-weight:700; fill:#0f172a; }
+      .sub { font-family:-apple-system,'Segoe UI',sans-serif; font-size:12px; fill:#475569; }
+      .card { fill:#ffffff; filter:url(#shadow); }
+      .h { font-family:-apple-system,'Segoe UI',sans-serif; font-size:14px; font-weight:700; fill:#0f172a; }
+      .t { font-family:-apple-system,'Segoe UI',sans-serif; font-size:12px; fill:#334155; }
+      .pillText { font-family:-apple-system,'Segoe UI',sans-serif; font-size:11px; font-weight:700; fill:#ffffff; }
+      .dash { stroke:#94a3b8; stroke-width:2; stroke-dasharray:6 6; fill:none; }
+      .label { font-family:-apple-system,'Segoe UI',sans-serif; font-size:11px; fill:#64748b; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="frame" x="10" y="10" width="640" height="380" rx="12"/>
+
+  <!-- Header -->
+  <text class="title" x="30" y="45">先做哪个方向更容易出结果：押这 3 类</text>
+  <text class="sub" x="30" y="66">用同一维度对比：核心价值 → MVP 关键步骤 → 验证指标 → 付费人群</text>
+
+  <!-- Center node -->
+  <rect x="230" y="88" width="200" height="44" rx="12" fill="#ffffff" filter="url(#shadow)"/>
+  <text class="h" x="330" y="115" text-anchor="middle">语音应用方向选择</text>
+
+  <!-- Dashed connectors -->
+  <path class="dash" d="M 330 132 L 140 170"/>
+  <path class="dash" d="M 330 132 L 330 170"/>
+  <path class="dash" d="M 330 132 L 520 170"/>
+
+  <!-- Card 1: Meeting minutes -->
+  <rect class="card" x="40" y="170" width="200" height="190" rx="12"/>
+  <rect x="52" y="184" width="84" height="22" rx="11" fill="#2563EB"/>
+  <text class="pillText" x="94" y="200" text-anchor="middle">会议纪要</text>
+  <text class="h" x="52" y="226">会后可执行，而非逐字稿</text>
+  <text class="t" x="52" y="248">MVP：音频 → 转写 → 分离说话人</text>
+  <text class="t" x="52" y="266">输出：结论 / 待办 / 风险点</text>
+  <text class="t" x="52" y="284">一键同步：飞书 / Notion / 邮件</text>
+  <text class="label" x="52" y="308">验证：打开结果页、复制点击、改待办、二周留存</text>
+  <text class="label" x="52" y="330">买家：小团队、销售/招聘/咨询/培训</text>
+
+  <!-- Card 2: Cross-language service / coaching -->
+  <rect class="card" x="230" y="170" width="200" height="190" rx="12"/>
+  <rect x="242" y="184" width="96" height="22" rx="11" fill="#EA580C"/>
+  <text class="pillText" x="290" y="200" text-anchor="middle">跨语言沟通</text>
+  <text class="h" x="242" y="226">任务型客服/陪练，强调完成结果</text>
+  <text class="t" x="242" y="248">MVP：中文语音 → 译文 → 目标语音</text>
+  <text class="t" x="242" y="266">对方回复 → 反向翻译 → 留存对话</text>
+  <text class="t" x="242" y="284">可选：纠错但不打断（陪练）</text>
+  <text class="label" x="242" y="308">验证：任务完成率、确认轮次下降、导出记录、场景复用</text>
+  <text class="label" x="242" y="330">买家：B端客服前台 / C端场景口语练习</text>
+
+  <!-- Card 3: Voice form / inspection -->
+  <rect class="card" x="420" y="170" width="200" height="190" rx="12"/>
+  <rect x="432" y="184" width="96" height="22" rx="11" fill="#16A34A"/>
+  <text class="pillText" x="480" y="200" text-anchor="middle">语音表单</text>
+  <text class="h" x="432" y="226">口述直接变结构化字段</text>
+  <text class="t" x="432" y="248">MVP：开始录音 → 按字段口述</text>
+  <text class="t" x="432" y="266">边转写边提取 → 缺项追问</text>
+  <text class="t" x="432" y="284">生成表单 → 人工确认 → 提交</text>
+  <text class="label" x="432" y="308">验证：填写时长↓、漏项↓、连续使用、管理端跟进动作</text>
+  <text class="label" x="432" y="330">买家：线下团队企业、需留痕服务团队、填报质量差组织</text>
+
+  <!-- Footer note -->
+  <text class="sub" x="30" y="382">共同结论：STT/翻译是“发动机”，收费点在结构化结果与工作流落地</text>
+</svg>

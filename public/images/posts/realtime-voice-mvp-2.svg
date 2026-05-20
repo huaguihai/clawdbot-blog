@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .bg { fill:#FAFAFA; }
+      .card { fill:#FFFFFF; stroke:#E5E7EB; stroke-width:1; filter:url(#shadow); }
+      .title { font-family:-apple-system,'Segoe UI',sans-serif; font-size:18px; font-weight:700; fill:#111827; }
+      .text { font-family:-apple-system,'Segoe UI',sans-serif; font-size:13px; fill:#111827; }
+      .muted { font-family:-apple-system,'Segoe UI',sans-serif; font-size:12px; fill:#4B5563; }
+      .pillText { font-family:-apple-system,'Segoe UI',sans-serif; font-size:12px; font-weight:700; fill:#111827; }
+      .dash { stroke:#9CA3AF; stroke-width:2; stroke-dasharray:6 6; fill:none; }
+      .accentBlue { fill:#DBEAFE; stroke:#2563EB; }
+      .accentGreen { fill:#DCFCE7; stroke:#16A34A; }
+      .accentOrange { fill:#FFEDD5; stroke:#EA580C; }
+      .badge { fill:#FEF3C7; stroke:#D97706; }
+      .badgeText { font-family:-apple-system,'Segoe UI',sans-serif; font-size:11px; font-weight:700; fill:#92400E; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" x="0" y="0" width="660" height="400" rx="12"/>
+
+  <!-- Header card -->
+  <rect class="card" x="40" y="28" width="580" height="84" rx="12"/>
+  <text class="title" x="60" y="58">实时语音 / 转写 / 翻译：先选哪个？</text>
+  <text class="muted" x="60" y="82">按“核心价值”做选择：即时反馈、留档检索、跨语言完成任务</text>
+
+  <!-- Center decision card -->
+  <rect class="card" x="220" y="132" width="220" height="74" rx="12"/>
+  <text class="text" x="240" y="160" font-weight="700">你的产品核心价值是？</text>
+  <text class="muted" x="240" y="182">先把能力拆开，别一口吃成全能助手</text>
+
+  <!-- Connectors -->
+  <path class="dash" d="M330 206 L150 244"/>
+  <path class="dash" d="M330 206 L330 244"/>
+  <path class="dash" d="M330 206 L510 244"/>
+
+  <!-- Left card: Real-time speech -->
+  <rect class="card accentBlue" x="50" y="244" width="200" height="126" rx="12"/>
+  <text class="text" x="68" y="272" font-weight="700" fill="#1D4ED8">实时语音</text>
+  <rect class="badge" x="170" y="256" width="64" height="18" rx="9"/>
+  <text class="badgeText" x="202" y="269" text-anchor="middle">适合MVP</text>
+  <text class="muted" x="68" y="295">核心价值：即时反馈</text>
+  <text class="muted" x="68" y="315">典型场景：陪练 / 客服 / 助手</text>
+  <text class="muted" x="68" y="335">关键提醒：边界要窄</text>
+  <text class="muted" x="68" y="355">坑：想一次做“全能助手”</text>
+
+  <!-- Middle card: Transcription -->
+  <rect class="card accentGreen" x="230" y="244" width="200" height="126" rx="12"/>
+  <text class="text" x="248" y="272" font-weight="700" fill="#15803D">语音转文字</text>
+  <rect class="badge" x="342" y="256" width="76" height="18" rx="9"/>
+  <text class="badgeText" x="380" y="269" text-anchor="middle">最适合MVP</text>
+  <text class="muted" x="248" y="295">核心价值：留档 / 检索 / 总结</text>
+  <text class="muted" x="248" y="315">典型场景：会议纪要 / 巡检</text>
+  <text class="muted" x="248" y="335">关键提醒：转写要配整理</text>
+  <text class="muted" x="248" y="355">坑：只转不整理，没人看</text>
+
+  <!-- Right card: Translation -->
+  <rect class="card accentOrange" x="410" y="244" width="200" height="126" rx="12"/>
+  <text class="text" x="428" y="272" font-weight="700" fill="#C2410C">语音翻译</text>
+  <rect class="badge" x="530" y="256" width="64" height="18" rx="9"/>
+  <text class="badgeText" x="562" y="269" text-anchor="middle">很适合</text>
+  <text class="muted" x="428" y="295">核心价值：跨语言完成任务</text>
+  <text class="muted" x="428" y="315">典型场景：双语客服 / 旅游商贸</text>
+  <text class="muted" x="428" y="335">关键提醒：目标是把事办成</text>
+  <text class="muted" x="428" y="355">坑：追求“像真人聊天”</text>
+
+  <!-- Bottom takeaway -->
+  <rect class="card" x="40" y="372" width="580" height="0" rx="12"/>
+  <text class="muted" x="40" y="392">结论：先追求可结算的工具价值，再谈“像人”的体验</text>
+</svg>

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .bg { fill:#FAFAFA; }
+      .title { font-family:-apple-system,'Segoe UI',sans-serif; font-size:18px; font-weight:700; fill:#111827; }
+      .sub { font-family:-apple-system,'Segoe UI',sans-serif; font-size:12px; fill:#6B7280; }
+      .card { fill:#FFFFFF; stroke:#E5E7EB; stroke-width:1; filter:url(#shadow); }
+      .q { font-family:-apple-system,'Segoe UI',sans-serif; font-size:13px; font-weight:700; fill:#111827; }
+      .t { font-family:-apple-system,'Segoe UI',sans-serif; font-size:12px; fill:#374151; }
+      .pillText { font-family:-apple-system,'Segoe UI',sans-serif; font-size:12px; font-weight:700; fill:#FFFFFF; }
+      .line { stroke:#9CA3AF; stroke-width:2; stroke-dasharray:6 6; fill:none; }
+      .tag { font-family:-apple-system,'Segoe UI',sans-serif; font-size:11px; font-weight:700; fill:#6B7280; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" x="0" y="0" width="660" height="400" rx="12"/>
+
+  <!-- Header -->
+  <text class="title" x="28" y="42">什么时候用实时，什么时候只做转写？</text>
+  <text class="sub" x="28" y="64">判断准则：只有“等待回答会破坏体验”才需要实时；否则优先转写/翻译。</text>
+
+  <!-- Start node -->
+  <rect class="card" x="28" y="86" width="604" height="54" rx="12"/>
+  <text class="q" x="46" y="118">Q1 用户需要边说边被回应吗？</text>
+  <rect x="520" y="101" width="92" height="28" rx="14" fill="#2563EB"/>
+  <text class="pillText" x="566" y="120" text-anchor="middle">用实时语音</text>
+
+  <!-- Lines from Q1 to Q2/Q3 -->
+  <path class="line" d="M330 140 L330 164"/>
+
+  <!-- Second row cards: Q2 and Q3 -->
+  <rect class="card" x="28" y="164" width="294" height="86" rx="12"/>
+  <text class="q" x="46" y="192">Q2 说完再处理也没关系？</text>
+  <rect x="46" y="205" width="92" height="28" rx="14" fill="#16A34A"/>
+  <text class="pillText" x="92" y="224" text-anchor="middle">用转写</text>
+  <text class="t" x="152" y="224">开发更轻、风险更低</text>
+
+  <rect class="card" x="338" y="164" width="294" height="86" rx="12"/>
+  <text class="q" x="356" y="192">Q3 核心障碍是语言不通？</text>
+  <rect x="356" y="205" width="92" height="28" rx="14" fill="#9333EA"/>
+  <text class="pillText" x="402" y="224" text-anchor="middle">用翻译</text>
+  <text class="t" x="462" y="224">而非实时对话</text>
+
+  <!-- Connecting lines: Q1 down to both cards -->
+  <path class="line" d="M330 164 L175 164"/>
+  <path class="line" d="M330 164 L485 164"/>
+  <path class="line" d="M175 140 L175 164"/>
+  <path class="line" d="M485 140 L485 164"/>
+
+  <!-- Lines to bottom row -->
+  <path class="line" d="M175 250 L175 274"/>
+  <path class="line" d="M485 250 L485 274"/>
+  <path class="line" d="M175 274 L330 274"/>
+  <path class="line" d="M485 274 L330 274"/>
+  <path class="line" d="M330 274 L330 292"/>
+
+  <!-- Bottom card: governance/risk -->
+  <rect class="card" x="28" y="292" width="604" height="86" rx="12"/>
+  <text class="q" x="46" y="320">Q4 需要留档/检索/审批？ 或 Q5 高风险需人工确认？</text>
+
+  <rect x="46" y="333" width="152" height="30" rx="15" fill="#D97706"/>
+  <text class="pillText" x="122" y="353" text-anchor="middle">转写优先（可留档）</text>
+
+  <rect x="214" y="333" width="170" height="30" rx="15" fill="#EA580C"/>
+  <text class="pillText" x="299" y="353" text-anchor="middle">转写 + 确认流（控风险）</text>
+
+  <text class="t" x="402" y="352">很多“实时需求”拆一层，其实是：先录下来，再结构化</text>
+
+  <!-- Small labels on dashed lines -->
+  <text class="tag" x="344" y="158">否则继续判断</text>
+</svg>
