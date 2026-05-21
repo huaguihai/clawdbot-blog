@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <text x="330" y="38" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#0F172A">敢让 Agent 连内网的四项标准</text>
+  <text x="330" y="62" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">同时满足四条，试点才从“赌运气”变成“可控试错”</text>
+
+  <line x1="210" y1="125" x2="330" y2="200" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="450" y1="125" x2="330" y2="200" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="210" y1="295" x2="330" y2="200" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="450" y1="295" x2="330" y2="200" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <rect x="60" y="80" width="210" height="90" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="76" y="96" width="34" height="34" rx="10" fill="#DBEAFE"/>
+  <text x="93" y="118" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#2563EB">1</text>
+  <text x="120" y="114" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#1E293B">隔离执行环境</text>
+  <text x="76" y="144" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">自托管沙箱运行，出错可销毁，</text>
+  <text x="76" y="161" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">且不污染宿主机</text>
+
+  <rect x="390" y="80" width="210" height="90" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="406" y="96" width="34" height="34" rx="10" fill="#FFEDD5"/>
+  <text x="423" y="118" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#EA580C">2</text>
+  <text x="450" y="114" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#1E293B">网络默认拒绝</text>
+  <text x="406" y="144" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">仅允许白名单内部服务，</text>
+  <text x="406" y="161" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">通过 tunnel 或显式放行</text>
+
+  <rect x="60" y="250" width="210" height="90" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="76" y="266" width="34" height="34" rx="10" fill="#DCFCE7"/>
+  <text x="93" y="288" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#16A34A">3</text>
+  <text x="120" y="284" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#1E293B">临时最小权限凭证</text>
+  <text x="76" y="314" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">凭证可撤销、短时有效，</text>
+  <text x="76" y="331" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">权限只覆盖本次任务所需</text>
+
+  <rect x="390" y="250" width="210" height="90" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="406" y="266" width="34" height="34" rx="10" fill="#F3E8FF"/>
+  <text x="423" y="288" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#9333EA">4</text>
+  <text x="450" y="284" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#1E293B">可回放审计记录</text>
+  <text x="406" y="314" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">记录工具调用、参数、返回、</text>
+  <text x="406" y="331" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">以及实际写入内容</text>
+
+  <rect x="245" y="165" width="170" height="70" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="260" y="181" width="40" height="40" rx="12" fill="#FEF3C7"/>
+  <text x="280" y="206" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#D97706">✓</text>
+  <text x="330" y="193" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#0F172A">可控试错</text>
+  <text x="330" y="212" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">而不是赌运气</text>
+
+  <text x="330" y="376" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#64748B">核心判断：不是要求 Agent 永不犯错，而是确保犯错时不会拖垮公司环境</text>
+</svg>

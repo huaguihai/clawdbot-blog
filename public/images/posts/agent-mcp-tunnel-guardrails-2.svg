@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .bg { fill:#FAFAFA; }
+      .card { fill:#FFFFFF; filter:url(#shadow); }
+      .stroke { stroke:#E5E7EB; stroke-width:1; }
+      .title { font-family:-apple-system,'Segoe UI',sans-serif; font-size:18px; font-weight:700; fill:#111827; }
+      .sub { font-family:-apple-system,'Segoe UI',sans-serif; font-size:12px; fill:#6B7280; }
+      .h { font-family:-apple-system,'Segoe UI',sans-serif; font-size:13px; font-weight:700; fill:#111827; }
+      .t { font-family:-apple-system,'Segoe UI',sans-serif; font-size:12px; fill:#111827; }
+      .muted { font-family:-apple-system,'Segoe UI',sans-serif; font-size:11px; fill:#6B7280; }
+      .dash { stroke-dasharray:6 5; }
+      .pillText { font-family:-apple-system,'Segoe UI',sans-serif; font-size:11px; font-weight:700; fill:#FFFFFF; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" x="0" y="0" width="660" height="400" rx="12"/>
+
+  <!-- Title -->
+  <text class="title" x="28" y="44">自托管沙箱 vs MCP tunnel：分别装上哪道门</text>
+  <text class="sub" x="28" y="66">一个管“在哪跑/能碰什么”，一个管“能连到哪/只开哪条路”</text>
+
+  <!-- Left card: Sandbox -->
+  <rect class="card" x="28" y="92" width="292" height="252" rx="12"/>
+  <rect x="28" y="92" width="292" height="44" rx="12" fill="#2563EB" opacity="0.12"/>
+  <text class="h" x="48" y="120">自托管沙箱（执行环境）</text>
+  <rect x="230" y="104" width="76" height="20" rx="10" fill="#2563EB"/>
+  <text class="pillText" x="242" y="118">环境门</text>
+
+  <!-- Sandbox diagram -->
+  <!-- Outer boundary -->
+  <rect x="52" y="148" width="244" height="176" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="2"/>
+  <text class="muted" x="60" y="168">公司隔间：隔离 + 限权</text>
+
+  <!-- Agent box -->
+  <rect x="74" y="184" width="92" height="44" rx="10" fill="#FFFFFF" stroke="#9333EA" stroke-width="2"/>
+  <text class="t" x="92" y="209">Agent</text>
+
+  <!-- Controls list -->
+  <rect x="178" y="184" width="104" height="28" rx="8" fill="#16A34A" opacity="0.12" stroke="#16A34A"/>
+  <text class="t" x="188" y="202">文件隔离</text>
+
+  <rect x="178" y="220" width="104" height="28" rx="8" fill="#16A34A" opacity="0.12" stroke="#16A34A"/>
+  <text class="t" x="188" y="238">网络限制</text>
+
+  <rect x="178" y="256" width="104" height="28" rx="8" fill="#16A34A" opacity="0.12" stroke="#16A34A"/>
+  <text class="t" x="188" y="274">资源配额</text>
+
+  <!-- Dashed connections inside sandbox -->
+  <line x1="166" y1="206" x2="178" y2="198" stroke="#9CA3AF" stroke-width="1.5" class="dash"/>
+  <line x1="166" y1="206" x2="178" y2="234" stroke="#9CA3AF" stroke-width="1.5" class="dash"/>
+  <line x1="166" y1="206" x2="178" y2="270" stroke="#9CA3AF" stroke-width="1.5" class="dash"/>
+
+  <text class="muted" x="52" y="356">适合：脚本/抓取/报表/离线处理</text>
+
+  <!-- Right card: MCP tunnel -->
+  <rect class="card" x="340" y="92" width="292" height="252" rx="12"/>
+  <rect x="340" y="92" width="292" height="44" rx="12" fill="#EA580C" opacity="0.12"/>
+  <text class="h" x="360" y="120">MCP tunnel（连接通道）</text>
+  <rect x="542" y="104" width="76" height="20" rx="10" fill="#EA580C"/>
+  <text class="pillText" x="554" y="118">通道门</text>
+
+  <!-- Network diagram -->
+  <!-- Agent side -->
+  <rect x="362" y="170" width="114" height="62" rx="12" fill="#FFFFFF" stroke="#9333EA" stroke-width="2"/>
+  <text class="t" x="396" y="198">Agent</text>
+  <text class="muted" x="372" y="218">外网/本地</text>
+
+  <!-- Firewall -->
+  <rect x="492" y="158" width="16" height="192" rx="8" fill="#D97706" opacity="0.25" stroke="#D97706"/>
+  <text class="muted" x="472" y="154">防火墙</text>
+
+  <!-- Internal MCP service -->
+  <rect x="524" y="176" width="92" height="44" rx="10" fill="#FFFFFF" stroke="#16A34A" stroke-width="2"/>
+  <text class="t" x="532" y="203">指定MCP</text>
+
+  <!-- Other internal services (blocked) -->
+  <rect x="524" y="232" width="92" height="34" rx="10" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text class="muted" x="536" y="254">其他内网</text>
+
+  <rect x="524" y="274" width="92" height="34" rx="10" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text class="muted" x="540" y="296">数据库等</text>
+
+  <!-- Tunnel dashed path -->
+  <path d="M 476 201 C 486 201, 488 201, 492 201" fill="none" stroke="#9CA3AF" stroke-width="1.5" class="dash"/>
+  <path d="M 508 201 C 516 201, 518 201, 524 201" fill="none" stroke="#9CA3AF" stroke-width="1.5" class="dash"/>
+  <text class="muted" x="414" y="248">只通到指定工位</text>
+
+  <!-- Blocked lines -->
+  <line x1="508" y1="249" x2="524" y2="249" stroke="#EF4444" stroke-width="1.5" class="dash"/>
+  <line x1="508" y1="291" x2="524" y2="291" stroke="#EF4444" stroke-width="1.5" class="dash"/>
+  <line x1="496" y1="244" x2="516" y2="254" stroke="#EF4444" stroke-width="1.5"/>
+  <line x1="516" y1="244" x2="496" y2="254" stroke="#EF4444" stroke-width="1.5"/>
+  <line x1="496" y1="286" x2="516" y2="296" stroke="#EF4444" stroke-width="1.5"/>
+  <line x1="516" y1="286" x2="496" y2="296" stroke="#EF4444" stroke-width="1.5"/>
+
+  <text class="muted" x="340" y="356">适合：内网API/只读查库/CRM/工单/知识库</text>
+
+  <!-- Bottom callout summary -->
+  <rect x="28" y="352" width="604" height="36" rx="10" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <circle cx="48" cy="370" r="6" fill="#2563EB"/>
+  <circle cx="66" cy="370" r="6" fill="#EA580C"/>
+  <text class="t" x="84" y="375">当 Agent 要“动公司资产”时：先画清 沙箱(执行边界) + tunnel(连接边界)</text>
+</svg>
