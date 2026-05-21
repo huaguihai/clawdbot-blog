@@ -1,0 +1,84 @@
+<svg viewBox="0 0 660 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .bg { fill: #FAFAFA; }
+      .card { fill: #FFFFFF; filter: url(#shadow); }
+      .title { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 18px; font-weight: 700; fill: #0f172a; }
+      .h { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 14px; font-weight: 700; fill: #0f172a; }
+      .t { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 12px; fill: #334155; }
+      .pillText { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 12px; font-weight: 700; fill: #0f172a; }
+      .dash { stroke: #64748b; stroke-width: 2; stroke-dasharray: 6 6; fill: none; }
+      .iconText { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 12px; font-weight: 700; fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" x="10" y="10" width="640" height="380" rx="12"/>
+
+  <!-- Title -->
+  <text class="title" x="40" y="52">自包含块：任务拆分 → 部署分流 → 四重兜底</text>
+
+  <!-- Left card: High-risk / On-prem -->
+  <rect class="card" x="40" y="80" width="280" height="210" rx="12"/>
+  <rect x="40" y="80" width="280" height="44" rx="12" fill="#2563EB" opacity="0.10"/>
+  <text class="h" x="56" y="108">高风险任务（默认内网/本地）</text>
+
+  <!-- bullets -->
+  <circle cx="60" cy="142" r="4" fill="#2563EB"/>
+  <text class="t" x="74" y="146">密钥/凭据相关编码与排障</text>
+
+  <circle cx="60" cy="170" r="4" fill="#2563EB"/>
+  <text class="t" x="74" y="174">客户数据、受监管信息处理</text>
+
+  <circle cx="60" cy="198" r="4" fill="#2563EB"/>
+  <text class="t" x="74" y="202">核心业务逻辑与关键系统变更</text>
+
+  <rect x="56" y="226" width="140" height="28" rx="999" fill="#2563EB"/>
+  <text class="iconText" x="70" y="245">执行环境：内网/本地</text>
+
+  <!-- Right card: Low-risk / Cloud -->
+  <rect class="card" x="340" y="80" width="280" height="210" rx="12"/>
+  <rect x="340" y="80" width="280" height="44" rx="12" fill="#16A34A" opacity="0.10"/>
+  <text class="h" x="356" y="108">低风险任务（可先云端提效）</text>
+
+  <circle cx="360" cy="142" r="4" fill="#16A34A"/>
+  <text class="t" x="374" y="146">文档改写、说明补全</text>
+
+  <circle cx="360" cy="170" r="4" fill="#16A34A"/>
+  <text class="t" x="374" y="174">通用重构、格式化</text>
+
+  <circle cx="360" cy="198" r="4" fill="#16A34A"/>
+  <text class="t" x="374" y="202">测试骨架、开源依赖示例</text>
+
+  <rect x="356" y="226" width="124" height="28" rx="999" fill="#16A34A"/>
+  <text class="iconText" x="370" y="245">执行环境：云端</text>
+
+  <!-- dashed separation arrow -->
+  <path class="dash" d="M 320 185 C 330 185, 330 185, 340 185"/>
+  <polygon points="338,179 350,185 338,191" fill="#64748b"/>
+  <text class="t" x="268" y="170">按风险拆任务</text>
+
+  <!-- Bottom card: 4 safeguards -->
+  <rect class="card" x="40" y="305" width="580" height="70" rx="12"/>
+  <text class="h" x="56" y="332">落地兜底（不要靠“大家注意安全”）</text>
+
+  <!-- 4 pills -->
+  <rect x="56" y="344" width="124" height="26" rx="999" fill="#EA580C" opacity="0.12"/>
+  <text class="pillText" x="70" y="361">默认拒绝</text>
+
+  <rect x="194" y="344" width="124" height="26" rx="999" fill="#9333EA" opacity="0.12"/>
+  <text class="pillText" x="208" y="361">最小权限</text>
+
+  <rect x="332" y="344" width="144" height="26" rx="999" fill="#D97706" opacity="0.14"/>
+  <text class="pillText" x="346" y="361">可验证脱敏</text>
+
+  <rect x="490" y="344" width="114" height="26" rx="999" fill="#2563EB" opacity="0.12"/>
+  <text class="pillText" x="504" y="361">完整审计</text>
+
+  <!-- dashed connectors from both cards to safeguards -->
+  <path class="dash" d="M 180 290 L 180 305"/>
+  <path class="dash" d="M 480 290 L 480 305"/>
+</svg>

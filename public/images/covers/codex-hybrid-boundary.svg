@@ -1,0 +1,79 @@
+<svg width="660" height="300" viewBox="0 0 660 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="660" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#44403C"/>
+      <stop offset="1" stop-color="#1C1917"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="50" y1="0" x2="660" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EA580C"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="660" height="300" fill="url(#bgGrad)"/>
+
+  <g opacity="0.06" fill="#D6D3D1">
+    <circle cx="24" cy="18" r="1.2"/><circle cx="58" cy="42" r="0.9"/><circle cx="96" cy="28" r="1.1"/>
+    <circle cx="140" cy="54" r="0.8"/><circle cx="182" cy="24" r="1.3"/><circle cx="228" cy="46" r="0.9"/>
+    <circle cx="266" cy="20" r="1.1"/><circle cx="312" cy="38" r="0.8"/><circle cx="356" cy="26" r="1.2"/>
+    <circle cx="402" cy="44" r="0.9"/><circle cx="446" cy="22" r="1"/><circle cx="492" cy="48" r="1.2"/>
+    <circle cx="536" cy="30" r="0.8"/><circle cx="580" cy="18" r="1.1"/><circle cx="622" cy="40" r="0.9"/>
+    <circle cx="38" cy="84" r="1"/><circle cx="84" cy="96" r="0.8"/><circle cx="126" cy="74" r="1.2"/>
+    <circle cx="170" cy="102" r="0.9"/><circle cx="214" cy="86" r="1"/><circle cx="252" cy="110" r="0.8"/>
+    <circle cx="296" cy="78" r="1.2"/><circle cx="340" cy="98" r="0.9"/><circle cx="384" cy="82" r="1.1"/>
+    <circle cx="430" cy="106" r="0.8"/><circle cx="474" cy="88" r="1"/><circle cx="518" cy="100" r="1.2"/>
+    <circle cx="562" cy="76" r="0.9"/><circle cx="604" cy="94" r="1.1"/><circle cx="636" cy="108" r="0.8"/>
+    <circle cx="28" cy="146" r="1.1"/><circle cx="72" cy="132" r="0.8"/><circle cx="118" cy="154" r="1"/>
+    <circle cx="162" cy="140" r="1.2"/><circle cx="204" cy="160" r="0.9"/><circle cx="246" cy="138" r="1.1"/>
+    <circle cx="292" cy="152" r="0.8"/><circle cx="334" cy="134" r="1"/><circle cx="378" cy="158" r="1.2"/>
+    <circle cx="424" cy="144" r="0.9"/><circle cx="468" cy="162" r="1.1"/><circle cx="512" cy="136" r="0.8"/>
+    <circle cx="556" cy="150" r="1"/><circle cx="598" cy="140" r="1.2"/><circle cx="628" cy="156" r="0.9"/>
+    <circle cx="40" cy="206" r="0.9"/><circle cx="86" cy="190" r="1.1"/><circle cx="130" cy="214" r="0.8"/>
+    <circle cx="176" cy="198" r="1"/><circle cx="220" cy="222" r="1.2"/><circle cx="262" cy="204" r="0.9"/>
+    <circle cx="306" cy="216" r="1.1"/><circle cx="350" cy="194" r="0.8"/><circle cx="394" cy="220" r="1"/>
+    <circle cx="438" cy="202" r="1.2"/><circle cx="482" cy="214" r="0.9"/><circle cx="526" cy="196" r="1.1"/>
+    <circle cx="570" cy="224" r="0.8"/><circle cx="612" cy="206" r="1"/><circle cx="638" cy="218" r="1.2"/>
+    <circle cx="22" cy="262" r="1.1"/><circle cx="68" cy="246" r="0.8"/><circle cx="112" cy="270" r="1"/>
+    <circle cx="156" cy="254" r="1.2"/><circle cx="202" cy="276" r="0.9"/><circle cx="244" cy="248" r="1.1"/>
+    <circle cx="288" cy="266" r="0.8"/><circle cx="332" cy="250" r="1"/><circle cx="376" cy="274" r="1.2"/>
+    <circle cx="420" cy="258" r="0.9"/><circle cx="466" cy="280" r="1.1"/><circle cx="510" cy="246" r="0.8"/>
+    <circle cx="554" cy="268" r="1"/><circle cx="598" cy="252" r="1.2"/><circle cx="634" cy="278" r="0.9"/>
+  </g>
+
+  <rect x="50" y="24" width="5" height="230" rx="2.5" fill="url(#accentGrad)"/>
+
+  <text x="70" y="98" fill="#FAFAF9" font-size="22" font-weight="700" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <tspan x="70" dy="0">混合部署 Codex</tspan>
+    <tspan x="70" dy="28">一张表定出网边界</tspan>
+  </text>
+
+  <text x="70" y="172" fill="#A8A29E" font-size="13" font-weight="400" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    混合部署 Codex 最难不是效果，而是代码与密钥能不能出网。本文给你一张决策表
+  </text>
+
+  <g>
+    <rect x="70" y="236" width="82" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="111" y="252" text-anchor="middle" fill="#D6D3D1" font-size="12" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">混合部署</text>
+
+    <rect x="162" y="236" width="82" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="203" y="252" text-anchor="middle" fill="#D6D3D1" font-size="12" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">出网边界</text>
+
+    <rect x="254" y="236" width="82" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="295" y="252" text-anchor="middle" fill="#D6D3D1" font-size="12" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">决策矩阵</text>
+  </g>
+
+  <g opacity="0.22" stroke="#A8A29E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <rect x="492" y="196" width="64" height="44" rx="6"/>
+    <path d="M513.333 196V240"/>
+    <path d="M534.666 196V240"/>
+    <path d="M492 210.666H556"/>
+    <path d="M492 225.333H556"/>
+  </g>
+
+  <g opacity="0.2" stroke="#EA580C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M592 188L618 198V218C618 232 606.5 240 592 246C577.5 240 566 232 566 218V198L592 188Z"/>
+    <path d="M582 217L589 224L603 209"/>
+  </g>
+
+  <rect x="0" y="293" width="660" height="7" fill="url(#accentGrad)"/>
+</svg>
