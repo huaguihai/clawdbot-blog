@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563EB"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#16A34A"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+
+  <text x="330" y="38" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#111827">最短上手路径：先验证，再决定是否折腾</text>
+  <text x="330" y="62" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">核心区别：路线 A 追求极限体积，路线 B 追求最快业务验证</text>
+
+  <rect x="36" y="86" width="286" height="268" rx="16" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <rect x="338" y="86" width="286" height="268" rx="16" fill="#F0FDF4" stroke="#BBF7D0"/>
+
+  <text x="58" y="116" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#2563EB">路线 A：先跑 1.25-bit</text>
+  <text x="58" y="136" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">适合：想验证超低体积方案</text>
+
+  <rect x="56" y="152" width="246" height="42" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="72" y="169" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#EA580C" font-weight="700">1</text>
+  <text x="88" y="169" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#111827">获取 Hy-MT2 1.25Bit GGUF 模型</text>
+  <text x="88" y="185" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6B7280">先拿到目标模型文件</text>
+
+  <rect x="56" y="208" width="246" height="42" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="72" y="225" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#EA580C" font-weight="700">2</text>
+  <text x="88" y="225" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#111827">获取 llama.cpp PR #22836 版本</text>
+  <text x="88" y="241" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6B7280">关键是 STQ 内核支持，不是主线最新版</text>
+
+  <rect x="56" y="264" width="246" height="42" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="72" y="281" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#EA580C" font-weight="700">3</text>
+  <text x="88" y="281" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#111827">CMake 编译</text>
+  <text x="88" y="297" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6B7280">编译成本更高，可能遇到兼容问题</text>
+
+  <line x1="179" y1="194" x2="179" y2="208" stroke="#2563EB" stroke-width="2" stroke-dasharray="5 5" marker-end="url(#arrowBlue)"/>
+  <line x1="179" y1="250" x2="179" y2="264" stroke="#2563EB" stroke-width="2" stroke-dasharray="5 5" marker-end="url(#arrowBlue)"/>
+
+  <rect x="358" y="152" width="246" height="42" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="374" y="169" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#D97706" font-weight="700">1</text>
+  <text x="390" y="169" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#111827">先用 1.8B-GGUF 跑通本地翻译</text>
+  <text x="390" y="185" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6B7280">目标是先拿到第一轮结果</text>
+
+  <rect x="358" y="208" width="246" height="42" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="374" y="225" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#D97706" font-weight="700">2</text>
+  <text x="390" y="225" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#111827">快速部署与排障</text>
+  <text x="390" y="241" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6B7280">兼容路径更现实，少走弯路</text>
+
+  <rect x="358" y="264" width="246" height="42" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="374" y="281" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#D97706" font-weight="700">3</text>
+  <text x="390" y="281" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#111827">评估结果是否可进产品</text>
+  <text x="390" y="297" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6B7280">先省时间，再决定要不要极限压缩</text>
+
+  <line x1="481" y1="194" x2="481" y2="208" stroke="#16A34A" stroke-width="2" stroke-dasharray="5 5" marker-end="url(#arrowGreen)"/>
+  <line x1="481" y1="250" x2="481" y2="264" stroke="#16A34A" stroke-width="2" stroke-dasharray="5 5" marker-end="url(#arrowGreen)"/>
+
+  <text x="360" y="116" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#16A34A">路线 B：先跑 1.8B-GGUF</text>
+  <text x="360" y="136" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">适合：尽快验证能否进入产品</text>
+
+  <rect x="56" y="320" width="246" height="22" rx="11" fill="#FEE2E2"/>
+  <text x="179" y="335" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#991B1B">代价：编译与兼容成本高</text>
+
+  <rect x="358" y="320" width="246" height="22" rx="11" fill="#DCFCE7"/>
+  <text x="481" y="335" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#166534">收益：更快拿到业务样本</text>
+
+  <rect x="222" y="354" width="216" height="28" rx="14" fill="#FFFFFF" stroke="#E5E7EB" filter="url(#shadow)"/>
+  <text x="330" y="372" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#9333EA">建议默认选 B，A 留给后续极限优化</text>
+</svg>

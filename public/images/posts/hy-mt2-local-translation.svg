@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <text x="330" y="40" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#111827">440MB 本地翻译模型为何打动独立开发者</text>
+  <text x="330" y="66" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">核心不是能否演示翻译，而是把持续 API 成本变成可控投入</text>
+
+  <rect x="40" y="100" width="240" height="122" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="60" y="128" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#EA580C">云翻译 API</text>
+  <text x="60" y="154" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 初期接入快，适合快速上线</text>
+  <text x="60" y="178" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 页面、文档、邮件反复改动</text>
+  <text x="60" y="202" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#DC2626">• 调用越多，月度成本越持续累积</text>
+
+  <rect x="380" y="100" width="240" height="122" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="400" y="128" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#2563EB">440MB 本地模型</text>
+  <text x="400" y="154" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 一次部署后可反复使用</text>
+  <text x="400" y="178" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#16A34A">• 边际调用成本接近 0</text>
+  <text x="400" y="202" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 本地/离线/隐私场景更容易算账</text>
+
+  <line x1="280" y1="161" x2="380" y2="161" stroke="#9333EA" stroke-width="2" stroke-dasharray="6 6"/>
+  <text x="330" y="150" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#9333EA">价值转移</text>
+  <text x="330" y="174" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">从效果演示 → 成本可控</text>
+
+  <rect x="120" y="250" width="420" height="108" rx="18" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="330" y="278" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="17" font-weight="700" fill="#111827">最受益的 5 类独立开发场景</text>
+
+  <rect x="146" y="295" width="58" height="38" rx="10" fill="#DBEAFE"/>
+  <text x="175" y="318" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#2563EB">SaaS</text>
+
+  <rect x="217" y="295" width="58" height="38" rx="10" fill="#FED7AA"/>
+  <text x="246" y="318" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#EA580C">文档</text>
+
+  <rect x="288" y="295" width="84" height="38" rx="10" fill="#E9D5FF"/>
+  <text x="330" y="318" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#9333EA">即时插件</text>
+
+  <rect x="385" y="295" width="58" height="38" rx="10" fill="#DCFCE7"/>
+  <text x="414" y="318" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#16A34A">隐私</text>
+
+  <rect x="456" y="295" width="58" height="38" rx="10" fill="#FEF3C7"/>
+  <text x="485" y="318" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#D97706">移动端</text>
+
+  <line x1="330" y1="222" x2="330" y2="250" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="6 6"/>
+</svg>

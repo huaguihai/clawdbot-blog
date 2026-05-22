@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .t { font-family: -apple-system, 'Segoe UI', sans-serif; fill: #0f172a; }
+      .muted { fill: #475569; }
+      .card { fill: #ffffff; filter: url(#shadow); }
+      .stroke { stroke: #94a3b8; stroke-width: 2; stroke-dasharray: 6 6; fill: none; }
+      .badge { font-size: 12px; font-weight: 700; }
+      .title { font-size: 16px; font-weight: 800; }
+      .body { font-size: 13px; }
+    </style>
+  </defs>
+
+  <!-- Header -->
+  <text x="24" y="34" class="t" style="font-size:18px;font-weight:900;">现在就跑 1.25-bit GGUF：先过三道关</text>
+  <text x="24" y="56" class="t muted" style="font-size:13px;">核心硬坑：依赖 STQ 内核（llama.cpp PR #22836）未并入主线</text>
+
+  <!-- Card 1: Goal -->
+  <rect x="24" y="78" width="612" height="64" rx="12" class="card"/>
+  <rect x="24" y="78" width="10" height="64" rx="12" fill="#2563EB"/>
+  <text x="44" y="105" class="t title">目标</text>
+  <text x="44" y="126" class="t body muted">你是要“上线稳定”，还是只是“演示能跑”？</text>
+  <text x="520" y="105" class="t badge" fill="#2563EB">起点</text>
+
+  <!-- Split to two paths -->
+  <path d="M330 142 L330 164" class="stroke"/>
+  <path d="M330 164 L170 164 L170 182" class="stroke"/>
+  <path d="M330 164 L490 164 L490 182" class="stroke"/>
+
+  <!-- Card 2A: Production path -->
+  <rect x="24" y="182" width="292" height="88" rx="12" class="card"/>
+  <rect x="24" y="182" width="10" height="88" rx="12" fill="#16A34A"/>
+  <text x="44" y="209" class="t title">优先：可维护上线</text>
+  <text x="44" y="230" class="t body muted">建议先用 1.8B-GGUF（非 1.25-bit）</text>
+  <text x="44" y="251" class="t body muted">减少依赖风险与部署复杂度</text>
+  <text x="250" y="209" class="t badge" fill="#16A34A">更稳</text>
+
+  <!-- Card 2B: Demo path -->
+  <rect x="344" y="182" width="292" height="88" rx="12" class="card"/>
+  <rect x="344" y="182" width="10" height="88" rx="12" fill="#EA580C"/>
+  <text x="364" y="209" class="t title">可以：折腾验证</text>
+  <text x="364" y="230" class="t body muted">但不是“ollama pull 一把梭”</text>
+  <text x="364" y="251" class="t body muted">先确认 PR #22836 / STQ 内核可用</text>
+  <text x="568" y="209" class="t badge" fill="#EA580C">有坑</text>
+
+  <!-- Merge to checklist -->
+  <path d="M170 270 L170 292 L330 292" class="stroke"/>
+  <path d="M490 270 L490 292 L330 292" class="stroke"/>
+  <path d="M330 292 L330 308" class="stroke"/>
+
+  <!-- Checklist Card -->
+  <rect x="24" y="308" width="612" height="72" rx="12" class="card"/>
+  <rect x="24" y="308" width="10" height="72" rx="12" fill="#9333EA"/>
+  <text x="44" y="335" class="t title">落地前验证清单（必须自测）</text>
+
+  <!-- Bullets -->
+  <circle cx="50" cy="356" r="4" fill="#D97706"/>
+  <text x="62" y="360" class="t body muted">精度损失：官方缺少完整业务 benchmark，不能默认“不掉点”</text>
+
+  <circle cx="50" cy="376" r="4" fill="#D97706"/>
+  <text x="62" y="380" class="t body muted">领域差异：开源 SOTA 不等于你的业务赢家（语言/场景需评测）</text>
+</svg>
