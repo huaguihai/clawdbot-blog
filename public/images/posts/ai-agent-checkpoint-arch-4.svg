@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA" />
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563EB"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#EA580C"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#16A34A"/>
+    </marker>
+  </defs>
+
+  <text x="330" y="34" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#0F172A">session / harness / sandbox 最小可用拆分</text>
+  <text x="330" y="58" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">把记账、调度、执行隔离，支持恢复、回放与重试</text>
+
+  <rect x="40" y="90" width="170" height="240" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="52" y="104" width="54" height="24" rx="12" fill="#DBEAFE"/>
+  <text x="79" y="120" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#2563EB">账本</text>
+  <text x="125" y="150" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#1E293B">session</text>
+  <text x="125" y="172" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#64748B">只追加事件流</text>
+  <rect x="58" y="192" width="134" height="30" rx="10" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <text x="125" y="211" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#334155">append：写入每一步</text>
+  <rect x="58" y="230" width="134" height="30" rx="10" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <text x="125" y="249" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#334155">replay：从 seq 回放</text>
+  <rect x="58" y="268" width="134" height="30" rx="10" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <text x="125" y="287" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#334155">debug：定位失败现场</text>
+
+  <rect x="245" y="90" width="170" height="240" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="257" y="104" width="54" height="24" rx="12" fill="#FEE2E2"/>
+  <text x="284" y="120" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#EA580C">领班</text>
+  <text x="330" y="150" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#1E293B">harness</text>
+  <text x="330" y="172" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#64748B">无状态 while-loop</text>
+  <rect x="263" y="192" width="134" height="30" rx="10" fill="#FFF7ED" stroke="#FED7AA"/>
+  <text x="330" y="211" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#9A3412">wake(sessionId)</text>
+  <rect x="263" y="230" width="134" height="30" rx="10" fill="#FFF7ED" stroke="#FED7AA"/>
+  <text x="330" y="249" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#9A3412">读 checkpoint 恢复</text>
+  <rect x="263" y="268" width="134" height="30" rx="10" fill="#FFF7ED" stroke="#FED7AA"/>
+  <text x="330" y="287" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#9A3412">cursor 后继续处理</text>
+
+  <rect x="450" y="90" width="170" height="240" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="462" y="104" width="54" height="24" rx="12" fill="#DCFCE7"/>
+  <text x="489" y="120" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#16A34A">灶台</text>
+  <text x="535" y="150" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#1E293B">sandbox</text>
+  <text x="535" y="172" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#64748B">可替换的隔离执行环境</text>
+  <rect x="468" y="192" width="134" height="30" rx="10" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <text x="535" y="211" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#166534">provision()</text>
+  <rect x="468" y="230" width="134" height="30" rx="10" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <text x="535" y="249" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#166534">execute() / snapshot()</text>
+  <rect x="468" y="268" width="134" height="30" rx="10" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <text x="535" y="287" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#166534">destroy()</text>
+
+  <line x1="210" y1="210" x2="245" y2="210" stroke="#2563EB" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#arrowBlue)"/>
+  <text x="227" y="198" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#2563EB">读历史</text>
+
+  <line x1="415" y1="210" x2="450" y2="210" stroke="#EA580C" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#arrowOrange)"/>
+  <text x="432" y="198" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#EA580C">调用执行</text>
+
+  <path d="M535 330 C535 360, 330 360, 330 316" fill="none" stroke="#16A34A" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#arrowGreen)"/>
+  <text x="466" y="362" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#16A34A">结果回写 session，继续下一轮</text>
+
+  <rect x="164" y="340" width="332" height="38" rx="12" fill="#F5F3FF" stroke="#DDD6FE"/>
+  <text x="330" y="364" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#6B21A8">核心原则：session 负责记账，harness 负责恢复与调度，sandbox 负责隔离执行</text>
+</svg>

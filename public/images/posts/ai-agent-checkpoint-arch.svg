@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .bg { fill:#FAFAFA; }
+      .panel { fill:#FFFFFF; stroke:#E5E7EB; stroke-width:1; filter:url(#shadow); }
+      .title { font-family:-apple-system, 'Segoe UI', sans-serif; font-size:16px; font-weight:700; fill:#111827; }
+      .subtitle { font-family:-apple-system, 'Segoe UI', sans-serif; font-size:12px; fill:#6B7280; }
+      .label { font-family:-apple-system, 'Segoe UI', sans-serif; font-size:13px; font-weight:700; fill:#111827; }
+      .small { font-family:-apple-system, 'Segoe UI', sans-serif; font-size:12px; fill:#374151; }
+      .tiny { font-family:-apple-system, 'Segoe UI', sans-serif; font-size:11px; fill:#6B7280; }
+      .dash { stroke:#9CA3AF; stroke-width:2; stroke-dasharray:6 6; fill:none; }
+      .warn { fill:#EA580C; }
+      .ok { fill:#16A34A; }
+      .blue { fill:#2563EB; }
+      .purple { fill:#9333EA; }
+      .yellow { fill:#D97706; }
+      .cardStroke { stroke:#E5E7EB; stroke-width:1; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#9CA3AF"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" x="0" y="0" width="660" height="400" rx="12"/>
+
+  <!-- Header -->
+  <text class="title" x="24" y="34">为什么 Demo 能跑，生产会卡死/丢上下文？</text>
+  <text class="subtitle" x="24" y="56">核心：把“脑子/手脚/账本”塞进同一进程，会导致重启即丢状态；生产需解耦与持久化</text>
+
+  <!-- Left panel: Demo -->
+  <rect class="panel" x="24" y="78" width="300" height="298" rx="12"/>
+  <text class="label" x="44" y="110">Demo：三样挤在一个进程/容器</text>
+  <text class="tiny" x="44" y="130">断电/卡死/重启 → 状态、证据、恢复点一起没</text>
+
+  <!-- Demo single box containing 3 -->
+  <rect x="56" y="152" width="236" height="172" rx="12" fill="#FFFFFF" class="cardStroke"/>
+  <text class="small" x="74" y="178">同一屋子（同一进程）</text>
+
+  <!-- Brain -->
+  <rect x="78" y="192" width="192" height="34" rx="10" fill="#2563EB" opacity="0.12"/>
+  <circle cx="96" cy="209" r="6" class="blue"/>
+  <text class="small" x="110" y="214">脑子：模型对话 + 规划</text>
+
+  <!-- Hands -->
+  <rect x="78" y="234" width="192" height="34" rx="10" fill="#9333EA" opacity="0.12"/>
+  <circle cx="96" cy="251" r="6" class="purple"/>
+  <text class="small" x="110" y="256">手脚：执行环境 + 工具</text>
+
+  <!-- Ledger -->
+  <rect x="78" y="276" width="192" height="34" rx="10" fill="#D97706" opacity="0.12"/>
+  <circle cx="96" cy="293" r="6" class="yellow"/>
+  <text class="small" x="110" y="298">账本：步骤记录/证据</text>
+
+  <!-- Power off icon + note -->
+  <rect x="56" y="334" width="236" height="28" rx="10" fill="#EA580C" opacity="0.10"/>
+  <path d="M78 343 C78 339, 90 339, 90 343 C90 350, 78 350, 78 343 Z" fill="#EA580C" opacity="0.75"/>
+  <path d="M84 338 L84 348" stroke="#FFFFFF" stroke-width="2"/>
+  <text class="small" x="102" y="352" fill="#7C2D12">一挂就全挂：无法恢复</text>
+
+  <!-- Right panel: Production -->
+  <rect class="panel" x="336" y="78" width="300" height="298" rx="12"/>
+  <text class="label" x="356" y="110">生产：解耦 + 可重建 + 可持续</text>
+  <text class="tiny" x="356" y="130">账本在外持久化；执行环境可替换；领班可重启续跑</text>
+
+  <!-- Production components -->
+  <!-- Orchestrator/Brain -->
+  <rect x="364" y="154" width="244" height="54" rx="12" fill="#2563EB" opacity="0.10" class="cardStroke"/>
+  <circle cx="386" cy="181" r="7" class="blue"/>
+  <text class="small" x="402" y="178">脑子/领班（可换班）</text>
+  <text class="tiny" x="402" y="196">模型对话 + 规划流程（可重启）</text>
+
+  <!-- Executor -->
+  <rect x="364" y="224" width="244" height="66" rx="12" fill="#9333EA" opacity="0.10" class="cardStroke"/>
+  <circle cx="386" cy="251" r="7" class="purple"/>
+  <text class="small" x="402" y="248">手脚（可随时换新）</text>
+  <text class="tiny" x="402" y="266">沙盒/容器/工具调用（可重建）</text>
+  <rect x="402" y="272" width="86" height="14" rx="7" fill="#FFFFFF" class="cardStroke"/>
+  <text class="tiny" x="412" y="283">可替换实例</text>
+
+  <!-- External Ledger -->
+  <rect x="364" y="306" width="244" height="54" rx="12" fill="#16A34A" opacity="0.10" class="cardStroke"/>
+  <circle cx="386" cy="333" r="7" class="ok"/>
+  <text class="small" x="402" y="330">账本在屋外（持久化）</text>
+  <text class="tiny" x="402" y="348">步骤日志/证据/检查点（可恢复）</text>
+
+  <!-- Dashed links -->
+  <path class="dash" d="M486 208 L486 224" marker-end="url(#arrow)"/>
+  <path class="dash" d="M486 290 L486 306" marker-end="url(#arrow)"/>
+  <path class="dash" d="M608 257 C630 257, 630 333, 608 333" marker-end="url(#arrow)"/>
+  <text class="tiny" x="560" y="246">每步写账本</text>
+
+  <!-- Divider note -->
+  <path class="dash" d="M330 90 L330 370"/>
+  <text class="tiny" x="306" y="86">对比</text>
+</svg>

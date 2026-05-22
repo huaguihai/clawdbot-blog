@@ -1,0 +1,62 @@
+<svg width="660" height="300" viewBox="0 0 660 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="660" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#44403C"/>
+      <stop offset="1" stop-color="#1C1917"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="50" y1="0" x2="660" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EA580C"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+    <pattern id="grain" width="36" height="36" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="8" r="1.1" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="17" cy="6" r="0.8" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="28" cy="11" r="1.2" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="11" cy="19" r="0.9" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="24" cy="22" r="1.1" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="7" cy="30" r="0.8" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="31" cy="31" r="1" fill="#D6D3D1" opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <rect width="660" height="300" fill="url(#bgGrad)"/>
+  <rect width="660" height="300" fill="url(#grain)"/>
+
+  <rect x="50" y="34" width="5" height="210" rx="2.5" fill="url(#accentGrad)"/>
+
+  <text x="70" y="92" fill="#FAFAF9" font-size="22" font-weight="700" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+    <tspan x="70" dy="0">AI Agent 总重跑？</tspan>
+    <tspan x="70" dy="28">照抄不断点架构</tspan>
+  </text>
+
+  <text x="70" y="148" fill="#A8A29E" font-size="13" font-weight="400" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+    AI Agent 一崩就得从头再来，多半不是模型不行，而是「脑子、手脚、日志」绑
+  </text>
+
+  <g>
+    <rect x="70" y="238" width="78" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="109" y="254" text-anchor="middle" fill="#D6D3D1" font-size="12" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, sans-serif">可恢复</text>
+
+    <rect x="158" y="238" width="78" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="197" y="254" text-anchor="middle" fill="#D6D3D1" font-size="12" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, sans-serif">可重试</text>
+
+    <rect x="246" y="238" width="78" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="285" y="254" text-anchor="middle" fill="#D6D3D1" font-size="12" font-family="Inter, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, sans-serif">可追踪</text>
+  </g>
+
+  <g opacity="0.22" stroke="#A8A29E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <rect x="500" y="188" width="54" height="34" rx="6"/>
+    <rect x="518" y="206" width="54" height="34" rx="6"/>
+    <rect x="536" y="224" width="54" height="34" rx="6"/>
+    <path d="M514 205L524 195"/>
+    <path d="M532 223L542 213"/>
+  </g>
+
+  <g opacity="0.2" stroke="#EA580C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M595 202a24 24 0 1 1-9 47"/>
+    <path d="M586 243l-7 6 9 2"/>
+    <circle cx="594" cy="226" r="2.5" fill="#EA580C" stroke="none"/>
+  </g>
+
+  <rect x="0" y="293" width="660" height="7" fill="url(#accentGrad)"/>
+</svg>
