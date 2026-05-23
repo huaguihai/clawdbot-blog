@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <style>
+    text { font-family: -apple-system, 'Segoe UI', sans-serif; fill: #0F172A; }
+    .title { font-size: 24px; font-weight: 700; }
+    .subtitle { font-size: 13px; fill: #475569; }
+    .card-title { font-size: 16px; font-weight: 700; }
+    .card-text { font-size: 12px; fill: #475569; }
+    .warn-title { font-size: 16px; font-weight: 700; }
+    .warn-text { font-size: 13px; fill: #334155; }
+  </style>
+
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#94A3B8"/>
+    </marker>
+  </defs>
+
+  <text x="330" y="42" text-anchor="middle" class="title">SaaS 做 AI 前，先排除 3 种伪需求</text>
+  <text x="330" y="64" text-anchor="middle" class="subtitle">共同特征：看起来很强，但无法稳定进入用户高频工作流</text>
+
+  <rect x="32" y="96" width="184" height="168" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <circle cx="62" cy="126" r="14" fill="#DBEAFE"/>
+  <text x="62" y="131" text-anchor="middle" font-size="14" font-weight="700" fill="#2563EB">1</text>
+  <text x="84" y="130" class="card-title" fill="#2563EB">万能聊天助手</text>
+  <text x="48" y="158" class="card-text">入口显眼，但不在流程内</text>
+  <text x="48" y="180" class="card-text">用户被迫离开当前页面，</text>
+  <text x="48" y="198" class="card-text">重新解释上下文，再复制执行</text>
+  <rect x="48" y="216" width="152" height="30" rx="10" fill="#EFF6FF"/>
+  <text x="124" y="235" text-anchor="middle" font-size="12" font-weight="600" fill="#2563EB">新增摩擦：离开 → 解释 → 粘贴 → 验证</text>
+
+  <rect x="238" y="96" width="184" height="168" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <circle cx="268" cy="126" r="14" fill="#F3E8FF"/>
+  <text x="268" y="131" text-anchor="middle" font-size="14" font-weight="700" fill="#9333EA">2</text>
+  <text x="290" y="130" class="card-title" fill="#9333EA">灵感型生成</text>
+  <text x="254" y="158" class="card-text">第一次体验很爽，长期难复用</text>
+  <text x="254" y="180" class="card-text">生成 PRD、周报、文案后，</text>
+  <text x="254" y="198" class="card-text">用户仍需通读、修改、判断对错</text>
+  <rect x="254" y="216" width="152" height="30" rx="10" fill="#FAF5FF"/>
+  <text x="330" y="235" text-anchor="middle" font-size="12" font-weight="600" fill="#9333EA">问题核心：结果不可快速验证</text>
+
+  <rect x="444" y="96" width="184" height="168" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <circle cx="474" cy="126" r="14" fill="#FFEDD5"/>
+  <text x="474" y="131" text-anchor="middle" font-size="14" font-weight="700" fill="#EA580C">3</text>
+  <text x="496" y="130" class="card-title" fill="#EA580C">大而全自动化</text>
+  <text x="460" y="158" class="card-text">承诺太大，失败成本太高</text>
+  <text x="460" y="180" class="card-text">自动建任务、分配、排期、通知</text>
+  <text x="460" y="198" class="card-text">任何一步出错，都会迅速丢信任</text>
+  <rect x="460" y="216" width="152" height="30" rx="10" fill="#FFF7ED"/>
+  <text x="536" y="235" text-anchor="middle" font-size="12" font-weight="600" fill="#EA580C">风险：一次失败，用户直接关闭</text>
+
+  <line x1="124" y1="280" x2="330" y2="306" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrow)"/>
+  <line x1="330" y1="280" x2="330" y2="306" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrow)"/>
+  <line x1="536" y1="280" x2="330" y2="306" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrow)"/>
+
+  <rect x="92" y="314" width="476" height="58" rx="16" fill="#FFFFFF" stroke="#F59E0B" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="122" cy="343" r="14" fill="#FEF3C7"/>
+  <text x="122" y="348" text-anchor="middle" font-size="15" font-weight="700" fill="#D97706">!</text>
+  <text x="146" y="338" class="warn-title" fill="#D97706">残酷但好用的判断</text>
+  <text x="146" y="358" class="warn-text">如果 AI 失败一次会让用户更累，它大概率活不久。优先做“失败也不亏”的功能。</text>
+
+  <rect x="254" y="76" width="152" height="24" rx="12" fill="#DCFCE7"/>
+  <text x="330" y="92" text-anchor="middle" font-size="12" font-weight="700" fill="#16A34A">筛选标准：能否低风险融入真实流程</text>
+</svg>

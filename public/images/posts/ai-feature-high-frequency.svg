@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B"/>
+    </marker>
+    <style>
+      .title { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 18px; font-weight: 700; fill: #0F172A; }
+      .subtitle { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 12px; fill: #475569; }
+      .h { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 13px; font-weight: 700; fill: #0F172A; }
+      .t { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 12px; fill: #334155; }
+      .chipText { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 11px; font-weight: 700; fill: #0F172A; }
+      .card { fill: #FFFFFF; stroke: #E2E8F0; stroke-width: 1; filter: url(#shadow); }
+      .dash { stroke: #64748B; stroke-width: 2; stroke-dasharray: 6 6; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <!-- Header -->
+  <text x="40" y="44" class="title">为什么 AI 功能容易“只用一次”</text>
+  <text x="40" y="66" class="subtitle">核心：没嵌进用户的日常高频动作</text>
+
+  <!-- Left card: One-time try -->
+  <rect x="40" y="100" width="250" height="250" rx="12" class="card"/>
+  <rect x="58" y="122" width="88" height="22" rx="11" fill="#EA580C" opacity="0.14"/>
+  <text x="70" y="138" class="chipText">一次性尝鲜</text>
+  <text x="58" y="168" class="h">上线后：第一周很热</text>
+  <text x="58" y="190" class="t">• 为炫酷而炫酷</text>
+  <text x="58" y="212" class="t">• 结果不可验证</text>
+  <text x="58" y="234" class="t">• 需要额外学习新流程</text>
+  <rect x="58" y="262" width="214" height="70" rx="10" fill="#FFF7ED" stroke="#FED7AA"/>
+  <text x="70" y="286" class="h">结果</text>
+  <text x="70" y="308" class="t">第三周开始吃灰</text>
+
+  <!-- Right card: Embedded habit -->
+  <rect x="370" y="100" width="250" height="250" rx="12" class="card"/>
+  <rect x="388" y="122" width="108" height="22" rx="11" fill="#16A34A" opacity="0.14"/>
+  <text x="400" y="138" class="chipText">融入日常动作</text>
+  <text x="388" y="168" class="h">像厨房电器一样嵌入</text>
+  <text x="388" y="190" class="t">围绕高频动作：切菜/下锅/清洗</text>
+  <text x="388" y="212" class="t">让 AI 成为流程中的“默认步骤”</text>
+  <rect x="388" y="240" width="214" height="92" rx="10" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <text x="400" y="264" class="h">评审会的关键问题</text>
+  <text x="400" y="286" class="t">别先问“要不要做 AI”</text>
+  <text x="400" y="308" class="t">先问“省掉哪个高频动作？”</text>
+
+  <!-- Connector -->
+  <path d="M290 225 C 320 225, 340 225, 370 225" class="dash"/>
+
+  <!-- Bottom note -->
+  <rect x="40" y="364" width="580" height="1" fill="#E2E8F0"/>
+  <text x="40" y="388" class="subtitle">提示：克制不是不懂 AI，而是优先保证“会反复用”</text>
+</svg>
