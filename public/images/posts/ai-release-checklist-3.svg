@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <text x="330" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#111827" font-family="-apple-system, 'Segoe UI', sans-serif">最小可用上线评估清单</text>
+  <text x="330" y="58" text-anchor="middle" font-size="12" fill="#6B7280" font-family="-apple-system, 'Segoe UI', sans-serif">从任务边界到回滚机制的五步上线门槛</text>
+
+  <line x1="140" y1="130" x2="248" y2="130" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="356" y1="130" x2="464" y2="130" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="560" y1="162" x2="560" y2="220" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="464" y1="290" x2="356" y2="290" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="248" y1="290" x2="140" y2="290" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <g>
+    <rect x="34" y="84" width="106" height="92" rx="14" fill="#000000" opacity="0.06"/>
+    <rect x="30" y="80" width="106" height="92" rx="14" fill="#FFFFFF"/>
+    <circle cx="54" cy="104" r="12" fill="#2563EB"/>
+    <text x="54" y="108" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF" font-family="-apple-system, 'Segoe UI', sans-serif">1</text>
+    <text x="83" y="108" font-size="15" font-weight="700" fill="#1F2937" font-family="-apple-system, 'Segoe UI', sans-serif">任务边界</text>
+    <text x="42" y="132" font-size="12" fill="#4B5563" font-family="-apple-system, 'Segoe UI', sans-serif">写清做什么</text>
+    <text x="42" y="150" font-size="12" fill="#4B5563" font-family="-apple-system, 'Segoe UI', sans-serif">不做什么</text>
+  </g>
+
+  <g>
+    <rect x="250" y="84" width="106" height="92" rx="14" fill="#000000" opacity="0.06"/>
+    <rect x="246" y="80" width="106" height="92" rx="14" fill="#FFFFFF"/>
+    <circle cx="270" cy="104" r="12" fill="#EA580C"/>
+    <text x="270" y="108" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF" font-family="-apple-system, 'Segoe UI', sans-serif">2</text>
+    <text x="299" y="108" font-size="15" font-weight="700" fill="#1F2937" font-family="-apple-system, 'Segoe UI', sans-serif">失败样本</text>
+    <text x="258" y="132" font-size="12" fill="#4B5563" font-family="-apple-system, 'Segoe UI', sans-serif">脏输入 / 边界</text>
+    <text x="258" y="150" font-size="12" fill="#4B5563" font-family="-apple-system, 'Segoe UI', sans-serif">高风险场景</text>
+  </g>
+
+  <g>
+    <rect x="466" y="84" width="106" height="92" rx="14" fill="#000000" opacity="0.06"/>
+    <rect x="462" y="80" width="106" height="92" rx="14" fill="#FFFFFF"/>
+    <circle cx="486" cy="104" r="12" fill="#16A34A"/>
+    <text x="486" y="108" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF" font-family="-apple-system, 'Segoe UI', sans-serif">3</text>
+    <text x="515" y="108" font-size="15" font-weight="700" fill="#1F2937" font-family="-apple-system, 'Segoe UI', sans-serif">离线评测</text>
+    <text x="474" y="132" font-size="12" fill="#4B5563" font-family="-apple-system, 'Segoe UI', sans-serif">固定测试集</text>
+    <text x="474" y="150" font-size="12" fill="#4B5563" font-family="-apple-system, 'Segoe UI', sans-serif">统一评分尺子</text>
+  </g>
+
+  <g>
+    <rect x="250" y="244" width="106" height="92" rx="14" fill="#000000" opacity="0.06"/>
+    <rect x="246" y="240" width="106" height="92" rx="14" fill="#FFFFFF"/>
+    <circle cx="270" cy="264" r="12" fill="#9333EA"/>
+    <text x="270" y="268" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF" font-family="-apple-system, 'Segoe UI', sans-serif">4</text>
+    <text x="299" y="268" font-size="15" font-weight="700" fill="#1F2937" font-family="-apple-system, 'Segoe UI', sans-serif">线上监控</text>
+    <text x="258" y="292" font-size="12" fill="#4B5563" font-family="-apple-system, 'Segoe UI', sans-serif">质量 / 风险</text>
+    <text x="258" y="310" font-size="12" fill="#4B5563" font-family="-apple-system, 'Segoe UI', sans-serif">成本三类信号</text>
+  </g>
+
+  <g>
+    <rect x="34" y="244" width="106" height="92" rx="14" fill="#000000" opacity="0.06"/>
+    <rect x="30" y="240" width="106" height="92" rx="14" fill="#FFFFFF"/>
+    <circle cx="54" cy="264" r="12" fill="#D97706"/>
+    <text x="54" y="268" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF" font-family="-apple-system, 'Segoe UI', sans-serif">5</text>
+    <text x="83" y="268" font-size="15" font-weight="700" fill="#1F2937" font-family="-apple-system, 'Segoe UI', sans-serif">止血机制</text>
+    <text x="42" y="292" font-size="12" fill="#4B5563" font-family="-apple-system, 'Segoe UI', sans-serif">开关 / 降级</text>
+    <text x="42" y="310" font-size="12" fill="#4B5563" font-family="-apple-system, 'Segoe UI', sans-serif">回滚 / 人工接管</text>
+  </g>
+
+  <g>
+    <rect x="462" y="240" width="166" height="92" rx="14" fill="#000000" opacity="0.06"/>
+    <rect x="458" y="236" width="166" height="92" rx="14" fill="#FFFFFF"/>
+    <text x="478" y="262" font-size="14" font-weight="700" fill="#1F2937" font-family="-apple-system, 'Segoe UI', sans-serif">上线底线</text>
+    <text x="478" y="286" font-size="12" fill="#4B5563" font-family="-apple-system, 'Segoe UI', sans-serif">写入型动作先用建议模式</text>
+    <text x="478" y="306" font-size="12" fill="#2563EB" font-weight="600" font-family="-apple-system, 'Segoe UI', sans-serif">先当副驾驶，再摸方向盘</text>
+  </g>
+</svg>

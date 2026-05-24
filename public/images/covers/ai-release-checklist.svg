@@ -1,0 +1,109 @@
+<svg width="660" height="300" viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AI 上线判断：这张清单让你敢发版 封面">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="660" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#44403C"/>
+      <stop offset="1" stop-color="#1C1917"/>
+    </linearGradient>
+
+    <!-- Accent gradient -->
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="660" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EA580C"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+
+    <!-- Paper-like subtle texture -->
+    <pattern id="grain" width="120" height="120" patternUnits="userSpaceOnUse">
+      <g fill="#D6D3D1" opacity="0.06">
+        <circle cx="10" cy="18" r="1.2"/>
+        <circle cx="32" cy="26" r="0.9"/>
+        <circle cx="54" cy="12" r="1.0"/>
+        <circle cx="78" cy="28" r="0.8"/>
+        <circle cx="102" cy="20" r="1.1"/>
+
+        <circle cx="18" cy="54" r="0.9"/>
+        <circle cx="44" cy="62" r="1.2"/>
+        <circle cx="70" cy="50" r="0.9"/>
+        <circle cx="96" cy="58" r="1.0"/>
+        <circle cx="112" cy="44" r="0.8"/>
+
+        <circle cx="14" cy="92" r="1.0"/>
+        <circle cx="36" cy="104" r="0.8"/>
+        <circle cx="60" cy="96" r="1.2"/>
+        <circle cx="84" cy="108" r="0.9"/>
+        <circle cx="108" cy="98" r="1.1"/>
+
+        <circle cx="26" cy="14" r="0.7"/>
+        <circle cx="92" cy="10" r="0.7"/>
+        <circle cx="6" cy="70" r="0.7"/>
+        <circle cx="118" cy="82" r="0.7"/>
+        <circle cx="74" cy="86" r="0.7"/>
+      </g>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="660" height="300" fill="url(#bgGrad)"/>
+  <rect x="0" y="0" width="660" height="300" fill="url(#grain)"/>
+
+  <!-- Left accent line -->
+  <rect x="50" y="28" width="5" height="244" fill="url(#accentGrad)"/>
+
+  <!-- Text block (x starts at 70; keep clear of right-bottom decoration by placing decoration below and far right) -->
+  <g font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+    <!-- Title -->
+    <text x="70" y="86" fill="#FAFAF9" font-size="22" font-weight="700">
+      <tspan x="70" dy="0">AI 上线判断：这张清单</tspan>
+      <tspan x="70" dy="28">让你敢发版</tspan>
+    </text>
+
+    <!-- Subtitle -->
+    <text x="70" y="150" fill="#A8A29E" font-size="13" font-weight="500">
+      AI 上线判断别再靠拍脑袋：同样是「模型更强了」，有人敢上生产，有人只敢跑 demo
+    </text>
+
+    <!-- Tags (bottom area, left side) -->
+    <g transform="translate(70,236)">
+      <!-- tag 1 -->
+      <rect x="0" y="0" width="78" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+      <text x="39" y="16" text-anchor="middle" fill="#D6D3D1" font-size="13" font-weight="600">可控</text>
+
+      <!-- tag 2 -->
+      <rect x="90" y="0" width="78" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+      <text x="129" y="16" text-anchor="middle" fill="#D6D3D1" font-size="13" font-weight="600">可测</text>
+
+      <!-- tag 3 -->
+      <rect x="180" y="0" width="86" height="24" rx="12" fill="#57534E" opacity="0.4"/>
+      <text x="223" y="16" text-anchor="middle" fill="#D6D3D1" font-size="13" font-weight="600">可回滚</text>
+    </g>
+  </g>
+
+  <!-- Decorations (ONLY in right-bottom corner: x>=480, y>=180; must be to the right of tags and not overlap any text) -->
+  <g opacity="0.22" stroke="#A8A29E" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Minimal checklist icon -->
+    <g transform="translate(505,188)">
+      <rect x="0" y="0" width="74" height="88" rx="10"/>
+      <path d="M16 22 l6 6 l12 -14" stroke="#EA580C" opacity="0.75"/>
+      <line x1="38" y1="22" x2="60" y2="22"/>
+      <path d="M16 44 l6 6 l12 -14" stroke="#EA580C" opacity="0.75"/>
+      <line x1="38" y1="44" x2="60" y2="44"/>
+      <path d="M16 66 l6 6 l12 -14" stroke="#EA580C" opacity="0.75"/>
+      <line x1="38" y1="66" x2="60" y2="66"/>
+    </g>
+
+    <!-- Minimal shield/guardrail hint -->
+    <g transform="translate(592,210)" opacity="0.85">
+      <path d="M28 8
+               C20 14, 12 14, 8 16
+               V30
+               C8 48, 18 58, 28 62
+               C38 58, 48 48, 48 30
+               V16
+               C44 14, 36 14, 28 8 Z"/>
+      <path d="M18 34 l6 6 l14 -18" stroke="#EA580C" opacity="0.75"/>
+    </g>
+  </g>
+
+  <!-- Bottom color bar -->
+  <rect x="0" y="293" width="660" height="7" fill="url(#accentGrad)"/>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .t { font-family: -apple-system, 'Segoe UI', sans-serif; fill: #0f172a; }
+      .muted { fill: #475569; }
+      .card { fill: #ffffff; stroke: #e2e8f0; stroke-width: 1; filter: url(#shadow); }
+      .dash { stroke: #94a3b8; stroke-width: 2; stroke-dasharray: 6 6; fill: none; }
+      .pill { fill: #ffffff; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text class="t" x="36" y="48" font-size="20" font-weight="700">为什么 AI 能跑 demo 但难进生产</text>
+  <text class="t muted" x="36" y="72" font-size="13">demo 往往“躲开”三件事，生产必须正面处理</text>
+
+  <!-- Left: Demo -->
+  <rect class="card" x="36" y="104" width="260" height="250" rx="14"/>
+  <text class="t" x="56" y="136" font-size="16" font-weight="700" fill="#2563EB">Demo 环境</text>
+
+  <!-- Demo bullets -->
+  <circle cx="58" cy="162" r="5" fill="#2563EB"/>
+  <text class="t" x="72" y="166" font-size="13">挑“最适合展示”的样本</text>
+
+  <circle cx="58" cy="190" r="5" fill="#2563EB"/>
+  <text class="t" x="72" y="194" font-size="13">数据干净、路径短、上下文全</text>
+
+  <circle cx="58" cy="218" r="5" fill="#2563EB"/>
+  <text class="t" x="72" y="222" font-size="13">失败更容易被忽略或重试</text>
+
+  <rect x="56" y="246" width="220" height="84" rx="12" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text class="t" x="68" y="272" font-size="12" font-weight="700" fill="#2563EB">结果：</text>
+  <text class="t muted" x="68" y="292" font-size="12">看起来稳定、效果不错</text>
+  <text class="t muted" x="68" y="312" font-size="12">但风险未暴露</text>
+
+  <!-- Right: Production -->
+  <rect class="card" x="364" y="104" width="260" height="250" rx="14"/>
+  <text class="t" x="384" y="136" font-size="16" font-weight="700" fill="#9333EA">生产环境</text>
+  <text class="t muted" x="384" y="156" font-size="12">真实用户与真实约束</text>
+
+  <!-- Three risk pills -->
+  <rect class="pill" x="384" y="176" width="220" height="46" rx="12" stroke="#EA580C"/>
+  <text class="t" x="404" y="204" font-size="13" font-weight="700" fill="#EA580C">不可控的输入</text>
+  <text class="t muted" x="384" y="236" font-size="12">残缺表格 / 情绪邮件 / 权限链接 / 半成工单</text>
+
+  <rect class="pill" x="384" y="254" width="220" height="46" rx="12" stroke="#D97706"/>
+  <text class="t" x="404" y="282" font-size="13" font-weight="700" fill="#D97706">不可复现的失败</text>
+  <text class="t muted" x="384" y="314" font-size="12">不是报错，而是“看起来还行但错了”</text>
+
+  <rect class="pill" x="384" y="332" width="220" height="46" rx="12" stroke="#16A34A"/>
+  <text class="t" x="404" y="360" font-size="13" font-weight="700" fill="#16A34A">不可接受的事故成本</text>
+  <text class="t muted" x="384" y="382" font-size="12">监控难、回滚难、责任边界难</text>
+
+  <!-- Dashed bridge -->
+  <path class="dash" d="M296 228 C 330 228, 330 228, 364 228"/>
+  <path class="dash" d="M296 268 C 330 268, 330 268, 364 268"/>
+  <path class="dash" d="M296 308 C 330 308, 330 308, 364 308"/>
+
+  <!-- Center label -->
+  <rect x="292" y="190" width="76" height="40" rx="12" fill="#ffffff" stroke="#e2e8f0" filter="url(#shadow)"/>
+  <text class="t" x="300" y="215" font-size="12" font-weight="700">差距</text>
+
+</svg>
