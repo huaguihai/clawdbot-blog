@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .bg { fill: #FAFAFA; }
+      .card { fill: #FFFFFF; filter: url(#shadow); }
+      .t { font-family: -apple-system, 'Segoe UI', sans-serif; fill: #0F172A; }
+      .muted { fill: #475569; }
+      .label { font-size: 14px; font-weight: 700; }
+      .h1 { font-size: 18px; font-weight: 800; }
+      .p { font-size: 13px; }
+      .mono { font-size: 12px; }
+      .dash { stroke: #94A3B8; stroke-width: 2; stroke-dasharray: 6 6; fill: none; }
+    </style>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="660" height="400" rx="12" class="bg"/>
+
+  <!-- Title -->
+  <text x="28" y="42" class="t h1">别卖“功能”，卖“可交付物”</text>
+  <text x="28" y="64" class="t p muted">把 AI 能力压缩成用户能立刻用的输出</text>
+
+  <!-- Left card: 功能 -->
+  <rect x="28" y="88" width="290" height="232" rx="12" class="card"/>
+  <rect x="28" y="88" width="290" height="44" rx="12" fill="#2563EB" opacity="0.10"/>
+  <text x="48" y="116" class="t label" fill="#2563EB">功能式承诺（太大太虚）</text>
+
+  <!-- bullets left -->
+  <circle cx="48" cy="156" r="5" fill="#EA580C"/>
+  <text x="62" y="160" class="t p">AI 帮你写简历</text>
+
+  <circle cx="48" cy="190" r="5" fill="#EA580C"/>
+  <text x="62" y="194" class="t p">AI 帮你做竞品分析</text>
+
+  <circle cx="48" cy="224" r="5" fill="#EA580C"/>
+  <text x="62" y="228" class="t p">AI 生成营销内容</text>
+
+  <text x="48" y="266" class="t mono muted">结果：用户无法预演下一步</text>
+  <text x="48" y="288" class="t mono muted">感觉“还在路上”</text>
+
+  <!-- Right card: 可交付物 -->
+  <rect x="342" y="88" width="290" height="232" rx="12" class="card"/>
+  <rect x="342" y="88" width="290" height="44" rx="12" fill="#16A34A" opacity="0.12"/>
+  <text x="362" y="116" class="t label" fill="#16A34A">可交付物承诺（具体可复制）</text>
+
+  <!-- bullets right -->
+  <circle cx="362" cy="152" r="5" fill="#16A34A"/>
+  <text x="376" y="156" class="t p">JD + 经历 → 可投递英文简历 + 3 段自我介绍</text>
+
+  <circle cx="362" cy="196" r="5" fill="#16A34A"/>
+  <text x="376" y="200" class="t p">3 个网址 → 一页对比表 + 10 条差异化卖点</text>
+
+  <circle cx="362" cy="240" r="5" fill="#16A34A"/>
+  <text x="376" y="244" class="t p">一句话产品 → 10 条标题 + 3 套首图文案结构</text>
+
+  <text x="362" y="286" class="t mono muted">结果：拿到输出就能贴进工作流</text>
+
+  <!-- dashed arrows between cards -->
+  <path d="M 318 170 C 330 170, 330 170, 342 170" class="dash"/>
+  <path d="M 318 204 C 330 204, 330 204, 342 204" class="dash"/>
+  <path d="M 318 238 C 330 238, 330 238, 342 238" class="dash"/>
+
+  <!-- Bottom callout -->
+  <rect x="28" y="334" width="604" height="46" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="28" y="334" width="8" height="46" rx="12" fill="#9333EA"/>
+  <text x="48" y="362" class="t p">
+    <tspan fill="#9333EA" font-weight="700">检验法：</tspan>
+    <tspan class="muted">用户拿到这份输出，能不能立刻复制粘贴到工作流里？</tspan>
+  </text>
+</svg>

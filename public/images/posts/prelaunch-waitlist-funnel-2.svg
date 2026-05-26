@@ -1,0 +1,80 @@
+<svg viewBox="0 0 660 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .bg { fill:#FAFAFA; }
+      .card { fill:#FFFFFF; stroke:#E5E7EB; stroke-width:1; filter:url(#shadow); }
+      .title { font-family:-apple-system, 'Segoe UI', sans-serif; font-size:14px; font-weight:700; fill:#111827; }
+      .text { font-family:-apple-system, 'Segoe UI', sans-serif; font-size:12px; fill:#374151; }
+      .hint { font-family:-apple-system, 'Segoe UI', sans-serif; font-size:12px; fill:#4B5563; }
+      .line { stroke:#9CA3AF; stroke-width:2; stroke-dasharray:6 6; fill:none; }
+      .badgeText { font-family:-apple-system, 'Segoe UI', sans-serif; font-size:12px; font-weight:700; fill:#FFFFFF; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" x="0" y="0" width="660" height="400" rx="12"/>
+
+  <!-- Header -->
+  <text class="title" x="30" y="42">预发布最小漏斗（一个人也能做）</text>
+  <text class="hint" x="30" y="64">核心：把“看见价值”逐步推进到“留下联系方式并开始对话”</text>
+
+  <!-- Cards layout -->
+  <!-- Card 1 -->
+  <rect class="card" x="30" y="90" width="600" height="52" rx="12"/>
+  <circle cx="56" cy="116" r="14" fill="#2563EB"/>
+  <text class="badgeText" x="52" y="121">1</text>
+  <text class="title" x="82" y="112">落地页 Landing Page</text>
+  <text class="text" x="82" y="132">一句话价值主张 + 适用人群 + CTA</text>
+  <text class="hint" x="470" y="124">验证：愿不愿点下一步</text>
+
+  <!-- Line 1 -->
+  <path class="line" d="M330 142 L330 160"/>
+
+  <!-- Card 2 -->
+  <rect class="card" x="30" y="160" width="600" height="52" rx="12"/>
+  <circle cx="56" cy="186" r="14" fill="#16A34A"/>
+  <text class="badgeText" x="52" y="191">2</text>
+  <text class="title" x="82" y="182">示例输出 Sample Output</text>
+  <text class="text" x="82" y="202">1-3 个真实可读样例（让结果可感知）</text>
+  <text class="hint" x="470" y="194">验证：他想要的结果</text>
+
+  <!-- Line 2 -->
+  <path class="line" d="M330 212 L330 230"/>
+
+  <!-- Card 3 -->
+  <rect class="card" x="30" y="230" width="600" height="52" rx="12"/>
+  <circle cx="56" cy="256" r="14" fill="#EA580C"/>
+  <text class="badgeText" x="52" y="261">3</text>
+  <text class="title" x="82" y="252">等待名单 Waitlist</text>
+  <text class="text" x="82" y="272">邮箱/Telegram/微信（建议邮箱优先）</text>
+  <text class="hint" x="470" y="264">验证：愿不愿留联系方式</text>
+
+  <!-- Line 3 -->
+  <path class="line" d="M330 282 L330 300"/>
+
+  <!-- Card 4 -->
+  <rect class="card" x="30" y="300" width="600" height="52" rx="12"/>
+  <circle cx="56" cy="326" r="14" fill="#9333EA"/>
+  <text class="badgeText" x="52" y="331">4</text>
+  <text class="title" x="82" y="322">排队机制 Queue</text>
+  <text class="text" x="82" y="342">为什么要排队 + 你怎么决定顺序</text>
+  <text class="hint" x="470" y="334">验证：稀缺感 + 可控交付</text>
+
+  <!-- Line 4 -->
+  <path class="line" d="M330 352 L330 370"/>
+
+  <!-- Card 5 -->
+  <rect class="card" x="30" y="370" width="600" height="52" rx="12"/>
+  <circle cx="56" cy="396" r="14" fill="#D97706"/>
+  <text class="badgeText" x="52" y="401">5</text>
+  <text class="title" x="82" y="392">邮件触达 Email</text>
+  <text class="text" x="82" y="412">3 封邮件：确认 → 收集信息 → 邀请内测</text>
+  <text class="hint" x="470" y="404">验证：名单能否变成对话</text>
+
+  <!-- Footer note -->
+  <rect x="410" y="94" width="210" height="40" rx="10" fill="#FFFFFF" stroke="#E5E7EB" filter="url(#shadow)"/>
+  <text class="hint" x="424" y="118">像“需求测力计”而非模型展示</text>
+</svg>

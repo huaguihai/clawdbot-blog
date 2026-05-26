@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <text x="36" y="42" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#111827">预发布阶段，哪些指标算“真需求”</text>
+  <text x="36" y="68" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#6B7280">核心判断：别盯 UV，盯“留下联系方式 + 愿意补充信息”的比例</text>
+
+  <line x1="202" y1="170" x2="230" y2="170" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <polygon points="230,170 220,164 220,176" fill="#94A3B8"/>
+  <line x1="414" y1="170" x2="442" y2="170" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <polygon points="442,170 432,164 432,176" fill="#94A3B8"/>
+
+  <rect x="36" y="94" width="166" height="152" rx="14" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="42" y="100" width="166" height="152" rx="14" fill="none" stroke="#000000" opacity="0.05" transform="translate(4 4)"/>
+  <rect x="52" y="110" width="52" height="24" rx="12" fill="#EA580C" opacity="0.12"/>
+  <text x="78" y="127" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#EA580C">弱信号</text>
+  <text x="52" y="156" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#111827">行为</text>
+  <text x="52" y="177" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">点击 CTA，未提交表单</text>
+  <text x="52" y="201" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#111827">代表</text>
+  <text x="52" y="222" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">只有好奇，尚未确定</text>
+
+  <rect x="248" y="94" width="166" height="152" rx="14" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="254" y="100" width="166" height="152" rx="14" fill="none" stroke="#000000" opacity="0.05" transform="translate(4 4)"/>
+  <rect x="264" y="110" width="52" height="24" rx="12" fill="#2563EB" opacity="0.12"/>
+  <text x="290" y="127" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#2563EB">中信号</text>
+  <text x="264" y="156" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#111827">行为</text>
+  <text x="264" y="177" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">留下邮箱或联系方式</text>
+  <text x="264" y="201" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#111827">代表</text>
+  <text x="264" y="222" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">愿意被你继续触达</text>
+
+  <rect x="460" y="94" width="166" height="152" rx="14" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="466" y="100" width="166" height="152" rx="14" fill="none" stroke="#000000" opacity="0.05" transform="translate(4 4)"/>
+  <rect x="476" y="110" width="52" height="24" rx="12" fill="#16A34A" opacity="0.12"/>
+  <text x="502" y="127" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#16A34A">强信号</text>
+  <text x="476" y="156" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#111827">行为</text>
+  <text x="476" y="177" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">愿回答 2-3 个场景问题</text>
+  <text x="476" y="201" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#111827">代表</text>
+  <text x="476" y="222" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">需求真实且足够具体</text>
+
+  <rect x="36" y="272" width="590" height="88" rx="16" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="42" y="278" width="590" height="88" rx="16" fill="none" stroke="#000000" opacity="0.05" transform="translate(4 4)"/>
+  <text x="56" y="300" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#9333EA">对应动作</text>
+
+  <circle cx="74" cy="323" r="6" fill="#EA580C"/>
+  <text x="88" y="328" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">弱：缩短表单，把示例和价值点放更显眼</text>
+
+  <circle cx="74" cy="344" r="6" fill="#2563EB"/>
+  <text x="88" y="349" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">中：发确认邮件，继续追问具体使用场景</text>
+
+  <circle cx="344" cy="323" r="6" fill="#16A34A"/>
+  <text x="358" y="328" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">强：优先邀请内测，先手动交付，再考虑自动化</text>
+
+  <circle cx="344" cy="344" r="6" fill="#D97706"/>
+  <text x="358" y="349" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">例外：B2B 可把强信号换成“愿开会/给真实样本”</text>
+</svg>
