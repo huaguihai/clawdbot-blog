@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .font { font-family: -apple-system, 'Segoe UI', sans-serif; }
+      .title { font-size: 18px; font-weight: 700; fill: #111827; }
+      .sub { font-size: 12px; fill: #6B7280; }
+      .label { font-size: 12px; font-weight: 700; fill: #111827; }
+      .small { font-size: 11px; fill: #374151; }
+      .tiny { font-size: 10px; fill: #4B5563; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+
+  <!-- Header -->
+  <text x="28" y="40" class="font title">先划边界：做一张 AI 权限地图</text>
+  <text x="28" y="62" class="font sub">先按“读/写”拆开，再按“低风险/高风险”分组，避免把看文档和改代码混在同层授权。</text>
+
+  <!-- Axis labels -->
+  <text x="86" y="98" class="font label" fill="#2563EB">读（Read）</text>
+  <text x="458" y="98" class="font label" fill="#EA580C">写（Write）</text>
+
+  <g class="font">
+    <text x="28" y="150" class="label" fill="#16A34A">低风险</text>
+    <text x="28" y="310" class="label" fill="#9333EA">高风险</text>
+  </g>
+
+  <!-- Matrix container -->
+  <rect x="80" y="110" width="552" height="260" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+
+  <!-- Dividers (dashed) -->
+  <line x1="356" y1="120" x2="356" y2="360" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="92" y1="240" x2="620" y2="240" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- Quadrant cards -->
+  <!-- Q1: Read + Low risk -->
+  <rect x="102" y="128" width="232" height="96" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="2" filter="url(#shadow)"/>
+  <text x="118" y="154" class="font label" fill="#2563EB">只读访问（默认）</text>
+  <text x="118" y="176" class="font small">• 内部知识库：只读</text>
+  <text x="118" y="196" class="font small">• 私有代码仓库：只读</text>
+
+  <!-- Q2: Write + Low risk -->
+  <rect x="378" y="128" width="232" height="96" rx="12" fill="#FFFFFF" stroke="#EA580C" stroke-width="2" filter="url(#shadow)"/>
+  <text x="394" y="154" class="font label" fill="#EA580C">受控写入（有护栏）</text>
+  <text x="394" y="176" class="font small">• 工单：仅草稿/评论</text>
+  <text x="394" y="196" class="font small">• 测试环境：白名单任务</text>
+
+  <!-- Q3: Read + High risk -->
+  <rect x="102" y="256" width="232" height="96" rx="12" fill="#FFFFFF" stroke="#9333EA" stroke-width="2" filter="url(#shadow)"/>
+  <text x="118" y="282" class="font label" fill="#9333EA">高风险也先读清楚</text>
+  <text x="118" y="304" class="font small">• 生产环境：禁止访问</text>
+  <text x="118" y="324" class="font small">• 敏感配置：严格隔离</text>
+
+  <!-- Q4: Write + High risk -->
+  <rect x="378" y="256" width="232" height="96" rx="12" fill="#FFFFFF" stroke="#D97706" stroke-width="2" filter="url(#shadow)"/>
+  <text x="394" y="282" class="font label" fill="#D97706">写入高风险（默认禁用）</text>
+  <text x="394" y="304" class="font small">• 主干写入：不开放</text>
+  <text x="394" y="324" class="font small">• 生产变更：不适用</text>
+
+  <!-- Callout: key distinction -->
+  <rect x="80" y="370" width="552" height="22" rx="11" fill="#FFFFFF" filter="url(#shadow)"/>
+  <circle cx="98" cy="381" r="6" fill="#16A34A"/>
+  <text x="112" y="385" class="font tiny">关键结论：不是“有没有权限”，而是“在哪个资源上，拥有什么粒度的权限”（分支写 ≠ 主干写）。</text>
+
+  <!-- Small annotations: approvals -->
+  <g class="font">
+    <text x="118" y="220" class="tiny" fill="#6B7280">写入触发审批：PR 审核 / 指定人确认 / 自动记录</text>
+    <text x="394" y="220" class="tiny" fill="#6B7280">原则：默认只读；需要写入时加护栏与审计</text>
+  </g>
+</svg>

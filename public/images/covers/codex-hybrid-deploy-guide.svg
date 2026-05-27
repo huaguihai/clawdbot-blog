@@ -1,0 +1,78 @@
+<svg width="660" height="300" viewBox="0 0 660 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="660" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#44403C"/>
+      <stop offset="1" stop-color="#1C1917"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="50" y1="0" x2="660" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EA580C"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="660" height="300" fill="url(#bgGrad)"/>
+
+  <g opacity="0.06" fill="#D6D3D1">
+    <circle cx="38" cy="26" r="1.1"/><circle cx="92" cy="42" r="0.9"/><circle cx="146" cy="31" r="1.3"/>
+    <circle cx="210" cy="53" r="0.8"/><circle cx="264" cy="36" r="1.2"/><circle cx="325" cy="28" r="0.9"/>
+    <circle cx="388" cy="49" r="1.4"/><circle cx="446" cy="34" r="0.8"/><circle cx="512" cy="26" r="1.1"/>
+    <circle cx="580" cy="47" r="0.9"/><circle cx="624" cy="39" r="1.2"/>
+
+    <circle cx="54" cy="84" r="0.8"/><circle cx="118" cy="96" r="1.2"/><circle cx="172" cy="78" r="0.9"/>
+    <circle cx="236" cy="104" r="1.4"/><circle cx="291" cy="87" r="0.8"/><circle cx="356" cy="99" r="1.1"/>
+    <circle cx="415" cy="82" r="0.9"/><circle cx="474" cy="108" r="1.3"/><circle cx="541" cy="88" r="0.8"/>
+    <circle cx="602" cy="100" r="1.2"/>
+
+    <circle cx="32" cy="142" r="1.1"/><circle cx="101" cy="130" r="0.8"/><circle cx="159" cy="148" r="1.2"/>
+    <circle cx="220" cy="136" r="0.9"/><circle cx="278" cy="154" r="1.4"/><circle cx="342" cy="143" r="0.8"/>
+    <circle cx="401" cy="129" r="1.1"/><circle cx="462" cy="151" r="0.9"/><circle cx="526" cy="137" r="1.3"/>
+    <circle cx="587" cy="146" r="0.8"/><circle cx="633" cy="132" r="1.1"/>
+
+    <circle cx="43" cy="196" r="0.9"/><circle cx="112" cy="186" r="1.3"/><circle cx="171" cy="204" r="0.8"/>
+    <circle cx="233" cy="191" r="1.1"/><circle cx="296" cy="210" r="0.9"/><circle cx="353" cy="183" r="1.2"/>
+    <circle cx="419" cy="201" r="0.8"/><circle cx="486" cy="190" r="1.4"/><circle cx="547" cy="208" r="0.9"/>
+    <circle cx="611" cy="188" r="1.2"/>
+
+    <circle cx="28" cy="246" r="1.2"/><circle cx="89" cy="230" r="0.8"/><circle cx="148" cy="254" r="1.1"/>
+    <circle cx="212" cy="239" r="0.9"/><circle cx="270" cy="258" r="1.3"/><circle cx="336" cy="233" r="0.8"/>
+    <circle cx="394" cy="249" r="1.2"/><circle cx="458" cy="238" r="0.9"/><circle cx="520" cy="256" r="1.1"/>
+    <circle cx="582" cy="241" r="0.8"/><circle cx="638" cy="252" r="1.3"/>
+  </g>
+
+  <rect x="50" y="32" width="5" height="206" rx="2.5" fill="url(#accentGrad)"/>
+
+  <text x="70" y="88" fill="#FAFAF9" font-size="22" font-weight="700" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <tspan x="70" dy="0">本地 Codex 怎么搭：</tspan>
+    <tspan x="70" dy="28">私有仓库也敢放给 AI</tspan>
+  </text>
+
+  <text x="70" y="148" fill="#A8A29E" font-size="13" font-weight="400" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    本地 Codex 怎么搭，不是先买服务器，而是先划清代码、权限和内网资源的边界。
+  </text>
+
+  <g font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="500" fill="#D6D3D1">
+    <rect x="70" y="238" width="84" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="112" y="254" text-anchor="middle">混合部署</text>
+
+    <rect x="164" y="238" width="84" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="206" y="254" text-anchor="middle">权限边界</text>
+
+    <rect x="258" y="238" width="84" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="300" y="254" text-anchor="middle">私有仓库</text>
+  </g>
+
+  <g opacity="0.22" stroke="#A8A29E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <rect x="492" y="188" width="68" height="46" rx="8"/>
+    <path d="M503 201H519"/>
+    <path d="M503 211H538"/>
+    <path d="M503 221H529"/>
+    <path d="M542 198L550 206L542 214"/>
+  </g>
+
+  <g opacity="0.2" stroke="#EA580C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M585 196L604 186L623 196V211C623 223 614 233 604 238C594 233 585 223 585 211V196Z"/>
+    <path d="M597 210L602 215L612 204"/>
+  </g>
+
+  <rect x="0" y="293" width="660" height="7" fill="url(#accentGrad)"/>
+</svg>
