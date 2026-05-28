@@ -1,0 +1,1 @@
+/root/clawd/.cache/wechat-rewrites/hy-mt2-full.md
