@@ -1,0 +1,58 @@
+<svg width="660" height="300" viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#44403C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1C1917;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#EA580C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="texture-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#D6D3D1" />
+      <circle cx="12" cy="15" r="0.5" fill="#D6D3D1" />
+    </pattern>
+  </defs>
+
+  <!-- 背景层 -->
+  <rect width="660" height="300" fill="url(#bg-grad)" />
+  <rect width="660" height="300" fill="url(#texture-pattern)" opacity="0.06" />
+
+  <!-- 左侧强调线 -->
+  <rect x="50" y="70" width="4" height="100" fill="url(#accent-grad)" />
+
+  <!-- 文字层 -->
+  <text x="70" y="95" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-weight="bold" font-size="22" fill="#FAFAF9">
+    <tspan x="70" dy="0">AI 对话搜索库实战：</tspan>
+    <tspan x="70" dy="28">把分散聊天变成宝库</tspan>
+  </text>
+  
+  <text x="70" y="160" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="13" fill="#A8A29E">
+    AI 对话搜索库不是把聊天记录存起来就完事，而是把 Claude、ChatGPT...
+  </text>
+
+  <!-- 标签胶囊 -->
+  <g transform="translate(70, 240)">
+    <rect width="75" height="24" rx="12" fill="#57534E" opacity="0.4" />
+    <text x="37.5" y="16" font-family="PingFang SC" font-size="11" fill="#D6D3D1" text-anchor="middle">知识管理</text>
+  </g>
+  <g transform="translate(155, 240)">
+    <rect width="75" height="24" rx="12" fill="#57534E" opacity="0.4" />
+    <text x="37.5" y="16" font-family="PingFang SC" font-size="11" fill="#D6D3D1" text-anchor="middle">上手指南</text>
+  </g>
+  <g transform="translate(240, 240)">
+    <rect width="75" height="24" rx="12" fill="#57534E" opacity="0.4" />
+    <text x="37.5" y="16" font-family="PingFang SC" font-size="11" fill="#D6D3D1" text-anchor="middle">AI实战</text>
+  </g>
+
+  <!-- 装饰元素（右下角） -->
+  <g opacity="0.2" stroke="#F59E0B" stroke-width="1.5" fill="none">
+    <path d="M540 200 h50 v40 h-50 z" />
+    <path d="M540 210 h50 M540 220 h50 M540 230 h50" />
+    <circle cx="585" cy="245" r="12" />
+    <line x1="593" y1="253" x2="605" y2="265" />
+  </g>
+
+  <!-- 底部色条 -->
+  <rect y="293" width="660" height="7" fill="url(#accent-grad)" />
+</svg>

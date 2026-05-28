@@ -1,0 +1,24 @@
+<svg viewBox="0 0 660 400" xmlns="http://www.w3.org/2000/svg" style="background:#FAFAFA; font-family:-apple-system, 'Segoe UI', sans-serif;">
+  <defs>
+    <style>.card { fill: #FFFFFF; stroke: #E5E7EB; stroke-width: 1; rx: 12; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); } .title { font-size: 16px; font-weight: 600; fill: #111827; }</style>
+  </defs>
+  
+  <!-- 数据采集 -->
+  <rect class="card" x="40" y="40" width="180" height="80" />
+  <text x="130" y="80" text-anchor="middle" class="title">数据采集</text>
+  <text x="130" y="100" text-anchor="middle" font-size="12">浏览器扩展 / 导出文件 / 链接抓取</text>
+
+  <!-- 存储 -->
+  <rect class="card" x="240" y="160" width="180" height="80" />
+  <text x="330" y="200" text-anchor="middle" class="title">内容存储</text>
+  <text x="330" y="220" text-anchor="middle" font-size="12">SQLite / JSON / PostgreSQL</text>
+
+  <!-- 索引和搜索 -->
+  <rect class="card" x="440" y="280" width="180" height="80" />
+  <text x="530" y="320" text-anchor="middle" class="title">索引与搜索</text>
+  <text x="530" y="340" text-anchor="middle" font-size="12">全文 / 标题 / 标签 / 时间 / 平台 / 向量</text>
+
+  <!-- 连线 -->
+  <line x1="220" y1="80" x2="240" y2="200" stroke="#2563EB" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="420" y1="200" x2="440" y2="320" stroke="#2563EB" stroke-width="2" stroke-dasharray="5,5" />
+</svg>
