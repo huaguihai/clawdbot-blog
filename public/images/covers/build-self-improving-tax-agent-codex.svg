@@ -1,0 +1,58 @@
+<svg width="660" height="300" viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#78350F" />
+      <stop offset="100%" stop-color="#451A03" />
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.8" fill="#D6A456" opacity="0.06" />
+      <circle cx="12" cy="8" r="1.2" fill="#D6A456" opacity="0.06" />
+      <circle cx="6" cy="15" r="0.5" fill="#D6A456" opacity="0.06" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="660" height="300" fill="url(#bg-grad)" />
+  <rect width="660" height="300" fill="url(#dots)" />
+
+  <!-- Left Accent Line -->
+  <rect x="50" y="50" width="5" height="200" fill="url(#accent-grad)" rx="2.5" />
+
+  <!-- Text Layer -->
+  <text x="70" y="90" fill="#FEFCE8" style="font-family: sans-serif; font-weight: bold; font-size: 22px;">
+    <tspan x="70" dy="0">别只盯着对话框了！用 Codex 撸一个</tspan>
+    <tspan x="70" dy="28">能自我进化的「税务 Agent」</tspan>
+  </text>
+  
+  <text x="70" y="152" fill="#D6A456" style="font-family: sans-serif; font-size: 13px;">
+    垂直领域 AI 是独立开发者的黄金赛道。本文拆解如何利用 Codex 构建具有自
+  </text>
+
+  <!-- Tags -->
+  <g transform="translate(70, 240)">
+    <rect width="85" height="24" rx="12" fill="#92400E" opacity="0.4" />
+    <text x="42.5" y="16" text-anchor="middle" fill="#FDE68A" style="font-family: sans-serif; font-size: 11px;">税务 Agent</text>
+  </g>
+  <g transform="translate(165, 240)">
+    <rect width="65" height="24" rx="12" fill="#92400E" opacity="0.4" />
+    <text x="32.5" y="16" text-anchor="middle" fill="#FDE68A" style="font-family: sans-serif; font-size: 11px;">Codex</text>
+  </g>
+  <g transform="translate(240, 240)">
+    <rect width="75" height="24" rx="12" fill="#92400E" opacity="0.4" />
+    <text x="37.5" y="16" text-anchor="middle" fill="#FDE68A" style="font-family: sans-serif; font-size: 11px;">自我进化</text>
+  </g>
+
+  <!-- Decorations -->
+  <g transform="translate(520, 190)" opacity="0.2">
+    <path d="M10 30 L30 10 L50 30 M10 50 L30 70 L50 50" stroke="#F59E0B" stroke-width="2" fill="none" />
+    <circle cx="30" cy="40" r="15" stroke="#D6A456" stroke-width="1.5" fill="none" stroke-dasharray="4 2" />
+    <path d="M25 40 L35 40 M30 35 L30 45" stroke="#F59E0B" stroke-width="2" />
+  </g>
+
+  <!-- Bottom Bar -->
+  <rect x="0" y="293" width="660" height="7" fill="url(#accent-grad)" />
+</svg>
