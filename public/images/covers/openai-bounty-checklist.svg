@@ -1,0 +1,65 @@
+<svg width="660" height="300" viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#44403C"/>
+      <stop offset="100%" stop-color="#1C1917"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <pattern id="texture" width="36" height="36" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="8" r="1.1" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="18" cy="14" r="0.9" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="29" cy="7" r="1" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="10" cy="24" r="0.8" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="24" cy="29" r="1.2" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="33" cy="22" r="0.7" fill="#D6D3D1" opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <rect width="660" height="300" fill="url(#bg)"/>
+  <rect width="660" height="300" fill="url(#texture)"/>
+
+  <rect x="50" y="28" width="5" height="214" rx="2.5" fill="url(#accent)"/>
+
+  <g transform="translate(70,72)">
+    <text x="0" y="0" fill="#FAFAF9" font-size="22" font-weight="700" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, sans-serif">
+      <tspan x="0" dy="0">OpenAI赏金计划里，</tspan>
+      <tspan x="0" dy="28">藏着AI产品最常见的坑</tspan>
+    </text>
+
+    <text x="0" y="86" fill="#A8A29E" font-size="13" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, sans-serif">
+      OpenAI赏金计划暴露出来的，不只是大厂安全问题，更像一份 AI 产品发版前的
+    </text>
+  </g>
+
+  <g font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans SC, sans-serif" font-size="12" fill="#D6D3D1">
+    <rect x="70" y="238" width="78" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="109" y="254" text-anchor="middle">提示注入</text>
+
+    <rect x="158" y="238" width="86" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="201" y="254" text-anchor="middle">工具越权</text>
+
+    <rect x="254" y="238" width="84" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="296" y="254" text-anchor="middle">发版自测</text>
+  </g>
+
+  <g transform="translate(500,188)" opacity="0.22" fill="none" stroke="#EA580C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="0" y="8" width="54" height="40" rx="6"/>
+    <path d="M10 20h22"/>
+    <path d="M10 28h30"/>
+    <path d="M10 36h18"/>
+    <path d="M40 0l0 14"/>
+    <path d="M33 7l14 0"/>
+    <circle cx="40" cy="7" r="10"/>
+  </g>
+
+  <g transform="translate(582,214)" opacity="0.18" fill="none" stroke="#A8A29E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 34l10-10 8 8 18-20"/>
+    <path d="M46 12h-10v10"/>
+    <rect x="0" y="0" width="56" height="44" rx="8"/>
+  </g>
+
+  <rect x="0" y="293" width="660" height="7" fill="url(#accent)"/>
+</svg>

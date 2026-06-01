@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <text x="330" y="36" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#111827">先列敏感动作，再谈自动化</text>
+  <text x="330" y="60" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">核心原则：能自动生成，不等于能自动执行</text>
+
+  <rect x="34" y="92" width="180" height="160" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="34" y="92" width="180" height="10" rx="16" fill="#16A34A"/>
+  <text x="124" y="126" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#16A34A">低风险</text>
+  <text x="124" y="152" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">搜索资料</text>
+  <text x="124" y="173" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">总结文档</text>
+  <text x="124" y="194" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">生成草稿</text>
+  <rect x="59" y="212" width="130" height="28" rx="14" fill="#DCFCE7"/>
+  <text x="124" y="230" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#166534">可自动执行</text>
+
+  <rect x="240" y="92" width="180" height="160" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="240" y="92" width="180" height="10" rx="16" fill="#D97706"/>
+  <text x="330" y="126" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#D97706">中风险</text>
+  <text x="330" y="152" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">创建草稿邮件</text>
+  <text x="330" y="173" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">写日历建议</text>
+  <text x="330" y="194" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">改测试数据</text>
+  <rect x="261" y="212" width="138" height="28" rx="14" fill="#FEF3C7"/>
+  <text x="330" y="230" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#92400E">需要明确确认</text>
+
+  <rect x="446" y="92" width="180" height="160" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="446" y="92" width="180" height="10" rx="16" fill="#EA580C"/>
+  <text x="536" y="126" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#EA580C">高风险</text>
+  <text x="536" y="152" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">发邮件、删文件</text>
+  <text x="536" y="173" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">改正式数据</text>
+  <text x="536" y="194" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">调用付款接口</text>
+  <rect x="467" y="212" width="138" height="28" rx="14" fill="#FEE2E2"/>
+  <text x="536" y="230" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#9A3412">必须人工确认</text>
+
+  <line x1="124" y1="272" x2="124" y2="302" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="330" y1="272" x2="330" y2="302" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="536" y1="272" x2="536" y2="302" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <rect x="120" y="302" width="420" height="62" rx="18" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="330" y="328" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#6B7280">程序层负责拦截决策，模型层只负责内容生成</text>
+  <text x="330" y="352" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#2563EB">生成 ≠ 执行</text>
+
+  <line x1="214" y1="172" x2="240" y2="172" stroke="#C4B5FD" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="420" y1="172" x2="446" y2="172" stroke="#C4B5FD" stroke-width="2" stroke-dasharray="6 6"/>
+  <text x="330" y="86" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#9333EA">先按风险分层，再决定自动化权限</text>
+</svg>
