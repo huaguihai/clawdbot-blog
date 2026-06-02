@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <text x="330" y="38" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#111827">这次变化，主要改变的是接入路径</text>
+  <text x="330" y="62" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">模型能力差异不是核心，关键在于基础设施接入成本</text>
+
+  <rect x="36" y="88" width="264" height="270" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="360" y="88" width="264" height="270" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+
+  <rect x="56" y="108" width="224" height="38" rx="10" fill="#EFF6FF"/>
+  <text x="168" y="132" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#2563EB">直接接 OpenAI 原生 API</text>
+
+  <rect x="380" y="108" width="224" height="38" rx="10" fill="#ECFDF5"/>
+  <text x="492" y="132" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#16A34A">通过 AWS 接入 OpenAI</text>
+
+  <line x1="330" y1="96" x2="330" y2="356" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <circle cx="74" cy="172" r="8" fill="#EA580C"/>
+  <text x="92" y="177" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#111827">鉴权独立管理</text>
+  <text x="92" y="195" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">API Key、凭证与权限链路分开</text>
+
+  <circle cx="74" cy="222" r="8" fill="#D97706"/>
+  <text x="92" y="227" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#111827">网络与审查额外处理</text>
+  <text x="92" y="245" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">新增外部出站、安全说明和审计</text>
+
+  <circle cx="74" cy="272" r="8" fill="#9333EA"/>
+  <text x="92" y="277" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#111827">账单与观测分散</text>
+  <text x="92" y="295" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">成本、日志、监控需要额外拼接</text>
+
+  <circle cx="74" cy="322" r="8" fill="#2563EB"/>
+  <text x="92" y="327" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#111827">原生能力跟进更快</text>
+  <text x="92" y="345" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">平台更灵活，但组织流程可能更慢</text>
+
+  <circle cx="398" cy="172" r="8" fill="#16A34A"/>
+  <text x="416" y="177" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#111827">并入现有权限体系</text>
+  <text x="416" y="195" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">更容易沿用 AWS 的身份与权限管理</text>
+
+  <circle cx="398" cy="222" r="8" fill="#16A34A"/>
+  <text x="416" y="227" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#111827">复用云内网络与审计</text>
+  <text x="416" y="245" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">更顺滑地进入既有安全和合规流程</text>
+
+  <circle cx="398" cy="272" r="8" fill="#16A34A"/>
+  <text x="416" y="277" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#111827">成本与监控更统一</text>
+  <text x="416" y="295" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">账单、日志、监控更容易接入现有体系</text>
+
+  <circle cx="398" cy="322" r="8" fill="#EA580C"/>
+  <text x="416" y="327" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#111827">更适合 AWS 团队先跑</text>
+  <text x="416" y="345" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">试点更顺路，但新能力同步可能略慢</text>
+
+  <path d="M278 126 C305 126, 315 126, 342 126" fill="none" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <path d="M382 126 C355 126, 345 126, 318 126" fill="none" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <rect x="224" y="76" width="212" height="34" rx="17" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="330" y="98" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#374151">核心差异：非模型问题的处理成本</text>
+</svg>

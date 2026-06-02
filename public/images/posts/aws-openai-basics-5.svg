@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <text x="330" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#111827" font-family="-apple-system, 'Segoe UI', sans-serif">什么场景更适合继续走原生 API</text>
+  <text x="330" y="60" text-anchor="middle" font-size="12" fill="#4B5563" font-family="-apple-system, 'Segoe UI', sans-serif">核心判断：优先速度、最新特性、细粒度控制与多模型编排</text>
+
+  <rect x="230" y="88" width="200" height="64" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="330" y="114" text-anchor="middle" font-size="16" font-weight="700" fill="#2563EB" font-family="-apple-system, 'Segoe UI', sans-serif">选择原生 API</text>
+  <text x="330" y="136" text-anchor="middle" font-size="12" fill="#374151" font-family="-apple-system, 'Segoe UI', sans-serif">避免被平台层卡住节奏</text>
+
+  <line x1="330" y1="152" x2="330" y2="182" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <rect x="36" y="198" width="176" height="70" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <circle cx="62" cy="224" r="14" fill="#2563EB"/>
+  <text x="62" y="229" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF" font-family="-apple-system, 'Segoe UI', sans-serif">1</text>
+  <text x="84" y="220" font-size="14" font-weight="700" fill="#111827" font-family="-apple-system, 'Segoe UI', sans-serif">追新特性</text>
+  <text x="84" y="242" font-size="12" fill="#4B5563" font-family="-apple-system, 'Segoe UI', sans-serif">第一时间接入新模型与新能力</text>
+
+  <rect x="242" y="198" width="176" height="70" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <circle cx="268" cy="224" r="14" fill="#EA580C"/>
+  <text x="268" y="229" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF" font-family="-apple-system, 'Segoe UI', sans-serif">2</text>
+  <text x="290" y="220" font-size="14" font-weight="700" fill="#111827" font-family="-apple-system, 'Segoe UI', sans-serif">细粒度控制</text>
+  <text x="290" y="242" font-size="12" fill="#4B5563" font-family="-apple-system, 'Segoe UI', sans-serif">强依赖原生参数和平台能力</text>
+
+  <rect x="448" y="198" width="176" height="70" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <circle cx="474" cy="224" r="14" fill="#16A34A"/>
+  <text x="474" y="229" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF" font-family="-apple-system, 'Segoe UI', sans-serif">3</text>
+  <text x="496" y="220" font-size="14" font-weight="700" fill="#111827" font-family="-apple-system, 'Segoe UI', sans-serif">多模型架构</text>
+  <text x="496" y="242" font-size="12" fill="#4B5563" font-family="-apple-system, 'Segoe UI', sans-serif">同时接入多家模型服务</text>
+
+  <rect x="139" y="292" width="176" height="70" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <circle cx="165" cy="318" r="14" fill="#9333EA"/>
+  <text x="165" y="323" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF" font-family="-apple-system, 'Segoe UI', sans-serif">4</text>
+  <text x="187" y="314" font-size="14" font-weight="700" fill="#111827" font-family="-apple-system, 'Segoe UI', sans-serif">云中立优先</text>
+  <text x="187" y="336" font-size="12" fill="#4B5563" font-family="-apple-system, 'Segoe UI', sans-serif">面向外部产品，弱化云绑定</text>
+
+  <rect x="345" y="292" width="176" height="70" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <circle cx="371" cy="318" r="14" fill="#D97706"/>
+  <text x="371" y="323" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF" font-family="-apple-system, 'Segoe UI', sans-serif">5</text>
+  <text x="393" y="314" font-size="14" font-weight="700" fill="#111827" font-family="-apple-system, 'Segoe UI', sans-serif">已有 AI 网关</text>
+  <text x="393" y="336" font-size="12" fill="#4B5563" font-family="-apple-system, 'Segoe UI', sans-serif">不想破坏现有抽象层</text>
+
+  <line x1="330" y1="182" x2="124" y2="198" stroke="#2563EB" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="330" y1="182" x2="330" y2="198" stroke="#EA580C" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="330" y1="182" x2="536" y2="198" stroke="#16A34A" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="330" y1="182" x2="227" y2="292" stroke="#9333EA" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="330" y1="182" x2="433" y2="292" stroke="#D97706" stroke-width="2" stroke-dasharray="6 6"/>
+</svg>

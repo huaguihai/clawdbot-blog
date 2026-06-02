@@ -1,0 +1,59 @@
+<svg width="660" height="300" viewBox="0 0 660 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="660" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#44403C"/>
+      <stop offset="100%" stop-color="#1C1917"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="50" y1="0" x2="610" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <pattern id="texture" x="0" y="0" width="36" height="36" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="8" r="1.1" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="18" cy="5" r="0.9" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="30" cy="10" r="1.2" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="10" cy="20" r="0.8" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="24" cy="18" r="1.1" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="33" cy="26" r="0.9" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="7" cy="31" r="1.2" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="20" cy="30" r="0.8" fill="#D6D3D1" opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <rect width="660" height="300" fill="url(#bgGrad)"/>
+  <rect width="660" height="300" fill="url(#texture)"/>
+
+  <rect x="50" y="28" width="5" height="214" rx="2.5" fill="url(#accentGrad)"/>
+
+  <text x="70" y="78" fill="#FAFAF9" font-family="Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="22" font-weight="700">
+    <tspan x="70" dy="0">AWS 里的 OpenAI，值不值</tspan>
+    <tspan x="70" dy="28">得少折腾一层基建</tspan>
+  </text>
+
+  <text x="70" y="143" fill="#A8A29E" font-family="Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13">
+    AWS 里的 OpenAI 不只是多一个模型入口。对本来就跑在 AWS 的团队来
+  </text>
+
+  <g>
+    <rect x="70" y="238" width="76" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="108" y="254" text-anchor="middle" fill="#D6D3D1" font-family="Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="12">AWS 接入</text>
+
+    <rect x="156" y="238" width="72" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="192" y="254" text-anchor="middle" fill="#D6D3D1" font-family="Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="12">基础设施</text>
+
+    <rect x="238" y="238" width="74" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="275" y="254" text-anchor="middle" fill="#D6D3D1" font-family="Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="12">权限审计</text>
+  </g>
+
+  <g opacity="0.22" stroke="#EA580C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <rect x="520" y="196" width="54" height="40" rx="6"/>
+    <path d="M528 208H566"/>
+    <path d="M528 218H554"/>
+    <path d="M528 228H560"/>
+    <path d="M580 210L596 194L612 210L596 226L580 210Z"/>
+    <path d="M596 194V186"/>
+    <path d="M590 186H602"/>
+  </g>
+
+  <rect x="0" y="293" width="660" height="7" fill="url(#accentGrad)"/>
+</svg>

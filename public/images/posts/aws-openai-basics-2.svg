@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <text x="330" y="42" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#0F172A">已经在 AWS 上的团队，麻烦会少在哪？</text>
+  <text x="330" y="68" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#475569">核心结论：接入更贴近现有 AWS 边界后，组织推进阻力通常更小</text>
+
+  <rect x="230" y="94" width="200" height="72" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="330" y="122" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#2563EB">AWS 内接入模型能力</text>
+  <text x="330" y="146" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#475569">沿用已有云资源、边界与治理方式</text>
+
+  <line x1="330" y1="166" x2="130" y2="206" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="330" y1="166" x2="280" y2="206" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="330" y1="166" x2="430" y2="206" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="330" y1="166" x2="530" y2="206" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <rect x="40" y="206" width="180" height="104" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <circle cx="72" cy="238" r="12" fill="#2563EB"/>
+  <text x="72" y="242" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">1</text>
+  <text x="98" y="242" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#2563EB">权限</text>
+  <text x="58" y="270" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#475569">复用 IAM 与现有账号体系，</text>
+  <text x="58" y="290" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#475569">减少“谁能访问什么”解释成本</text>
+
+  <rect x="240" y="206" width="180" height="104" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <circle cx="272" cy="238" r="12" fill="#16A34A"/>
+  <text x="272" y="242" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">2</text>
+  <text x="298" y="242" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#16A34A">网络</text>
+  <text x="258" y="270" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#475569">S3、RDS、后台链路更容易</text>
+  <text x="258" y="290" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#475569">留在熟悉的 AWS 边界内</text>
+
+  <rect x="440" y="206" width="180" height="104" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <circle cx="472" cy="238" r="12" fill="#EA580C"/>
+  <text x="472" y="242" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">3</text>
+  <text x="498" y="242" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#EA580C">账单</text>
+  <text x="458" y="270" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#475569">采购、归集、成本归属更容易</text>
+  <text x="458" y="290" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#475569">放进已有财务流程</text>
+
+  <rect x="140" y="326" width="180" height="52" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <circle cx="170" cy="352" r="12" fill="#9333EA"/>
+  <text x="170" y="356" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">4</text>
+  <text x="194" y="348" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#9333EA">审计</text>
+  <text x="194" y="366" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#475569">留痕、责任界定、审查说明更顺</text>
+
+  <line x1="320" y1="352" x2="352" y2="352" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <rect x="352" y="326" width="220" height="52" rx="16" fill="#FFF7ED" stroke="#D97706" stroke-width="1.5"/>
+  <text x="462" y="348" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#D97706">结果：更容易拿到试点入场券</text>
+  <text x="462" y="366" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#7C2D12">但不是万能通行证，仍受组织治理影响</text>
+</svg>
