@@ -15,8 +15,14 @@ jobs:
       - name: Restore file mtimes from git history
         run: |
           git ls-files -z content/posts/ | while IFS= read -r -d '' f; do
+            # 跳过软链接/非普通文件：曾因误提交指向本机绝对路径的软链接，
+            # 导致 touch 解析失败、整个部署中断（2026-06-03 修复）
+            if [ ! -f "$f" ] || [ -L "$f" ]; then
+              echo "::warning::skip non-regular file in content/posts: $f"
+              continue
+            fi
             t=$(git log -1 --format=%aI -- "$f")
-            [ -n "$t" ] && touch -d "$t" "$f"
+            [ -n "$t" ] && touch -d "$t" "$f" || true
           done
 
       - uses: actions/setup-node@v4
