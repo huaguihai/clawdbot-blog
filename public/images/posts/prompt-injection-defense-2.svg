@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563EB"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#EA580C"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#16A34A"/>
+    </marker>
+  </defs>
+
+  <text x="330" y="38" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#111827">风险不在脏内容，而在脏内容连上工具权限</text>
+
+  <rect x="38" y="80" width="150" height="220" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="113" y="108" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#2563EB">外部内容入口</text>
+
+  <rect x="58" y="128" width="110" height="34" rx="10" fill="#DBEAFE"/>
+  <text x="113" y="150" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#1F2937">网页</text>
+
+  <rect x="58" y="172" width="110" height="34" rx="10" fill="#FFEDD5"/>
+  <text x="113" y="194" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#1F2937">邮件</text>
+
+  <rect x="58" y="216" width="110" height="34" rx="10" fill="#E9D5FF"/>
+  <text x="113" y="238" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#1F2937">文档/附件</text>
+
+  <rect x="58" y="260" width="110" height="34" rx="10" fill="#DCFCE7"/>
+  <text x="113" y="282" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#1F2937">用户输入</text>
+
+  <rect x="255" y="92" width="150" height="190" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="330" y="120" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#9333EA">模型读取内容</text>
+
+  <rect x="275" y="140" width="110" height="42" rx="10" fill="#F3E8FF"/>
+  <text x="330" y="158" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#1F2937">内容里混入</text>
+  <text x="330" y="174" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#1F2937">伪指令/隐藏意图</text>
+
+  <rect x="275" y="196" width="110" height="58" rx="10" fill="#FEF3C7"/>
+  <text x="330" y="216" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#1F2937">只总结时</text>
+  <text x="330" y="234" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#1F2937">通常只是结果变脏</text>
+
+  <rect x="472" y="80" width="150" height="220" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="547" y="108" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#EA580C">工具与执行器</text>
+
+  <rect x="492" y="128" width="110" height="34" rx="10" fill="#FFEDD5"/>
+  <text x="547" y="150" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#1F2937">发邮件</text>
+
+  <rect x="492" y="172" width="110" height="34" rx="10" fill="#DBEAFE"/>
+  <text x="547" y="194" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#1F2937">查数据库</text>
+
+  <rect x="492" y="216" width="110" height="34" rx="10" fill="#DCFCE7"/>
+  <text x="547" y="238" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#1F2937">改表格 / 内部 API</text>
+
+  <rect x="492" y="260" width="110" height="34" rx="10" fill="#FEE2E2"/>
+  <text x="547" y="282" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#1F2937">执行命令</text>
+
+  <line x1="188" y1="190" x2="255" y2="190" stroke="#2563EB" stroke-width="3" stroke-dasharray="8 6" marker-end="url(#arrowBlue)"/>
+  <text x="221" y="178" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#2563EB">读取内容</text>
+
+  <line x1="405" y1="190" x2="472" y2="190" stroke="#EA580C" stroke-width="3" stroke-dasharray="8 6" marker-end="url(#arrowOrange)"/>
+  <text x="438" y="178" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#EA580C">若有工具权限</text>
+
+  <rect x="218" y="320" width="224" height="48" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="330" y="340" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#16A34A">核心结论</text>
+  <text x="330" y="358" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#1F2937">真正被攻击者盯上的，是模型背后的工具控制权</text>
+
+  <line x1="547" y1="300" x2="547" y2="344" stroke="#16A34A" stroke-width="3" stroke-dasharray="8 6" marker-end="url(#arrowGreen)"/>
+</svg>
