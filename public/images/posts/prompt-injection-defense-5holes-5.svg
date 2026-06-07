@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563EB"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#EA580C"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#16A34A"/>
+    </marker>
+  </defs>
+
+  <text x="330" y="36" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#111827">敏感操作必须先过二次确认</text>
+  <text x="330" y="60" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">防止模型因一句话指令直接执行高风险动作</text>
+
+  <rect x="38" y="95" width="170" height="110" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="38" y="95" width="170" height="110" rx="16" fill="none" stroke="#2563EB" stroke-width="2"/>
+  <text x="123" y="122" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#2563EB">触发请求</text>
+  <text x="123" y="148" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">用户或外部内容</text>
+  <text x="123" y="168" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">提出执行动作</text>
+  <text x="123" y="188" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">如发邮件、导数据、改状态</text>
+
+  <rect x="245" y="95" width="170" height="110" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="245" y="95" width="170" height="110" rx="16" fill="none" stroke="#EA580C" stroke-width="2"/>
+  <text x="330" y="122" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#EA580C">识别敏感操作</text>
+  <text x="330" y="148" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">命中高风险动作清单</text>
+  <text x="330" y="168" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">外发、共享、删除、支付</text>
+  <text x="330" y="188" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">禁止直接执行</text>
+
+  <rect x="452" y="95" width="170" height="110" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="452" y="95" width="170" height="110" rx="16" fill="none" stroke="#16A34A" stroke-width="2"/>
+  <text x="537" y="122" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#16A34A">展示确认页</text>
+  <text x="537" y="148" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">说明工具、目标、内容</text>
+  <text x="537" y="168" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">并明确提示风险</text>
+  <text x="537" y="188" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">要求用户明确确认</text>
+
+  <line x1="208" y1="150" x2="245" y2="150" stroke="#2563EB" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#arrowBlue)"/>
+  <line x1="415" y1="150" x2="452" y2="150" stroke="#EA580C" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#arrowOrange)"/>
+
+  <rect x="95" y="255" width="470" height="105" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="95" y="255" width="470" height="105" rx="16" fill="none" stroke="#9333EA" stroke-width="2"/>
+  <text x="330" y="282" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#9333EA">确认信息应包含的四个要点</text>
+
+  <rect x="122" y="298" width="88" height="40" rx="10" fill="#EFF6FF" stroke="#2563EB"/>
+  <text x="166" y="323" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#2563EB">工具名称</text>
+
+  <rect x="222" y="298" width="88" height="40" rx="10" fill="#FFF7ED" stroke="#EA580C"/>
+  <text x="266" y="323" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#EA580C">目标对象</text>
+
+  <rect x="322" y="298" width="88" height="40" rx="10" fill="#F0FDF4" stroke="#16A34A"/>
+  <text x="366" y="323" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#16A34A">附带内容</text>
+
+  <rect x="422" y="298" width="116" height="40" rx="10" fill="#FEF3C7" stroke="#D97706"/>
+  <text x="480" y="323" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#D97706">风险提示</text>
+
+  <line x1="537" y1="205" x2="537" y2="230" stroke="#16A34A" stroke-width="2.5" stroke-dasharray="6 6"/>
+  <line x1="537" y1="230" x2="330" y2="230" stroke="#16A34A" stroke-width="2.5" stroke-dasharray="6 6"/>
+  <line x1="330" y1="230" x2="330" y2="255" stroke="#16A34A" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#arrowGreen)"/>
+
+  <text x="330" y="382" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">只有收到明确指令（如“确认发送”）后，系统才继续执行</text>
+</svg>

@@ -1,0 +1,68 @@
+<svg width="660" height="300" viewBox="0 0 660 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="660" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#44403C"/>
+      <stop offset="100%" stop-color="#1C1917"/>
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="50" y1="0" x2="50" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <linearGradient id="bottomGradient" x1="0" y1="293" x2="660" y2="293" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <pattern id="texture" width="36" height="36" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="8" r="1" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="18" cy="5" r="0.8" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="29" cy="11" r="1.1" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="9" cy="22" r="0.9" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="23" cy="19" r="1" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="31" cy="29" r="0.8" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="14" cy="32" r="1.1" fill="#D6D3D1" opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <rect width="660" height="300" fill="url(#bgGradient)"/>
+  <rect width="660" height="300" fill="url(#texture)"/>
+
+  <rect x="50" y="28" width="5" height="222" rx="2.5" fill="url(#accentGradient)"/>
+
+  <text x="70" y="78" fill="#FAFAF9" font-size="22" font-weight="700" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif">
+    <tspan x="70" dy="0">Prompt Injection 防御：</tspan>
+    <tspan x="70" dy="28">先补这 5 个洞</tspan>
+  </text>
+
+  <text x="70" y="146" fill="#A8A29E" font-size="13" font-weight="400" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif">
+    Prompt Injection 防御不是改几句提示词就行。真正容易出事的，是你
+  </text>
+
+  <g>
+    <rect x="70" y="238" width="82" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="111" y="254" text-anchor="middle" fill="#D6D3D1" font-size="13" font-weight="500" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif">工具权限</text>
+
+    <rect x="162" y="238" width="82" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="203" y="254" text-anchor="middle" fill="#D6D3D1" font-size="13" font-weight="500" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif">上下文隔离</text>
+
+    <rect x="254" y="238" width="74" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="291" y="254" text-anchor="middle" fill="#D6D3D1" font-size="13" font-weight="500" font-family="PingFang SC, Microsoft YaHei, Noto Sans SC, sans-serif">审计追踪</text>
+  </g>
+
+  <g opacity="0.22" stroke="#EA580C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <rect x="505" y="190" width="56" height="40" rx="8"/>
+    <path d="M517 202H549"/>
+    <path d="M517 210H541"/>
+    <path d="M517 218H535"/>
+    <path d="M569 214L580 225L596 198"/>
+  </g>
+
+  <g opacity="0.18" stroke="#A8A29E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <circle cx="566" cy="252" r="22"/>
+    <path d="M566 240V252L574 258"/>
+    <path d="M546 252H540"/>
+    <path d="M592 252H586"/>
+    <path d="M566 226V220"/>
+  </g>
+
+  <rect x="0" y="293" width="660" height="7" fill="url(#bottomGradient)"/>
+</svg>
