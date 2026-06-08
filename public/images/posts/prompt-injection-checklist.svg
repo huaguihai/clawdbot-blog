@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563EB"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#EA580C"/>
+    </marker>
+  </defs>
+
+  <text x="330" y="38" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#111827">Prompt Injection 搞坏的是执行边界</text>
+  <text x="330" y="62" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#4B5563">不是单纯“说错”，而是让不该发生的动作真的被执行</text>
+
+  <rect x="250" y="90" width="160" height="64" rx="12" fill="#FFFFFF" stroke="#EA580C" stroke-width="2" filter="url(#shadow)"/>
+  <text x="330" y="117" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#EA580C">注入指令</text>
+  <text x="330" y="138" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">网页 / PDF / 邮件 / 用户输入</text>
+
+  <line x1="330" y1="154" x2="330" y2="188" stroke="#EA580C" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrowOrange)"/>
+
+  <rect x="230" y="188" width="200" height="72" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="2" filter="url(#shadow)"/>
+  <text x="330" y="215" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#2563EB">模型误把文本当命令</text>
+  <text x="330" y="236" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">错误理解后继续驱动系统动作</text>
+
+  <line x1="330" y1="260" x2="330" y2="286" stroke="#2563EB" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrowBlue)"/>
+
+  <rect x="40" y="300" width="110" height="64" rx="12" fill="#FFFFFF" stroke="#9333EA" stroke-width="2" filter="url(#shadow)"/>
+  <text x="95" y="326" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#9333EA">系统提示词</text>
+  <text x="95" y="346" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6B7280">泄露规则</text>
+
+  <rect x="165" y="300" width="110" height="64" rx="12" fill="#FFFFFF" stroke="#D97706" stroke-width="2" filter="url(#shadow)"/>
+  <text x="220" y="326" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#D97706">工具调用</text>
+  <text x="220" y="346" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6B7280">乱调 API</text>
+
+  <rect x="290" y="300" width="110" height="64" rx="12" fill="#FFFFFF" stroke="#16A34A" stroke-width="2" filter="url(#shadow)"/>
+  <text x="345" y="326" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#16A34A">外部内容</text>
+  <text x="345" y="346" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6B7280">污染执行链</text>
+
+  <rect x="415" y="300" width="110" height="64" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="2" filter="url(#shadow)"/>
+  <text x="470" y="326" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#2563EB">权限边界</text>
+  <text x="470" y="346" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6B7280">越权读写</text>
+
+  <rect x="540" y="300" width="80" height="64" rx="12" fill="#FFFFFF" stroke="#EA580C" stroke-width="2" filter="url(#shadow)"/>
+  <text x="580" y="326" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#EA580C">审计追踪</text>
+  <text x="580" y="346" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6B7280">难复盘</text>
+
+  <line x1="330" y1="286" x2="95" y2="300" stroke="#9333EA" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="330" y1="286" x2="220" y2="300" stroke="#D97706" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="330" y1="286" x2="345" y2="300" stroke="#16A34A" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="330" y1="286" x2="470" y2="300" stroke="#2563EB" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="330" y1="286" x2="580" y2="300" stroke="#EA580C" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <text x="330" y="387" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#111827">核心：攻击的是“文本如何影响动作”，不是文本本身</text>
+</svg>
