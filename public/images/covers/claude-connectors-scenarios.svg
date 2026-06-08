@@ -1,0 +1,102 @@
+<svg width="660" height="300" viewBox="0 0 660 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="660" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#44403C"/>
+      <stop offset="100%" stop-color="#1C1917"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="50" y1="0" x2="610" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <filter id="softGrain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.06"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="660" height="300" fill="url(#bgGrad)"/>
+  <rect width="660" height="300" fill="#D6D3D1" filter="url(#softGrain)" opacity="0.06"/>
+
+  <g opacity="0.06" fill="#D6D3D1">
+    <circle cx="38" cy="42" r="1.2"/>
+    <circle cx="96" cy="24" r="1"/>
+    <circle cx="148" cy="58" r="1.3"/>
+    <circle cx="210" cy="30" r="0.9"/>
+    <circle cx="274" cy="48" r="1.1"/>
+    <circle cx="338" cy="26" r="1.2"/>
+    <circle cx="412" cy="44" r="1"/>
+    <circle cx="486" cy="28" r="1.1"/>
+    <circle cx="548" cy="52" r="0.9"/>
+    <circle cx="612" cy="34" r="1.2"/>
+    <circle cx="54" cy="104" r="1"/>
+    <circle cx="122" cy="90" r="1.2"/>
+    <circle cx="188" cy="112" r="0.9"/>
+    <circle cx="246" cy="86" r="1.1"/>
+    <circle cx="316" cy="108" r="1"/>
+    <circle cx="382" cy="92" r="1.2"/>
+    <circle cx="448" cy="116" r="1"/>
+    <circle cx="520" cy="96" r="1.1"/>
+    <circle cx="586" cy="110" r="0.9"/>
+    <circle cx="628" cy="88" r="1.1"/>
+    <circle cx="40" cy="172" r="1.1"/>
+    <circle cx="110" cy="154" r="0.9"/>
+    <circle cx="174" cy="182" r="1.2"/>
+    <circle cx="240" cy="160" r="1"/>
+    <circle cx="306" cy="176" r="1.1"/>
+    <circle cx="370" cy="150" r="1"/>
+    <circle cx="438" cy="184" r="1.2"/>
+    <circle cx="506" cy="166" r="0.9"/>
+    <circle cx="574" cy="178" r="1.1"/>
+    <circle cx="620" cy="158" r="1"/>
+    <circle cx="64" cy="238" r="1"/>
+    <circle cx="134" cy="220" r="1.1"/>
+    <circle cx="202" cy="246" r="0.9"/>
+    <circle cx="268" cy="226" r="1.2"/>
+    <circle cx="334" cy="242" r="1"/>
+    <circle cx="402" cy="224" r="1.1"/>
+    <circle cx="468" cy="248" r="1"/>
+    <circle cx="534" cy="230" r="1.2"/>
+    <circle cx="602" cy="244" r="0.9"/>
+  </g>
+
+  <rect x="50" y="24" width="5" height="232" rx="2.5" fill="url(#accentGrad)"/>
+
+  <g>
+    <text x="70" y="82" fill="#FAFAF9" font-size="22" font-weight="700" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+      <tspan x="70" dy="0">Claude Connectors 值得开吗？</tspan>
+      <tspan x="70" dy="28">先看这4个场景</tspan>
+    </text>
+
+    <text x="70" y="140" fill="#A8A29E" font-size="13" font-weight="400" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+      Claude Connectors 值得开吗？如果你已经受够了在邮箱、日历、文档
+    </text>
+  </g>
+
+  <g>
+    <rect x="70" y="238" width="76" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="108" y="254" text-anchor="middle" fill="#D6D3D1" font-size="12" font-weight="500" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">连接器</text>
+
+    <rect x="156" y="238" width="88" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="200" y="254" text-anchor="middle" fill="#D6D3D1" font-size="12" font-weight="500" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">信息整理</text>
+
+    <rect x="254" y="238" width="76" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="292" y="254" text-anchor="middle" fill="#D6D3D1" font-size="12" font-weight="500" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">工作流</text>
+  </g>
+
+  <g opacity="0.22" stroke="#EA580C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <rect x="500" y="190" width="54" height="40" rx="6"/>
+    <path d="M506 198L527 213L548 198"/>
+    <path d="M518 240H566"/>
+    <path d="M518 248H560"/>
+    <circle cx="586" cy="212" r="18" stroke="#A8A29E" opacity="0.24"/>
+    <path d="M577 212H595" stroke="#A8A29E" opacity="0.24"/>
+    <path d="M586 203V221" stroke="#A8A29E" opacity="0.24"/>
+    <path d="M573 225L580 218" stroke="#A8A29E" opacity="0.24"/>
+    <path d="M592 206L599 199" stroke="#A8A29E" opacity="0.24"/>
+  </g>
+
+  <rect x="0" y="293" width="660" height="7" fill="url(#accentGrad)"/>
+</svg>
