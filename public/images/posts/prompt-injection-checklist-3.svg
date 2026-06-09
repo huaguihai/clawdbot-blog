@@ -1,1 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400"><rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/><defs><filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#000000" flood-opacity="0.10"/></filter></defs><text x="330" y="42" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#111827">“能演示” vs “能交付” 的核心区别</text><text x="330" y="68" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">关键判断：外部文本是否可能直接影响工具调用，且缺少结构化隔离与人工拦截</text><rect x="50" y="100" width="250" height="240" rx="16" fill="#FFFFFF" filter="url(#shadow)" stroke="#F1F5F9"/><rect x="360" y="100" width="250" height="240" rx="16" fill="#FFFFFF" filter="url(#shadow)" stroke="#F1F5F9"/><rect x="75" y="120" width="200" height="34" rx="10" fill="#EA580C"/><text x="175" y="142" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">能演示</text><rect x="385" y="120" width="200" height="34" rx="10" fill="#16A34A"/><text x="485" y="142" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">能交付</text><circle cx="90" cy="178" r="6" fill="#EA580C"/><text x="106" y="183" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827">成功路径顺，体验丝滑</text><circle cx="90" cy="218" r="6" fill="#EA580C"/><text x="106" y="223" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827">外部输入可贴近执行链路</text><circle cx="90" cy="258" r="6" fill="#EA580C"/><text x="106" y="263" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827">资料、规则、恶意指令易混淆</text><circle cx="90" cy="298" r="6" fill="#EA580C"/><text x="106" y="303" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827">边界弱，风险在复杂输入下暴露</text><circle cx="400" cy="178" r="6" fill="#16A34A"/><text x="416" y="183" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827">默认输入不可信</text><circle cx="400" cy="218" r="6" fill="#16A34A"/><text x="416" y="223" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827">先结构化隔离，再开放能力</text><circle cx="400" cy="258" r="6" fill="#16A34A"/><text x="416" y="263" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827">关键动作前增加人工拦截</text><circle cx="400" cy="298" r="6" fill="#16A34A"/><text x="416" y="303" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827">宁可多问一句，也避免误操作</text><line x1="300" y1="220" x2="360" y2="220" stroke="#9333EA" stroke-width="2" stroke-dasharray="6 6"/><polygon points="360,220 350,214 350,226" fill="#9333EA"/><rect x="255" y="196" width="150" height="48" rx="12" fill="#FFFFFF" stroke="#E5E7EB" filter="url(#shadow)"/><text x="330" y="214" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#9333EA">核心分界线</text><text x="330" y="231" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#4B5563">是否隔离外部文本对工具的直接影响</text><rect x="142" y="350" width="376" height="28" rx="10" fill="#DBEAFE"/><text x="330" y="368" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#1D4ED8">Demo 优化丝滑感，交付优先边界设计与稳健性</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563EB"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#EA580C"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#16A34A"/>
+    </marker>
+  </defs>
+
+  <text x="330" y="36" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#111827">三种最常见的 Agent 翻车场景</text>
+  <text x="330" y="58" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">输入污染、边界混淆、权限过大</text>
+
+  <rect x="40" y="92" width="170" height="210" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="55" y="108" width="140" height="34" rx="10" fill="#DBEAFE"/>
+  <text x="125" y="130" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#2563EB">场景1：隐藏文本</text>
+  <text x="125" y="160" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">网页 / Markdown / 注释</text>
+  <text x="125" y="178" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">Alt 文本 / OCR 图片</text>
+  <rect x="60" y="194" width="130" height="46" rx="10" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text x="125" y="213" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#1F2937">模型读页面时</text>
+  <text x="125" y="228" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#1F2937">一起吞下恶意指令</text>
+  <text x="125" y="262" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6B7280">后果：总结跑偏、诱导跳转</text>
+  <text x="125" y="280" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6B7280">甚至触发错误工具调用</text>
+
+  <rect x="245" y="92" width="170" height="210" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="260" y="108" width="140" height="34" rx="10" fill="#FEE2E2"/>
+  <text x="330" y="130" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#EA580C">场景2：规则同层</text>
+  <text x="330" y="160" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">系统要求 + 用户输入</text>
+  <text x="330" y="178" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">网页正文 + 工具结果</text>
+  <rect x="265" y="194" width="130" height="46" rx="10" fill="#FFF7ED" stroke="#EA580C" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text x="330" y="213" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#1F2937">全部拼成一个大 prompt</text>
+  <text x="330" y="228" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#1F2937">安全边界被抹平</text>
+  <text x="330" y="262" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6B7280">后果：优先级混乱、指令串台</text>
+  <text x="330" y="280" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6B7280">模型更难只听系统规则</text>
+
+  <rect x="450" y="92" width="170" height="210" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="465" y="108" width="140" height="34" rx="10" fill="#DCFCE7"/>
+  <text x="535" y="130" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#16A34A">场景3：权限过满</text>
+  <text x="535" y="160" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">发消息 / 发邮件 / 改库</text>
+  <text x="535" y="178" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">调用 API / 操作后台</text>
+  <rect x="470" y="194" width="130" height="46" rx="10" fill="#F0FDF4" stroke="#16A34A" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text x="535" y="213" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#1F2937">一旦被带偏</text>
+  <text x="535" y="228" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#1F2937">就可能真的执行动作</text>
+  <text x="535" y="262" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6B7280">后果：爆炸半径最大</text>
+  <text x="535" y="280" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6B7280">风险取决于能做什么</text>
+
+  <line x1="210" y1="198" x2="245" y2="198" stroke="#2563EB" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrowBlue)"/>
+  <line x1="415" y1="198" x2="450" y2="198" stroke="#EA580C" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrowOrange)"/>
+
+  <rect x="166" y="328" width="328" height="44" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="330" y="347" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#9333EA">核心规律</text>
+  <text x="330" y="365" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#374151">输入越不可信、边界越模糊、权限越大，Prompt Injection 风险越高</text>
+
+  <line x1="125" y1="302" x2="250" y2="328" stroke="#2563EB" stroke-width="2" stroke-dasharray="5 5" marker-end="url(#arrowBlue)"/>
+  <line x1="330" y1="302" x2="330" y2="328" stroke="#EA580C" stroke-width="2" stroke-dasharray="5 5" marker-end="url(#arrowOrange)"/>
+  <line x1="535" y1="302" x2="410" y2="328" stroke="#16A34A" stroke-width="2" stroke-dasharray="5 5" marker-end="url(#arrowGreen)"/>
+</svg>
