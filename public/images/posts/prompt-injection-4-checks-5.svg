@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <text x="330" y="36" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#111827">内容隔离：别把资料和命令混在一起</text>
+  <text x="330" y="60" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">核心原则：系统规则与用户请求优先，外部内容仅作分析材料</text>
+
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563EB"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#EA580C"/>
+    </marker>
+  </defs>
+
+  <rect x="38" y="94" width="250" height="238" rx="16" fill="#FEE2E2" stroke="#EA580C" stroke-width="2" stroke-dasharray="6 6"/>
+  <text x="163" y="122" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#EA580C">错误做法：信息混放</text>
+
+  <rect x="64" y="146" width="198" height="138" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="163" y="172" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#111827">一锅大杂烩 Prompt</text>
+  <text x="82" y="200" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 系统规则</text>
+  <text x="82" y="224" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 用户请求</text>
+  <text x="82" y="248" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 网页/邮件内容</text>
+  <text x="82" y="272" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#374151">• 工具返回结果</text>
+  <text x="163" y="311" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#B91C1C">模型容易把资料误认成命令</text>
+
+  <rect x="372" y="94" width="250" height="238" rx="16" fill="#DBEAFE" stroke="#2563EB" stroke-width="2" stroke-dasharray="6 6"/>
+  <text x="497" y="122" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#2563EB">正确做法：结构分层</text>
+
+  <rect x="398" y="144" width="198" height="38" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="497" y="168" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#9333EA">1. 系统规则</text>
+
+  <rect x="398" y="190" width="198" height="38" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="497" y="214" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#16A34A">2. 用户明确请求</text>
+
+  <rect x="398" y="236" width="198" height="38" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="497" y="260" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#D97706">3. 外部材料：仅供分析</text>
+
+  <rect x="398" y="282" width="198" height="38" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="497" y="306" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#EA580C">4. 工具反馈：不是新指令</text>
+
+  <line x1="497" y1="182" x2="497" y2="190" stroke="#2563EB" stroke-width="2" stroke-dasharray="5 5"/>
+  <line x1="497" y1="228" x2="497" y2="236" stroke="#2563EB" stroke-width="2" stroke-dasharray="5 5"/>
+  <line x1="497" y1="274" x2="497" y2="282" stroke="#2563EB" stroke-width="2" stroke-dasharray="5 5"/>
+
+  <line x1="288" y1="212" x2="372" y2="212" stroke="#2563EB" stroke-width="2.5" stroke-dasharray="7 7" marker-end="url(#arrowBlue)"/>
+  <text x="330" y="198" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#2563EB">改造 Prompt 结构</text>
+
+  <text x="497" y="349" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#1D4ED8">外部内容默认身份 = 证据 / 样本</text>
+  <text x="497" y="367" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#1D4ED8">而不是上级命令</text>
+</svg>

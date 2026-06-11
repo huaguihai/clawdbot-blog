@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563EB"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#EA580C"/>
+    </marker>
+  </defs>
+
+  <text x="330" y="38" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#111827">Prompt Injection 风险不是偶发失误</text>
+  <text x="330" y="62" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280">当 AI 同时具备三种能力时，不可信内容会进入可执行决策链</text>
+
+  <rect x="36" y="108" width="170" height="102" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="36" y="108" width="170" height="10" rx="12" fill="#2563EB"/>
+  <text x="121" y="142" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#1F2937">1 会读外部内容</text>
+  <text x="121" y="168" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#4B5563">网页、邮件、PDF</text>
+  <text x="121" y="188" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#4B5563">知识库、工单</text>
+
+  <rect x="245" y="108" width="170" height="102" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="245" y="108" width="170" height="10" rx="12" fill="#16A34A"/>
+  <text x="330" y="142" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#1F2937">2 会自己判断</text>
+  <text x="330" y="168" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#4B5563">决定是否继续查</text>
+  <text x="330" y="188" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#4B5563">决定是否对外发送</text>
+
+  <rect x="454" y="108" width="170" height="102" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="454" y="108" width="170" height="10" rx="12" fill="#9333EA"/>
+  <text x="539" y="142" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#1F2937">3 会调用工具</text>
+  <text x="539" y="168" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#4B5563">发消息、执行脚本</text>
+  <text x="539" y="188" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#4B5563">改状态、写数据库</text>
+
+  <line x1="206" y1="159" x2="245" y2="159" stroke="#2563EB" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#arrowBlue)"/>
+  <line x1="415" y1="159" x2="454" y2="159" stroke="#2563EB" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#arrowBlue)"/>
+
+  <rect x="140" y="246" width="380" height="74" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="140" y="246" width="380" height="10" rx="12" fill="#EA580C"/>
+  <text x="330" y="282" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#7C2D12">不可信内容进入可执行决策链</text>
+  <text x="330" y="305" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#4B5563">模型把伪装成资料的文本误当成指令</text>
+
+  <line x1="121" y1="210" x2="230" y2="246" stroke="#EA580C" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#arrowOrange)"/>
+  <line x1="330" y1="210" x2="330" y2="246" stroke="#EA580C" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#arrowOrange)"/>
+  <line x1="539" y1="210" x2="430" y2="246" stroke="#EA580C" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#arrowOrange)"/>
+
+  <rect x="172" y="336" width="316" height="40" rx="20" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+  <text x="330" y="361" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="600" fill="#92400E">结果：不只是答错，而是可能真的执行错误操作</text>
+</svg>

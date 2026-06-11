@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563EB"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#EA580C"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#16A34A"/>
+    </marker>
+  </defs>
+
+  <text x="330" y="36" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#0F172A">Prompt Injection 真正要防的是什么</text>
+  <text x="330" y="62" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">核心风险：把不可信内容当成可执行指令，并借已有权限去行动</text>
+
+  <rect x="42" y="108" width="160" height="82" rx="12" fill="#FFFFFF" stroke="#E2E8F0" filter="url(#shadow)"/>
+  <text x="122" y="138" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#9333EA">不可信内容</text>
+  <text x="122" y="160" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#64748B">网页、邮件、文档</text>
+  <text x="122" y="178" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#64748B">第三方输入</text>
+
+  <rect x="250" y="92" width="160" height="116" rx="12" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2" filter="url(#shadow)"/>
+  <text x="330" y="122" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#EA580C">AI 工作流混合区</text>
+  <text x="330" y="146" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">阅读材料</text>
+  <text x="330" y="164" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">+</text>
+  <text x="330" y="182" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#475569">执行上下文 / 工具决策</text>
+
+  <rect x="458" y="108" width="160" height="82" rx="12" fill="#FFFFFF" stroke="#E2E8F0" filter="url(#shadow)"/>
+  <text x="538" y="138" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#2563EB">工具与权限</text>
+  <text x="538" y="160" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#64748B">调用 API / 发消息</text>
+  <text x="538" y="178" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#64748B">读写数据 / 执行动作</text>
+
+  <line x1="202" y1="149" x2="250" y2="149" stroke="#9333EA" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#arrowOrange)"/>
+  <line x1="410" y1="149" x2="458" y2="149" stroke="#EA580C" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#arrowBlue)"/>
+
+  <rect x="206" y="236" width="248" height="62" rx="12" fill="#FEF2F2" stroke="#EA580C" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="330" y="262" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#EA580C">风险升级路径</text>
+  <text x="330" y="284" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#7C2D12">从“回答质量问题”升级为“权限使用问题”</text>
+
+  <rect x="42" y="320" width="132" height="48" rx="12" fill="#FFFFFF" stroke="#16A34A" filter="url(#shadow)"/>
+  <text x="108" y="349" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#16A34A">内容隔离</text>
+
+  <rect x="186" y="320" width="132" height="48" rx="12" fill="#FFFFFF" stroke="#16A34A" filter="url(#shadow)"/>
+  <text x="252" y="349" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#16A34A">权限收紧</text>
+
+  <rect x="330" y="320" width="132" height="48" rx="12" fill="#FFFFFF" stroke="#16A34A" filter="url(#shadow)"/>
+  <text x="396" y="349" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#16A34A">关键动作确认</text>
+
+  <rect x="474" y="320" width="132" height="48" rx="12" fill="#FFFFFF" stroke="#16A34A" filter="url(#shadow)"/>
+  <text x="540" y="349" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#16A34A">执行留痕</text>
+
+  <line x1="330" y1="298" x2="108" y2="320" stroke="#16A34A" stroke-width="2" stroke-dasharray="5 5" marker-end="url(#arrowGreen)"/>
+  <line x1="330" y1="298" x2="252" y2="320" stroke="#16A34A" stroke-width="2" stroke-dasharray="5 5" marker-end="url(#arrowGreen)"/>
+  <line x1="330" y1="298" x2="396" y2="320" stroke="#16A34A" stroke-width="2" stroke-dasharray="5 5" marker-end="url(#arrowGreen)"/>
+  <line x1="330" y1="298" x2="540" y2="320" stroke="#16A34A" stroke-width="2" stroke-dasharray="5 5" marker-end="url(#arrowGreen)"/>
+</svg>

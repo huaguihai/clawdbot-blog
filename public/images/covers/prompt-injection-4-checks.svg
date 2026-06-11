@@ -1,0 +1,64 @@
+<svg width="660" height="300" viewBox="0 0 660 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="660" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#44403C"/>
+      <stop offset="1" stop-color="#1C1917"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="50" y1="0" x2="660" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EA580C"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+    <pattern id="texture" x="0" y="0" width="48" height="48" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="10" r="1.1" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="21" cy="7" r="0.9" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="36" cy="14" r="1.2" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="13" cy="26" r="0.8" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="29" cy="22" r="1.1" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="42" cy="31" r="0.9" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="6" cy="39" r="1.2" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="24" cy="42" r="0.8" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="38" cy="45" r="1.1" fill="#D6D3D1" opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <rect width="660" height="300" fill="url(#bg)"/>
+  <rect width="660" height="300" fill="url(#texture)"/>
+
+  <rect x="50" y="28" width="5" height="218" rx="2.5" fill="url(#accent)"/>
+
+  <text x="70" y="86" fill="#FAFAF9" font-size="22" font-weight="700" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <tspan x="70" dy="0">Prompt Injection 怎么防：</tspan>
+    <tspan x="70" dy="28">AI 读网页前先过这 4 关</tspan>
+  </text>
+
+  <text x="70" y="148" fill="#A8A29E" font-size="13" font-weight="400" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    Prompt Injection 怎么防？如果你的 AI 已经会读网页、邮件和文
+  </text>
+
+  <g>
+    <rect x="70" y="238" width="82" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="111" y="254" text-anchor="middle" fill="#D6D3D1" font-size="12" font-weight="500" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">安全防护</text>
+
+    <rect x="162" y="238" width="78" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="201" y="254" text-anchor="middle" fill="#D6D3D1" font-size="12" font-weight="500" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">网页读取</text>
+
+    <rect x="250" y="238" width="76" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="288" y="254" text-anchor="middle" fill="#D6D3D1" font-size="12" font-weight="500" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">工具调用</text>
+  </g>
+
+  <g opacity="0.22" stroke="#EA580C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <rect x="525" y="192" width="56" height="42" rx="6"/>
+    <path d="M535 205H571"/>
+    <path d="M535 214H562"/>
+    <path d="M535 223H553"/>
+    <path d="M548 192V182"/>
+    <path d="M560 192V182"/>
+  </g>
+
+  <g opacity="0.2" stroke="#A8A29E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M590 220L609 239L634 206"/>
+    <circle cx="612" cy="222" r="26"/>
+  </g>
+
+  <rect x="0" y="293" width="660" height="7" fill="url(#accent)"/>
+</svg>

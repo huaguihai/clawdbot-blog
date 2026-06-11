@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563EB"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#EA580C"/>
+    </marker>
+  </defs>
+
+  <text x="330" y="36" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#111827">哪些 AI 工作流最容易中招</text>
+  <text x="330" y="60" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#4B5563">核心风险：读取外部内容后，模型继续调用工具并多走一步</text>
+
+  <rect x="40" y="95" width="170" height="230" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="125" y="120" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#2563EB">高频场景</text>
+
+  <rect x="55" y="135" width="140" height="26" rx="8" fill="#DBEAFE"/>
+  <text x="125" y="152" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#1E3A8A">网页总结</text>
+
+  <rect x="55" y="171" width="140" height="26" rx="8" fill="#FFEDD5"/>
+  <text x="125" y="188" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#9A3412">邮件助手</text>
+
+  <rect x="55" y="207" width="140" height="26" rx="8" fill="#DCFCE7"/>
+  <text x="125" y="224" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#166534">文档问答</text>
+
+  <rect x="55" y="243" width="140" height="26" rx="8" fill="#F3E8FF"/>
+  <text x="125" y="260" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B21A8">自动化运营助手</text>
+
+  <rect x="55" y="279" width="140" height="26" rx="8" fill="#FEF3C7"/>
+  <text x="125" y="296" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#92400E">脚本执行助手</text>
+
+  <rect x="245" y="95" width="170" height="230" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="330" y="120" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#EA580C">共同触发条件</text>
+
+  <rect x="260" y="145" width="140" height="46" rx="10" fill="#FFF7ED" stroke="#EA580C" stroke-width="1.2"/>
+  <text x="330" y="164" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#9A3412">读取外部内容</text>
+  <text x="330" y="180" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#7C2D12">网页 / 邮件 / 文档 / 日志</text>
+
+  <rect x="260" y="210" width="140" height="46" rx="10" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.2"/>
+  <text x="330" y="229" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#1D4ED8">与规则混在一起</text>
+  <text x="330" y="245" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#1E40AF">正文、指令、工具结果同上下文</text>
+
+  <rect x="260" y="275" width="140" height="34" rx="10" fill="#FEE2E2" stroke="#EA580C" stroke-width="1.2"/>
+  <text x="330" y="296" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#B91C1C">像命令的话污染判断</text>
+
+  <rect x="450" y="95" width="170" height="230" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="535" y="120" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#16A34A">危险后果</text>
+
+  <rect x="465" y="145" width="140" height="38" rx="10" fill="#ECFDF5"/>
+  <text x="535" y="168" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#166534">改任务目标</text>
+
+  <rect x="465" y="193" width="140" height="38" rx="10" fill="#ECFDF5"/>
+  <text x="535" y="216" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#166534">继续访问链接或数据源</text>
+
+  <rect x="465" y="241" width="140" height="38" rx="10" fill="#ECFDF5"/>
+  <text x="535" y="264" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#166534">调用消息或后台工具</text>
+
+  <rect x="465" y="289" width="140" height="38" rx="10" fill="#ECFDF5"/>
+  <text x="535" y="312" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#166534">执行写出或脚本动作</text>
+
+  <line x1="210" y1="210" x2="245" y2="210" stroke="#2563EB" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrowBlue)"/>
+  <line x1="415" y1="210" x2="450" y2="210" stroke="#EA580C" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrowOrange)"/>
+
+  <rect x="110" y="340" width="440" height="38" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="330" y="357" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#111827">最该警惕的不是答错，而是模型拿着工具权限自信地多走一步</text>
+  <text x="330" y="372" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#4B5563">只要能读外部内容，又能把结果写出去，就值得检查整条链路</text>
+</svg>
