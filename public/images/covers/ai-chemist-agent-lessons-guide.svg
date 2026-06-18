@@ -1,0 +1,68 @@
+<svg width="660" height="300" viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#78350F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#451A03;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent_grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- 背景层 -->
+  <rect width="660" height="300" fill="url(#bg_grad)" />
+  
+  <!-- 不规则散点纹理 -->
+  <g fill="#D6A456" opacity="0.06">
+    <circle cx="45" cy="34" r="1.5" />
+    <circle cx="120" cy="80" r="1" />
+    <circle cx="280" cy="45" r="2" />
+    <circle cx="450" cy="120" r="1.2" />
+    <circle cx="580" cy="60" r="1.5" />
+    <circle cx="80" cy="220" r="1" />
+    <circle cx="200" cy="180" r="1.8" />
+    <circle cx="350" cy="250" r="1.2" />
+    <circle cx="520" cy="210" r="2" />
+    <circle cx="610" cy="270" r="1" />
+  </g>
+
+  <!-- 左侧强调线 -->
+  <rect x="50" y="50" width="4" height="60" fill="url(#accent_grad)" rx="2" />
+
+  <!-- 文字层 -->
+  <text x="70" y="75" font-family="Source Han Sans CN, Microsoft YaHei, sans-serif" font-weight="bold" font-size="22" fill="#FEFCE8">
+    <tspan x="70" dy="0">别只盯着写代码：</tspan>
+    <tspan x="70" dy="30">化学实验教你找对 Agent 场景</tspan>
+  </text>
+  
+  <text x="70" y="145" font-family="Source Han Sans CN, Microsoft YaHei, sans-serif" font-size="13" fill="#D6A456">
+    为什么有些 AI Agent 能在实验室里自主改进化学反应，而你的“全能助手”却不行？
+  </text>
+
+  <!-- 标签胶囊 -->
+  <g transform="translate(70, 240)">
+    <rect width="80" height="24" rx="12" fill="#92400E" opacity="0.4" />
+    <text x="40" y="16" text-anchor="middle" font-family="Source Han Sans CN" font-size="11" fill="#FDE68A">AI Agent</text>
+    
+    <rect x="90" width="80" height="24" rx="12" fill="#92400E" opacity="0.4" />
+    <text x="130" y="16" text-anchor="middle" font-family="Source Han Sans CN" font-size="11" fill="#FDE68A">场景闭环</text>
+    
+    <rect x="180" width="80" height="24" rx="12" fill="#92400E" opacity="0.4" />
+    <text x="220" y="16" text-anchor="middle" font-family="Source Han Sans CN" font-size="11" fill="#FDE68A">搞钱实操</text>
+  </g>
+
+  <!-- 装饰元素（右下角，不与文字重叠） -->
+  <g transform="translate(520, 190)" opacity="0.25" stroke="#F59E0B" stroke-width="1.5" fill="none">
+    <!-- 烧瓶简笔画 -->
+    <path d="M20,0 L20,20 L5,50 A25,10 0 1,0 55,50 L40,20 L40,0 Z" />
+    <line x1="20" y1="8" x2="40" y2="8" />
+    <!-- 气泡/节点 -->
+    <circle cx="60" cy="20" r="4" fill="#F59E0B" stroke="none" />
+    <circle cx="75" cy="45" r="3" />
+    <line x1="55" y1="50" x2="72" y2="45" stroke-dasharray="2,2" />
+  </g>
+
+  <!-- 底部色条 -->
+  <rect y="293" width="660" height="7" fill="url(#accent_grad)" />
+</svg>
