@@ -1,0 +1,61 @@
+<svg width="660" height="300" viewBox="0 0 660 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="660" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#78350F"/>
+      <stop offset="1" stop-color="#451A03"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="660" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#D97706"/>
+    </linearGradient>
+    <pattern id="texture" x="0" y="0" width="36" height="36" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="8" r="1.2" fill="#D6A456" opacity="0.06"/>
+      <circle cx="18" cy="14" r="0.9" fill="#D6A456" opacity="0.06"/>
+      <circle cx="29" cy="7" r="1.1" fill="#D6A456" opacity="0.06"/>
+      <circle cx="10" cy="24" r="0.8" fill="#D6A456" opacity="0.06"/>
+      <circle cx="24" cy="28" r="1.3" fill="#D6A456" opacity="0.06"/>
+      <circle cx="32" cy="20" r="0.7" fill="#D6A456" opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <rect width="660" height="300" fill="url(#bg)"/>
+  <rect width="660" height="300" fill="url(#texture)"/>
+
+  <rect x="50" y="28" width="5" height="214" rx="2.5" fill="url(#accent)"/>
+
+  <text x="70" y="78" fill="#FEFCE8" font-size="22" font-weight="700" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <tspan x="70" dy="0">AI Agent 上线前，先补上</tspan>
+    <tspan x="70" dy="28">这 5 个防注入缺口</tspan>
+  </text>
+
+  <text x="70" y="142" fill="#D6A456" font-size="13" font-weight="400" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    AI Agent 上线前，先补上这 5 个防注入缺口。只要你的 Agent 会读
+  </text>
+
+  <g>
+    <rect x="70" y="238" width="78" height="24" rx="12" fill="#92400E" fill-opacity="0.4"/>
+    <text x="109" y="254" text-anchor="middle" fill="#FDE68A" font-size="12" font-weight="500" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">AI Agent</text>
+
+    <rect x="158" y="238" width="74" height="24" rx="12" fill="#92400E" fill-opacity="0.4"/>
+    <text x="195" y="254" text-anchor="middle" fill="#FDE68A" font-size="12" font-weight="500" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">提示注入</text>
+
+    <rect x="242" y="238" width="82" height="24" rx="12" fill="#92400E" fill-opacity="0.4"/>
+    <text x="283" y="254" text-anchor="middle" fill="#FDE68A" font-size="12" font-weight="500" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">权限边界</text>
+  </g>
+
+  <g opacity="0.22" stroke="#F59E0B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M520 188H578L592 202V246H520V188Z"/>
+    <path d="M578 188V202H592"/>
+    <path d="M536 208C548 214 563 214 575 208"/>
+    <path d="M540 220H572"/>
+    <path d="M540 230H566"/>
+  </g>
+
+  <g opacity="0.18" stroke="#D6A456" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M604 214L618 228L604 242L590 228L604 214Z"/>
+    <path d="M604 221V235"/>
+    <path d="M597 228H611"/>
+  </g>
+
+  <rect x="0" y="293" width="660" height="7" fill="url(#accent)"/>
+</svg>
