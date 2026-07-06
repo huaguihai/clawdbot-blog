@@ -1,0 +1,65 @@
+<svg width="660" height="300" viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#44403C"/>
+      <stop offset="100%" stop-color="#1C1917"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <pattern id="texture" patternUnits="userSpaceOnUse" width="40" height="40">
+      <circle cx="8" cy="12" r="1.2" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="25" cy="28" r="0.9" fill="#D6D3D1" opacity="0.06"/>
+      <circle cx="33" cy="7" r="1.1" fill="#D6D3D1" opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="660" height="300" fill="url(#bgGrad)"/>
+  <rect width="660" height="300" fill="url(#texture)"/>
+
+  <!-- 左侧强调线 -->
+  <rect x="50" y="0" width="4.5" height="300" fill="url(#accentGrad)"/>
+
+  <!-- 标题 -->
+  <text x="70" y="72" fill="#FAFAF9" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700">
+    <tspan x="70" dy="0">AI 功能总失控？</tspan>
+    <tspan x="70" dy="28">用这 5 个交互组件</tspan>
+    <tspan x="70" dy="28">把权限和流程锁死</tspan>
+  </text>
+
+  <!-- 副标题 -->
+  <text x="70" y="168" fill="#A8A29E" font-family="system-ui, -apple-system, sans-serif" font-size="13">
+    用户输入一句就跑偏、工具权限失控、输出无法回溯？Claude Dispatch
+  </text>
+
+  <!-- 标签 -->
+  <g>
+    <!-- 标签1 -->
+    <rect x="70" y="245" width="82" height="24" rx="12" ry="12" fill="#57534E" opacity="0.4"/>
+    <text x="111" y="261" fill="#D6D3D1" font-family="system-ui, -apple-system, sans-serif" font-size="12" text-anchor="middle">权限控制</text>
+    
+    <!-- 标签2 -->
+    <rect x="162" y="245" width="82" height="24" rx="12" ry="12" fill="#57534E" opacity="0.4"/>
+    <text x="203" y="261" fill="#D6D3D1" font-family="system-ui, -apple-system, sans-serif" font-size="12" text-anchor="middle">交互组件</text>
+    
+    <!-- 标签3 -->
+    <rect x="254" y="245" width="82" height="24" rx="12" ry="12" fill="#57534E" opacity="0.4"/>
+    <text x="295" y="261" fill="#D6D3D1" font-family="system-ui, -apple-system, sans-serif" font-size="12" text-anchor="middle">流程治理</text>
+  </g>
+
+  <!-- 右下角装饰：简笔锁图标 -->
+  <g opacity="0.22">
+    <!-- 锁体 -->
+    <rect x="542" y="210" width="48" height="38" rx="6" ry="6" fill="none" stroke="#EA580C" stroke-width="4"/>
+    <!-- 锁梁 -->
+    <path d="M554 210 Q554 188 570 188 Q586 188 586 210" fill="none" stroke="#EA580C" stroke-width="4" stroke-linecap="round"/>
+    <!-- 钥匙孔 -->
+    <circle cx="566" cy="228" r="5" fill="none" stroke="#EA580C" stroke-width="3"/>
+    <line x1="566" y1="233" x2="566" y2="240" stroke="#EA580C" stroke-width="3"/>
+  </g>
+
+  <!-- 底部色条 -->
+  <rect x="0" y="293" width="660" height="7" fill="url(#accentGrad)"/>
+</svg>
