@@ -1,0 +1,81 @@
+<svg width="660" height="300" viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#44403C"/>
+      <stop offset="100%" stop-color="#1C1917"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="0" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <linearGradient id="bottomGrad" x1="0" y1="293" x2="660" y2="293" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="660" height="300" fill="url(#bgGrad)"/>
+
+  <!-- 纸张纹理散点 -->
+  <g opacity="0.06" fill="#D6D3D1">
+    <circle cx="80" cy="40" r="1.5"/>
+    <circle cx="150" cy="90" r="1"/>
+    <circle cx="220" cy="30" r="1.2"/>
+    <circle cx="310" cy="120" r="0.8"/>
+    <circle cx="400" cy="55" r="1.3"/>
+    <circle cx="490" cy="85" r="1"/>
+    <circle cx="570" cy="25" r="1.1"/>
+    <circle cx="120" cy="200" r="0.9"/>
+    <circle cx="280" cy="260" r="1.4"/>
+    <circle cx="360" cy="180" r="1"/>
+    <circle cx="520" cy="210" r="0.7"/>
+    <circle cx="620" cy="140" r="1.2"/>
+    <circle cx="200" cy="150" r="0.8"/>
+    <circle cx="450" cy="280" r="1.1"/>
+  </g>
+
+  <!-- 左侧强调线 -->
+  <rect x="50" y="0" width="5" height="300" fill="url(#accentGrad)"/>
+
+  <!-- 标题 -->
+  <text x="70" y="70" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#FAFAF9">
+    <tspan x="70" dy="0">ai-agent-defense-</tspan>
+    <tspan x="70" dy="30">checklist</tspan>
+  </text>
+
+  <!-- 副标题 -->
+  <text x="70" y="135" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#A8A29E">
+    ai-agent-defense-checklist
+  </text>
+
+  <!-- 标签胶囊 -->
+  <g>
+    <!-- 标签1 -->
+    <rect x="70" y="242" width="82" height="24" rx="12" ry="12" fill="#57534E" opacity="0.4"/>
+    <text x="111" y="258" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#D6D3D1" text-anchor="middle">input-layer</text>
+
+    <!-- 标签2 -->
+    <rect x="162" y="242" width="78" height="24" rx="12" ry="12" fill="#57534E" opacity="0.4"/>
+    <text x="201" y="258" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#D6D3D1" text-anchor="middle">permission</text>
+
+    <!-- 标签3 -->
+    <rect x="250" y="242" width="76" height="24" rx="12" ry="12" fill="#57534E" opacity="0.4"/>
+    <text x="288" y="258" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#D6D3D1" text-anchor="middle">audit-log</text>
+  </g>
+
+  <!-- 右下角装饰：简笔盾牌 + 层级几何 -->
+  <g opacity="0.22">
+    <!-- 盾牌 -->
+    <path d="M530 195 L555 195 L555 225 Q555 245 542 252 Q530 245 530 225 Z" 
+          fill="none" stroke="#EA580C" stroke-width="2.5" stroke-linejoin="round"/>
+    <!-- 层级线条 -->
+    <rect x="505" y="215" width="18" height="4" rx="1" fill="#F59E0B"/>
+    <rect x="505" y="225" width="18" height="4" rx="1" fill="#F59E0B"/>
+    <rect x="505" y="235" width="18" height="4" rx="1" fill="#F59E0B"/>
+  </g>
+
+  <!-- 底部色条 -->
+  <rect y="293" width="660" height="7" fill="url(#bottomGrad)"/>
+</svg>
