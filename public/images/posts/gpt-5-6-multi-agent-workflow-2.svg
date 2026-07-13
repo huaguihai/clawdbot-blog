@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA" />
+  <style>
+    text { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 14px; fill: #111827; }
+    .title { font-size: 20px; font-weight: 600; }
+    .subtitle { font-size: 13px; fill: #4B5563; }
+    .card { fill: #FFFFFF; stroke: #E5E7EB; stroke-width: 1; rx: 10; }
+    .shadow { filter: drop-shadow(0 1px 3px rgba(0,0,0,0.08)); }
+    .label { font-size: 12px; fill: #6B7280; }
+  </style>
+
+  <!-- 标题 -->
+  <text x="40" y="50" class="title">个人多 Agent 工作流：总控 + 子对话</text>
+  <text x="40" y="75" class="subtitle">不依赖复杂 SDK，利用多对话和指令模板搭出可用雏形</text>
+
+  <!-- 总控卡片 -->
+  <rect x="230" y="100" width="200" height="80" class="card shadow" />
+  <text x="250" y="130" font-size="16" font-weight="600" fill="#2563EB">总控对话（项目经理 Agent）</text>
+  <text x="250" y="155" class="label">· 列出工单 / 拆任务</text>
+  <text x="250" y="175" class="label">· 分配给不同子对话</text>
+
+  <!-- 输入侧：杂乱信息 -->
+  <rect x="40" y="120" width="160" height="120" class="card shadow" />
+  <text x="60" y="145" font-size="15" font-weight="600" fill="#9333EA">原始资料输入</text>
+  <text x="60" y="170" class="label">· 产品更新文档</text>
+  <text x="60" y="190" class="label">· 邮件 / 聊天记录</text>
+  <text x="60" y="210" class="label">· 其他参考信息</text>
+
+  <!-- 输入到总控的虚线箭头 -->
+  <line x1="200" y1="180" x2="230" y2="180" stroke="#9CA3AF" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrow)" />
+  <text x="160" y="170" class="label">汇总到总控对话</text>
+
+  <!-- 子对话区域标题 -->
+  <text x="60" y="270" class="subtitle">多个子对话：按工单类型接单</text>
+
+  <!-- 子对话卡片 1：写作 -->
+  <rect x="40" y="290" width="180" height="80" class="card shadow" />
+  <text x="60" y="315" font-size="15" font-weight="600" fill="#EA580C">写作 Agent</text>
+  <text x="60" y="340" class="label">负责文案 / 总结</text>
+
+  <!-- 子对话卡片 2：代码 -->
+  <rect x="240" y="290" width="180" height="80" class="card shadow" />
+  <text x="260" y="315" font-size="15" font-weight="600" fill="#16A34A">代码 Agent</text>
+  <text x="260" y="340" class="label">负责脚本 / 自动化</text>
+
+  <!-- 子对话卡片 3：调研 -->
+  <rect x="440" y="290" width="180" height="80" class="card shadow" />
+  <text x="460" y="315" font-size="15" font-weight="600" fill="#2563EB">调研 Agent</text>
+  <text x="460" y="340" class="label">负责信息整理</text>
+
+  <!-- 总控到各子对话虚线箭头 -->
+  <line x1="280" y1="180" x2="130" y2="290" stroke="#9CA3AF" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrow)" />
+  <text x="135" y="260" class="label">分配写作工单</text>
+
+  <line x1="330" y1="180" x2="330" y2="290" stroke="#9CA3AF" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrow)" />
+  <text x="340" y="260" class="label">分配代码工单</text>
+
+  <line x1="380" y1="180" x2="530" y2="290" stroke="#9CA3AF" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrow)" />
+  <text x="470" y="260" class="label">分配调研工单</text>
+
+  <!-- 输出整合卡片 -->
+  <rect x="420" y="110" width="200" height="110" class="card shadow" />
+  <text x="440" y="135" font-size="15" font-weight="600" fill="#D97706">整合输出</text>
+  <text x="440" y="160" class="label">· 总控整合各子对话结果</text>
+  <text x="440" y="180" class="label">· 形成季度产品更新总结</text>
+
+  <!-- 子对话返回到总控，再到输出的虚线箭头 -->
+  <line x1="130" y1="290" x2="280" y2="210" stroke="#9CA3AF" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrow)" />
+  <line x1="330" y1="290" x2="330" y2="210" stroke="#9CA3AF" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrow)" />
+  <line x1="530" y1="290" x2="380" y2="210" stroke="#9CA3AF" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrow)" />
+
+  <line x1="430" y1="165" x2="420" y2="165" stroke="#9CA3AF" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrow)" />
+
+  <!-- 底部说明 -->
+  <text x="40" y="370" class="subtitle">关键思路：把多 Agent 当流程设计问题，用多对话 + 指令模板，而不是依赖神奇框架。</text>
+
+  <!-- 箭头定义 -->
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L6,4 L2,6" fill="none" stroke="#9CA3AF" stroke-width="1.5" />
+    </marker>
+  </defs>
+</svg>

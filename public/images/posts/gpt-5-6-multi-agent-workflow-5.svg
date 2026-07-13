@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <style>
+    text { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 13px; fill: #111827; }
+    .title { font-size: 18px; font-weight: 600; }
+    .subtitle { font-size: 14px; font-weight: 600; }
+    .card { fill: #FFFFFF; stroke: #E5E7EB; stroke-width: 1; rx: 8; }
+    .label { font-size: 12px; fill: #6B7280; }
+  </style>
+
+  <!-- 主标题 -->
+  <text x="24" y="40" class="title">多 Agent 在典型工作流中的应用场景</text>
+  <text x="24" y="62" class="label">四类任务，用总控 Agent 串联子 Agent 流程</text>
+
+  <!-- 场景 1：内容生产 -->
+  <rect x="24" y="80" width="290" height="70" class="card"/>
+  <text x="40" y="100" class="subtitle" fill="#2563EB">1 内容生产</text>
+  <text x="40" y="122" class="label">总控：生成工单表，按阶段分派任务</text>
+  <circle cx="220" cy="108" r="9" fill="#2563EB"/>
+  <text x="214" y="112" font-size="11" fill="#FFFFFF">总</text>
+  <text x="40" y="142" class="label">调研助手 → 写作助手 → 客服助手</text>
+
+  <!-- 内容生产流程卡片 -->
+  <rect x="24" y="160" width="64" height="52" class="card"/>
+  <text x="32" y="180" class="label">主题理解</text>
+  <text x="32" y="196" font-size="11" fill="#2563EB">调研助手</text>
+
+  <rect x="108" y="160" width="64" height="52" class="card"/>
+  <text x="116" y="180" class="label">长文写作</text>
+  <text x="116" y="196" font-size="11" fill="#2563EB">写作助手</text>
+
+  <rect x="192" y="160" width="64" height="52" class="card"/>
+  <text x="200" y="180" class="label">短视频脚本</text>
+  <text x="200" y="196" font-size="11" fill="#2563EB">写作助手</text>
+
+  <rect x="276" y="160" width="64" height="52" class="card"/>
+  <text x="284" y="180" class="label">FAQ 整理</text>
+  <text x="284" y="196" font-size="11" fill="#2563EB">客服助手</text>
+
+  <!-- 虚线连接内容生产流程 -->
+  <line x1="88" y1="186" x2="108" y2="186" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="172" y1="186" x2="192" y2="186" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="256" y1="186" x2="276" y2="186" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- 场景 2：代码开发 -->
+  <rect x="346" y="80" width="290" height="70" class="card"/>
+  <text x="362" y="100" class="subtitle" fill="#16A34A">2 代码开发</text>
+  <text x="362" y="122" class="label">总控：强制需求澄清 → 接口 → 实现</text>
+  <circle cx="566" cy="108" r="9" fill="#16A34A"/>
+  <text x="560" y="112" font-size="11" fill="#FFFFFF">总</text>
+  <text x="362" y="142" class="label">同一代码助手在设计 / 实现 / 测试间切换</text>
+
+  <!-- 代码开发流程卡片 -->
+  <rect x="346" y="160" width="72" height="52" class="card"/>
+  <text x="354" y="178" class="label">需求澄清</text>
+  <text x="354" y="196" font-size="11" fill="#16A34A">调研助手</text>
+
+  <rect x="434" y="160" width="72" height="52" class="card"/>
+  <text x="442" y="178" class="label">接口设计</text>
+  <text x="442" y="196" font-size="11" fill="#16A34A">代码助手</text>
+
+  <rect x="522" y="160" width="72" height="52" class="card"/>
+  <text x="530" y="178" class="label">代码实现</text>
+  <text x="530" y="196" font-size="11" fill="#16A34A">代码助手</text>
+
+  <rect x="610" y="160" width="26" height="52" class="card"/>
+  <text x="614" y="178" class="label">测</text>
+  <text x="614" y="196" font-size="11" fill="#16A34A">测</text>
+
+  <!-- 虚线连接代码开发流程 -->
+  <line x1="418" y1="186" x2="434" y2="186" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="506" y1="186" x2="522" y2="186" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="594" y1="186" x2="610" y2="186" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- 场景 3：调研分析 -->
+  <rect x="24" y="230" width="290" height="70" class="card"/>
+  <text x="40" y="250" class="subtitle" fill="#EA580C">3 调研分析</text>
+  <text x="40" y="272" class="label">总控：四阶段顺序执行，严禁跳步</text>
+  <circle cx="220" cy="258" r="9" fill="#EA580C"/>
+  <text x="214" y="262" font-size="11" fill="#FFFFFF">总</text>
+  <text x="40" y="292" class="label">事实 → 对比 → 风险机会 → 行动建议</text>
+
+  <!-- 调研分析流程卡片 -->
+  <rect x="24" y="310" width="72" height="52" class="card"/>
+  <text x="32" y="330" class="label">资料收集</text>
+  <text x="32" y="346" font-size="11" fill="#EA580C">调研助手</text>
+
+  <rect x="116" y="310" width="72" height="52" class="card"/>
+  <text x="124" y="330" class="label">对比分析</text>
+  <text x="124" y="346" font-size="11" fill="#EA580C">调研助手</text>
+
+  <rect x="208" y="310" width="72" height="52" class="card"/>
+  <text x="216" y="330" class="label">风险机会</text>
+  <text x="216" y="346" font-size="11" fill="#EA580C">调研助手</text>
+
+  <rect x="300" y="310" width="72" height="52" class="card"/>
+  <text x="308" y="330" class="label">行动建议</text>
+  <text x="308" y="346" font-size="11" fill="#EA580C">写作助手</text>
+
+  <!-- 虚线连接调研分析流程 -->
+  <line x1="96" y1="336" x2="116" y2="336" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="188" y1="336" x2="208" y2="336" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="280" y1="336" x2="300" y2="336" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- 场景 4：运营 / 客服 -->
+  <rect x="346" y="230" width="290" height="70" class="card"/>
+  <text x="362" y="250" class="subtitle" fill="#9333EA">4 运营 / 客服</text>
+  <text x="362" y="272" class="label">总控：归类问题，优先维护 FAQ</text>
+  <circle cx="566" cy="258" r="9" fill="#9333EA"/>
+  <text x="560" y="262" font-size="11" fill="#FFFFFF">总</text>
+  <text x="362" y="292" class="label">客服 / 数据 / 写作助手协作</text>
+
+  <!-- 运营客服角色卡片 -->
+  <rect x="346" y="310" width="82" height="52" class="card"/>
+  <text x="354" y="330" class="label">问题归类</text>
+  <text x="354" y="346" font-size="11" fill="#9333EA">总控 Agent</text>
+
+  <rect x="438" y="310" width="82" height="52" class="card"/>
+  <text x="446" y="330" class="label">标准回复</text>
+  <text x="446" y="346" font-size="11" fill="#9333EA">客服助手</text>
+
+  <rect x="530" y="310" width="82" height="52" class="card"/>
+  <text x="538" y="330" class="label">数据统计</text>
+  <text x="538" y="346" font-size="11" fill="#9333EA">数据助手</text>
+
+  <rect x="622" y="310" width="20" height="52" class="card"/>
+  <text x="624" y="330" class="label">FAQ</text>
+
+  <!-- 虚线连接运营客服流程 -->
+  <line x1="428" y1="336" x2="438" y2="336" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="520" y1="336" x2="530" y2="336" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="612" y1="336" x2="622" y2="336" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 4"/>
+
+</svg>
