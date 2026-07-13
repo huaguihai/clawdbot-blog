@@ -1,4 +1,11 @@
 ---
+title: "AI Agent 防御清单：Prompt 防不住，就加这 4 层"
+date: "2026-07-08"
+category: "上手指南"
+excerpt: "只靠 Prompt 和输出过滤挡不住 Agent 越权。这份清单把防线前移到输入规范、工具权限、逐步确认和可追溯日志，并附一段 10 分钟验证脚本。"
+pattern: "code"
+color: "text-stone-600"
+---
 
 ## 为什么 Prompt 防不住？
 

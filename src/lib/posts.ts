@@ -30,6 +30,7 @@ const CATEGORY_COLOR: Record<string, string> = {
   '宝藏合集': 'text-red-800',
 };
 const FALLBACK_COLOR = 'text-gray-600';
+const REQUIRED_FRONTMATTER = ['title', 'date', 'category', 'excerpt', 'pattern', 'color'] as const;
 
 export function getPosts(): Post[] {
   // Check if directory exists, if not create it (safe fallback)
@@ -45,6 +46,12 @@ export function getPosts(): Post[] {
     const fileMtime = fs.statSync(fullPath).mtimeMs;
 
     const { data, content } = matter(fileContents);
+    const missingFields = REQUIRED_FRONTMATTER.filter(
+      (field) => typeof data[field] !== 'string' || !data[field].trim(),
+    );
+    if (missingFields.length) {
+      throw new Error(`Invalid frontmatter in ${fileName}: missing or empty ${missingFields.join(', ')}`);
+    }
 
     // Format display date with time (Beijing time UTC+8)
     const beijingTime = new Date(fileMtime + 8 * 60 * 60 * 1000);
