@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.05"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="660" height="400" fill="#FAFAFA" rx="12"/>
+  
+  <!-- Title -->
+  <text x="330" y="40" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1F2937">结构化内容 Token 成本放大</text>
+  <text x="330" y="65" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" text-anchor="middle" fill="#6B7280">新 Tokenizer 对代码/JSON/Prompt 的影响</text>
+
+  <!-- Input Data Group -->
+  <g transform="translate(80, 100)">
+    <rect x="0" y="0" width="120" height="200" rx="8" fill="#FFFFFF" filter="url(#shadow)" stroke="#E5E7EB" stroke-width="1"/>
+    <text x="60" y="30" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#374151">原始上下文</text>
+    <line x1="20" y1="50" x2="100" y2="50" stroke="#E5E7EB" stroke-width="1"/>
+    
+    <rect x="20" y="65" width="80" height="24" rx="4" fill="#DBEAFE"/>
+    <text x="60" y="81" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" text-anchor="middle" fill="#1E40AF">系统 Prompt</text>
+    
+    <rect x="20" y="100" width="80" height="24" rx="4" fill="#FEE2E2"/>
+    <text x="60" y="116" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" text-anchor="middle" fill="#991B1B">Tool Schema</text>
+    
+    <rect x="20" y="135" width="80" height="24" rx="4" fill="#FEF3C7"/>
+    <text x="60" y="151" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" text-anchor="middle" fill="#92400E">TS 代码</text>
+    
+    <rect x="20" y="170" width="80" height="24" rx="4" fill="#D1FAE5"/>
+    <text x="60" y="186" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" text-anchor="middle" fill="#065F46">用户输入</text>
+  </g>
+
+  <!-- Arrow -->
+  <path d="M 210 200 L 280 200" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#9CA3AF"/>
+    </marker>
+  </defs>
+
+  <!-- Processing Box -->
+  <g transform="translate(290, 150)">
+    <circle cx="50" cy="50" r="40" fill="#F3F4F6" stroke="#D1D5DB" stroke-width="2"/>
+    <text x="50" y="45" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#4B5563">New</text>
+    <text x="50" y="60" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#4B5563">Tokenizer</text>
+  </g>
+
+  <!-- Arrows from processing to output -->
+  <path d="M 350 200 L 420 200" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+
+  <!-- Output Data Group -->
+  <g transform="translate(420, 100)">
+    <rect x="0" y="0" width="120" height="200" rx="8" fill="#FFFFFF" filter="url(#shadow)" stroke="#E5E7EB" stroke-width="1"/>
+    <text x="60" y="30" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#374151">处理后上下文</text>
+    <line x1="20" y1="50" x2="100" y2="50" stroke="#E5E7EB" stroke-width="1"/>
+    
+    <rect x="20" y="65" width="80" height="24" rx="4" fill="#DBEAFE"/>
+    <text x="60" y="81" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" text-anchor="middle" fill="#1E40AF">+30~40%</text>
+    
+    <rect x="20" y="100" width="80" height="24" rx="4" fill="#FEE2E2"/>
+    <text x="60" y="116" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" text-anchor="middle" fill="#991B1B">+20~30%</text>
+    
+    <rect x="20" y="135" width="80" height="24" rx="4" fill="#FEF3C7"/>
+    <text x="60" y="151" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" text-anchor="middle" fill="#92400E">+30~70%</text>
+    
+    <rect x="20" y="170" width="80" height="24" rx="4" fill="#D1FAE5"/>
+    <text x="60" y="186" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" text-anchor="middle" fill="#065F46">+~0%</text>
+  </g>
+
+  <!-- Summary Box at Bottom -->
+  <g transform="translate(130, 330)">
+    <rect x="0" y="0" width="400" height="50" rx="8" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+    <text x="200" y="30" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1E40AF">整体 Token 消耗增加约 21%</text>
+  </g>
+</svg>

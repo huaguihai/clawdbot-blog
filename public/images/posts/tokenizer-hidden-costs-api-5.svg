@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400" font-family="-apple-system, 'Segoe UI', sans-serif">
+  <!-- Background -->
+  <rect width="660" height="400" fill="#FAFAFA" rx="12" />
+  
+  <!-- Title -->
+  <text x="330" y="40" text-anchor="middle" font-size="20" font-weight="bold" fill="#1F2937">Agent 场景 Token 优化策略</text>
+
+  <!-- Center Node: Goal -->
+  <circle cx="330" cy="200" r="35" fill="#DBEAFE" stroke="#2563EB" stroke-width="2" />
+  <text x="330" y="205" text-anchor="middle" font-size="14" font-weight="bold" fill="#1E40AF">降低 Token 成本</text>
+
+  <!-- Branch 1: Model Selection -->
+  <line x1="330" y1="165" x2="160" y2="100" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="5,5" />
+  <rect x="40" y="60" width="240" height="80" rx="8" fill="white" stroke="#E5E7EB" stroke-width="1" />
+  <text x="160" y="85" text-anchor="middle" font-size="14" font-weight="bold" fill="#2563EB">1. 按需选模型</text>
+  <text x="160" y="105" text-anchor="middle" font-size="11" fill="#4B5563">结构化代码 → GPT/Grok</text>
+  <text x="160" y="120" text-anchor="middle" font-size="11" fill="#4B5563">自然语言/创作 → Claude</text>
+
+  <!-- Branch 2: System Prompt Optimization -->
+  <line x1="295" y1="200" x2="295" y2="260" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="5,5" />
+  <rect x="175" y="260" width="240" height="110" rx="8" fill="white" stroke="#E5E7EB" stroke-width="1" />
+  <text x="295" y="285" text-anchor="middle" font-size="14" font-weight="bold" fill="#EA580C">2. 控制 Prompt 膨胀</text>
+  <text x="190" y="305" font-size="11" fill="#4B5563">• 拆分固定规则与动态上下文</text>
+  <text x="190" y="320" font-size="11" fill="#4B5563">• 压缩 Tool Schema (≤3行)</text>
+  <text x="190" y="335" font-size="11" fill="#4B5563">• 裁剪冗余历史日志</text>
+
+  <!-- Branch 3: CI Monitoring -->
+  <line x1="365" y1="200" x2="490" y2="310" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="5,5" />
+  <rect x="370" y="270" width="240" height="80" rx="8" fill="white" stroke="#E5E7EB" stroke-width="1" />
+  <text x="490" y="295" text-anchor="middle" font-size="14" font-weight="bold" fill="#16A34A">3. CI 预算检测</text>
+  <text x="490" y="315" text-anchor="middle" font-size="11" fill="#4B5563">Lint 检查 Token 数量</text>
+  <text x="490" y="330" text-anchor="middle" font-size="11" fill="#4B5563">超标报警 &amp; 成本预估面板</text>
+
+  <!-- Decorative Elements -->
+  <path d="M 160 140 L 160 165" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="5,5" />
+  <path d="M 490 240 L 490 270" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="5,5" />
+</svg>

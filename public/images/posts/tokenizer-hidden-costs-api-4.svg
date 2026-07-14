@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" fill="none" font-family="-apple-system, 'Segoe UI', sans-serif">
+  <!-- Background -->
+  <rect width="660" height="400" fill="#FAFAFA" rx="12" />
+  
+  <!-- Title -->
+  <text x="330" y="40" text-anchor="middle" font-size="18" font-weight="bold" fill="#1F2937">Token 差异快速判断指南</text>
+  
+  <!-- Step 1: Input Data -->
+  <rect x="50" y="80" width="120" height="80" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" />
+  <text x="110" y="115" text-anchor="middle" font-size="14" font-weight="bold" fill="#374151">真实样本</text>
+  <text x="110" y="135" text-anchor="middle" font-size="12" fill="#6B7280">TS 文件, Prompt,</text>
+  <text x="110" y="150" text-anchor="middle" font-size="12" fill="#6B7280">JSON Schema</text>
+  
+  <!-- Arrow 1 -->
+  <path d="M170 120 H220" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+  
+  <!-- Step 2: Processing -->
+  <rect x="230" y="90" width="200" height="60" rx="8" fill="#EFF6FF" stroke="#2563EB" stroke-width="1" />
+  <text x="330" y="115" text-anchor="middle" font-size="14" font-weight="bold" fill="#2563EB">双路并行计数</text>
+  <text x="330" y="135" text-anchor="middle" font-size="12" fill="#1E40AF">GPT(tiktoken) vs Anthropic(API)</text>
+  
+  <!-- Arrow 2 -->
+  <path d="M430 120 H480" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+  
+  <!-- Step 3: Calculation -->
+  <rect x="490" y="90" width="120" height="60" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" />
+  <text x="550" y="115" text-anchor="middle" font-size="14" font-weight="bold" fill="#374151">计算比值</text>
+  <text x="550" y="135" text-anchor="middle" font-size="12" fill="#6B7280">Anthropic / GPT</text>
+
+  <!-- Decision Logic -->
+  <path d="M550 150 V180" stroke="#9CA3AF" stroke-width="2" />
+  <path d="M550 180 L520 200 M550 180 L580 200" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="4 4" />
+  
+  <!-- Result Left: Normal -->
+  <rect x="380" y="200" width="140" height="60" rx="8" fill="#F0FDF4" stroke="#16A34A" stroke-width="1" />
+  <text x="450" y="225" text-anchor="middle" font-size="13" font-weight="bold" fill="#16A34A">比值 &lt; 1.5x</text>
+  <text x="450" y="245" text-anchor="middle" font-size="11" fill="#15803D">正常范围</text>
+
+  <!-- Result Right: High Cost -->
+  <rect x="540" y="200" width="140" height="60" rx="8" fill="#FFF7ED" stroke="#EA580C" stroke-width="1" />
+  <text x="610" y="225" text-anchor="middle" font-size="13" font-weight="bold" fill="#EA580C">比值 ≥ 1.5x</text>
+  <text x="610" y="245" text-anchor="middle" font-size="11" fill="#C2410C">注意成本溢价</text>
+
+  <!-- Conclusion Box -->
+  <rect x="150" y="280" width="360" height="80" rx="8" fill="#FFFFFF" stroke="#D97706" stroke-width="2" />
+  <text x="330" y="310" text-anchor="middle" font-size="14" font-weight="bold" fill="#D97706">关键结论</text>
+  <text x="330" y="330" text-anchor="middle" font-size="12" fill="#374151">同段 TypeScript，Anthropic 可能比 GPT 多 1.73 倍 Token。</text>
+  <text x="330" y="345" text-anchor="middle" font-size="12" fill="#374151">结构化内容（Prompt/Schema）易导致整体成本增加 20~30%。</text>
+
+  <!-- Arrowhead Marker Definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#9CA3AF" />
+    </marker>
+  </defs>
+</svg>
