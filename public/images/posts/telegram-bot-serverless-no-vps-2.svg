@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <style>
+    text { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 13px; fill: #111827; }
+    .title { font-size: 18px; font-weight: 600; }
+    .subtitle { font-size: 14px; font-weight: 600; fill: #374151; }
+    .label { font-size: 12px; fill: #4B5563; }
+  </style>
+  <!-- 标题 -->
+  <text x="330" y="32" text-anchor="middle" class="title">传统 Bot + VPS vs Telegram Serverless</text>
+
+  <!-- 左侧：传统 Bot + VPS -->
+  <rect x="40" y="60" width="260" height="300" rx="12" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="170" y="85" text-anchor="middle" class="subtitle">传统 Bot + VPS</text>
+
+  <!-- 传统：Telegram / Webhook / VPS / DB -->
+  <!-- Telegram -->
+  <rect x="90" y="110" width="80" height="40" rx="8" fill="#DBEAFE" stroke="#2563EB"/>
+  <text x="130" y="135" text-anchor="middle">Telegram</text>
+
+  <!-- 公网 URL / Webhook -->
+  <line x1="170" y1="130" x2="210" y2="130" stroke="#9CA3AF" stroke-dasharray="4 4"/>
+  <text x="190" y="120" text-anchor="middle" class="label">公网 URL /</text>
+  <text x="190" y="134" text-anchor="middle" class="label">Webhook</text>
+
+  <!-- VPS -->
+  <rect x="210" y="110" width="80" height="50" rx="8" fill="#EEF2FF" stroke="#9333EA"/>
+  <text x="250" y="135" text-anchor="middle">VPS</text>
+  <text x="250" y="149" text-anchor="middle" class="label">永远在线</text>
+
+  <!-- Bot 代码 -->
+  <rect x="75" y="190" width="90" height="50" rx="8" fill="#FFFBEB" stroke="#D97706"/>
+  <text x="120" y="215" text-anchor="middle">Bot 代码</text>
+  <text x="120" y="229" text-anchor="middle" class="label">部署 / 回滚</text>
+
+  <line x1="250" y1="160" x2="120" y2="190" stroke="#9CA3AF" stroke-dasharray="4 4"/>
+
+  <!-- 数据库服务 -->
+  <rect x="200" y="210" width="90" height="50" rx="8" fill="#ECFEFF" stroke="#16A34A"/>
+  <text x="245" y="232" text-anchor="middle">数据库</text>
+  <text x="245" y="246" text-anchor="middle" class="label">单独管理</text>
+
+  <line x1="120" y1="240" x2="200" y2="235" stroke="#9CA3AF" stroke-dasharray="4 4"/>
+
+  <!-- 运维要点 -->
+  <text x="60" y="275" class="label">• 维护服务器在线与补丁</text>
+  <text x="60" y="292" class="label">• 监控资源 / 扩容</text>
+  <text x="60" y="309" class="label">• 管理数据库服务</text>
+
+  <!-- 右侧：Telegram Serverless -->
+  <rect x="360" y="60" width="260" height="300" rx="12" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="490" y="85" text-anchor="middle" class="subtitle">Telegram Serverless</text>
+
+  <!-- Telegram 托管入口 -->
+  <rect x="410" y="110" width="100" height="50" rx="8" fill="#DBEAFE" stroke="#2563EB"/>
+  <text x="460" y="133" text-anchor="middle">Telegram</text>
+  <text x="460" y="148" text-anchor="middle" class="label">托管入口</text>
+
+  <!-- JS 模块 / handlers -->
+  <rect x="540" y="110" width="80" height="50" rx="8" fill="#FFFBEB" stroke="#D97706"/>
+  <text x="580" y="132" text-anchor="middle">JS 模块</text>
+  <text x="580" y="146" text-anchor="middle" class="label">handlers/</text>
+
+  <line x1="510" y1="135" x2="540" y2="135" stroke="#9CA3AF" stroke-dasharray="4 4"/>
+
+  <!-- schema.js + SQLite -->
+  <rect x="410" y="190" width="90" height="50" rx="8" fill="#ECFEFF" stroke="#16A34A"/>
+  <text x="455" y="213" text-anchor="middle">SQLite</text>
+  <text x="455" y="227" text-anchor="middle" class="label">schema.js</text>
+
+  <!-- lib/ -->
+  <rect x="540" y="190" width="80" height="50" rx="8" fill="#F5F3FF" stroke="#9333EA"/>
+  <text x="580" y="213" text-anchor="middle">lib/</text>
+  <text x="580" y="227" text-anchor="middle" class="label">共享逻辑</text>
+
+  <line x1="455" y1="240" x2="540" y2="215" stroke="#9CA3AF" stroke-dasharray="4 4"/>
+
+  <!-- tgcloud CLI -->
+  <rect x="445" y="255" width="110" height="40" rx="8" fill="#FEF2F2" stroke="#EA580C"/>
+  <text x="500" y="278" text-anchor="middle">tgcloud CLI</text>
+
+  <line x1="500" y1="255" x2="500" y2="240" stroke="#9CA3AF" stroke-dasharray="4 4"/>
+
+  <!-- 简化要点 -->
+  <text x="375" y="310" class="label">• 无需自管服务器 / 扩容</text>
+  <text x="375" y="327" class="label">• 代码按需执行</text>
+  <text x="375" y="344" class="label">• 统一用 tgcloud 操作</text>
+
+  <!-- 中间对比箭头 -->
+  <line x1="320" y1="140" x2="340" y2="140" stroke="#6B7280" marker-end="url(#arrow)"/>
+  <text x="330" y="125" text-anchor="middle" class="label">更省事</text>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#6B7280"/>
+    </marker>
+  </defs>
+</svg>

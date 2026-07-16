@@ -1,0 +1,60 @@
+<svg width="660" height="400" viewBox="0 0 660 400" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="660" height="400" rx="12" fill="#FAFAFA"/>
+  <style>
+    text { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 13px; fill: #1F2933; }
+    .title { font-size: 18px; font-weight: 600; }
+    .subtitle { font-size: 12px; fill: #6B7280; }
+    .card-title { font-size: 14px; font-weight: 600; }
+    .badge { font-size: 11px; font-weight: 600; fill: #1F2933; }
+  </style>
+
+  <!-- 标题 -->
+  <text x="30" y="42" class="title">从 0 到 1：开通 Serverless 并 scaffold 项目</text>
+  <text x="30" y="64" class="subtitle">三个关键步骤：开启 Serverless → 脚手架项目 → CLI 绑定 Bot</text>
+
+  <!-- 步骤 1 卡片 -->
+  <rect x="40" y="110" width="170" height="210" rx="10" fill="#FFFFFF" stroke="#E5E7EB" />
+  <text x="55" y="135" class="card-title" fill="#2563EB">步骤 1：在 BotFather 打开 Serverless</text>
+  <rect x="55" y="145" width="95" height="18" rx="9" fill="#DBEAFE" />
+  <text x="62" y="158" class="badge">前置：权限</text>
+  <text x="55" y="185">• 打开 Telegram，找到 @BotFather</text>
+  <text x="55" y="205">• 选中 Bot → 进入 Serverless 菜单</text>
+  <text x="55" y="225">• Enable 开关</text>
+  <text x="55" y="245">• 打开 CLI Access，复制 Access token</text>
+  <text x="55" y="270" fill="#EA580C">避坑：未开启会导致 tgcloud</text>
+  <text x="55" y="288" fill="#EA580C">命令权限错误</text>
+
+  <!-- 步骤 2 卡片 -->
+  <rect x="245" y="110" width="170" height="210" rx="10" fill="#FFFFFF" stroke="#E5E7EB" />
+  <text x="260" y="135" class="card-title" fill="#16A34A">步骤 2：用官方脚手架创建项目</text>
+  <rect x="260" y="145" width="115" height="18" rx="9" fill="#DCFCE7" />
+  <text x="267" y="158" class="badge">本地项目结构</text>
+  <text x="260" y="185">• npm create @tgcloud/bot</text>
+  <text x="260" y="205">• 生成 my_counter_bot/ 目录</text>
+  <text x="260" y="225">• 安装本地 @tgcloud/cli</text>
+  <text x="260" y="245">• handlers/、schema.js 等基础骨架</text>
+  <text x="260" y="270">• 标准 Node.js 项目，可用 Git 管理</text>
+
+  <!-- 步骤 3 卡片 -->
+  <rect x="450" y="110" width="170" height="210" rx="10" fill="#FFFFFF" stroke="#E5E7EB" />
+  <text x="465" y="135" class="card-title" fill="#9333EA">步骤 3：用 CLI 绑定项目和 Bot</text>
+  <rect x="465" y="145" width="130" height="18" rx="9" fill="#EDE9FE" />
+  <text x="472" y="158" class="badge">云端-本地绑定</text>
+  <text x="465" y="185">• cd my_counter_bot</text>
+  <text x="465" y="205">• npx tgcloud login</text>
+  <text x="465" y="225">• 输入 BotFather 的 Access token</text>
+  <text x="465" y="250">• 完成项目 ↔ Bot 绑定</text>
+  <text x="465" y="275" fill="#D97706">一个项目对应一个 Bot，</text>
+  <text x="465" y="293" fill="#D97706">避免误把测试代码推生产</text>
+
+  <!-- 步骤连接虚线 -->
+  <line x1="210" y1="215" x2="245" y2="215" stroke="#9CA3AF" stroke-width="1.5" stroke-dasharray="4 4" />
+  <polygon points="245,215 238,210 238,220" fill="#9CA3AF" />
+
+  <line x1="415" y1="215" x2="450" y2="215" stroke="#9CA3AF" stroke-width="1.5" stroke-dasharray="4 4" />
+  <polygon points="450,215 443,210 443,220" fill="#9CA3AF" />
+
+  <!-- 顶部准备条件 -->
+  <rect x="40" y="78" width="260" height="22" rx="11" fill="#FFFFFF" stroke="#E5E7EB" />
+  <text x="50" y="93" class="subtitle">前提：Node.js 18+ 且 Bot 已在 @BotFather 注册</text>
+</svg>

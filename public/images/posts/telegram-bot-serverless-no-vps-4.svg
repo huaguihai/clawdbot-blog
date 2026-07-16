@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <rect x="10" y="10" width="640" height="380" rx="12" fill="#FAFAFA"/>
+  <style>
+    text { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 13px; fill: #111827; }
+    .title { font-size: 18px; font-weight: 600; }
+    .subtitle { font-size: 13px; fill: #4B5563; }
+    .label { font-size: 12px; fill: #374151; }
+    .small { font-size: 11px; fill: #6B7280; }
+  </style>
+
+  <!-- 标题 -->
+  <text x="330" y="40" text-anchor="middle" class="title">“能记数”的 Telegram Bot 数据流</text>
+  <text x="330" y="62" text-anchor="middle" class="subtitle">消息 → handler → SQLite 计数表 → 回复</text>
+
+  <!-- 左侧：Telegram 用户 / Chat -->
+  <rect x="40" y="110" width="130" height="80" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.2"/>
+  <text x="105" y="140" text-anchor="middle" class="label" fill="#2563EB">Telegram Chat</text>
+  <text x="105" y="162" text-anchor="middle" class="small">message 更新</text>
+
+  <!-- 中间：Serverless handler -->
+  <rect x="260" y="100" width="160" height="110" rx="12" fill="#FFFFFF" stroke="#9333EA" stroke-width="1.2"/>
+  <text x="340" y="128" text-anchor="middle" class="label" fill="#9333EA">Serverless handler</text>
+  <text x="340" y="148" text-anchor="middle" class="small">handlers/message.js</text>
+  <text x="340" y="170" text-anchor="middle" class="small">读取 chatId</text>
+  <text x="340" y="188" text-anchor="middle" class="small">db.insert(counters)...</text>
+
+  <!-- 右侧：SQLite / counters 表 -->
+  <rect x="480" y="95" width="140" height="140" rx="12" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.2"/>
+  <text x="550" y="122" text-anchor="middle" class="label" fill="#16A34A">SQLite 数据库</text>
+  <text x="550" y="142" text-anchor="middle" class="small">表：counters</text>
+  <text x="550" y="162" text-anchor="middle" class="small">chat_id (PK)</text>
+  <text x="550" y="180" text-anchor="middle" class="small">seen 默认 0</text>
+  <text x="550" y="198" text-anchor="middle" class="small">插入或 seen+1</text>
+
+  <!-- 连接线：Chat -> handler -->
+  <line x1="170" y1="150" x2="260" y2="150" stroke="#2563EB" stroke-width="1.2" stroke-dasharray="4 4" marker-end="url(#arrowBlue)"/>
+  <text x="215" y="138" text-anchor="middle" class="small" fill="#2563EB">消息更新</text>
+
+  <!-- 连接线：handler -> DB -->
+  <line x1="420" y1="145" x2="480" y2="145" stroke="#16A34A" stroke-width="1.2" stroke-dasharray="4 4" marker-end="url(#arrowGreen)"/>
+  <text x="450" y="133" text-anchor="middle" class="small" fill="#16A34A">insert /</text>
+  <text x="450" y="148" text-anchor="middle" class="small" fill="#16A34A">onConflictDoUpdate</text>
+
+  <!-- 连接线：DB -> handler (返回 row) -->
+  <line x1="480" y1="185" x2="420" y2="185" stroke="#16A34A" stroke-width="1.2" stroke-dasharray="4 4" marker-end="url(#arrowGreenBack)"/>
+  <text x="450" y="200" text-anchor="middle" class="small" fill="#16A34A">returning() row</text>
+
+  <!-- 连接线：handler -> Chat (回消息) -->
+  <line x1="260" y1="190" x2="170" y2="190" stroke="#EA580C" stroke-width="1.2" stroke-dasharray="4 4" marker-end="url(#arrowOrangeBack)"/>
+  <text x="215" y="205" text-anchor="middle" class="small" fill="#EA580C">api.sendMessage</text>
+
+  <!-- 底部：关键点摘要卡片 -->
+  <rect x="80" y="250" width="500" height="120" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="100" y="275" class="label" fill="#111827">核心概念</text>
+
+  <circle cx="110" cy="298" r="5" fill="#9333EA"/>
+  <text x="125" y="302" class="small">schema.js 用 table() 声明 counters(chatId, seen)</text>
+
+  <circle cx="110" cy="322" r="5" fill="#16A34A"/>
+  <text x="125" y="326" class="small">db.insert(...).onConflictDoUpdate 实现“插入或自增”</text>
+
+  <circle cx="110" cy="346" r="5" fill="#2563EB"/>
+  <text x="125" y="350" class="small">returning() 拿到最新 seen，拼到回复文案中</text>
+
+  <!-- 箭头定义 -->
+  <defs>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#2563EB" />
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#16A34A" />
+    </marker>
+    <marker id="arrowGreenBack" markerWidth="10" markerHeight="10" refX="2" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M8,0 L0,3 L8,6 Z" fill="#16A34A" />
+    </marker>
+    <marker id="arrowOrangeBack" markerWidth="10" markerHeight="10" refX="2" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M8,0 L0,3 L8,6 Z" fill="#EA580C" />
+    </marker>
+  </defs>
+</svg>
