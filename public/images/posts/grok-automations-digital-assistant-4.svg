@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <rect x="10" y="10" width="640" height="380" rx="12" fill="#FAFAFA"/>
+  <style>
+    text { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 13px; fill: #111827; }
+    .title { font-size: 18px; font-weight: 600; }
+    .subtitle { font-size: 14px; fill: #4B5563; }
+    .label { font-size: 12px; fill: #6B7280; }
+  </style>
+
+  <!-- 图标题 -->
+  <text x="330" y="40" text-anchor="middle" class="title">Grok 自动助理三阶段搭建路线</text>
+  <text x="330" y="62" text-anchor="middle" class="subtitle">从基础任务到工具接入再到“搞钱”自动化</text>
+
+  <!-- 阶段 1 卡片 -->
+  <rect x="40" y="100" width="180" height="210" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.2"/>
+  <filter id="shadow" x="0" y="0" width="200%" height="200%">
+    <feOffset result="offOut" in="SourceAlpha" dx="0" dy="2"/>
+    <feGaussianBlur result="blurOut" in="offOut" stdDeviation="3"/>
+    <feColorMatrix result="blurOut" in="blurOut" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.12 0"/>
+    <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+  </filter>
+  <rect x="40" y="100" width="180" height="210" rx="12" fill="#FFFFFF" filter="url(#shadow)" opacity="0.96"/>
+  <text x="50" y="125" class="subtitle" fill="#2563EB">阶段 1 · 必备任务</text>
+  <text x="50" y="145" class="label">目标：让 Grok 每天主动出现</text>
+  <circle cx="56" cy="170" r="6" fill="#2563EB"/>
+  <text x="70" y="174">Morning Brief 晨间简报</text>
+  <text x="70" y="194" class="label">定时 · 日历 + 邮件 · 冲突与重点</text>
+  <circle cx="56" cy="220" r="6" fill="#EA580C"/>
+  <text x="70" y="224">Invoice Filter 账单过滤</text>
+  <text x="70" y="244" class="label">账单摘要 · 异常标记 · 建议操作</text>
+
+  <!-- 阶段 2 卡片 -->
+  <rect x="240" y="100" width="180" height="210" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.2"/>
+  <rect x="240" y="100" width="180" height="210" rx="12" fill="#FFFFFF" filter="url(#shadow)" opacity="0.96"/>
+  <text x="250" y="125" class="subtitle" fill="#16A34A">阶段 2 · 工具接入</text>
+  <text x="250" y="145" class="label">目标：扩展数据源与能力</text>
+  <circle cx="256" cy="170" r="6" fill="#2563EB"/>
+  <text x="270" y="174">@calendar · 日历事件</text>
+  <circle cx="256" cy="200" r="6" fill="#9333EA"/>
+  <text x="270" y="204">@github · issue / PR 更新</text>
+  <circle cx="256" cy="230" r="6" fill="#D97706"/>
+  <text x="270" y="234">@drive · 共享文档</text>
+  <text x="250" y="260" class="label">套路：先让 Automation 拉摘要，</text>
+  <text x="250" y="276" class="label">需要时再进 Run 历史深挖。</text>
+
+  <!-- 阶段 3 卡片 -->
+  <rect x="440" y="100" width="180" height="210" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.2"/>
+  <rect x="440" y="100" width="180" height="210" rx="12" fill="#FFFFFF" filter="url(#shadow)" opacity="0.96"/>
+  <text x="450" y="125" class="subtitle" fill="#EA580C">阶段 3 · 与收入绑定</text>
+  <text x="450" y="145" class="label">目标：围绕“搞钱向”自动化</text>
+  <circle cx="456" cy="170" r="6" fill="#EA580C"/>
+  <text x="470" y="174">订阅续费 / 账单异常监控</text>
+  <circle cx="456" cy="200" r="6" fill="#16A34A"/>
+  <text x="470" y="204">用户反馈汇总 · 每日主题</text>
+  <circle cx="456" cy="230" r="6" fill="#9333EA"/>
+  <text x="470" y="234">营销活动效果 · 周报与 A/B</text>
+  <text x="450" y="260" class="label">结果：直接影响迭代与选题</text>
+
+  <!-- 阶段连接虚线 -->
+  <line x1="220" y1="205" x2="240" y2="205" stroke="#9CA3AF" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrow)"/>
+  <line x1="420" y1="205" x2="440" y2="205" stroke="#9CA3AF" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrow)"/>
+
+  <!-- 顶部流程说明 -->
+  <text x="120" y="90" text-anchor="middle" class="label">先让 Grok 进入每日工作流</text>
+  <text x="320" y="90" text-anchor="middle" class="label">逐步接入更多工具和数据源</text>
+  <text x="520" y="90" text-anchor="middle" class="label">最终与收入相关动作绑定</text>
+
+  <!-- 底部总结条 -->
+  <rect x="40" y="330" width="580" height="40" rx="10" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+  <text x="50" y="355" class="label" fill="#1D4ED8">路径总结：</text>
+  <text x="130" y="355" class="label">基础自动化 → 工具整合 → 收入驱动自动助理</text>
+
+  <!-- 箭头定义 -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L6,3 L0,6" fill="#9CA3AF" />
+    </marker>
+  </defs>
+</svg>
