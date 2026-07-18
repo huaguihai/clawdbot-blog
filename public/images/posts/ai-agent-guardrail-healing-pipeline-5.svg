@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#9CA3AF"/>
+    </marker>
+    <marker id="arrow-feedback" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#EA580C"/>
+    </marker>
+  </defs>
+  <rect width="660" height="400" fill="#FAFAFA" rx="12"/>
+  <text x="330" y="42" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#111827" text-anchor="middle">通用五段式流水线</text>
+  <text x="330" y="62" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#6B7280" text-anchor="middle">伪代码抽象 · 领域无关框架</text>
+
+  <g font-family="-apple-system, 'Segoe UI', sans-serif">
+    <!-- Card 1: 规划 -->
+    <g transform="translate(100, 100)">
+      <rect width="90" height="60" rx="8" fill="#FFFFFF" stroke="#2563EB" stroke-width="2" filter="url(#shadow)"/>
+      <text x="45" y="26" font-size="13" font-weight="600" fill="#2563EB" text-anchor="middle">Phase 1</text>
+      <text x="45" y="44" font-size="12" font-weight="500" fill="#1F2937" text-anchor="middle">规划</text>
+    </g>
+    <!-- Card 2: 草稿 -->
+    <g transform="translate(210, 100)">
+      <rect width="90" height="60" rx="8" fill="#FFFFFF" stroke="#9333EA" stroke-width="2" filter="url(#shadow)"/>
+      <text x="45" y="26" font-size="13" font-weight="600" fill="#9333EA" text-anchor="middle">Phase 2A</text>
+      <text x="45" y="44" font-size="12" font-weight="500" fill="#1F2937" text-anchor="middle">草稿</text>
+    </g>
+    <!-- Card 3: 实现 -->
+    <g transform="translate(320, 100)">
+      <rect width="90" height="60" rx="8" fill="#FFFFFF" stroke="#D97706" stroke-width="2" filter="url(#shadow)"/>
+      <text x="45" y="26" font-size="13" font-weight="600" fill="#D97706" text-anchor="middle">Phase 2B</text>
+      <text x="45" y="44" font-size="12" font-weight="500" fill="#1F2937" text-anchor="middle">实现</text>
+    </g>
+    <!-- Card 4: 审查 -->
+    <g transform="translate(430, 100)">
+      <rect width="90" height="60" rx="8" fill="#FFFFFF" stroke="#16A34A" stroke-width="2" filter="url(#shadow)"/>
+      <text x="45" y="26" font-size="13" font-weight="600" fill="#16A34A" text-anchor="middle">Phase 3</text>
+      <text x="45" y="44" font-size="12" font-weight="500" fill="#1F2937" text-anchor="middle">审查</text>
+    </g>
+    <!-- Card 5: 交付 -->
+    <g transform="translate(540, 100)">
+      <rect width="90" height="60" rx="8" fill="#FFFFFF" stroke="#111827" stroke-width="2" filter="url(#shadow)"/>
+      <text x="45" y="26" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">Phase 4</text>
+      <text x="45" y="44" font-size="12" font-weight="500" fill="#1F2937" text-anchor="middle">交付</text>
+    </g>
+
+    <!-- Main Flow Arrows -->
+    <line x1="190" y1="130" x2="210" y2="130" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrow)"/>
+    <text x="200" y="122" font-size="10" fill="#6B7280" text-anchor="middle">结构化脚本</text>
+
+    <line x1="300" y1="130" x2="320" y2="130" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrow)"/>
+    <text x="310" y="122" font-size="10" fill="#6B7280" text-anchor="middle">时序/结构门</text>
+
+    <line x1="410" y1="130" x2="430" y2="130" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrow)"/>
+    <text x="420" y="122" font-size="10" fill="#6B7280" text-anchor="middle">执行 &amp; 资源</text>
+
+    <line x1="520" y1="130" x2="540" y2="130" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrow)"/>
+    <text x="530" y="122" font-size="10" fill="#6B7280" text-anchor="middle">业务规则/质量</text>
+
+    <!-- Feedback Loop -->
+    <path d="M 475 160 Q 475 210 210 210 L 210 160" fill="none" stroke="#EA580C" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow-feedback)"/>
+    <text x="342" y="200" font-size="11" font-weight="600" fill="#EA580C" text-anchor="middle">自愈回路</text>
+    <text x="342" y="216" font-size="10" fill="#9CA3AF" text-anchor="middle">日志→修复 Prompt</text>
+  </g>
+</svg>

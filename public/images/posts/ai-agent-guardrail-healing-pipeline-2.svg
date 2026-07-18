@@ -1,0 +1,66 @@
+<svg viewBox="0 0 660 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#94A3B8"/>
+    </marker>
+  </defs>
+  <rect width="660" height="400" fill="#FAFAFA" rx="12"/>
+  <g font-family="-apple-system, 'Segoe UI', sans-serif">
+    <text x="330" y="42" font-size="20" font-weight="700" fill="#1E293B" text-anchor="middle">结构化 JSON 契约工作流</text>
+
+    <!-- 左侧：JSON 契约卡片 -->
+    <rect x="30" y="75" width="130" height="230" fill="#FFFFFF" rx="10" filter="url(#shadow)" stroke="#E2E8F0"/>
+    <text x="95" y="105" font-size="14" font-weight="600" fill="#2563EB" text-anchor="middle">JSON 契约</text>
+    <line x1="50" y1="115" x2="140" y2="115" stroke="#DBEAFE" stroke-width="2"/>
+    <text x="95" y="140" font-size="12" fill="#475569" text-anchor="middle">mode, learning_goal</text>
+    <text x="95" y="160" font-size="12" fill="#475569" text-anchor="middle">audience, duration</text>
+    <text x="95" y="180" font-size="12" fill="#475569" text-anchor="middle">beats 数组结构</text>
+    <text x="95" y="220" font-size="11" fill="#64748B" text-anchor="middle" font-style="italic">下游全阶段输入契约</text>
+
+    <!-- 中间：三道门 -->
+    <rect x="200" y="90" width="110" height="50" fill="#EFF6FF" rx="8" stroke="#2563EB" stroke-width="2"/>
+    <text x="255" y="110" font-size="13" font-weight="600" fill="#2563EB" text-anchor="middle">1. 结构门</text>
+    <text x="255" y="128" font-size="11" fill="#3B82F6" text-anchor="middle">Schema 类型校验</text>
+
+    <rect x="200" y="160" width="110" height="50" fill="#FFF7ED" rx="8" stroke="#EA580C" stroke-width="2"/>
+    <text x="255" y="180" font-size="13" font-weight="600" fill="#EA580C" text-anchor="middle">2. 数量门</text>
+    <text x="255" y="198" font-size="11" fill="#F97316" text-anchor="middle">beats 范围控制</text>
+
+    <rect x="200" y="230" width="110" height="50" fill="#F5F3FF" rx="8" stroke="#9333EA" stroke-width="2"/>
+    <text x="255" y="250" font-size="13" font-weight="600" fill="#9333EA" text-anchor="middle">3. 可执行门</text>
+    <text x="255" y="268" font-size="11" fill="#A855F7" text-anchor="middle">对齐工具能力</text>
+
+    <!-- 右侧：下游阶段 -->
+    <rect x="380" y="75" width="240" height="230" fill="#FFFFFF" rx="10" filter="url(#shadow)" stroke="#E2E8F0"/>
+    <text x="500" y="105" font-size="14" font-weight="600" fill="#1E293B" text-anchor="middle">下游应用阶段</text>
+    <line x1="400" y1="115" x2="600" y2="115" stroke="#DCFCE7" stroke-width="2"/>
+
+    <rect x="395" y="130" width="210" height="32" fill="#F0FDF4" rx="6" stroke="#16A34A" stroke-width="1.5"/>
+    <text x="500" y="151" font-size="12" font-weight="500" fill="#16A34A" text-anchor="middle">草稿阶段 · 生成代码结构</text>
+
+    <rect x="395" y="172" width="210" height="32" fill="#F0FDF4" rx="6" stroke="#16A34A" stroke-width="1.5"/>
+    <text x="500" y="193" font-size="12" font-weight="500" fill="#16A34A" text-anchor="middle">实现阶段 · 控制时长节奏</text>
+
+    <rect x="395" y="214" width="210" height="32" fill="#F0FDF4" rx="6" stroke="#16A34A" stroke-width="1.5"/>
+    <text x="500" y="235" font-size="12" font-weight="500" fill="#16A34A" text-anchor="middle">审查阶段 · 教学点对齐画面</text>
+
+    <rect x="395" y="256" width="210" height="32" fill="#F0FDF4" rx="6" stroke="#16A34A" stroke-width="1.5"/>
+    <text x="500" y="277" font-size="12" font-weight="500" fill="#16A34A" text-anchor="middle">自愈阶段 · 校验骨架完整性</text>
+
+    <!-- 虚线连接 -->
+    <path d="M160,120 L195,115" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+    <path d="M160,145 L195,185" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+    <path d="M160,170 L195,255" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+
+    <path d="M310,115 L380,146" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+    <path d="M310,185 L380,188" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+    <path d="M310,255 L380,230" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+
+    <!-- 底部总结 -->
+    <rect x="140" y="335" width="380" height="36" fill="#FEF3C7" rx="6"/>
+    <text x="330" y="358" font-size="12" fill="#92400E" text-anchor="middle">将 LLM 从自由发挥收紧为对齐工具能力的脚本策划</text>
+  </g>
+</svg>
