@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300" width="660" height="300">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#44403C"/>
+      <stop offset="100%" stop-color="#1C1917"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="660" height="300" fill="url(#bgGrad)"/>
+  
+  <g fill="#D6D3D1" opacity="0.06">
+    <circle cx="110" cy="90" r="3"/><circle cx="280" cy="140" r="2.5"/><circle cx="420" cy="70" r="3.5"/>
+    <circle cx="190" cy="230" r="2"/><circle cx="380" cy="260" r="3"/><circle cx="60" cy="170" r="2.5"/>
+    <circle cx="550" cy="110" r="3"/><circle cx="320" cy="50" r="2"/><circle cx="600" cy="190" r="4"/>
+    <circle cx="140" cy="250" r="2.5"/><circle cx="480" cy="270" r="2"/><circle cx="90" cy="120" r="3"/>
+    <circle cx="240" cy="130" r="4"/><circle cx="450" cy="160" r="2.5"/><circle cx="350" cy="210" r="3"/>
+    <rect x="200" y="60" width="4" height="4" rx="1"/><rect x="510" y="240" width="3" height="3" rx="1"/>
+    <rect x="130" y="210" width="5" height="2" rx="1"/><rect x="400" y="100" width="2" height="5" rx="1"/>
+  </g>
+  
+  <rect x="50" y="65" width="4" height="230" fill="url(#accentGrad)" rx="2"/>
+  
+  <text x="70" y="85" fill="#FAFAF9" font-size="22" font-weight="bold" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+    <tspan x="70" dy="0">AI 写代码越用越没底？学会「接口先行」，</tspan>
+    <tspan x="70" dy="28">代码再乱你也敢上线</tspan>
+  </text>
+  
+  <text x="70" y="128" fill="#A8A29E" font-size="13" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+    AI 帮你写代码越来越快，但你心里越来越没底——不知道它写了什么、不知道怎么改、
+  </text>
+  
+  <g font-size="12" fill="#D6D3D1" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif" text-anchor="middle">
+    <rect x="70" y="245" width="72" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="106" y="261">接口先行</text>
+    <rect x="155" y="245" width="82" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="196" y="261">AI编程</text>
+    <rect x="249" y="245" width="82" height="24" rx="12" fill="#57534E" fill-opacity="0.4"/>
+    <text x="290" y="261">验收体系</text>
+  </g>
+  
+  <g opacity="0.2" stroke="#EA580C" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="585" cy="210" r="32"/>
+    <path d="M 525 195 L 545 225 M 535 195 L 555 225"/>
+  </g>
+  <g opacity="0.25" stroke="#A8A29E" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polygon points="590,185 610,205 590,225 570,205"/>
+  </g>
+  
+  <rect x="0" y="293" width="660" height="7" fill="url(#accentGrad)"/>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="660" height="400" fill="#FAFAFA" rx="12"/>
+  <text x="330" y="42" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="bold" fill="#1E293B" text-anchor="middle">🏝️ 荒岛协作：人机职责映射</text>
+
+  <text x="150" y="85" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="bold" fill="#2563EB" text-anchor="middle">👷 你（建筑师）</text>
+  <text x="510" y="85" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="bold" fill="#9333EA" text-anchor="middle">🤖 AI（帮手群）</text>
+
+  <rect x="40" y="110" width="220" height="56" rx="8" fill="#FFFFFF" filter="url(#shadow)" stroke="#2563EB" stroke-width="2"/>
+  <text x="150" y="144" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" fill="#1E293B" text-anchor="middle">📐 画图纸</text>
+
+  <rect x="400" y="110" width="220" height="56" rx="8" fill="#FFFFFF" filter="url(#shadow)" stroke="#9333EA" stroke-width="2"/>
+  <text x="510" y="144" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" fill="#1E293B" text-anchor="middle">🔌 定义接口</text>
+  <line x1="260" y1="138" x2="400" y2="138" stroke="#64748B" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="330" y="132" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#64748B" text-anchor="middle">=</text>
+
+  <rect x="40" y="190" width="220" height="56" rx="8" fill="#FFFFFF" filter="url(#shadow)" stroke="#2563EB" stroke-width="2"/>
+  <text x="150" y="224" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" fill="#1E293B" text-anchor="middle">📏 每日量尺寸</text>
+
+  <rect x="400" y="190" width="220" height="56" rx="8" fill="#FFFFFF" filter="url(#shadow)" stroke="#9333EA" stroke-width="2"/>
+  <text x="510" y="224" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" fill="#1E293B" text-anchor="middle">🧪 自动化测试</text>
+  <line x1="260" y1="218" x2="400" y2="218" stroke="#64748B" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="330" y="212" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#64748B" text-anchor="middle">=</text>
+
+  <rect x="40" y="270" width="220" height="56" rx="8" fill="#FFFFFF" filter="url(#shadow)" stroke="#2563EB" stroke-width="2"/>
+  <text x="150" y="304" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" fill="#1E293B" text-anchor="middle">🧱 指挥搬砖扛水泥</text>
+
+  <rect x="400" y="270" width="220" height="56" rx="8" fill="#FFFFFF" filter="url(#shadow)" stroke="#9333EA" stroke-width="2"/>
+  <text x="510" y="304" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" fill="#1E293B" text-anchor="middle">⚙️ AI 完成代码实现</text>
+  <line x1="260" y1="298" x2="400" y2="298" stroke="#64748B" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="330" y="292" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#64748B" text-anchor="middle">=</text>
+
+  <rect x="180" y="345" width="300" height="32" rx="16" fill="#F1F5F9"/>
+  <text x="330" y="366" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#475569" text-anchor="middle">你定方向与验收边界，AI 专注执行与落地</text>
+</svg>
