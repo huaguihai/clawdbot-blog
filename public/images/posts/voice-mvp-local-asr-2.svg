@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400">
+  <defs>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#00000010"/>
+    </filter>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22C55E"/>
+      <stop offset="100%" stop-color="#16A34A"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#9333EA"/>
+    </linearGradient>
+  </defs>
+  <rect width="660" height="400" rx="12" fill="#FAFAFA"/>
+
+  <!-- Title -->
+  <text x="330" y="34" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#1E293B">transcribe.cpp 统一转录引擎</text>
+  <text x="330" y="54" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#64748B">基于 ggml，一个引擎覆盖多平台、多模型、多加速后端</text>
+
+  <!-- Foundation: ggml -->
+  <rect x="230" y="72" width="200" height="38" rx="8" fill="url(#blueGrad)" filter="url(#shadow)"/>
+  <text x="330" y="96" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">ggml 推理框架</text>
+
+  <!-- Arrow down -->
+  <line x1="330" y1="110" x2="330" y2="130" stroke="#94A3B8" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="326,128 330,134 334,128" fill="#94A3B8"/>
+
+  <!-- Engine Card -->
+  <rect x="160" y="134" width="340" height="40" rx="10" fill="#FFFFFF" stroke="#2563EB" stroke-width="2" filter="url(#shadow)"/>
+  <text x="330" y="159" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#2563EB">transcribe.cpp 统一转录引擎</text>
+
+  <!-- Three Feature Cards -->
+  <!-- Card 1: Model Support -->
+  <rect x="30" y="200" width="185" height="72" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#shadow)"/>
+  <circle cx="58" cy="222" r="12" fill="#DBEAFE"/>
+  <text x="58" y="227" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#2563EB">16+</text>
+  <text x="122" y="220" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#1E293B">模型家族</text>
+  <text x="122" y="238" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#64748B">60+ 模型统一接入</text>
+  <text x="122" y="256" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#16A34A">vs 各管各的</text>
+
+  <!-- Card 2: Platform -->
+  <rect x="237" y="200" width="185" height="72" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#shadow)"/>
+  <circle cx="265" cy="222" r="12" fill="#FEF3C7"/>
+  <text x="265" y="227" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#D97706">3</text>
+  <text x="295" y="220" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#1E293B">平台统一</text>
+  <text x="295" y="238" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#64748B">Mac / Win / Linux</text>
+  <text x="295" y="256" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#16A34A">一次适配全平台</text>
+
+  <!-- Card 3: Acceleration -->
+  <rect x="445" y="200" width="185" height="72" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#shadow)"/>
+  <circle cx="473" cy="222" r="12" fill="#DCFCE7"/>
+  <text x="473" y="227" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#16A34A">4</text>
+  <text x="503" y="220" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#1E293B">加速后端</text>
+  <text x="503" y="238" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#64748B">Vulkan / Metal / CUDA</text>
+  <text x="503" y="256" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#16A34A">告别复杂配置</text>
+
+  <!-- Separator -->
+  <line x1="60" y1="290" x2="600" y2="290" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="330" y="284" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#94A3B8">核心差异化：准确性验证</text>
+
+  <!-- Validation Flow -->
+  <!-- Numerical Verification -->
+  <rect x="70" y="300" width="210" height="54" rx="10" fill="#FFFFFF" stroke="#9333EA" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="70" y="300" width="210" height="4" rx="2" fill="url(#purpleGrad)"/>
+  <text x="175" y="324" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#9333EA">数值验证</text>
+  <text x="175" y="342" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#64748B">中间层浮点输出对比</text>
+
+  <!-- Arrow merge -->
+  <path d="M 175 354 L 175 364 L 330 364 L 330 354" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <path d="M 330 354 L 330 364 L 485 364 L 485 354" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- WER Test -->
+  <rect x="380" y="300" width="210" height="54" rx="10" fill="#FFFFFF" stroke="#9333EA" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="380" y="300" width="210" height="4" rx="2" fill="url(#purpleGrad)"/>
+  <text x="485" y="324" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#9333EA">WER 测试</text>
+  <text x="485" y="342" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#64748B">语料扫描确认一致性</text>
+
+  <!-- Quality Tag -->
+  <rect x="265" y="368" width="130" height="26" rx="13" fill="url(#greenGrad)" filter="url(#shadow)"/>
+  <text x="330" y="385" text-anchor="middle" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#FFFFFF">✓ 质检标签</text>
+</svg>
